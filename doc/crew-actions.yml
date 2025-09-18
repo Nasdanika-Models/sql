@@ -1,0 +1,12 @@
+Action:
+    icon: https://docs.nasdanika.org/images/nasdanika-logo.png
+    text: Nasdanika CrewAI Model
+    location: https://crew-ai.models.nasdanika.org/
+    children:
+     - ActionReference: "target/action-models/crew-actions.xmi#/"
+    navigation:
+      - Action:
+          text: Source
+          icon: fab fa-github
+          location: https://github.com/Nasdanika-Models/crew-ai
+          

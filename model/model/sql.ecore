@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sql" nsURI="ecore://nasdanika.org/models/sql" nsPrefix="org.nasdanika.models.sql">
+  <eClassifiers xsi:type="ecore:EClass" name="Database" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driverClass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dependencies" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataTypes" upperBound="-1"
+        eType="#//DataType" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tableTypes" upperBound="-1"
+        eType="#//DataType" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="catalogs" upperBound="-1"
+        eType="#//Catalog" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataType" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TableType" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Catalog" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schemas" upperBound="-1"
+        eType="#//Schema" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schema" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tables" upperBound="-1"
+        eType="#//Table" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//TableType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columns" upperBound="-1"
+        eType="#//Column" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="primaryKey" eType="#//PrimaryKey"
+        containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="importedKeys" upperBound="-1"
+        eType="#//ImportedKey" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Column" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataType" eType="#//DataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PrimaryKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ImportedKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
+</ecore:EPackage>
