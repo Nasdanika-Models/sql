@@ -21,7 +21,7 @@ import org.nasdanika.ncore.util.NcoreUtil;
  * Builds SQL statements and other objects for EMF &lt;-&gt; JDBC interaction using 
  * model annotations
  */
-public class EClassStatementBuilder implements Injector<EObject>, Factory<EObject> {
+public class Connector<T extends EObject> implements Injector<T>, Factory<T> {
 	
 	/**
 	 * Default annotation source
@@ -79,15 +79,15 @@ public class EClassStatementBuilder implements Injector<EObject>, Factory<EObjec
 
 	protected Predicate<? super EAttribute> attributePredicate;
 	
-	public EClassStatementBuilder(EClass eClass) {
+	public Connector(EClass eClass) {
 		this(eClass, ANNOTATION_SOURCE);
 	}
 
-	public EClassStatementBuilder(EClass eClass, String annotationSource) {
+	public Connector(EClass eClass, String annotationSource) {
 		this(eClass, annotationSource, null);
 	}
 	
-	public EClassStatementBuilder(EClass eClass, String annotationSource, Predicate<? super EAttribute> attributePredicate) {
+	public Connector(EClass eClass, String annotationSource, Predicate<? super EAttribute> attributePredicate) {
 		this.eClass = eClass;
 		this.annotationSource = annotationSource;
 		this.attributePredicate = attributePredicate;
@@ -135,25 +135,19 @@ public class EClassStatementBuilder implements Injector<EObject>, Factory<EObjec
 	}
 		
 	public String getTable(boolean fullyQualified, String catalogSeparator) {
+		StringBuilder sb = new StringBuilder();
 		if (fullyQualified) {
-			StringBuilder sb = new StringBuilder();
 			String catalog = getCatalog();
 			if (!Util.isBlank(catalog)) {
 				sb.append(catalog).append(catalogSeparator);
 			}
 			String schema = getSchema();
 			if (!Util.isBlank(schema)) {
-				if (!sb.isEmpty()) {
-					sb.append(".");					
-				}
-				sb.append(schema);
+				sb.append(schema).append(".");
 			}
-			if (!sb.isEmpty()) {
-				sb.append(".");					
-			}
-			sb.append(getTable());
 		}
-		return getTable();
+		sb.append(getTable());
+		return sb.toString();
 	}
 		
 	public String getSchema() {
@@ -231,7 +225,7 @@ public class EClassStatementBuilder implements Injector<EObject>, Factory<EObjec
 	}
 	
 	@Override
-	public void inject(ResultSet resultSet, EObject target) throws SQLException {		
+	public void inject(ResultSet resultSet, T target) throws SQLException {		
 		if (target != null) {
 			List<Injector<EObject>> attributeInjectors = eClass
 				.getEAllAttributes()	
@@ -248,8 +242,9 @@ public class EClassStatementBuilder implements Injector<EObject>, Factory<EObjec
 	}
 
 	@Override
-	public EObject create(ResultSet resultSet) throws SQLException {
-		EObject ret = eClass.getEPackage().getEFactoryInstance().create(eClass);
+	public T create(ResultSet resultSet) throws SQLException {
+		@SuppressWarnings("unchecked")
+		T ret = (T) eClass.getEPackage().getEFactoryInstance().create(eClass);
 		inject(resultSet, ret);
 		return ret;
 	}
