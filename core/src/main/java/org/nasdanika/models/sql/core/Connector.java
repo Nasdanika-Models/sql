@@ -2,6 +2,7 @@ package org.nasdanika.models.sql.core;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
@@ -21,58 +22,8 @@ import org.nasdanika.ncore.util.NcoreUtil;
  * Builds SQL statements and other objects for EMF &lt;-&gt; JDBC interaction using 
  * model annotations
  */
-public class Connector<T extends EObject> implements Injector<T>, Factory<T> {
+public class Connector<T extends EObject> extends Configuration implements Injector<T>, Factory<T> {
 	
-	/**
-	 * Default annotation source
-	 */
-	public static final String ANNOTATION_SOURCE = "urn:org.nasdanika.models.sql";
-	
-	/**
-	 * {@link EClass} annotation for catalog name 
-	 */
-	public static final String CATALOG_ANNOTATION_KEY = "catalog";
-	
-	protected String getCatalogAnnotationKey() {
-		return CATALOG_ANNOTATION_KEY;
-	}
-	
-	/**
-	 * {@link EClass} annotation for schema name 
-	 */
-	public static final String SCHEMA_ANNOTATION_KEY = "schema";
-	
-	protected String getSchemaAnnotationKey() {
-		return SCHEMA_ANNOTATION_KEY;
-	}
-	
-	/**
-	 * {@link EClass} annotation for table name 
-	 */	
-	public static final String TABLE_ANNOTATION_KEY = "table";
-	
-	protected String getTableAnnotationKey() {
-		return TABLE_ANNOTATION_KEY;
-	}	
-		
-	/**
-	 * {@link EAttribute} annotation for column name 
-	 */	
-	public static final String COLUMN_ANNOTATION_KEY = "column";
-	
-	protected String getColumnAnnotationKey() {
-		return COLUMN_ANNOTATION_KEY;
-	}	
-	
-	/**
-	 * {@link EReference} annotation - a YAML map of the foreign key column to the primary key column 
-	 */	
-	public static final String KEY_MAPPING_ANNOTATION_KEY = "keyMapping";
-	
-	protected String getKeyMappingAnnotationKey() {
-		return KEY_MAPPING_ANNOTATION_KEY;
-	}
-
 	protected EClass eClass;
 
 	protected String annotationSource;
@@ -248,5 +199,58 @@ public class Connector<T extends EObject> implements Injector<T>, Factory<T> {
 		inject(resultSet, ret);
 		return ret;
 	}
+	
+	/**
+	 * Populates a reference creating objects of its type. Applicable to homogeneous concrete references
+	 * @param resultSet
+	 * @param target
+	 * @param eReference
+	 * @throws SQLException
+	 */
+	static void loadReference(
+			ResultSet resultSet, 
+			EObject target, 
+			EReference eReference) throws SQLException {
+		loadReference(resultSet, target, eReference, ANNOTATION_SOURCE);
+	}
+		
+	/**
+	 * Populates a reference creating objects of its type. Applicable to homogeneous concrete references
+	 * @param resultSet
+	 * @param target
+	 * @param eReference
+	 * @throws SQLException
+	 */
+	static void loadReference(
+			ResultSet resultSet, 
+			EObject target, 
+			EReference eReference,
+			String annotationSource) throws SQLException {
+		loadReference(resultSet, target, eReference, annotationSource, null);
+	}
+			
+	/**
+	 * Populates a reference creating objects of its type. Applicable to homogeneous concrete references
+	 * @param resultSet
+	 * @param target
+	 * @param eReference
+	 * @throws SQLException
+	 */
+	static void loadReference(
+			ResultSet resultSet, 
+			EObject target, 
+			EReference eReference,
+			String annotationSource, 
+			Predicate<? super EAttribute> attributePredicate) throws SQLException {
+		EClass refType = eReference.getEReferenceType();
+		Connector<EObject> connector = new Connector<>(refType, annotationSource, attributePredicate);
+		if (eReference.isMany()) {
+			@SuppressWarnings("unchecked")
+			Collection<EObject> refVal = (Collection<EObject>) target.eGet(eReference);
+			connector.load(resultSet, refVal::add);
+		} else {
+			target.eSet(eReference, connector.create(resultSet));
+		}
+	}		
 
 }
