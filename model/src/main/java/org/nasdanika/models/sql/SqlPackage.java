@@ -4,6 +4,7 @@ package org.nasdanika.models.sql;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -331,13 +332,166 @@ public interface SqlPackage extends EPackage {
 	int DATA_TYPE__CONTEXT_HELP = NcorePackage.DOCUMENTED_NAMED_ELEMENT__CONTEXT_HELP;
 
 	/**
+	 * The feature id for the '<em><b>Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__DATA_TYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Precision</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__PRECISION = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Literal Prefix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__LITERAL_PREFIX = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Literal Suffix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__LITERAL_SUFFIX = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Create Params</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__CREATE_PARAMS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Nullable</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__NULLABLE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Case Sensitive</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__CASE_SENSITIVE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Searchable</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__SEARCHABLE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Unsigned Attribute</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__UNSIGNED_ATTRIBUTE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Fixed Prec Scale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__FIXED_PREC_SCALE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Auto Increment</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__AUTO_INCREMENT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Local Type Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__LOCAL_TYPE_NAME = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Minimum Scale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__MINIMUM_SCALE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>Maximum Scale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__MAXIMUM_SCALE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 13;
+
+	/**
+	 * The feature id for the '<em><b>Sql Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__SQL_DATA_TYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 14;
+
+	/**
+	 * The feature id for the '<em><b>Sql Datetime Sub</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__SQL_DATETIME_SUB = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 15;
+
+	/**
+	 * The feature id for the '<em><b>Num Prec Radix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_TYPE__NUM_PREC_RADIX = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 16;
+
+	/**
 	 * The number of structural features of the '<em>Data Type</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TYPE_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int DATA_TYPE_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of operations of the '<em>Data Type</em>' class.
@@ -1239,6 +1393,17 @@ public interface SqlPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.nasdanika.models.sql.Type <em>Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.sql.Type
+	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getType()
+	 * @generated
+	 */
+	int TYPE = 9;
+
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.sql.Database <em>Database</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1323,6 +1488,193 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDataType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getDataType <em>Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Data Type</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getDataType()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_DataType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getPrecision <em>Precision</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Precision</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getPrecision()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_Precision();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getLiteralPrefix <em>Literal Prefix</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Literal Prefix</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getLiteralPrefix()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_LiteralPrefix();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getLiteralSuffix <em>Literal Suffix</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Literal Suffix</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getLiteralSuffix()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_LiteralSuffix();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getCreateParams <em>Create Params</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Create Params</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getCreateParams()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_CreateParams();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getNullable <em>Nullable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nullable</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getNullable()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_Nullable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getCaseSensitive <em>Case Sensitive</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Case Sensitive</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getCaseSensitive()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_CaseSensitive();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getSearchable <em>Searchable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Searchable</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getSearchable()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_Searchable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getUnsignedAttribute <em>Unsigned Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unsigned Attribute</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getUnsignedAttribute()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_UnsignedAttribute();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getFixedPrecScale <em>Fixed Prec Scale</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fixed Prec Scale</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getFixedPrecScale()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_FixedPrecScale();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getAutoIncrement <em>Auto Increment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Auto Increment</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getAutoIncrement()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_AutoIncrement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getLocalTypeName <em>Local Type Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Local Type Name</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getLocalTypeName()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_LocalTypeName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getMinimumScale <em>Minimum Scale</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Minimum Scale</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getMinimumScale()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_MinimumScale();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getMaximumScale <em>Maximum Scale</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Maximum Scale</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getMaximumScale()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_MaximumScale();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getSqlDataType <em>Sql Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sql Data Type</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getSqlDataType()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_SqlDataType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getSqlDatetimeSub <em>Sql Datetime Sub</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sql Datetime Sub</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getSqlDatetimeSub()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_SqlDatetimeSub();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.DataType#getNumPrecRadix <em>Num Prec Radix</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num Prec Radix</em>'.
+	 * @see org.nasdanika.models.sql.DataType#getNumPrecRadix()
+	 * @see #getDataType()
+	 * @generated
+	 */
+	EAttribute getDataType_NumPrecRadix();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.sql.TableType <em>Table Type</em>}'.
@@ -1472,6 +1824,16 @@ public interface SqlPackage extends EPackage {
 	EClass getImportedKey();
 
 	/**
+	 * Returns the meta object for enum '{@link org.nasdanika.models.sql.Type <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Type</em>'.
+	 * @see org.nasdanika.models.sql.Type
+	 * @generated
+	 */
+	EEnum getType();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1561,6 +1923,142 @@ public interface SqlPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DATA_TYPE = eINSTANCE.getDataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__DATA_TYPE = eINSTANCE.getDataType_DataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Precision</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__PRECISION = eINSTANCE.getDataType_Precision();
+
+		/**
+		 * The meta object literal for the '<em><b>Literal Prefix</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__LITERAL_PREFIX = eINSTANCE.getDataType_LiteralPrefix();
+
+		/**
+		 * The meta object literal for the '<em><b>Literal Suffix</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__LITERAL_SUFFIX = eINSTANCE.getDataType_LiteralSuffix();
+
+		/**
+		 * The meta object literal for the '<em><b>Create Params</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__CREATE_PARAMS = eINSTANCE.getDataType_CreateParams();
+
+		/**
+		 * The meta object literal for the '<em><b>Nullable</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__NULLABLE = eINSTANCE.getDataType_Nullable();
+
+		/**
+		 * The meta object literal for the '<em><b>Case Sensitive</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__CASE_SENSITIVE = eINSTANCE.getDataType_CaseSensitive();
+
+		/**
+		 * The meta object literal for the '<em><b>Searchable</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__SEARCHABLE = eINSTANCE.getDataType_Searchable();
+
+		/**
+		 * The meta object literal for the '<em><b>Unsigned Attribute</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__UNSIGNED_ATTRIBUTE = eINSTANCE.getDataType_UnsignedAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Fixed Prec Scale</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__FIXED_PREC_SCALE = eINSTANCE.getDataType_FixedPrecScale();
+
+		/**
+		 * The meta object literal for the '<em><b>Auto Increment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__AUTO_INCREMENT = eINSTANCE.getDataType_AutoIncrement();
+
+		/**
+		 * The meta object literal for the '<em><b>Local Type Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__LOCAL_TYPE_NAME = eINSTANCE.getDataType_LocalTypeName();
+
+		/**
+		 * The meta object literal for the '<em><b>Minimum Scale</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__MINIMUM_SCALE = eINSTANCE.getDataType_MinimumScale();
+
+		/**
+		 * The meta object literal for the '<em><b>Maximum Scale</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__MAXIMUM_SCALE = eINSTANCE.getDataType_MaximumScale();
+
+		/**
+		 * The meta object literal for the '<em><b>Sql Data Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__SQL_DATA_TYPE = eINSTANCE.getDataType_SqlDataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Sql Datetime Sub</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__SQL_DATETIME_SUB = eINSTANCE.getDataType_SqlDatetimeSub();
+
+		/**
+		 * The meta object literal for the '<em><b>Num Prec Radix</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_TYPE__NUM_PREC_RADIX = eINSTANCE.getDataType_NumPrecRadix();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.TableTypeImpl <em>Table Type</em>}' class.
@@ -1687,6 +2185,16 @@ public interface SqlPackage extends EPackage {
 		 * @generated
 		 */
 		EClass IMPORTED_KEY = eINSTANCE.getImportedKey();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.sql.Type <em>Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.sql.Type
+		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getType()
+		 * @generated
+		 */
+		EEnum TYPE = eINSTANCE.getType();
 
 	}
 

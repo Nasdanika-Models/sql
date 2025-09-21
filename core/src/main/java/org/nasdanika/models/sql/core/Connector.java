@@ -11,6 +11,8 @@ import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
@@ -71,6 +73,14 @@ public class Connector<T extends EObject> extends Configuration implements Injec
 			.filter(v -> !Util.isBlank(v))
 			.findFirst()
 			.orElse(defaultValue);
+	}
+	
+	public String getEnumLiteral(EModelElement modelElement) {
+		return getAnnotationDetail(modelElement, getEnumLiteralAnnotationKey());
+	}
+	
+	public String getEnumValue(EModelElement modelElement) {
+		return getAnnotationDetail(modelElement, getEnumValueAnnotationKey());
 	}
 	
 	public String getColumn(EModelElement modelElement) {
@@ -144,13 +154,36 @@ public class Connector<T extends EObject> extends Configuration implements Injec
 	}
 	
 	public Injector<EObject> createInjector(EAttribute eAttribute) {
+		EDataType type = eAttribute.getEAttributeType();
+		if (type instanceof EEnum) {
+			String literal = getEnumLiteral(eAttribute);
+			if (Util.isBlank(literal)) {
+				String valueColumn = getEnumValue(eAttribute);
+				if (!Util.isBlank(valueColumn)) {
+					return (resultSet, target) -> {					
+						int val = resultSet.getInt(valueColumn);
+						EEnumLiteral enumLiteral = ((EEnum) type).getELiterals().stream().filter(l -> l.getValue() == val).findFirst().get();
+						target.eSet(eAttribute, enumLiteral.getInstance());
+					};
+				}				
+			} else {
+				String literalColumn = getEnumLiteral(eAttribute);
+				if (!Util.isBlank(literalColumn)) {
+					return (resultSet, target) -> {					
+						String val = resultSet.getString(literalColumn);
+						EEnumLiteral enumLiteral = ((EEnum) type).getELiterals().stream().filter(l -> l.getLiteral().equals(val)).findFirst().get();
+						target.eSet(eAttribute, enumLiteral.getInstance());
+					};
+				}								
+			}
+		}
+		
 		String column = getColumn(eAttribute);
 		if (Util.isBlank(column)) {
 			return null;
 		}
 		
 		return (resultSet, target) -> {
-			EDataType type = eAttribute.getEAttributeType();
 			if (type == EcorePackage.Literals.ESTRING) {
 				target.eSet(eAttribute, resultSet.getString(column));
 			} else if (type == EcorePackage.Literals.EDATE) {
@@ -170,7 +203,7 @@ public class Connector<T extends EObject> extends Configuration implements Injec
 			} else if (type == EcorePackage.Literals.EFLOAT) {
 				target.eSet(eAttribute, resultSet.getFloat(column));
 			} else {
-				target.eSet(eAttribute, resultSet.getObject(column));
+				target.eSet(eAttribute, resultSet.getObject(column, type.getInstanceClass()));
 			}
 		};
 	}

@@ -1,14 +1,18 @@
 package org.nasdanika.models.sql.core.tests;
 
+import java.lang.reflect.Modifier;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.stream.Stream;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -82,6 +86,27 @@ public class SqlCoreTests {
     			ePackage.getEClassifiers().add(eClass);
     		}    		
         }		
+        
+        EEnum typesEnum = EcoreFactory.eINSTANCE.createEEnum();
+        typesEnum.setName("Types");
+        ePackage.getEClassifiers().add(typesEnum);
+        
+        Stream.of(java.sql.Types.class.getDeclaredFields())
+        	.filter(f -> Modifier.isStatic(f.getModifiers()))
+        	.sorted((a,b) -> a.getName().compareTo(b.getName()))
+        	.map(f -> {
+        		EEnumLiteral literal = EcoreFactory.eINSTANCE.createEEnumLiteral();
+        		literal.setName(f.getName());
+        		literal.setLiteral(f.getName());
+        		try {
+					literal.setValue(f.getInt(null));
+				} catch (IllegalArgumentException | IllegalAccessException e) {
+					throw new RuntimeException(e);
+				}
+        		return literal;
+        	})
+        	.forEach(typesEnum.getELiterals()::add);
+        			        
 		CapabilityLoader capabilityLoader = new CapabilityLoader();
 		ProgressMonitor progressMonitor = new PrintStreamProgressMonitor();
 		Requirement<ResourceSetRequirement, ResourceSet> requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);		

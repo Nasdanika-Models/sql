@@ -1,8 +1,8 @@
 /**
  */
-package org.nasdanika.models.sql;
+package Sql;
 
-import org.nasdanika.ncore.DocumentedNamedElement;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,55 +13,74 @@ import org.nasdanika.ncore.DocumentedNamedElement;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.nasdanika.models.sql.DataType#getDataType <em>Data Type</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getPrecision <em>Precision</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getLiteralPrefix <em>Literal Prefix</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getLiteralSuffix <em>Literal Suffix</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getCreateParams <em>Create Params</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getNullable <em>Nullable</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getCaseSensitive <em>Case Sensitive</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getSearchable <em>Searchable</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getUnsignedAttribute <em>Unsigned Attribute</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getFixedPrecScale <em>Fixed Prec Scale</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getAutoIncrement <em>Auto Increment</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getLocalTypeName <em>Local Type Name</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getMinimumScale <em>Minimum Scale</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getMaximumScale <em>Maximum Scale</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getSqlDataType <em>Sql Data Type</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getSqlDatetimeSub <em>Sql Datetime Sub</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.DataType#getNumPrecRadix <em>Num Prec Radix</em>}</li>
+ *   <li>{@link Sql.DataType#getTypeName <em>Type Name</em>}</li>
+ *   <li>{@link Sql.DataType#getDataType <em>Data Type</em>}</li>
+ *   <li>{@link Sql.DataType#getPrecision <em>Precision</em>}</li>
+ *   <li>{@link Sql.DataType#getLiteralPrefix <em>Literal Prefix</em>}</li>
+ *   <li>{@link Sql.DataType#getLiteralSuffix <em>Literal Suffix</em>}</li>
+ *   <li>{@link Sql.DataType#getCreateParams <em>Create Params</em>}</li>
+ *   <li>{@link Sql.DataType#getNullable <em>Nullable</em>}</li>
+ *   <li>{@link Sql.DataType#getCaseSensitive <em>Case Sensitive</em>}</li>
+ *   <li>{@link Sql.DataType#getSearchable <em>Searchable</em>}</li>
+ *   <li>{@link Sql.DataType#getUnsignedAttribute <em>Unsigned Attribute</em>}</li>
+ *   <li>{@link Sql.DataType#getFixedPrecScale <em>Fixed Prec Scale</em>}</li>
+ *   <li>{@link Sql.DataType#getAutoIncrement <em>Auto Increment</em>}</li>
+ *   <li>{@link Sql.DataType#getLocalTypeName <em>Local Type Name</em>}</li>
+ *   <li>{@link Sql.DataType#getMinimumScale <em>Minimum Scale</em>}</li>
+ *   <li>{@link Sql.DataType#getMaximumScale <em>Maximum Scale</em>}</li>
+ *   <li>{@link Sql.DataType#getSqlDataType <em>Sql Data Type</em>}</li>
+ *   <li>{@link Sql.DataType#getSqlDatetimeSub <em>Sql Datetime Sub</em>}</li>
+ *   <li>{@link Sql.DataType#getNumPrecRadix <em>Num Prec Radix</em>}</li>
  * </ul>
  *
- * @see org.nasdanika.models.sql.SqlPackage#getDataType()
+ * @see Sql.SqlPackage#getDataType()
  * @model
  * @generated
  */
-public interface DataType extends DocumentedNamedElement {
+public interface DataType extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Type Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Type Name</em>' attribute.
+	 * @see #setTypeName(String)
+	 * @see Sql.SqlPackage#getDataType_TypeName()
+	 * @model annotation="urn:org.nasdanika.models.sql column='TYPE_NAME'"
+	 * @generated
+	 */
+	String getTypeName();
+
+	/**
+	 * Sets the value of the '{@link Sql.DataType#getTypeName <em>Type Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Type Name</em>' attribute.
+	 * @see #getTypeName()
+	 * @generated
+	 */
+	void setTypeName(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Data Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.nasdanika.models.sql.Type}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Data Type</em>' attribute.
-	 * @see org.nasdanika.models.sql.Type
-	 * @see #setDataType(Type)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_DataType()
-	 * @model annotation="urn:org.nasdanika.models.sql enum-value='DATA_TYPE'"
+	 * @see #setDataType(Integer)
+	 * @see Sql.SqlPackage#getDataType_DataType()
+	 * @model annotation="urn:org.nasdanika.models.sql column='DATA_TYPE'"
 	 * @generated
 	 */
-	Type getDataType();
+	Integer getDataType();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getDataType <em>Data Type</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getDataType <em>Data Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Data Type</em>' attribute.
-	 * @see org.nasdanika.models.sql.Type
 	 * @see #getDataType()
 	 * @generated
 	 */
-	void setDataType(Type value);
+	void setDataType(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Precision</b></em>' attribute.
@@ -69,14 +88,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Precision</em>' attribute.
 	 * @see #setPrecision(Integer)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_Precision()
+	 * @see Sql.SqlPackage#getDataType_Precision()
 	 * @model annotation="urn:org.nasdanika.models.sql column='PRECISION'"
 	 * @generated
 	 */
 	Integer getPrecision();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getPrecision <em>Precision</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getPrecision <em>Precision</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Precision</em>' attribute.
@@ -91,14 +110,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Literal Prefix</em>' attribute.
 	 * @see #setLiteralPrefix(String)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_LiteralPrefix()
+	 * @see Sql.SqlPackage#getDataType_LiteralPrefix()
 	 * @model annotation="urn:org.nasdanika.models.sql column='LITERAL_PREFIX'"
 	 * @generated
 	 */
 	String getLiteralPrefix();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getLiteralPrefix <em>Literal Prefix</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getLiteralPrefix <em>Literal Prefix</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Literal Prefix</em>' attribute.
@@ -113,14 +132,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Literal Suffix</em>' attribute.
 	 * @see #setLiteralSuffix(String)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_LiteralSuffix()
+	 * @see Sql.SqlPackage#getDataType_LiteralSuffix()
 	 * @model annotation="urn:org.nasdanika.models.sql column='LITERAL_SUFFIX'"
 	 * @generated
 	 */
 	String getLiteralSuffix();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getLiteralSuffix <em>Literal Suffix</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getLiteralSuffix <em>Literal Suffix</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Literal Suffix</em>' attribute.
@@ -135,14 +154,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Create Params</em>' attribute.
 	 * @see #setCreateParams(String)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_CreateParams()
+	 * @see Sql.SqlPackage#getDataType_CreateParams()
 	 * @model annotation="urn:org.nasdanika.models.sql column='CREATE_PARAMS'"
 	 * @generated
 	 */
 	String getCreateParams();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getCreateParams <em>Create Params</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getCreateParams <em>Create Params</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Create Params</em>' attribute.
@@ -157,14 +176,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nullable</em>' attribute.
 	 * @see #setNullable(Short)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_Nullable()
+	 * @see Sql.SqlPackage#getDataType_Nullable()
 	 * @model annotation="urn:org.nasdanika.models.sql column='NULLABLE'"
 	 * @generated
 	 */
 	Short getNullable();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getNullable <em>Nullable</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getNullable <em>Nullable</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Nullable</em>' attribute.
@@ -179,14 +198,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Case Sensitive</em>' attribute.
 	 * @see #setCaseSensitive(Boolean)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_CaseSensitive()
+	 * @see Sql.SqlPackage#getDataType_CaseSensitive()
 	 * @model annotation="urn:org.nasdanika.models.sql column='CASE_SENSITIVE'"
 	 * @generated
 	 */
 	Boolean getCaseSensitive();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getCaseSensitive <em>Case Sensitive</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getCaseSensitive <em>Case Sensitive</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Case Sensitive</em>' attribute.
@@ -201,14 +220,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Searchable</em>' attribute.
 	 * @see #setSearchable(Short)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_Searchable()
+	 * @see Sql.SqlPackage#getDataType_Searchable()
 	 * @model annotation="urn:org.nasdanika.models.sql column='SEARCHABLE'"
 	 * @generated
 	 */
 	Short getSearchable();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getSearchable <em>Searchable</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getSearchable <em>Searchable</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Searchable</em>' attribute.
@@ -223,14 +242,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Unsigned Attribute</em>' attribute.
 	 * @see #setUnsignedAttribute(Boolean)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_UnsignedAttribute()
+	 * @see Sql.SqlPackage#getDataType_UnsignedAttribute()
 	 * @model annotation="urn:org.nasdanika.models.sql column='UNSIGNED_ATTRIBUTE'"
 	 * @generated
 	 */
 	Boolean getUnsignedAttribute();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getUnsignedAttribute <em>Unsigned Attribute</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getUnsignedAttribute <em>Unsigned Attribute</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Unsigned Attribute</em>' attribute.
@@ -245,14 +264,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fixed Prec Scale</em>' attribute.
 	 * @see #setFixedPrecScale(Boolean)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_FixedPrecScale()
+	 * @see Sql.SqlPackage#getDataType_FixedPrecScale()
 	 * @model annotation="urn:org.nasdanika.models.sql column='FIXED_PREC_SCALE'"
 	 * @generated
 	 */
 	Boolean getFixedPrecScale();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getFixedPrecScale <em>Fixed Prec Scale</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getFixedPrecScale <em>Fixed Prec Scale</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Fixed Prec Scale</em>' attribute.
@@ -267,14 +286,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Auto Increment</em>' attribute.
 	 * @see #setAutoIncrement(Boolean)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_AutoIncrement()
+	 * @see Sql.SqlPackage#getDataType_AutoIncrement()
 	 * @model annotation="urn:org.nasdanika.models.sql column='AUTO_INCREMENT'"
 	 * @generated
 	 */
 	Boolean getAutoIncrement();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getAutoIncrement <em>Auto Increment</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getAutoIncrement <em>Auto Increment</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Auto Increment</em>' attribute.
@@ -289,14 +308,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Local Type Name</em>' attribute.
 	 * @see #setLocalTypeName(String)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_LocalTypeName()
+	 * @see Sql.SqlPackage#getDataType_LocalTypeName()
 	 * @model annotation="urn:org.nasdanika.models.sql column='LOCAL_TYPE_NAME'"
 	 * @generated
 	 */
 	String getLocalTypeName();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getLocalTypeName <em>Local Type Name</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getLocalTypeName <em>Local Type Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Local Type Name</em>' attribute.
@@ -311,14 +330,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Minimum Scale</em>' attribute.
 	 * @see #setMinimumScale(Short)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_MinimumScale()
+	 * @see Sql.SqlPackage#getDataType_MinimumScale()
 	 * @model annotation="urn:org.nasdanika.models.sql column='MINIMUM_SCALE'"
 	 * @generated
 	 */
 	Short getMinimumScale();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getMinimumScale <em>Minimum Scale</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getMinimumScale <em>Minimum Scale</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Minimum Scale</em>' attribute.
@@ -333,14 +352,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maximum Scale</em>' attribute.
 	 * @see #setMaximumScale(Short)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_MaximumScale()
+	 * @see Sql.SqlPackage#getDataType_MaximumScale()
 	 * @model annotation="urn:org.nasdanika.models.sql column='MAXIMUM_SCALE'"
 	 * @generated
 	 */
 	Short getMaximumScale();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getMaximumScale <em>Maximum Scale</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getMaximumScale <em>Maximum Scale</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Maximum Scale</em>' attribute.
@@ -355,14 +374,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sql Data Type</em>' attribute.
 	 * @see #setSqlDataType(Integer)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_SqlDataType()
+	 * @see Sql.SqlPackage#getDataType_SqlDataType()
 	 * @model annotation="urn:org.nasdanika.models.sql column='SQL_DATA_TYPE'"
 	 * @generated
 	 */
 	Integer getSqlDataType();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getSqlDataType <em>Sql Data Type</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getSqlDataType <em>Sql Data Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Sql Data Type</em>' attribute.
@@ -377,14 +396,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sql Datetime Sub</em>' attribute.
 	 * @see #setSqlDatetimeSub(Integer)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_SqlDatetimeSub()
+	 * @see Sql.SqlPackage#getDataType_SqlDatetimeSub()
 	 * @model annotation="urn:org.nasdanika.models.sql column='SQL_DATETIME_SUB'"
 	 * @generated
 	 */
 	Integer getSqlDatetimeSub();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getSqlDatetimeSub <em>Sql Datetime Sub</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getSqlDatetimeSub <em>Sql Datetime Sub</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Sql Datetime Sub</em>' attribute.
@@ -399,14 +418,14 @@ public interface DataType extends DocumentedNamedElement {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Num Prec Radix</em>' attribute.
 	 * @see #setNumPrecRadix(Integer)
-	 * @see org.nasdanika.models.sql.SqlPackage#getDataType_NumPrecRadix()
+	 * @see Sql.SqlPackage#getDataType_NumPrecRadix()
 	 * @model annotation="urn:org.nasdanika.models.sql column='NUM_PREC_RADIX'"
 	 * @generated
 	 */
 	Integer getNumPrecRadix();
 
 	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.DataType#getNumPrecRadix <em>Num Prec Radix</em>}' attribute.
+	 * Sets the value of the '{@link Sql.DataType#getNumPrecRadix <em>Num Prec Radix</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Num Prec Radix</em>' attribute.
@@ -414,4 +433,5 @@ public interface DataType extends DocumentedNamedElement {
 	 * @generated
 	 */
 	void setNumPrecRadix(Integer value);
+
 } // DataType

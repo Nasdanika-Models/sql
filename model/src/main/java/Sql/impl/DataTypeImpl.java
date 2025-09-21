@@ -1,14 +1,13 @@
 /**
  */
-package org.nasdanika.models.sql.impl;
+package Sql.impl;
+
+import Sql.DataType;
+import Sql.SqlPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.nasdanika.models.sql.DataType;
-import org.nasdanika.models.sql.SqlPackage;
-
-import org.nasdanika.models.sql.Type;
-import org.nasdanika.ncore.impl.DocumentedNamedElementImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,28 +17,39 @@ import org.nasdanika.ncore.impl.DocumentedNamedElementImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getDataType <em>Data Type</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getPrecision <em>Precision</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getLiteralPrefix <em>Literal Prefix</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getLiteralSuffix <em>Literal Suffix</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getCreateParams <em>Create Params</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getNullable <em>Nullable</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getCaseSensitive <em>Case Sensitive</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getSearchable <em>Searchable</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getUnsignedAttribute <em>Unsigned Attribute</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getFixedPrecScale <em>Fixed Prec Scale</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getAutoIncrement <em>Auto Increment</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getLocalTypeName <em>Local Type Name</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getMinimumScale <em>Minimum Scale</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getMaximumScale <em>Maximum Scale</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getSqlDataType <em>Sql Data Type</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getSqlDatetimeSub <em>Sql Datetime Sub</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.DataTypeImpl#getNumPrecRadix <em>Num Prec Radix</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getTypeName <em>Type Name</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getDataType <em>Data Type</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getPrecision <em>Precision</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getLiteralPrefix <em>Literal Prefix</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getLiteralSuffix <em>Literal Suffix</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getCreateParams <em>Create Params</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getNullable <em>Nullable</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getCaseSensitive <em>Case Sensitive</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getSearchable <em>Searchable</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getUnsignedAttribute <em>Unsigned Attribute</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getFixedPrecScale <em>Fixed Prec Scale</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getAutoIncrement <em>Auto Increment</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getLocalTypeName <em>Local Type Name</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getMinimumScale <em>Minimum Scale</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getMaximumScale <em>Maximum Scale</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getSqlDataType <em>Sql Data Type</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getSqlDatetimeSub <em>Sql Datetime Sub</em>}</li>
+ *   <li>{@link Sql.impl.DataTypeImpl#getNumPrecRadix <em>Num Prec Radix</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType {
+public class DataTypeImpl extends MinimalEObjectImpl.Container implements DataType {
+	/**
+	 * The default value of the '{@link #getTypeName() <em>Type Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTypeName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TYPE_NAME_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getDataType() <em>Data Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -48,7 +58,8 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Type DATA_TYPE_EDEFAULT = Type.ARRAY;
+	protected static final Integer DATA_TYPE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getPrecision() <em>Precision</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,6 +69,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Integer PRECISION_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getLiteralPrefix() <em>Literal Prefix</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,6 +79,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final String LITERAL_PREFIX_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getLiteralSuffix() <em>Literal Suffix</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -76,6 +89,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final String LITERAL_SUFFIX_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getCreateParams() <em>Create Params</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,6 +99,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final String CREATE_PARAMS_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getNullable() <em>Nullable</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -94,6 +109,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Short NULLABLE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getCaseSensitive() <em>Case Sensitive</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -103,6 +119,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Boolean CASE_SENSITIVE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getSearchable() <em>Searchable</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,6 +129,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Short SEARCHABLE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getUnsignedAttribute() <em>Unsigned Attribute</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -121,6 +139,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Boolean UNSIGNED_ATTRIBUTE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getFixedPrecScale() <em>Fixed Prec Scale</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -130,6 +149,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Boolean FIXED_PREC_SCALE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getAutoIncrement() <em>Auto Increment</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -139,6 +159,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Boolean AUTO_INCREMENT_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getLocalTypeName() <em>Local Type Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -148,6 +169,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final String LOCAL_TYPE_NAME_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getMinimumScale() <em>Minimum Scale</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -157,6 +179,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Short MINIMUM_SCALE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getMaximumScale() <em>Maximum Scale</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -166,6 +189,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Short MAXIMUM_SCALE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getSqlDataType() <em>Sql Data Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -175,6 +199,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Integer SQL_DATA_TYPE_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getSqlDatetimeSub() <em>Sql Datetime Sub</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -184,6 +209,7 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @ordered
 	 */
 	protected static final Integer SQL_DATETIME_SUB_EDEFAULT = null;
+
 	/**
 	 * The default value of the '{@link #getNumPrecRadix() <em>Num Prec Radix</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -219,8 +245,8 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @generated
 	 */
 	@Override
-	public Type getDataType() {
-		return (Type)eDynamicGet(SqlPackage.DATA_TYPE__DATA_TYPE, SqlPackage.Literals.DATA_TYPE__DATA_TYPE, true, true);
+	protected int eStaticFeatureCount() {
+		return 0;
 	}
 
 	/**
@@ -229,7 +255,37 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	 * @generated
 	 */
 	@Override
-	public void setDataType(Type newDataType) {
+	public String getTypeName() {
+		return (String)eDynamicGet(SqlPackage.DATA_TYPE__TYPE_NAME, SqlPackage.Literals.DATA_TYPE__TYPE_NAME, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTypeName(String newTypeName) {
+		eDynamicSet(SqlPackage.DATA_TYPE__TYPE_NAME, SqlPackage.Literals.DATA_TYPE__TYPE_NAME, newTypeName);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Integer getDataType() {
+		return (Integer)eDynamicGet(SqlPackage.DATA_TYPE__DATA_TYPE, SqlPackage.Literals.DATA_TYPE__DATA_TYPE, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataType(Integer newDataType) {
 		eDynamicSet(SqlPackage.DATA_TYPE__DATA_TYPE, SqlPackage.Literals.DATA_TYPE__DATA_TYPE, newDataType);
 	}
 
@@ -561,6 +617,8 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case SqlPackage.DATA_TYPE__TYPE_NAME:
+				return getTypeName();
 			case SqlPackage.DATA_TYPE__DATA_TYPE:
 				return getDataType();
 			case SqlPackage.DATA_TYPE__PRECISION:
@@ -607,8 +665,11 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case SqlPackage.DATA_TYPE__TYPE_NAME:
+				setTypeName((String)newValue);
+				return;
 			case SqlPackage.DATA_TYPE__DATA_TYPE:
-				setDataType((Type)newValue);
+				setDataType((Integer)newValue);
 				return;
 			case SqlPackage.DATA_TYPE__PRECISION:
 				setPrecision((Integer)newValue);
@@ -670,6 +731,9 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case SqlPackage.DATA_TYPE__TYPE_NAME:
+				setTypeName(TYPE_NAME_EDEFAULT);
+				return;
 			case SqlPackage.DATA_TYPE__DATA_TYPE:
 				setDataType(DATA_TYPE_EDEFAULT);
 				return;
@@ -733,8 +797,10 @@ public class DataTypeImpl extends DocumentedNamedElementImpl implements DataType
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case SqlPackage.DATA_TYPE__TYPE_NAME:
+				return TYPE_NAME_EDEFAULT == null ? getTypeName() != null : !TYPE_NAME_EDEFAULT.equals(getTypeName());
 			case SqlPackage.DATA_TYPE__DATA_TYPE:
-				return getDataType() != DATA_TYPE_EDEFAULT;
+				return DATA_TYPE_EDEFAULT == null ? getDataType() != null : !DATA_TYPE_EDEFAULT.equals(getDataType());
 			case SqlPackage.DATA_TYPE__PRECISION:
 				return PRECISION_EDEFAULT == null ? getPrecision() != null : !PRECISION_EDEFAULT.equals(getPrecision());
 			case SqlPackage.DATA_TYPE__LITERAL_PREFIX:

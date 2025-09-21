@@ -18,6 +18,7 @@ import org.nasdanika.models.sql.DataType;
 import org.nasdanika.models.sql.Database;
 import org.nasdanika.models.sql.SqlPackage;
 
+import org.nasdanika.models.sql.TableType;
 import org.nasdanika.ncore.impl.DocumentedNamedElementImpl;
 
 /**
@@ -147,8 +148,8 @@ public class DatabaseImpl extends DocumentedNamedElementImpl implements Database
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public EList<DataType> getTableTypes() {
-		return (EList<DataType>)eDynamicGet(SqlPackage.DATABASE__TABLE_TYPES, SqlPackage.Literals.DATABASE__TABLE_TYPES, true, true);
+	public EList<TableType> getTableTypes() {
+		return (EList<TableType>)eDynamicGet(SqlPackage.DATABASE__TABLE_TYPES, SqlPackage.Literals.DATABASE__TABLE_TYPES, true, true);
 	}
 
 	/**
@@ -229,7 +230,7 @@ public class DatabaseImpl extends DocumentedNamedElementImpl implements Database
 				return;
 			case SqlPackage.DATABASE__TABLE_TYPES:
 				getTableTypes().clear();
-				getTableTypes().addAll((Collection<? extends DataType>)newValue);
+				getTableTypes().addAll((Collection<? extends TableType>)newValue);
 				return;
 			case SqlPackage.DATABASE__CATALOGS:
 				getCatalogs().clear();

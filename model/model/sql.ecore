@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sql" nsURI="ecore://nasdanika.org/models/sql" nsPrefix="org.nasdanika.models.sql">
+  <eClassifiers xsi:type="ecore:EEnum" name="Type">
+    <eLiterals name="ARRAY" value="2003" literal="ARRAY"/>
+    <eLiterals name="BIGINT" value="-5" literal="BIGINT"/>
+    <eLiterals name="BINARY" value="-2" literal="BINARY"/>
+    <eLiterals name="BIT" value="-7" literal="BIT"/>
+    <eLiterals name="BLOB" value="2004" literal="BLOB"/>
+    <eLiterals name="BOOLEAN" value="16" literal="BOOLEAN"/>
+    <eLiterals name="CHAR" value="1" literal="CHAR"/>
+    <eLiterals name="CLOB" value="2005" literal="CLOB"/>
+    <eLiterals name="DATALINK" value="70" literal="DATALINK"/>
+    <eLiterals name="DATE" value="91" literal="DATE"/>
+    <eLiterals name="DECIMAL" value="3" literal="DECIMAL"/>
+    <eLiterals name="DISTINCT" value="2001" literal="DISTINCT"/>
+    <eLiterals name="DOUBLE" value="8" literal="DOUBLE"/>
+    <eLiterals name="FLOAT" value="6" literal="FLOAT"/>
+    <eLiterals name="INTEGER" value="4" literal="INTEGER"/>
+    <eLiterals name="JAVA_OBJECT" value="2000" literal="JAVA_OBJECT"/>
+    <eLiterals name="LONGNVARCHAR" value="-16" literal="LONGNVARCHAR"/>
+    <eLiterals name="LONGVARBINARY" value="-4" literal="LONGVARBINARY"/>
+    <eLiterals name="LONGVARCHAR" value="-1" literal="LONGVARCHAR"/>
+    <eLiterals name="NCHAR" value="-15" literal="NCHAR"/>
+    <eLiterals name="NCLOB" value="2011" literal="NCLOB"/>
+    <eLiterals name="NULL" literal="NULL"/>
+    <eLiterals name="NUMERIC" value="2" literal="NUMERIC"/>
+    <eLiterals name="NVARCHAR" value="-9" literal="NVARCHAR"/>
+    <eLiterals name="OTHER" value="1111" literal="OTHER"/>
+    <eLiterals name="REAL" value="7" literal="REAL"/>
+    <eLiterals name="REF" value="2006" literal="REF"/>
+    <eLiterals name="REF_CURSOR" value="2012" literal="REF_CURSOR"/>
+    <eLiterals name="ROWID" value="-8" literal="ROWID"/>
+    <eLiterals name="SMALLINT" value="5" literal="SMALLINT"/>
+    <eLiterals name="SQLXML" value="2009" literal="SQLXML"/>
+    <eLiterals name="STRUCT" value="2002" literal="STRUCT"/>
+    <eLiterals name="TIME" value="92" literal="TIME"/>
+    <eLiterals name="TIMESTAMP" value="93" literal="TIMESTAMP"/>
+    <eLiterals name="TIMESTAMP_WITH_TIMEZONE" value="2014" literal="TIMESTAMP_WITH_TIMEZONE"/>
+    <eLiterals name="TIME_WITH_TIMEZONE" value="2013" literal="TIME_WITH_TIMEZONE"/>
+    <eLiterals name="TINYINT" value="-6" literal="TINYINT"/>
+    <eLiterals name="VARBINARY" value="-3" literal="VARBINARY"/>
+    <eLiterals name="VARCHAR" value="12" literal="VARCHAR"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Database" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="driverClass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -9,11 +50,97 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="dataTypes" upperBound="-1"
         eType="#//DataType" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="tableTypes" upperBound="-1"
-        eType="#//DataType" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+        eType="#//TableType" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="catalogs" upperBound="-1"
         eType="#//Catalog" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataType" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DataType" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="#//Type">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="enum-value" value="DATA_TYPE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="precision" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="PRECISION"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="literalPrefix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="LITERAL_PREFIX"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="literalSuffix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="LITERAL_SUFFIX"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="createParams" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="CREATE_PARAMS"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nullable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EShortObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="NULLABLE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="caseSensitive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="CASE_SENSITIVE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="searchable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EShortObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SEARCHABLE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unsignedAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="UNSIGNED_ATTRIBUTE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fixedPrecScale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="FIXED_PREC_SCALE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoIncrement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="AUTO_INCREMENT"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="localTypeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="LOCAL_TYPE_NAME"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minimumScale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EShortObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="MINIMUM_SCALE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maximumScale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EShortObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="MAXIMUM_SCALE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sqlDataType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SQL_DATA_TYPE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sqlDatetimeSub" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SQL_DATETIME_SUB"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numPrecRadix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="NUM_PREC_RADIX"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TableType" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
   <eClassifiers xsi:type="ecore:EClass" name="Catalog" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="schemas" upperBound="-1"

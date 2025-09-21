@@ -2,8 +2,12 @@
  */
 package org.nasdanika.models.sql;
 
-import org.eclipse.emf.common.util.EList;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
+import org.eclipse.emf.common.util.EList;
+import org.nasdanika.models.sql.core.Connector;
 import org.nasdanika.ncore.DocumentedNamedElement;
 
 /**
@@ -98,7 +102,7 @@ public interface Database extends DocumentedNamedElement {
 
 	/**
 	 * Returns the value of the '<em><b>Table Types</b></em>' containment reference list.
-	 * The list contents are of type {@link org.nasdanika.models.sql.DataType}.
+	 * The list contents are of type {@link org.nasdanika.models.sql.TableType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Table Types</em>' containment reference list.
@@ -106,7 +110,7 @@ public interface Database extends DocumentedNamedElement {
 	 * @model containment="true" keys="name"
 	 * @generated
 	 */
-	EList<DataType> getTableTypes();
+	EList<TableType> getTableTypes();
 
 	/**
 	 * Returns the value of the '<em><b>Catalogs</b></em>' containment reference list.
@@ -119,5 +123,28 @@ public interface Database extends DocumentedNamedElement {
 	 * @generated
 	 */
 	EList<Catalog> getCatalogs();
+	
+	default void load(DatabaseMetaData databaseMetaData) throws SQLException {
+		setUrl(databaseMetaData.getURL());
+		ResultSet tableTypes = databaseMetaData.getTableTypes();
+		while (tableTypes.next()) {
+			TableType tType = SqlFactory.eINSTANCE.createTableType();
+			tType.setName(tableTypes.getString("TABLE_TYPE"));
+			getTableTypes().add(tType);
+		}
+		ResultSet dataTypes = databaseMetaData.getTypeInfo();
+		Connector<DataType> dataTypeConnector = new Connector<>(SqlPackage.Literals.DATA_TYPE);
+		while (dataTypes.next()) {
+			DataType dType = dataTypeConnector.create(dataTypes);
+			dType.setName(dataTypes.getString("TYPE_NAME"));
+			getDataTypes().add(dType);
+		}		
+	}
+	
+	static Database create(DatabaseMetaData databaseMetaData) throws SQLException {
+		Database db = SqlFactory.eINSTANCE.createDatabase();
+		db.load(databaseMetaData);
+		return db;
+	}
 
 } // Database

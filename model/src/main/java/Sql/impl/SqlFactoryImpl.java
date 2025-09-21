@@ -1,6 +1,8 @@
 /**
  */
-package org.nasdanika.models.sql.impl;
+package Sql.impl;
+
+import Sql.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
@@ -10,8 +12,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
-import org.nasdanika.models.sql.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -57,7 +57,6 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case SqlPackage.DATABASE: return createDatabase();
 			case SqlPackage.DATA_TYPE: return createDataType();
 			case SqlPackage.TABLE_TYPE: return createTableType();
 			case SqlPackage.CATALOG: return createCatalog();
@@ -79,8 +78,8 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
-			case SqlPackage.TYPE:
-				return createTypeFromString(eDataType, initialValue);
+			case SqlPackage.TYPES:
+				return createTypesFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -94,22 +93,11 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
-			case SqlPackage.TYPE:
-				return convertTypeToString(eDataType, instanceValue);
+			case SqlPackage.TYPES:
+				return convertTypesToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Database createDatabase() {
-		DatabaseImpl database = new DatabaseImpl();
-		return database;
 	}
 
 	/**
@@ -205,8 +193,8 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Type createTypeFromString(EDataType eDataType, String initialValue) {
-		Type result = Type.get(initialValue);
+	public Types createTypesFromString(EDataType eDataType, String initialValue) {
+		Types result = Types.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -216,7 +204,7 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertTypesToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
