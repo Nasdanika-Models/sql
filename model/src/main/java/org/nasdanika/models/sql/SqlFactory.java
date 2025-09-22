@@ -103,6 +103,15 @@ public interface SqlFactory extends EFactory {
 	ImportedKey createImportedKey();
 
 	/**
+	 * Returns a new object of class '<em>Imported Key Column</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Imported Key Column</em>'.
+	 * @generated
+	 */
+	ImportedKeyColumn createImportedKeyColumn();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -2,8 +2,15 @@
  */
 package org.nasdanika.models.sql;
 
-import org.eclipse.emf.common.util.EList;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Map;
+import java.util.Objects;
+import java.util.TreeMap;
+import java.util.function.Function;
 
+import org.eclipse.emf.common.util.EList;
 import org.nasdanika.ncore.DocumentedNamedElement;
 
 /**
@@ -93,5 +100,44 @@ public interface Table extends DocumentedNamedElement {
 	 * @generated
 	 */
 	EList<ImportedKey> getImportedKeys();
-
+	
+	default void load(
+			DatabaseMetaData databaseMetaData, 
+			ResultSet resultSet,
+			Function<String,TableType> tableTypeResolver,
+			Function<String,DataType> dataTypeResolver) throws SQLException {
+		setName(resultSet.getString("TABLE_NAME"));		
+		setType(tableTypeResolver.apply(resultSet.getString("TYPE_NAME")));
+		ResultSet columns = databaseMetaData.getColumns(resultSet.getString("TABLE_CAT"),  resultSet.getString("TABLE_SCHEM"), getName(), null);
+		while (columns.next()) {
+			getColumns().add(Column.create(databaseMetaData, columns, dataTypeResolver));
+		}		
+		Map<Integer, Column> pkColumns = new TreeMap<>();
+		ResultSet primaryKeys = databaseMetaData.getPrimaryKeys(resultSet.getString("TABLE_CAT"),  resultSet.getString("TABLE_SCHEM"), getName());
+		PrimaryKey pk = SqlFactory.eINSTANCE.createPrimaryKey();		
+		while (primaryKeys.next()) {
+			String colName = primaryKeys.getString("COLUMN_NAME");
+			pkColumns.put(primaryKeys.getInt("KEY_SEQ"), getColumns().stream().filter(c -> Objects.equals(c.getName(), colName)).findFirst().get());
+			String pkName = primaryKeys.getString("PK_NAME");
+			if (pk.getName() != null && !pkName.equals(pk.getName())) {
+				throw new IllegalStateException("More than one primary key: " + pkName + ", " + pk.getName());
+			}	
+			pk.setName(pkName);
+		}
+		pk.getColumns().addAll(pkColumns.values());
+		if (!pk.getColumns().isEmpty()) {
+			setPrimaryKey(pk);
+		}
+	}
+	
+	static Table create(
+			DatabaseMetaData databaseMetaData, 
+			ResultSet resultSet,
+			Function<String,TableType> tableTypeResolver,
+			Function<String,DataType> dataTypeResolver) throws SQLException {
+		Table table = SqlFactory.eINSTANCE.createTable();
+		table.load(databaseMetaData, resultSet, tableTypeResolver, dataTypeResolver);
+		return table;		
+	}	
+	
 } // Table

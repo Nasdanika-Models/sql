@@ -14,7 +14,10 @@ import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Column;
 import org.nasdanika.models.sql.DataType;
 import org.nasdanika.models.sql.Database;
+import org.nasdanika.models.sql.Deferrability;
 import org.nasdanika.models.sql.ImportedKey;
+import org.nasdanika.models.sql.ImportedKeyColumn;
+import org.nasdanika.models.sql.ImportedKeyRule;
 import org.nasdanika.models.sql.PrimaryKey;
 import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.SqlFactory;
@@ -100,7 +103,28 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass importedKeyColumnEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EEnum typeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum importedKeyRuleEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum deferrabilityEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -151,17 +175,11 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		// Initialize simple dependencies
 		NcorePackage.eINSTANCE.eClass();
 
-		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Sql.SqlPackage.eNS_URI);
-		Sql.impl.SqlPackageImpl theSqlPackage_1 = (Sql.impl.SqlPackageImpl)(registeredPackage instanceof Sql.impl.SqlPackageImpl ? registeredPackage : Sql.SqlPackage.eINSTANCE);
-
 		// Create package meta-data objects
 		theSqlPackage.createPackageContents();
-		theSqlPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theSqlPackage.initializePackageContents();
-		theSqlPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theSqlPackage.freeze();
@@ -537,8 +555,208 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getColumn_DataType() {
+	public EReference getColumn_Type() {
 		return (EReference)columnEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_DataType() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_TypeName() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_ColumnSize() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_BufferLength() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_DecimalDigits() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_NumPrecRadix() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_Nullable() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_Remarks() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_ColumnDef() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_SqlDataType() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_SqlDatetimeSub() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_CharOctetLength() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_OrdinalPosition() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_IsNullable() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_ScopeCatalog() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_ScopeSchema() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_ScopeTable() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_SourceDataType() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_IsAutoincrement() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_IsGeneratedcolumn() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(20);
 	}
 
 	/**
@@ -557,6 +775,16 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getPrimaryKey_Columns() {
+		return (EReference)primaryKeyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getImportedKey() {
 		return importedKeyEClass;
 	}
@@ -567,8 +795,108 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getImportedKey_Columns() {
+		return (EReference)importedKeyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getImportedKey_PrimaryKey() {
+		return (EReference)importedKeyEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getImportedKey_UpdateRule() {
+		return (EAttribute)importedKeyEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getImportedKey_DeleteRule() {
+		return (EAttribute)importedKeyEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getImportedKey_Deferrability() {
+		return (EAttribute)importedKeyEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getImportedKeyColumn() {
+		return importedKeyColumnEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getImportedKeyColumn_FkColumn() {
+		return (EReference)importedKeyColumnEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getImportedKeyColumn_PkColumn() {
+		return (EReference)importedKeyColumnEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getType() {
 		return typeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getImportedKeyRule() {
+		return importedKeyRuleEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getDeferrability() {
+		return deferrabilityEEnum;
 	}
 
 	/**
@@ -642,14 +970,46 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		createEReference(tableEClass, TABLE__IMPORTED_KEYS);
 
 		columnEClass = createEClass(COLUMN);
-		createEReference(columnEClass, COLUMN__DATA_TYPE);
+		createEReference(columnEClass, COLUMN__TYPE);
+		createEAttribute(columnEClass, COLUMN__DATA_TYPE);
+		createEAttribute(columnEClass, COLUMN__TYPE_NAME);
+		createEAttribute(columnEClass, COLUMN__COLUMN_SIZE);
+		createEAttribute(columnEClass, COLUMN__BUFFER_LENGTH);
+		createEAttribute(columnEClass, COLUMN__DECIMAL_DIGITS);
+		createEAttribute(columnEClass, COLUMN__NUM_PREC_RADIX);
+		createEAttribute(columnEClass, COLUMN__NULLABLE);
+		createEAttribute(columnEClass, COLUMN__REMARKS);
+		createEAttribute(columnEClass, COLUMN__COLUMN_DEF);
+		createEAttribute(columnEClass, COLUMN__SQL_DATA_TYPE);
+		createEAttribute(columnEClass, COLUMN__SQL_DATETIME_SUB);
+		createEAttribute(columnEClass, COLUMN__CHAR_OCTET_LENGTH);
+		createEAttribute(columnEClass, COLUMN__ORDINAL_POSITION);
+		createEAttribute(columnEClass, COLUMN__IS_NULLABLE);
+		createEAttribute(columnEClass, COLUMN__SCOPE_CATALOG);
+		createEAttribute(columnEClass, COLUMN__SCOPE_SCHEMA);
+		createEAttribute(columnEClass, COLUMN__SCOPE_TABLE);
+		createEAttribute(columnEClass, COLUMN__SOURCE_DATA_TYPE);
+		createEAttribute(columnEClass, COLUMN__IS_AUTOINCREMENT);
+		createEAttribute(columnEClass, COLUMN__IS_GENERATEDCOLUMN);
 
 		primaryKeyEClass = createEClass(PRIMARY_KEY);
+		createEReference(primaryKeyEClass, PRIMARY_KEY__COLUMNS);
 
 		importedKeyEClass = createEClass(IMPORTED_KEY);
+		createEReference(importedKeyEClass, IMPORTED_KEY__COLUMNS);
+		createEReference(importedKeyEClass, IMPORTED_KEY__PRIMARY_KEY);
+		createEAttribute(importedKeyEClass, IMPORTED_KEY__UPDATE_RULE);
+		createEAttribute(importedKeyEClass, IMPORTED_KEY__DELETE_RULE);
+		createEAttribute(importedKeyEClass, IMPORTED_KEY__DEFERRABILITY);
+
+		importedKeyColumnEClass = createEClass(IMPORTED_KEY_COLUMN);
+		createEReference(importedKeyColumnEClass, IMPORTED_KEY_COLUMN__FK_COLUMN);
+		createEReference(importedKeyColumnEClass, IMPORTED_KEY_COLUMN__PK_COLUMN);
 
 		// Create enums
 		typeEEnum = createEEnum(TYPE);
+		importedKeyRuleEEnum = createEEnum(IMPORTED_KEY_RULE);
+		deferrabilityEEnum = createEEnum(DEFERRABILITY);
 	}
 
 	/**
@@ -744,11 +1104,41 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		getTable_ImportedKeys().getEKeys().add(theNcorePackage.getNamedElement_Name());
 
 		initEClass(columnEClass, Column.class, "Column", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getColumn_DataType(), this.getDataType(), null, "dataType", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getColumn_Type(), this.getDataType(), null, "type", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_DataType(), this.getType(), "dataType", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_TypeName(), ecorePackage.getEString(), "typeName", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_ColumnSize(), ecorePackage.getEIntegerObject(), "columnSize", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_BufferLength(), ecorePackage.getEIntegerObject(), "bufferLength", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_DecimalDigits(), ecorePackage.getEIntegerObject(), "decimalDigits", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_NumPrecRadix(), ecorePackage.getEIntegerObject(), "numPrecRadix", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_Nullable(), ecorePackage.getEIntegerObject(), "nullable", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_Remarks(), ecorePackage.getEString(), "remarks", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_ColumnDef(), ecorePackage.getEString(), "columnDef", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_SqlDataType(), ecorePackage.getEIntegerObject(), "sqlDataType", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_SqlDatetimeSub(), ecorePackage.getEIntegerObject(), "sqlDatetimeSub", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_CharOctetLength(), ecorePackage.getEIntegerObject(), "charOctetLength", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_OrdinalPosition(), ecorePackage.getEIntegerObject(), "ordinalPosition", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_IsNullable(), ecorePackage.getEString(), "isNullable", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_ScopeCatalog(), ecorePackage.getEString(), "scopeCatalog", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_ScopeSchema(), ecorePackage.getEString(), "scopeSchema", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_ScopeTable(), ecorePackage.getEString(), "scopeTable", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_SourceDataType(), ecorePackage.getEShortObject(), "sourceDataType", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_IsAutoincrement(), ecorePackage.getEString(), "isAutoincrement", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_IsGeneratedcolumn(), ecorePackage.getEString(), "isGeneratedcolumn", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(primaryKeyEClass, PrimaryKey.class, "PrimaryKey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPrimaryKey_Columns(), this.getColumn(), null, "columns", null, 1, -1, PrimaryKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(importedKeyEClass, ImportedKey.class, "ImportedKey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getImportedKey_Columns(), this.getImportedKeyColumn(), null, "columns", null, 0, -1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getImportedKey_PrimaryKey(), this.getPrimaryKey(), null, "primaryKey", null, 1, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getImportedKey_UpdateRule(), this.getImportedKeyRule(), "updateRule", null, 0, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getImportedKey_DeleteRule(), this.getImportedKeyRule(), "deleteRule", null, 0, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getImportedKey_Deferrability(), this.getDeferrability(), "deferrability", null, 0, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(importedKeyColumnEClass, ImportedKeyColumn.class, "ImportedKeyColumn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getImportedKeyColumn_FkColumn(), this.getColumn(), null, "fkColumn", null, 1, 1, ImportedKeyColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getImportedKeyColumn_PkColumn(), this.getColumn(), null, "pkColumn", null, 1, 1, ImportedKeyColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(typeEEnum, Type.class, "Type");
@@ -791,6 +1181,18 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		addEEnumLiteral(typeEEnum, Type.TINYINT);
 		addEEnumLiteral(typeEEnum, Type.VARBINARY);
 		addEEnumLiteral(typeEEnum, Type.VARCHAR);
+
+		initEEnum(importedKeyRuleEEnum, ImportedKeyRule.class, "ImportedKeyRule");
+		addEEnumLiteral(importedKeyRuleEEnum, ImportedKeyRule.KEY_CASCADE);
+		addEEnumLiteral(importedKeyRuleEEnum, ImportedKeyRule.KEY_RESTRICT);
+		addEEnumLiteral(importedKeyRuleEEnum, ImportedKeyRule.KEY_SET_NULL);
+		addEEnumLiteral(importedKeyRuleEEnum, ImportedKeyRule.NO_ACTION);
+		addEEnumLiteral(importedKeyRuleEEnum, ImportedKeyRule.KEY_SET_DEFAULT);
+
+		initEEnum(deferrabilityEEnum, Deferrability.class, "Deferrability");
+		addEEnumLiteral(deferrabilityEEnum, Deferrability.INITIALLY_DEFERRED);
+		addEEnumLiteral(deferrabilityEEnum, Deferrability.INITIALLY_IMMEDIATE);
+		addEEnumLiteral(deferrabilityEEnum, Deferrability.NOT_DEFERRABLE);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -909,6 +1311,144 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		   source,
 		   new String[] {
 			   "column", "NUM_PREC_RADIX"
+		   });
+		addAnnotation
+		  (getColumn_DataType(),
+		   source,
+		   new String[] {
+			   "enum-value", "DATA_TYPE"
+		   });
+		addAnnotation
+		  (getColumn_TypeName(),
+		   source,
+		   new String[] {
+			   "column", "TYPE_NAME"
+		   });
+		addAnnotation
+		  (getColumn_ColumnSize(),
+		   source,
+		   new String[] {
+			   "column", "COLUMN_SIZE"
+		   });
+		addAnnotation
+		  (getColumn_BufferLength(),
+		   source,
+		   new String[] {
+			   "column", "BUFFER_LENGTH"
+		   });
+		addAnnotation
+		  (getColumn_DecimalDigits(),
+		   source,
+		   new String[] {
+			   "column", "DECIMAL_DIGITS"
+		   });
+		addAnnotation
+		  (getColumn_NumPrecRadix(),
+		   source,
+		   new String[] {
+			   "column", "NUM_PREC_RADIX"
+		   });
+		addAnnotation
+		  (getColumn_Nullable(),
+		   source,
+		   new String[] {
+			   "column", "NULLABLE"
+		   });
+		addAnnotation
+		  (getColumn_Remarks(),
+		   source,
+		   new String[] {
+			   "column", "REMARKS"
+		   });
+		addAnnotation
+		  (getColumn_ColumnDef(),
+		   source,
+		   new String[] {
+			   "column", "COLUMN_DEF"
+		   });
+		addAnnotation
+		  (getColumn_SqlDataType(),
+		   source,
+		   new String[] {
+			   "column", "SQL_DATA_TYPE"
+		   });
+		addAnnotation
+		  (getColumn_SqlDatetimeSub(),
+		   source,
+		   new String[] {
+			   "column", "SQL_DATETIME_SUB"
+		   });
+		addAnnotation
+		  (getColumn_CharOctetLength(),
+		   source,
+		   new String[] {
+			   "column", "CHAR_OCTET_LENGTH"
+		   });
+		addAnnotation
+		  (getColumn_OrdinalPosition(),
+		   source,
+		   new String[] {
+			   "column", "ORDINAL_POSITION"
+		   });
+		addAnnotation
+		  (getColumn_IsNullable(),
+		   source,
+		   new String[] {
+			   "column", "IS_NULLABLE"
+		   });
+		addAnnotation
+		  (getColumn_ScopeCatalog(),
+		   source,
+		   new String[] {
+			   "column", "SCOPE_CATALOG"
+		   });
+		addAnnotation
+		  (getColumn_ScopeSchema(),
+		   source,
+		   new String[] {
+			   "column", "SCOPE_SCHEMA"
+		   });
+		addAnnotation
+		  (getColumn_ScopeTable(),
+		   source,
+		   new String[] {
+			   "column", "SCOPE_TABLE"
+		   });
+		addAnnotation
+		  (getColumn_SourceDataType(),
+		   source,
+		   new String[] {
+			   "column", "SOURCE_DATA_TYPE"
+		   });
+		addAnnotation
+		  (getColumn_IsAutoincrement(),
+		   source,
+		   new String[] {
+			   "column", "IS_AUTOINCREMENT"
+		   });
+		addAnnotation
+		  (getColumn_IsGeneratedcolumn(),
+		   source,
+		   new String[] {
+			   "column", "IS_GENERATEDCOLUMN"
+		   });
+		addAnnotation
+		  (getImportedKey_UpdateRule(),
+		   source,
+		   new String[] {
+			   "enum-value", "UPDATE_RULE"
+		   });
+		addAnnotation
+		  (getImportedKey_DeleteRule(),
+		   source,
+		   new String[] {
+			   "enum-value", "DELETE_RULE"
+		   });
+		addAnnotation
+		  (getImportedKey_Deferrability(),
+		   source,
+		   new String[] {
+			   "enum-value", "DEFERRABILITY"
 		   });
 	}
 

@@ -66,6 +66,7 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 			case SqlPackage.COLUMN: return createColumn();
 			case SqlPackage.PRIMARY_KEY: return createPrimaryKey();
 			case SqlPackage.IMPORTED_KEY: return createImportedKey();
+			case SqlPackage.IMPORTED_KEY_COLUMN: return createImportedKeyColumn();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -81,6 +82,10 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 		switch (eDataType.getClassifierID()) {
 			case SqlPackage.TYPE:
 				return createTypeFromString(eDataType, initialValue);
+			case SqlPackage.IMPORTED_KEY_RULE:
+				return createImportedKeyRuleFromString(eDataType, initialValue);
+			case SqlPackage.DEFERRABILITY:
+				return createDeferrabilityFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -96,6 +101,10 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 		switch (eDataType.getClassifierID()) {
 			case SqlPackage.TYPE:
 				return convertTypeToString(eDataType, instanceValue);
+			case SqlPackage.IMPORTED_KEY_RULE:
+				return convertImportedKeyRuleToString(eDataType, instanceValue);
+			case SqlPackage.DEFERRABILITY:
+				return convertDeferrabilityToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -205,6 +214,17 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public ImportedKeyColumn createImportedKeyColumn() {
+		ImportedKeyColumnImpl importedKeyColumn = new ImportedKeyColumnImpl();
+		return importedKeyColumn;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Type createTypeFromString(EDataType eDataType, String initialValue) {
 		Type result = Type.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
@@ -217,6 +237,46 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	 * @generated
 	 */
 	public String convertTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImportedKeyRule createImportedKeyRuleFromString(EDataType eDataType, String initialValue) {
+		ImportedKeyRule result = ImportedKeyRule.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertImportedKeyRuleToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Deferrability createDeferrabilityFromString(EDataType eDataType, String initialValue) {
+		Deferrability result = Deferrability.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertDeferrabilityToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

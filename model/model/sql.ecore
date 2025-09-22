@@ -160,8 +160,149 @@
         eType="#//ImportedKey" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Column" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dataType" eType="#//DataType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//DataType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="#//Type">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="enum-value" value="DATA_TYPE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="TYPE_NAME"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="columnSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="COLUMN_SIZE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bufferLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="BUFFER_LENGTH"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decimalDigits" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="DECIMAL_DIGITS"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numPrecRadix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="NUM_PREC_RADIX"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nullable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="NULLABLE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="remarks" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="REMARKS"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="columnDef" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="COLUMN_DEF"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sqlDataType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SQL_DATA_TYPE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sqlDatetimeSub" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SQL_DATETIME_SUB"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="charOctetLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="CHAR_OCTET_LENGTH"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ordinalPosition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="ORDINAL_POSITION"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isNullable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="IS_NULLABLE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scopeCatalog" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SCOPE_CATALOG"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scopeSchema" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SCOPE_SCHEMA"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scopeTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SCOPE_TABLE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceDataType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EShortObject">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="SOURCE_DATA_TYPE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAutoincrement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="IS_AUTOINCREMENT"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isGeneratedcolumn" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="column" value="IS_GENERATEDCOLUMN"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PrimaryKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ImportedKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PrimaryKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columns" lowerBound="1"
+        upperBound="-1" eType="#//Column"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ImportedKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columns" upperBound="-1"
+        eType="#//ImportedKeyColumn" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="primaryKey" lowerBound="1"
+        eType="#//PrimaryKey"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateRule" eType="#//ImportedKeyRule">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="enum-value" value="UPDATE_RULE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deleteRule" eType="#//ImportedKeyRule">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="enum-value" value="DELETE_RULE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deferrability" eType="#//Deferrability">
+      <eAnnotations source="urn:org.nasdanika.models.sql">
+        <details key="enum-value" value="DEFERRABILITY"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ImportedKeyColumn">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fkColumn" lowerBound="1"
+        eType="#//Column"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pkColumn" lowerBound="1"
+        eType="#//Column"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ImportedKeyRule">
+    <eLiterals name="KEY_CASCADE"/>
+    <eLiterals name="KEY_RESTRICT" value="1"/>
+    <eLiterals name="KEY_SET_NULL" value="2"/>
+    <eLiterals name="NO_ACTION" value="3"/>
+    <eLiterals name="KEY_SET_DEFAULT" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Deferrability">
+    <eLiterals name="INITIALLY_DEFERRED" value="5"/>
+    <eLiterals name="INITIALLY_IMMEDIATE" value="6"/>
+    <eLiterals name="NOT_DEFERRABLE" value="7"/>
+  </eClassifiers>
 </ecore:EPackage>

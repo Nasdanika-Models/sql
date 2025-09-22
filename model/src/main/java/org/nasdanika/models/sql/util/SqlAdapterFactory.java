@@ -113,6 +113,10 @@ public class SqlAdapterFactory extends AdapterFactoryImpl {
 				return createImportedKeyAdapter();
 			}
 			@Override
+			public Adapter caseImportedKeyColumn(ImportedKeyColumn object) {
+				return createImportedKeyColumnAdapter();
+			}
+			@Override
 			public Adapter caseIMarked(Marked object) {
 				return createIMarkedAdapter();
 			}
@@ -283,6 +287,20 @@ public class SqlAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createImportedKeyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.sql.ImportedKeyColumn <em>Imported Key Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.sql.ImportedKeyColumn
+	 * @generated
+	 */
+	public Adapter createImportedKeyColumnAdapter() {
 		return null;
 	}
 

@@ -50,6 +50,18 @@
       <genEnumLiterals ecoreEnumLiteral="sql.ecore#//Type/VARBINARY"/>
       <genEnumLiterals ecoreEnumLiteral="sql.ecore#//Type/VARCHAR"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sql.ecore#//ImportedKeyRule">
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//ImportedKeyRule/KEY_CASCADE"/>
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//ImportedKeyRule/KEY_RESTRICT"/>
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//ImportedKeyRule/KEY_SET_NULL"/>
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//ImportedKeyRule/NO_ACTION"/>
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//ImportedKeyRule/KEY_SET_DEFAULT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sql.ecore#//Deferrability">
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//Deferrability/INITIALLY_DEFERRED"/>
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//Deferrability/INITIALLY_IMMEDIATE"/>
+      <genEnumLiterals ecoreEnumLiteral="sql.ecore#//Deferrability/NOT_DEFERRABLE"/>
+    </genEnums>
     <genClasses ecoreClass="sql.ecore#//Database">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Database/url"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Database/driverClass"/>
@@ -91,144 +103,41 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql.ecore#//Table/importedKeys"/>
     </genClasses>
     <genClasses ecoreClass="sql.ecore#//Column">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//Column/dataType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//Column/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute sql.ecore#//Column/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/typeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/columnSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/bufferLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/decimalDigits"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/numPrecRadix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/nullable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/remarks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/columnDef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/sqlDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/sqlDatetimeSub"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/charOctetLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/ordinalPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/isNullable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/scopeCatalog"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/scopeSchema"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/scopeTable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/sourceDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/isAutoincrement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//Column/isGeneratedcolumn"/>
     </genClasses>
-    <genClasses ecoreClass="sql.ecore#//PrimaryKey"/>
-    <genClasses ecoreClass="sql.ecore#//ImportedKey"/>
-  </genPackages>
-  <genPackages prefix="Sql" ecorePackage="../../org.nasdanika.models.sql.core/target/sql.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types">
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/ARRAY"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/BIGINT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/BINARY"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/BIT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/BLOB"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/BOOLEAN"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/CHAR"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/CLOB"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/DATALINK"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/DATE"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/DECIMAL"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/DISTINCT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/DOUBLE"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/FLOAT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/INTEGER"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/JAVA_OBJECT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/LONGNVARCHAR"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/LONGVARBINARY"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/LONGVARCHAR"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/NCHAR"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/NCLOB"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/NULL"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/NUMERIC"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/NVARCHAR"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/OTHER"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/REAL"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/REF"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/REF_CURSOR"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/ROWID"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/SMALLINT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/SQLXML"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/STRUCT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/TIME"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/TIMESTAMP"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/TIMESTAMP_WITH_TIMEZONE"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/TIME_WITH_TIMEZONE"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/TINYINT"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/VARBINARY"/>
-      <genEnumLiterals ecoreEnumLiteral="../../org.nasdanika.models.sql.core/target/sql.ecore#//Types/VARCHAR"/>
-    </genEnums>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/typeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/dataType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/precision"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/literalPrefix"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/literalSuffix"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/createParams"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/nullable"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/caseSensitive"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/searchable"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/unsignedAttribute"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/fixedPrecScale"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/autoIncrement"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/localTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/minimumScale"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/maximumScale"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/sqlDataType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/sqlDatetimeSub"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//DataType/numPrecRadix"/>
+    <genClasses ecoreClass="sql.ecore#//PrimaryKey">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//PrimaryKey/columns"/>
     </genClasses>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//TableType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//TableType/tableType"/>
+    <genClasses ecoreClass="sql.ecore#//ImportedKey">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKey/columns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKey/primaryKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ImportedKey/updateRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ImportedKey/deleteRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ImportedKey/deferrability"/>
     </genClasses>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//Catalog">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Catalog/tableCat"/>
-    </genClasses>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//Schema">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Schema/tableSchem"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Schema/tableCatalog"/>
-    </genClasses>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//Table">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/tableCat"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/tableSchem"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/tableName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/tableType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/remarks"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/typeCat"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/typeSchem"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/typeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/selfReferencingColName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Table/refGeneration"/>
-    </genClasses>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//Column">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/tableCat"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/tableSchem"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/tableName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/columnName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/dataType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/typeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/columnSize"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/bufferLength"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/decimalDigits"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/numPrecRadix"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/nullable"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/remarks"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/columnDef"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/sqlDataType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/sqlDatetimeSub"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/charOctetLength"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/ordinalPosition"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/isNullable"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/scopeCatalog"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/scopeSchema"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/scopeTable"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/sourceDataType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/isAutoincrement"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//Column/isGeneratedcolumn"/>
-    </genClasses>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//PrimaryKey">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//PrimaryKey/tableCat"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//PrimaryKey/tableSchem"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//PrimaryKey/tableName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//PrimaryKey/columnName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//PrimaryKey/keySeq"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//PrimaryKey/pkName"/>
-    </genClasses>
-    <genClasses ecoreClass="../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/pktableCat"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/pktableSchem"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/pktableName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/pkcolumnName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/fktableCat"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/fktableSchem"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/fktableName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/fkcolumnName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/keySeq"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/updateRule"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/deleteRule"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/fkName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/pkName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../org.nasdanika.models.sql.core/target/sql.ecore#//ImportedKey/deferrability"/>
+    <genClasses ecoreClass="sql.ecore#//ImportedKeyColumn">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKeyColumn/fkColumn"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKeyColumn/pkColumn"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

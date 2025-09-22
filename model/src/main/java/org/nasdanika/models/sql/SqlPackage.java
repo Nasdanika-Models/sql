@@ -1129,13 +1129,193 @@ public interface SqlPackage extends EPackage {
 	int COLUMN__CONTEXT_HELP = NcorePackage.DOCUMENTED_NAMED_ELEMENT__CONTEXT_HELP;
 
 	/**
-	 * The feature id for the '<em><b>Data Type</b></em>' reference.
+	 * The feature id for the '<em><b>Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN__DATA_TYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int COLUMN__TYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__DATA_TYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Type Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__TYPE_NAME = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Column Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__COLUMN_SIZE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Buffer Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__BUFFER_LENGTH = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Decimal Digits</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__DECIMAL_DIGITS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Num Prec Radix</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__NUM_PREC_RADIX = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Nullable</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__NULLABLE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Remarks</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__REMARKS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Column Def</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__COLUMN_DEF = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Sql Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__SQL_DATA_TYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Sql Datetime Sub</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__SQL_DATETIME_SUB = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Char Octet Length</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__CHAR_OCTET_LENGTH = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>Ordinal Position</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__ORDINAL_POSITION = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 13;
+
+	/**
+	 * The feature id for the '<em><b>Is Nullable</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__IS_NULLABLE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 14;
+
+	/**
+	 * The feature id for the '<em><b>Scope Catalog</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__SCOPE_CATALOG = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 15;
+
+	/**
+	 * The feature id for the '<em><b>Scope Schema</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__SCOPE_SCHEMA = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Scope Table</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__SCOPE_TABLE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 17;
+
+	/**
+	 * The feature id for the '<em><b>Source Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__SOURCE_DATA_TYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 18;
+
+	/**
+	 * The feature id for the '<em><b>Is Autoincrement</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__IS_AUTOINCREMENT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 19;
+
+	/**
+	 * The feature id for the '<em><b>Is Generatedcolumn</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__IS_GENERATEDCOLUMN = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Column</em>' class.
@@ -1144,7 +1324,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
+	int COLUMN_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 21;
 
 	/**
 	 * The number of operations of the '<em>Column</em>' class.
@@ -1256,13 +1436,22 @@ public interface SqlPackage extends EPackage {
 	int PRIMARY_KEY__CONTEXT_HELP = NcorePackage.DOCUMENTED_NAMED_ELEMENT__CONTEXT_HELP;
 
 	/**
+	 * The feature id for the '<em><b>Columns</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIMARY_KEY__COLUMNS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Primary Key</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRIMARY_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int PRIMARY_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Primary Key</em>' class.
@@ -1374,13 +1563,58 @@ public interface SqlPackage extends EPackage {
 	int IMPORTED_KEY__CONTEXT_HELP = NcorePackage.DOCUMENTED_NAMED_ELEMENT__CONTEXT_HELP;
 
 	/**
+	 * The feature id for the '<em><b>Columns</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY__COLUMNS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Primary Key</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY__PRIMARY_KEY = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Update Rule</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY__UPDATE_RULE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Delete Rule</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY__DELETE_RULE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Deferrability</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY__DEFERRABILITY = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Imported Key</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int IMPORTED_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Imported Key</em>' class.
@@ -1393,6 +1627,52 @@ public interface SqlPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.nasdanika.models.sql.impl.ImportedKeyColumnImpl <em>Imported Key Column</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.sql.impl.ImportedKeyColumnImpl
+	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKeyColumn()
+	 * @generated
+	 */
+	int IMPORTED_KEY_COLUMN = 9;
+
+	/**
+	 * The feature id for the '<em><b>Fk Column</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY_COLUMN__FK_COLUMN = 0;
+
+	/**
+	 * The feature id for the '<em><b>Pk Column</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY_COLUMN__PK_COLUMN = 1;
+
+	/**
+	 * The number of structural features of the '<em>Imported Key Column</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY_COLUMN_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Imported Key Column</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMPORTED_KEY_COLUMN_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.nasdanika.models.sql.Type <em>Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1400,7 +1680,28 @@ public interface SqlPackage extends EPackage {
 	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getType()
 	 * @generated
 	 */
-	int TYPE = 9;
+	int TYPE = 10;
+
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.sql.ImportedKeyRule <em>Imported Key Rule</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.sql.ImportedKeyRule
+	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKeyRule()
+	 * @generated
+	 */
+	int IMPORTED_KEY_RULE = 11;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.sql.Deferrability <em>Deferrability</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.sql.Deferrability
+	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getDeferrability()
+	 * @generated
+	 */
+	int DEFERRABILITY = 12;
 
 
 	/**
@@ -1793,15 +2094,235 @@ public interface SqlPackage extends EPackage {
 	EClass getColumn();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.Column#getDataType <em>Data Type</em>}'.
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.Column#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Type</em>'.
+	 * @return the meta object for the reference '<em>Type</em>'.
+	 * @see org.nasdanika.models.sql.Column#getType()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EReference getColumn_Type();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getDataType <em>Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Data Type</em>'.
 	 * @see org.nasdanika.models.sql.Column#getDataType()
 	 * @see #getColumn()
 	 * @generated
 	 */
-	EReference getColumn_DataType();
+	EAttribute getColumn_DataType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getTypeName <em>Type Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type Name</em>'.
+	 * @see org.nasdanika.models.sql.Column#getTypeName()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_TypeName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getColumnSize <em>Column Size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Column Size</em>'.
+	 * @see org.nasdanika.models.sql.Column#getColumnSize()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_ColumnSize();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getBufferLength <em>Buffer Length</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Buffer Length</em>'.
+	 * @see org.nasdanika.models.sql.Column#getBufferLength()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_BufferLength();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getDecimalDigits <em>Decimal Digits</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Decimal Digits</em>'.
+	 * @see org.nasdanika.models.sql.Column#getDecimalDigits()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_DecimalDigits();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getNumPrecRadix <em>Num Prec Radix</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num Prec Radix</em>'.
+	 * @see org.nasdanika.models.sql.Column#getNumPrecRadix()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_NumPrecRadix();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getNullable <em>Nullable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nullable</em>'.
+	 * @see org.nasdanika.models.sql.Column#getNullable()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_Nullable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getRemarks <em>Remarks</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Remarks</em>'.
+	 * @see org.nasdanika.models.sql.Column#getRemarks()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_Remarks();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getColumnDef <em>Column Def</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Column Def</em>'.
+	 * @see org.nasdanika.models.sql.Column#getColumnDef()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_ColumnDef();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getSqlDataType <em>Sql Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sql Data Type</em>'.
+	 * @see org.nasdanika.models.sql.Column#getSqlDataType()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_SqlDataType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getSqlDatetimeSub <em>Sql Datetime Sub</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sql Datetime Sub</em>'.
+	 * @see org.nasdanika.models.sql.Column#getSqlDatetimeSub()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_SqlDatetimeSub();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getCharOctetLength <em>Char Octet Length</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Char Octet Length</em>'.
+	 * @see org.nasdanika.models.sql.Column#getCharOctetLength()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_CharOctetLength();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getOrdinalPosition <em>Ordinal Position</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ordinal Position</em>'.
+	 * @see org.nasdanika.models.sql.Column#getOrdinalPosition()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_OrdinalPosition();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getIsNullable <em>Is Nullable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Nullable</em>'.
+	 * @see org.nasdanika.models.sql.Column#getIsNullable()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_IsNullable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getScopeCatalog <em>Scope Catalog</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scope Catalog</em>'.
+	 * @see org.nasdanika.models.sql.Column#getScopeCatalog()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_ScopeCatalog();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getScopeSchema <em>Scope Schema</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scope Schema</em>'.
+	 * @see org.nasdanika.models.sql.Column#getScopeSchema()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_ScopeSchema();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getScopeTable <em>Scope Table</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scope Table</em>'.
+	 * @see org.nasdanika.models.sql.Column#getScopeTable()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_ScopeTable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getSourceDataType <em>Source Data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Data Type</em>'.
+	 * @see org.nasdanika.models.sql.Column#getSourceDataType()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_SourceDataType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getIsAutoincrement <em>Is Autoincrement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Autoincrement</em>'.
+	 * @see org.nasdanika.models.sql.Column#getIsAutoincrement()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_IsAutoincrement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getIsGeneratedcolumn <em>Is Generatedcolumn</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Generatedcolumn</em>'.
+	 * @see org.nasdanika.models.sql.Column#getIsGeneratedcolumn()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_IsGeneratedcolumn();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.sql.PrimaryKey <em>Primary Key</em>}'.
@@ -1814,6 +2335,17 @@ public interface SqlPackage extends EPackage {
 	EClass getPrimaryKey();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.sql.PrimaryKey#getColumns <em>Columns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Columns</em>'.
+	 * @see org.nasdanika.models.sql.PrimaryKey#getColumns()
+	 * @see #getPrimaryKey()
+	 * @generated
+	 */
+	EReference getPrimaryKey_Columns();
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.sql.ImportedKey <em>Imported Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1824,6 +2356,93 @@ public interface SqlPackage extends EPackage {
 	EClass getImportedKey();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link org.nasdanika.models.sql.ImportedKey#getColumns <em>Columns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Columns</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKey#getColumns()
+	 * @see #getImportedKey()
+	 * @generated
+	 */
+	EReference getImportedKey_Columns();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ImportedKey#getPrimaryKey <em>Primary Key</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Primary Key</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKey#getPrimaryKey()
+	 * @see #getImportedKey()
+	 * @generated
+	 */
+	EReference getImportedKey_PrimaryKey();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ImportedKey#getUpdateRule <em>Update Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Update Rule</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKey#getUpdateRule()
+	 * @see #getImportedKey()
+	 * @generated
+	 */
+	EAttribute getImportedKey_UpdateRule();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ImportedKey#getDeleteRule <em>Delete Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Delete Rule</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKey#getDeleteRule()
+	 * @see #getImportedKey()
+	 * @generated
+	 */
+	EAttribute getImportedKey_DeleteRule();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ImportedKey#getDeferrability <em>Deferrability</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deferrability</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKey#getDeferrability()
+	 * @see #getImportedKey()
+	 * @generated
+	 */
+	EAttribute getImportedKey_Deferrability();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.sql.ImportedKeyColumn <em>Imported Key Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Imported Key Column</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKeyColumn
+	 * @generated
+	 */
+	EClass getImportedKeyColumn();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ImportedKeyColumn#getFkColumn <em>Fk Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Fk Column</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKeyColumn#getFkColumn()
+	 * @see #getImportedKeyColumn()
+	 * @generated
+	 */
+	EReference getImportedKeyColumn_FkColumn();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ImportedKeyColumn#getPkColumn <em>Pk Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Pk Column</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKeyColumn#getPkColumn()
+	 * @see #getImportedKeyColumn()
+	 * @generated
+	 */
+	EReference getImportedKeyColumn_PkColumn();
+
+	/**
 	 * Returns the meta object for enum '{@link org.nasdanika.models.sql.Type <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1832,6 +2451,26 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getType();
+
+	/**
+	 * Returns the meta object for enum '{@link org.nasdanika.models.sql.ImportedKeyRule <em>Imported Key Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Imported Key Rule</em>'.
+	 * @see org.nasdanika.models.sql.ImportedKeyRule
+	 * @generated
+	 */
+	EEnum getImportedKeyRule();
+
+	/**
+	 * Returns the meta object for enum '{@link org.nasdanika.models.sql.Deferrability <em>Deferrability</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Deferrability</em>'.
+	 * @see org.nasdanika.models.sql.Deferrability
+	 * @generated
+	 */
+	EEnum getDeferrability();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2159,12 +2798,172 @@ public interface SqlPackage extends EPackage {
 		EClass COLUMN = eINSTANCE.getColumn();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Type</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COLUMN__DATA_TYPE = eINSTANCE.getColumn_DataType();
+		EReference COLUMN__TYPE = eINSTANCE.getColumn_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__DATA_TYPE = eINSTANCE.getColumn_DataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Type Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__TYPE_NAME = eINSTANCE.getColumn_TypeName();
+
+		/**
+		 * The meta object literal for the '<em><b>Column Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__COLUMN_SIZE = eINSTANCE.getColumn_ColumnSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Buffer Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__BUFFER_LENGTH = eINSTANCE.getColumn_BufferLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Decimal Digits</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__DECIMAL_DIGITS = eINSTANCE.getColumn_DecimalDigits();
+
+		/**
+		 * The meta object literal for the '<em><b>Num Prec Radix</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__NUM_PREC_RADIX = eINSTANCE.getColumn_NumPrecRadix();
+
+		/**
+		 * The meta object literal for the '<em><b>Nullable</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__NULLABLE = eINSTANCE.getColumn_Nullable();
+
+		/**
+		 * The meta object literal for the '<em><b>Remarks</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__REMARKS = eINSTANCE.getColumn_Remarks();
+
+		/**
+		 * The meta object literal for the '<em><b>Column Def</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__COLUMN_DEF = eINSTANCE.getColumn_ColumnDef();
+
+		/**
+		 * The meta object literal for the '<em><b>Sql Data Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__SQL_DATA_TYPE = eINSTANCE.getColumn_SqlDataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Sql Datetime Sub</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__SQL_DATETIME_SUB = eINSTANCE.getColumn_SqlDatetimeSub();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Octet Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__CHAR_OCTET_LENGTH = eINSTANCE.getColumn_CharOctetLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Ordinal Position</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__ORDINAL_POSITION = eINSTANCE.getColumn_OrdinalPosition();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Nullable</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__IS_NULLABLE = eINSTANCE.getColumn_IsNullable();
+
+		/**
+		 * The meta object literal for the '<em><b>Scope Catalog</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__SCOPE_CATALOG = eINSTANCE.getColumn_ScopeCatalog();
+
+		/**
+		 * The meta object literal for the '<em><b>Scope Schema</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__SCOPE_SCHEMA = eINSTANCE.getColumn_ScopeSchema();
+
+		/**
+		 * The meta object literal for the '<em><b>Scope Table</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__SCOPE_TABLE = eINSTANCE.getColumn_ScopeTable();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Data Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__SOURCE_DATA_TYPE = eINSTANCE.getColumn_SourceDataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Autoincrement</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__IS_AUTOINCREMENT = eINSTANCE.getColumn_IsAutoincrement();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Generatedcolumn</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__IS_GENERATEDCOLUMN = eINSTANCE.getColumn_IsGeneratedcolumn();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.PrimaryKeyImpl <em>Primary Key</em>}' class.
@@ -2177,6 +2976,14 @@ public interface SqlPackage extends EPackage {
 		EClass PRIMARY_KEY = eINSTANCE.getPrimaryKey();
 
 		/**
+		 * The meta object literal for the '<em><b>Columns</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRIMARY_KEY__COLUMNS = eINSTANCE.getPrimaryKey_Columns();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.ImportedKeyImpl <em>Imported Key</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2187,6 +2994,72 @@ public interface SqlPackage extends EPackage {
 		EClass IMPORTED_KEY = eINSTANCE.getImportedKey();
 
 		/**
+		 * The meta object literal for the '<em><b>Columns</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMPORTED_KEY__COLUMNS = eINSTANCE.getImportedKey_Columns();
+
+		/**
+		 * The meta object literal for the '<em><b>Primary Key</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMPORTED_KEY__PRIMARY_KEY = eINSTANCE.getImportedKey_PrimaryKey();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Rule</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMPORTED_KEY__UPDATE_RULE = eINSTANCE.getImportedKey_UpdateRule();
+
+		/**
+		 * The meta object literal for the '<em><b>Delete Rule</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMPORTED_KEY__DELETE_RULE = eINSTANCE.getImportedKey_DeleteRule();
+
+		/**
+		 * The meta object literal for the '<em><b>Deferrability</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMPORTED_KEY__DEFERRABILITY = eINSTANCE.getImportedKey_Deferrability();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.ImportedKeyColumnImpl <em>Imported Key Column</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.sql.impl.ImportedKeyColumnImpl
+		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKeyColumn()
+		 * @generated
+		 */
+		EClass IMPORTED_KEY_COLUMN = eINSTANCE.getImportedKeyColumn();
+
+		/**
+		 * The meta object literal for the '<em><b>Fk Column</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMPORTED_KEY_COLUMN__FK_COLUMN = eINSTANCE.getImportedKeyColumn_FkColumn();
+
+		/**
+		 * The meta object literal for the '<em><b>Pk Column</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMPORTED_KEY_COLUMN__PK_COLUMN = eINSTANCE.getImportedKeyColumn_PkColumn();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.sql.Type <em>Type</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2195,6 +3068,26 @@ public interface SqlPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum TYPE = eINSTANCE.getType();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.sql.ImportedKeyRule <em>Imported Key Rule</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.sql.ImportedKeyRule
+		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKeyRule()
+		 * @generated
+		 */
+		EEnum IMPORTED_KEY_RULE = eINSTANCE.getImportedKeyRule();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.sql.Deferrability <em>Deferrability</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.sql.Deferrability
+		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getDeferrability()
+		 * @generated
+		 */
+		EEnum DEFERRABILITY = eINSTANCE.getDeferrability();
 
 	}
 

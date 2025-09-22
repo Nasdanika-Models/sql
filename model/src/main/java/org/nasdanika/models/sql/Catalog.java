@@ -2,8 +2,12 @@
  */
 package org.nasdanika.models.sql;
 
-import org.eclipse.emf.common.util.EList;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.function.Function;
 
+import org.eclipse.emf.common.util.EList;
 import org.nasdanika.ncore.DocumentedNamedElement;
 
 /**
@@ -34,5 +38,27 @@ public interface Catalog extends DocumentedNamedElement {
 	 * @generated
 	 */
 	EList<Schema> getSchemas();
+	
+	default void load(
+			DatabaseMetaData databaseMetaData, 
+			ResultSet resultSet,
+			Function<String,TableType> tableTypeResolver,
+			Function<String,DataType> dataTypeResolver) throws SQLException {
+		setName(resultSet.getString("TABLE_CAT"));		
+		ResultSet schemas = databaseMetaData.getSchemas(getName(), null);
+		while (schemas.next()) {
+			getSchemas().add(Schema.create(databaseMetaData, schemas, tableTypeResolver, dataTypeResolver));
+		}								
+	}
+	
+	static Catalog create(
+			DatabaseMetaData databaseMetaData, 
+			ResultSet resultSet,
+			Function<String,TableType> tableTypeResolver,
+			Function<String,DataType> dataTypeResolver) throws SQLException {
+		Catalog catalog = SqlFactory.eINSTANCE.createCatalog();
+		catalog.load(databaseMetaData, resultSet, tableTypeResolver, dataTypeResolver);
+		return catalog;		
+	}
 
 } // Catalog

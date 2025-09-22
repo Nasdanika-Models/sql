@@ -58,7 +58,6 @@ public class SqlTests {
         try (Connection conn = DriverManager.getConnection(url, "sa", "");
              Statement stmt = conn.createStatement()) {
 
-            // create table
             stmt.execute(SCRIPT);
             
             Database database = Database.create(conn.getMetaData());
@@ -75,5 +74,13 @@ public class SqlTests {
         }		
 	}
 	
+	@Test
+	public void testCreateFileDB() throws Exception {
+        String url = "jdbc:h2:./test-db/ledger";
+        try (Connection conn = DriverManager.getConnection(url, "sa", "");
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(SCRIPT);
+        }		
+	}
 	
 }
