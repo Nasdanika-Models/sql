@@ -1,14 +1,15 @@
 import org.nasdanika.capability.CapabilityFactory;
-import org.nasdanika.models.crewai.ecore.ECoreGenCrewAIProcessorsCapabilityFactory;
+import org.nasdanika.models.sql.ecore.ECoreGenSqlProcessorsCapabilityFactory;
 
-module org.nasdanika.models.crewai.ecore {
+module org.nasdanika.models.sql.ecore {
 		
-	requires transitive org.nasdanika.models.crewai;
+	requires transitive org.nasdanika.models.sql;
 	requires transitive org.nasdanika.models.ecore.graph;
+	requires org.eclipse.emf.common;
 	
-	exports org.nasdanika.models.crewai.ecore;
-	opens org.nasdanika.models.crewai.ecore; // For loading resources
+	exports org.nasdanika.models.sql.ecore;
+	opens org.nasdanika.models.sql.ecore; // For loading resources
 
-	provides CapabilityFactory with	ECoreGenCrewAIProcessorsCapabilityFactory; 		
+	provides CapabilityFactory with	ECoreGenSqlProcessorsCapabilityFactory; 		
 	
 }

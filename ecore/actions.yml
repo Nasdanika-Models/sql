@@ -3,7 +3,7 @@ app.Action:
   text: Nasdanika Models
   location: https://github.com/Nasdanika-Models
   children:
-    - app.ActionReference: "target/action-models/crew-ai.xmi#/"
+    - app.ActionReference: "target/action-models/sql.xmi#/"
     - app.Action:
         location: ${base-uri}search.html
         icon: fas fa-search
@@ -14,7 +14,7 @@ app.Action:
               content.Resource: classpath://org/nasdanika/models/app/gen/search.html
   navigation:
     - app.Action:
-        location: https://github.com/Nasdanika-Models/crew-ai
+        location: https://github.com/Nasdanika-Models/sql
         icon: fab fa-github
         text: Sources
           

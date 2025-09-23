@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.nasdanika.models.crewai.ecore</name>
+	<name>org.nasdanika.models.sql.ecore</name>
 	<comment>Ecore metamodel documentation generation processors</comment>
 	<projects>
 	</projects>
