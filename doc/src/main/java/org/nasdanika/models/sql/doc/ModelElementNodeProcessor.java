@@ -1,4 +1,4 @@
-package org.nasdanika.models.crewai.doc;
+package org.nasdanika.models.sql.doc;
 
 import java.util.Collection;
 import java.util.Map;
@@ -30,23 +30,30 @@ import org.nasdanika.ncore.NamedElement;
  */
 public abstract class ModelElementNodeProcessor<T extends EObject> extends EObjectNodeProcessor<T> {
 	
-	public static final String GUARDRAIL_ICON = "https://crew-ai.models.nasdanika.org/images/barrier.svg";
-	public static final String TOOL_ICON = "https://crew-ai.models.nasdanika.org/images/tool.svg";	
-	public static final String TOOLS_ICON = "https://crew-ai.models.nasdanika.org/images/toolbox.svg";	
-	public static final String TASK_ICON = "https://crew-ai.models.nasdanika.org/images/task.svg";	
-	public static final String TASKS_ICON = "https://crew-ai.models.nasdanika.org/images/project-management.svg";	
-	public static final String LLM_ICON = "https://crew-ai.models.nasdanika.org/images/ai.svg";	
-	public static final String KNOWLDEGE_SOURCE_ICON = "https://crew-ai.models.nasdanika.org/images/book.svg";	
-	public static final String FUNCTION_ICON = "https://crew-ai.models.nasdanika.org/images/settings.svg";	
-	public static final String CREW_ICON = "https://crew-ai.models.nasdanika.org/images/navy.svg";	
-	public static final String CONFIGURABLE_ICON = "https://crew-ai.models.nasdanika.org/images/web-management.svg";	
-	public static final String CALLBACK_ICON = "https://crew-ai.models.nasdanika.org/images/callback.svg";	
-	public static final String CODE_ICON = "https://crew-ai.models.nasdanika.org/images/script.svg";	
-	public static final String AGENT_ICON = "https://crew-ai.models.nasdanika.org/images/software-agent.svg";
-	public static final String BACKSTORY_ICON = "https://crew-ai.models.nasdanika.org/images/cv.svg";
-	public static final String ROLE_ICON = "https://crew-ai.models.nasdanika.org/images/role.svg";
-	public static final String GOAL_ICON = "https://crew-ai.models.nasdanika.org/images/business-plan.svg";
-	public static final String DESCRIPTION_ICON = "https://crew-ai.models.nasdanika.org/images/instructions.svg";
+//	Catalog.java
+//	Schema.java
+//	Table.java
+//	
+//	Column.java
+//	DataType.java
+//	Deferrability.java
+//	ImportedKey.java
+//	ImportedKeyColumn.java
+//	ImportedKeyRule.java
+//	PrimaryKey.java
+//	TableType.java
+//	Type.java
+
+	
+	public static final String DATABASE_ICON = "https://sql.models.nasdanika.org/images/server.svg";
+	public static final String CATALOG_ICON = "https://sql.models.nasdanika.org/images/catalog.svg";
+	public static final String SCHEMA_ICON = "https://sql.models.nasdanika.org/images/scheme.svg";
+	public static final String TABLE_ICON = "https://sql.models.nasdanika.org/images/table.svg";
+	public static final String COLUMN_ICON = "https://sql.models.nasdanika.org/images/speadsheet-column.svg";
+	public static final String DATA_TYPE_ICON = "https://sql.models.nasdanika.org/images/data-format.svg";
+	public static final String TABLE_TYPE_ICON = "https://sql.models.nasdanika.org/images/spreadsheet-file.svg";
+	public static final String IMPORTED_KEY_ICON = "https://sql.models.nasdanika.org/images/relational.svg";
+	public static final String PRIMARY_KEY_ICON = "https://sql.models.nasdanika.org/images/key.svg";
 	
 	protected Collection<DocumentationFactory> documentationFactories;
 	

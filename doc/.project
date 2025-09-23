@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.nasdanika.models.crewai.doc</name>
+	<name>org.nasdanika.models.sql.doc</name>
 	<comment>Model documentation generation processors</comment>
 	<projects>
 	</projects>

@@ -1,4 +1,4 @@
-package org.nasdanika.models.crewai.doc;
+package org.nasdanika.models.sql.doc;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,7 +15,7 @@ import org.nasdanika.models.app.graph.emf.HtmlAppGenerator.NodeProcessorFactoryR
 
 import reactor.core.publisher.Flux;
 
-public class CrewAINodeProcessorFactoryCapabilityFactory implements CapabilityFactory<NodeProcessorFactoryRequirement, Object> {
+public class SqlNodeProcessorFactoryCapabilityFactory implements CapabilityFactory<NodeProcessorFactoryRequirement, Object> {
 
 	@Override
 	public boolean canHandle(Object requirement) {
@@ -43,7 +43,7 @@ public class CrewAINodeProcessorFactoryCapabilityFactory implements CapabilityFa
 			cp.getPublisher().subscribe(df -> documentationFactories.add(df));
 		}				
 
-		CrewAINodeProcessorFactory factory = new CrewAINodeProcessorFactory(
+		SqlNodeProcessorFactory factory = new SqlNodeProcessorFactory(
 				requirement.context(), 
 				requirement.prototypeProvider(),
 				documentationFactories);

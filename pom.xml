@@ -175,7 +175,7 @@
 	<modules>
 		<module>core</module>
 		<module>model</module>
-		<module>core</module>
+		<module>doc</module>
 		<module>ecore</module>
 		<module>cli</module>
 	</modules>
