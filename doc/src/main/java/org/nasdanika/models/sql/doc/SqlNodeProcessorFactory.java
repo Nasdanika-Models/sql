@@ -16,7 +16,9 @@ import org.nasdanika.models.app.Action;
 import org.nasdanika.models.app.AppFactory;
 import org.nasdanika.models.app.Label;
 import org.nasdanika.models.app.graph.WidgetFactory;
+import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Database;
+import org.nasdanika.models.sql.Schema;
 import org.nasdanika.ncore.util.NcoreUtil;
 
 /**
@@ -58,10 +60,8 @@ public class SqlNodeProcessorFactory {
 		this.documentationFactories = documentationFactories;
 	}
 	
-	
-//	Database.java	
 	@EObjectNodeProcessor(type = Database.class)
-	public Object createCrewNodeProcessor(
+	public Object createDatabaseNodeProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
 			boolean parallel, 
 			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
@@ -74,6 +74,33 @@ public class SqlNodeProcessorFactory {
 				documentationFactories);
 	}
 	
+	@EObjectNodeProcessor(type = Catalog.class)
+	public Object createCatalogNodeProcessor(
+			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			boolean parallel, 
+			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			ProgressMonitor progressMonitor) {
+		
+		return new CatalogNodeProcessor(
+				config, 
+				context, 
+				getPrototypeProvider(config), 
+				documentationFactories);
+	}
+	
+	@EObjectNodeProcessor(type = Schema.class)
+	public Object createSchemaNodeProcessor(
+			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			boolean parallel, 
+			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			ProgressMonitor progressMonitor) {
+		
+		return new SchemaNodeProcessor(
+				config, 
+				context, 
+				getPrototypeProvider(config), 
+				documentationFactories);
+	}
 	
 	
 //	Catalog.java

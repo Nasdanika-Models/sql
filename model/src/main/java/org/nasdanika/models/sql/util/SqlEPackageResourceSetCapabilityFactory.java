@@ -14,7 +14,7 @@ public class SqlEPackageResourceSetCapabilityFactory extends EPackageCapabilityF
 
 	@Override
 	protected URI getDocumentationURI() {
-		return URI.createURI("https://crew-ai.models.nasdanika.org/");
+		return URI.createURI("https://sql.models.nasdanika.org/");
 	}
 
 }
