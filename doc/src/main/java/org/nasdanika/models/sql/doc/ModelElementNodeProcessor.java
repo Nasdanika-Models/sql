@@ -49,7 +49,7 @@ public abstract class ModelElementNodeProcessor<T extends EObject> extends EObje
 	public static final String CATALOG_ICON = "https://sql.models.nasdanika.org/images/catalog.svg";
 	public static final String SCHEMA_ICON = "https://sql.models.nasdanika.org/images/scheme.svg";
 	public static final String TABLE_ICON = "https://sql.models.nasdanika.org/images/table.svg";
-	public static final String COLUMN_ICON = "https://sql.models.nasdanika.org/images/speadsheet-column.svg";
+	public static final String COLUMN_ICON = "https://sql.models.nasdanika.org/images/spreadsheet-column.svg";
 	public static final String DATA_TYPE_ICON = "https://sql.models.nasdanika.org/images/data-format.svg";
 	public static final String TABLE_TYPE_ICON = "https://sql.models.nasdanika.org/images/spreadsheet-file.svg";
 	public static final String IMPORTED_KEY_ICON = "https://sql.models.nasdanika.org/images/relational.svg";

@@ -16,11 +16,11 @@ import org.nasdanika.models.app.Label;
 import org.nasdanika.models.app.gen.DynamicTableBuilder;
 import org.nasdanika.models.app.graph.WidgetFactory;
 import org.nasdanika.models.app.graph.emf.OutgoingReferenceBuilder;
-import org.nasdanika.models.sql.Database;
+import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.SqlPackage;
 import org.nasdanika.ncore.NamedElement;
 
-public class SchemaNodeProcessor extends ModelElementNodeProcessor<Database> {
+public class SchemaNodeProcessor extends ModelElementNodeProcessor<Schema> {
 
 	public SchemaNodeProcessor(
 		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 

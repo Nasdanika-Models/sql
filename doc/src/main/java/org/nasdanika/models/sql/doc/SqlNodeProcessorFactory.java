@@ -17,8 +17,12 @@ import org.nasdanika.models.app.AppFactory;
 import org.nasdanika.models.app.Label;
 import org.nasdanika.models.app.graph.WidgetFactory;
 import org.nasdanika.models.sql.Catalog;
+import org.nasdanika.models.sql.Column;
+import org.nasdanika.models.sql.DataType;
 import org.nasdanika.models.sql.Database;
+import org.nasdanika.models.sql.ImportedKey;
 import org.nasdanika.models.sql.Schema;
+import org.nasdanika.models.sql.Table;
 import org.nasdanika.ncore.util.NcoreUtil;
 
 /**
@@ -101,16 +105,63 @@ public class SqlNodeProcessorFactory {
 				getPrototypeProvider(config), 
 				documentationFactories);
 	}
+		
+	@EObjectNodeProcessor(type = Table.class)
+	public Object createTableNodeProcessor(
+			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			boolean parallel, 
+			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			ProgressMonitor progressMonitor) {
+		
+		return new TableNodeProcessor(
+				config, 
+				context, 
+				getPrototypeProvider(config), 
+				documentationFactories);
+	}
 	
+	@EObjectNodeProcessor(type = Column.class)
+	public Object createColumnNodeProcessor(
+			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			boolean parallel, 
+			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			ProgressMonitor progressMonitor) {
+		
+		return new ColumnNodeProcessor(
+				config, 
+				context, 
+				getPrototypeProvider(config), 
+				documentationFactories);
+	}
 	
-//	Catalog.java
-//	Schema.java
-//	Table.java
-//	
-//	Column.java
-//	DataType.java
-//	Deferrability.java
-//	ImportedKey.java
+	@EObjectNodeProcessor(type = DataType.class)
+	public Object createDataTypeNodeProcessor(
+			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			boolean parallel, 
+			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			ProgressMonitor progressMonitor) {
+		
+		return new DataTypeNodeProcessor(
+				config, 
+				context, 
+				getPrototypeProvider(config), 
+				documentationFactories);
+	}
+	
+	@EObjectNodeProcessor(type = ImportedKey.class)
+	public Object createImportedKeyNodeProcessor(
+			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			boolean parallel, 
+			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			ProgressMonitor progressMonitor) {
+		
+		return new ImportedKeyNodeProcessor(
+				config, 
+				context, 
+				getPrototypeProvider(config), 
+				documentationFactories);
+	}
+	
 //	ImportedKeyColumn.java
 //	ImportedKeyRule.java
 //	PrimaryKey.java

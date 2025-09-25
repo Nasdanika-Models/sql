@@ -81,6 +81,51 @@ public class DatabaseNodeProcessor extends ModelElementNodeProcessor<Database> {
 		}
 	}
 	
+	@OutgoingReferenceBuilder(
+			nsURI = SqlPackage.eNS_URI,
+			classID = SqlPackage.DATABASE,
+			referenceID = SqlPackage.DATABASE__DATA_TYPES)
+	public void buildDataTypesOutgoingReference(
+			EReference eReference,
+			List<Entry<EReferenceConnection, WidgetFactory>> referenceOutgoingEndpoints, 
+			Collection<Label> labels,
+			Map<EReferenceConnection, Collection<Label>> outgoingLabels, 
+			ProgressMonitor progressMonitor) {
+
+		List<Entry<EReferenceConnection, Collection<Label>>> sorted = outgoingLabels.entrySet().stream()
+				.sorted((a,b) -> ((NamedElement) a.getKey().getTarget().get()).getName().compareTo(((NamedElement) b.getKey().getTarget().get()).getName()))
+				.toList();		
+
+		for (Label label: labels) {
+			Action dataTypesAction = getRoleActionByLocation(
+					((Action) label).getChildren(), 
+					"data-types.html", 
+					"Data Types", 
+					DATA_TYPE_ICON);
+			
+			for (Entry<EReferenceConnection, Collection<Label>> re: sorted) {
+				dataTypesAction.getChildren().addAll(re.getValue());
+			}
+			if (label instanceof Action) {										
+				DynamicTableBuilder<Entry<EReferenceConnection, WidgetFactory>> dataTypesTableBuilder = new DynamicTableBuilder<>("nsd-table");
+				buildNamedElementColumns(dataTypesTableBuilder, progressMonitor);
+				
+				org.nasdanika.models.html.Tag dataTypesTable = dataTypesTableBuilder.build(
+						referenceOutgoingEndpoints.stream().sorted((a,b) -> {
+							NamedElement ane = (NamedElement) a.getKey().getTarget().get();
+							NamedElement bne = (NamedElement) b.getKey().getTarget().get();
+							return ane.getName().compareTo(bne.getName());
+						}).toList(),  
+						"database-data-types", 
+						"data-types-table", 
+						progressMonitor);
+				
+				dataTypesAction.getContent().add(dataTypesTable);
+			}
+		}
+	}
+	
+	
 //	@OutgoingReferenceBuilder(
 //			nsURI = SqlPackage.eNS_URI,
 //			classID = SqlPackage.CREW,
