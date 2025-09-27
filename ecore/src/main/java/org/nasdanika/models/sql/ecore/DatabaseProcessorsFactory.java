@@ -24,7 +24,7 @@ public class DatabaseProcessorsFactory {
 	}	
 		
 	@EClassifierNodeProcessorFactory(
-			icon = "http://sql.models.nasdanika.org/images/server.svg", 
+			icon = "http://sql.models.nasdanika.org/images/sql-server.svg", 
 			documentation = 
                     """
 					Database is the top-level object containing [catalogs](../Catalog/index.html), [data types](../DataType/index.html) and [table types](../TableType/index.html).					

@@ -2,8 +2,6 @@ package org.nasdanika.models.sql.tests;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
 import org.eclipse.emf.common.util.URI;
@@ -25,7 +23,7 @@ public class SqlTests {
 	 */
 	private static final String SCRIPT = 
 			"""
-			CREATE TABLE Accounts (
+			CREATE TABLE IF NOT EXISTS Accounts (
 			    ID INT PRIMARY KEY AUTO_INCREMENT,
 			    NAME VARCHAR(255) NOT NULL,
 			    TYPE VARCHAR(50) NOT NULL, -- e.g., 'Asset', 'Liability', 'Equity', 'Revenue', 'Expense'
@@ -33,14 +31,14 @@ public class SqlTests {
 			    FOREIGN KEY (PARent) REFERENCES Accounts(ID)
 			);
 			
-			CREATE TABLE Transactions (
+			CREATE TABLE IF NOT EXISTS Transactions (
 			    ID INT PRIMARY KEY AUTO_INCREMENT,
 			    TRANSACTION_DATE DATE NOT NULL,
 			    Description VARCHAR(500),
 			    ReferenceNumber VARCHAR(100) -- Optional: e.g., Invoice Number, Check Number
 			);
 			
-			CREATE TABLE Journal_Entries (
+			CREATE TABLE IF NOT EXISTS Journal_Entries (
 			    ID INT PRIMARY KEY AUTO_INCREMENT,
 			    Transaction INT NOT NULL,
 			    Account INT NOT NULL,

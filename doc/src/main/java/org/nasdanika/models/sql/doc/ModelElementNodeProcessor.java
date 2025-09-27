@@ -45,7 +45,7 @@ public abstract class ModelElementNodeProcessor<T extends EObject> extends EObje
 //	Type.java
 
 	
-	public static final String DATABASE_ICON = "https://sql.models.nasdanika.org/images/server.svg";
+	public static final String DATABASE_ICON = "https://sql.models.nasdanika.org/images/sql-server.svg";
 	public static final String CATALOG_ICON = "https://sql.models.nasdanika.org/images/catalog.svg";
 	public static final String SCHEMA_ICON = "https://sql.models.nasdanika.org/images/scheme.svg";
 	public static final String TABLE_ICON = "https://sql.models.nasdanika.org/images/table.svg";
