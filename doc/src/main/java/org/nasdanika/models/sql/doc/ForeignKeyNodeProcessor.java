@@ -8,12 +8,11 @@ import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.graph.processor.NodeProcessorConfig;
 import org.nasdanika.models.app.Action;
 import org.nasdanika.models.app.graph.WidgetFactory;
-import org.nasdanika.models.sql.Column;
-import org.nasdanika.models.sql.ImportedKey;
+import org.nasdanika.models.sql.ForeignKey;
 
-public class ImportedKeyNodeProcessor extends ModelElementNodeProcessor<ImportedKey> {
+public class ForeignKeyNodeProcessor extends ModelElementNodeProcessor<ForeignKey> {
 
-	public ImportedKeyNodeProcessor(
+	public ForeignKeyNodeProcessor(
 		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
 		Context context,
 		java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
@@ -24,7 +23,7 @@ public class ImportedKeyNodeProcessor extends ModelElementNodeProcessor<Imported
 
 	@Override
 	protected String getTypeIcon() {
-		return IMPORTED_KEY_ICON;
+		return FOREIGN_KEY_ICON;
 	}
 			
 }

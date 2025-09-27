@@ -127,17 +127,18 @@
     </genClasses>
     <genClasses ecoreClass="sql.ecore#//PrimaryKey">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//PrimaryKey/columns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//PrimaryKey/exportedKeys"/>
     </genClasses>
-    <genClasses ecoreClass="sql.ecore#//ImportedKey">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKey/columns"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKey/primaryKey"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ImportedKey/updateRule"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ImportedKey/deleteRule"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ImportedKey/deferrability"/>
+    <genClasses ecoreClass="sql.ecore#//ForeignKey">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql.ecore#//ForeignKey/columns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ForeignKey/primaryKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ForeignKey/updateRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ForeignKey/deleteRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql.ecore#//ForeignKey/deferrability"/>
     </genClasses>
-    <genClasses ecoreClass="sql.ecore#//ImportedKeyColumn">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKeyColumn/fkColumn"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ImportedKeyColumn/pkColumn"/>
+    <genClasses ecoreClass="sql.ecore#//ForeignKeyColumn">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ForeignKeyColumn/fkColumn"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sql.ecore#//ForeignKeyColumn/pkColumn"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -15,8 +15,8 @@ import org.nasdanika.models.sql.Column;
 import org.nasdanika.models.sql.DataType;
 import org.nasdanika.models.sql.Database;
 import org.nasdanika.models.sql.Deferrability;
-import org.nasdanika.models.sql.ImportedKey;
-import org.nasdanika.models.sql.ImportedKeyColumn;
+import org.nasdanika.models.sql.ForeignKey;
+import org.nasdanika.models.sql.ForeignKeyColumn;
 import org.nasdanika.models.sql.ImportedKeyRule;
 import org.nasdanika.models.sql.PrimaryKey;
 import org.nasdanika.models.sql.Schema;
@@ -96,14 +96,14 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass importedKeyEClass = null;
+	private EClass foreignKeyEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass importedKeyColumnEClass = null;
+	private EClass foreignKeyColumnEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -785,8 +785,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getImportedKey() {
-		return importedKeyEClass;
+	public EReference getPrimaryKey_ExportedKeys() {
+		return (EReference)primaryKeyEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -795,8 +795,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getImportedKey_Columns() {
-		return (EReference)importedKeyEClass.getEStructuralFeatures().get(0);
+	public EClass getForeignKey() {
+		return foreignKeyEClass;
 	}
 
 	/**
@@ -805,8 +805,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getImportedKey_PrimaryKey() {
-		return (EReference)importedKeyEClass.getEStructuralFeatures().get(1);
+	public EReference getForeignKey_Columns() {
+		return (EReference)foreignKeyEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -815,8 +815,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getImportedKey_UpdateRule() {
-		return (EAttribute)importedKeyEClass.getEStructuralFeatures().get(2);
+	public EReference getForeignKey_PrimaryKey() {
+		return (EReference)foreignKeyEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -825,8 +825,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getImportedKey_DeleteRule() {
-		return (EAttribute)importedKeyEClass.getEStructuralFeatures().get(3);
+	public EAttribute getForeignKey_UpdateRule() {
+		return (EAttribute)foreignKeyEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -835,8 +835,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getImportedKey_Deferrability() {
-		return (EAttribute)importedKeyEClass.getEStructuralFeatures().get(4);
+	public EAttribute getForeignKey_DeleteRule() {
+		return (EAttribute)foreignKeyEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -845,8 +845,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getImportedKeyColumn() {
-		return importedKeyColumnEClass;
+	public EAttribute getForeignKey_Deferrability() {
+		return (EAttribute)foreignKeyEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -855,8 +855,8 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getImportedKeyColumn_FkColumn() {
-		return (EReference)importedKeyColumnEClass.getEStructuralFeatures().get(0);
+	public EClass getForeignKeyColumn() {
+		return foreignKeyColumnEClass;
 	}
 
 	/**
@@ -865,8 +865,18 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getImportedKeyColumn_PkColumn() {
-		return (EReference)importedKeyColumnEClass.getEStructuralFeatures().get(1);
+	public EReference getForeignKeyColumn_FkColumn() {
+		return (EReference)foreignKeyColumnEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getForeignKeyColumn_PkColumn() {
+		return (EReference)foreignKeyColumnEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -994,17 +1004,18 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 
 		primaryKeyEClass = createEClass(PRIMARY_KEY);
 		createEReference(primaryKeyEClass, PRIMARY_KEY__COLUMNS);
+		createEReference(primaryKeyEClass, PRIMARY_KEY__EXPORTED_KEYS);
 
-		importedKeyEClass = createEClass(IMPORTED_KEY);
-		createEReference(importedKeyEClass, IMPORTED_KEY__COLUMNS);
-		createEReference(importedKeyEClass, IMPORTED_KEY__PRIMARY_KEY);
-		createEAttribute(importedKeyEClass, IMPORTED_KEY__UPDATE_RULE);
-		createEAttribute(importedKeyEClass, IMPORTED_KEY__DELETE_RULE);
-		createEAttribute(importedKeyEClass, IMPORTED_KEY__DEFERRABILITY);
+		foreignKeyEClass = createEClass(FOREIGN_KEY);
+		createEReference(foreignKeyEClass, FOREIGN_KEY__COLUMNS);
+		createEReference(foreignKeyEClass, FOREIGN_KEY__PRIMARY_KEY);
+		createEAttribute(foreignKeyEClass, FOREIGN_KEY__UPDATE_RULE);
+		createEAttribute(foreignKeyEClass, FOREIGN_KEY__DELETE_RULE);
+		createEAttribute(foreignKeyEClass, FOREIGN_KEY__DEFERRABILITY);
 
-		importedKeyColumnEClass = createEClass(IMPORTED_KEY_COLUMN);
-		createEReference(importedKeyColumnEClass, IMPORTED_KEY_COLUMN__FK_COLUMN);
-		createEReference(importedKeyColumnEClass, IMPORTED_KEY_COLUMN__PK_COLUMN);
+		foreignKeyColumnEClass = createEClass(FOREIGN_KEY_COLUMN);
+		createEReference(foreignKeyColumnEClass, FOREIGN_KEY_COLUMN__FK_COLUMN);
+		createEReference(foreignKeyColumnEClass, FOREIGN_KEY_COLUMN__PK_COLUMN);
 
 		// Create enums
 		typeEEnum = createEEnum(TYPE);
@@ -1051,7 +1062,7 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		tableEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedElement());
 		columnEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedElement());
 		primaryKeyEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedElement());
-		importedKeyEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedElement());
+		foreignKeyEClass.getESuperTypes().add(theNcorePackage.getDocumentedNamedElement());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(databaseEClass, Database.class, "Database", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1100,7 +1111,7 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		getTable_Columns().getEKeys().add(theNcorePackage.getNamedElement_Name());
 		initEReference(getTable_PrimaryKey(), this.getPrimaryKey(), null, "primaryKey", null, 0, 1, Table.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTable_PrimaryKey().getEKeys().add(theNcorePackage.getNamedElement_Name());
-		initEReference(getTable_ImportedKeys(), this.getImportedKey(), null, "importedKeys", null, 0, -1, Table.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTable_ImportedKeys(), this.getForeignKey(), null, "importedKeys", null, 0, -1, Table.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTable_ImportedKeys().getEKeys().add(theNcorePackage.getNamedElement_Name());
 
 		initEClass(columnEClass, Column.class, "Column", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1128,17 +1139,18 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 
 		initEClass(primaryKeyEClass, PrimaryKey.class, "PrimaryKey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPrimaryKey_Columns(), this.getColumn(), null, "columns", null, 1, -1, PrimaryKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPrimaryKey_ExportedKeys(), this.getForeignKey(), this.getForeignKey_PrimaryKey(), "exportedKeys", null, 0, 1, PrimaryKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(importedKeyEClass, ImportedKey.class, "ImportedKey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getImportedKey_Columns(), this.getImportedKeyColumn(), null, "columns", null, 0, -1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getImportedKey_PrimaryKey(), this.getPrimaryKey(), null, "primaryKey", null, 1, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getImportedKey_UpdateRule(), this.getImportedKeyRule(), "updateRule", null, 0, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getImportedKey_DeleteRule(), this.getImportedKeyRule(), "deleteRule", null, 0, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getImportedKey_Deferrability(), this.getDeferrability(), "deferrability", null, 0, 1, ImportedKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(foreignKeyEClass, ForeignKey.class, "ForeignKey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getForeignKey_Columns(), this.getForeignKeyColumn(), null, "columns", null, 0, -1, ForeignKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getForeignKey_PrimaryKey(), this.getPrimaryKey(), this.getPrimaryKey_ExportedKeys(), "primaryKey", null, 1, 1, ForeignKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getForeignKey_UpdateRule(), this.getImportedKeyRule(), "updateRule", null, 0, 1, ForeignKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getForeignKey_DeleteRule(), this.getImportedKeyRule(), "deleteRule", null, 0, 1, ForeignKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getForeignKey_Deferrability(), this.getDeferrability(), "deferrability", null, 0, 1, ForeignKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(importedKeyColumnEClass, ImportedKeyColumn.class, "ImportedKeyColumn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getImportedKeyColumn_FkColumn(), this.getColumn(), null, "fkColumn", null, 1, 1, ImportedKeyColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getImportedKeyColumn_PkColumn(), this.getColumn(), null, "pkColumn", null, 1, 1, ImportedKeyColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(foreignKeyColumnEClass, ForeignKeyColumn.class, "ForeignKeyColumn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getForeignKeyColumn_FkColumn(), this.getColumn(), null, "fkColumn", null, 1, 1, ForeignKeyColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getForeignKeyColumn_PkColumn(), this.getColumn(), null, "pkColumn", null, 1, 1, ForeignKeyColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(typeEEnum, Type.class, "Type");
@@ -1433,19 +1445,19 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 			   "column", "IS_GENERATEDCOLUMN"
 		   });
 		addAnnotation
-		  (getImportedKey_UpdateRule(),
+		  (getForeignKey_UpdateRule(),
 		   source,
 		   new String[] {
 			   "enum-value", "UPDATE_RULE"
 		   });
 		addAnnotation
-		  (getImportedKey_DeleteRule(),
+		  (getForeignKey_DeleteRule(),
 		   source,
 		   new String[] {
 			   "enum-value", "DELETE_RULE"
 		   });
 		addAnnotation
-		  (getImportedKey_Deferrability(),
+		  (getForeignKey_Deferrability(),
 		   source,
 		   new String[] {
 			   "enum-value", "DEFERRABILITY"

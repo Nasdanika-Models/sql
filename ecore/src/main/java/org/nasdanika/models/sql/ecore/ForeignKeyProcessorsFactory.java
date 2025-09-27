@@ -13,11 +13,11 @@ import org.nasdanika.models.ecore.graph.processors.EClassNodeProcessor;
 import org.nasdanika.models.ecore.graph.processors.EClassifierNodeProcessorFactory;
 import org.nasdanika.models.sql.SqlPackage;
 
-@EClassifierNodeProcessorFactory(classifierID = SqlPackage.IMPORTED_KEY_COLUMN)
-public class ImportedKeyColumnProcessorsFactory {
+@EClassifierNodeProcessorFactory(classifierID = SqlPackage.FOREIGN_KEY)
+public class ForeignKeyProcessorsFactory {
 	private Context context;
 	
-	public ImportedKeyColumnProcessorsFactory(Context context) {
+	public ForeignKeyProcessorsFactory(Context context) {
 		this.context = context;
 	}	
 		
@@ -29,12 +29,20 @@ public class ImportedKeyColumnProcessorsFactory {
 	 * @return
 	 */
 	@EClassifierNodeProcessorFactory(
+			icon = "http://sql.models.nasdanika.org/images/relational.svg", 
 			documentation = 
                     """
-					A [column](../Column/index.html) entry in the imported (foreign) key.
+					An imported key in a relational database refers to a foreign key that a 
+					[table](../Table/index.html) receives from another table. 
+					It’s a way of saying: “This [column](../Column/index.html) in my table references 
+					a [primary key](../PrimaryKey/index.html) in another table.”
+
+					* It’s a foreign key from the perspective of the child table.
+					* It creates a relationship between two tables—typically a many-to-one or one-to-one link.
+					* The imported key ensures referential integrity, meaning the value in the child table must exist in the parent table.
                     """
 	)
-	public EClassNodeProcessor createImportedKeyColumnProcessor(
+	public EClassNodeProcessor createImportedKeyProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
 			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,

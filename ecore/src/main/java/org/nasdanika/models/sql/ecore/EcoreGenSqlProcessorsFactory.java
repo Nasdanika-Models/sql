@@ -31,10 +31,10 @@ public class EcoreGenSqlProcessorsFactory {
 	public final DataTypeProcessorsFactory dataTypeProcessorsFactory;
 	
 	@Factory
-	public final ImportedKeyProcessorsFactory importedKeyProcessorsFactory;
+	public final ForeignKeyProcessorsFactory importedKeyProcessorsFactory;
 	
 	@Factory
-	public final ImportedKeyProcessorsFactory importedKeyColumnProcessorsFactory;
+	public final ForeignKeyProcessorsFactory importedKeyColumnProcessorsFactory;
 	
 	@Factory
 	public final PrimaryKeyProcessorsFactory primaryKeyProcessorsFactory;
@@ -55,8 +55,8 @@ public class EcoreGenSqlProcessorsFactory {
 		columnProcessorsFactory = new ColumnProcessorsFactory(context);
 		databaseProcessorsFactory = new DatabaseProcessorsFactory(context);
 		dataTypeProcessorsFactory = new DataTypeProcessorsFactory(context);
-		importedKeyProcessorsFactory = new ImportedKeyProcessorsFactory(context);
-		importedKeyColumnProcessorsFactory = new ImportedKeyProcessorsFactory(context);
+		importedKeyProcessorsFactory = new ForeignKeyProcessorsFactory(context);
+		importedKeyColumnProcessorsFactory = new ForeignKeyProcessorsFactory(context);
 		primaryKeyProcessorsFactory = new PrimaryKeyProcessorsFactory(context);
 		schemaProcessorsFactory = new SchemaProcessorsFactory(context);
 		tableProcessorsFactory = new TableProcessorsFactory(context);

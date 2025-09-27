@@ -58,9 +58,11 @@ public class MetaDataCommand extends CommandGroup implements EObjectSupplier<Dat
 	@Override
 	public Collection<Database> getEObjects(ProgressMonitor progressMonitor) {
 		try {
-			return sqlCommand.apply(connection -> {
-			    return Collections.singleton(Database.create(connection.getMetaData(), schemaPattern, tableNamePattern, tableTypes));			
-			});
+			return sqlCommand.apply(
+				(connection, pm) -> {
+					return Collections.singleton(Database.create(connection.getMetaData(), schemaPattern, tableNamePattern, tableTypes));			
+				},
+				progressMonitor);
 		} catch (SQLException e) {
 			throw new CommandLine.ExecutionException(spec.commandLine(), "Error loading metadata: " + e, e);
 		}

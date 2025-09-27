@@ -94,22 +94,22 @@ public interface SqlFactory extends EFactory {
 	PrimaryKey createPrimaryKey();
 
 	/**
-	 * Returns a new object of class '<em>Imported Key</em>'.
+	 * Returns a new object of class '<em>Foreign Key</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Imported Key</em>'.
+	 * @return a new object of class '<em>Foreign Key</em>'.
 	 * @generated
 	 */
-	ImportedKey createImportedKey();
+	ForeignKey createForeignKey();
 
 	/**
-	 * Returns a new object of class '<em>Imported Key Column</em>'.
+	 * Returns a new object of class '<em>Foreign Key Column</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Imported Key Column</em>'.
+	 * @return a new object of class '<em>Foreign Key Column</em>'.
 	 * @generated
 	 */
-	ImportedKeyColumn createImportedKeyColumn();
+	ForeignKeyColumn createForeignKeyColumn();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -1445,13 +1445,22 @@ public interface SqlPackage extends EPackage {
 	int PRIMARY_KEY__COLUMNS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Exported Keys</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIMARY_KEY__EXPORTED_KEYS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Primary Key</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRIMARY_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
+	int PRIMARY_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Primary Key</em>' class.
@@ -1463,14 +1472,14 @@ public interface SqlPackage extends EPackage {
 	int PRIMARY_KEY_OPERATION_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.sql.impl.ImportedKeyImpl <em>Imported Key</em>}' class.
+	 * The meta object id for the '{@link org.nasdanika.models.sql.impl.ForeignKeyImpl <em>Foreign Key</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.sql.impl.ImportedKeyImpl
-	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKey()
+	 * @see org.nasdanika.models.sql.impl.ForeignKeyImpl
+	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getForeignKey()
 	 * @generated
 	 */
-	int IMPORTED_KEY = 8;
+	int FOREIGN_KEY = 8;
 
 	/**
 	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
@@ -1479,7 +1488,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__MARKERS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__MARKERS;
+	int FOREIGN_KEY__MARKERS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__MARKERS;
 
 	/**
 	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
@@ -1488,7 +1497,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__URIS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__URIS;
+	int FOREIGN_KEY__URIS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1497,7 +1506,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__DESCRIPTION = NcorePackage.DOCUMENTED_NAMED_ELEMENT__DESCRIPTION;
+	int FOREIGN_KEY__DESCRIPTION = NcorePackage.DOCUMENTED_NAMED_ELEMENT__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
@@ -1506,7 +1515,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__UUID = NcorePackage.DOCUMENTED_NAMED_ELEMENT__UUID;
+	int FOREIGN_KEY__UUID = NcorePackage.DOCUMENTED_NAMED_ELEMENT__UUID;
 
 	/**
 	 * The feature id for the '<em><b>Label Prototype</b></em>' containment reference.
@@ -1515,7 +1524,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__LABEL_PROTOTYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT__LABEL_PROTOTYPE;
+	int FOREIGN_KEY__LABEL_PROTOTYPE = NcorePackage.DOCUMENTED_NAMED_ELEMENT__LABEL_PROTOTYPE;
 
 	/**
 	 * The feature id for the '<em><b>Representations</b></em>' map.
@@ -1524,7 +1533,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__REPRESENTATIONS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__REPRESENTATIONS;
+	int FOREIGN_KEY__REPRESENTATIONS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__REPRESENTATIONS;
 
 	/**
 	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
@@ -1533,7 +1542,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__ANNOTATIONS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__ANNOTATIONS;
+	int FOREIGN_KEY__ANNOTATIONS = NcorePackage.DOCUMENTED_NAMED_ELEMENT__ANNOTATIONS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1542,7 +1551,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__NAME = NcorePackage.DOCUMENTED_NAMED_ELEMENT__NAME;
+	int FOREIGN_KEY__NAME = NcorePackage.DOCUMENTED_NAMED_ELEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Documentation</b></em>' containment reference list.
@@ -1551,7 +1560,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__DOCUMENTATION = NcorePackage.DOCUMENTED_NAMED_ELEMENT__DOCUMENTATION;
+	int FOREIGN_KEY__DOCUMENTATION = NcorePackage.DOCUMENTED_NAMED_ELEMENT__DOCUMENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Context Help</b></em>' containment reference list.
@@ -1560,7 +1569,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__CONTEXT_HELP = NcorePackage.DOCUMENTED_NAMED_ELEMENT__CONTEXT_HELP;
+	int FOREIGN_KEY__CONTEXT_HELP = NcorePackage.DOCUMENTED_NAMED_ELEMENT__CONTEXT_HELP;
 
 	/**
 	 * The feature id for the '<em><b>Columns</b></em>' containment reference list.
@@ -1569,7 +1578,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__COLUMNS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int FOREIGN_KEY__COLUMNS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Primary Key</b></em>' reference.
@@ -1578,7 +1587,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__PRIMARY_KEY = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
+	int FOREIGN_KEY__PRIMARY_KEY = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Update Rule</b></em>' attribute.
@@ -1587,7 +1596,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__UPDATE_RULE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 2;
+	int FOREIGN_KEY__UPDATE_RULE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Delete Rule</b></em>' attribute.
@@ -1596,7 +1605,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__DELETE_RULE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 3;
+	int FOREIGN_KEY__DELETE_RULE = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Deferrability</b></em>' attribute.
@@ -1605,36 +1614,35 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY__DEFERRABILITY = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 4;
+	int FOREIGN_KEY__DEFERRABILITY = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
-	 * The number of structural features of the '<em>Imported Key</em>' class.
+	 * The number of structural features of the '<em>Foreign Key</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 5;
+	int FOREIGN_KEY_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
-	 * The number of operations of the '<em>Imported Key</em>' class.
+	 * The number of operations of the '<em>Foreign Key</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY_OPERATION_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_OPERATION_COUNT + 0;
-
+	int FOREIGN_KEY_OPERATION_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.sql.impl.ImportedKeyColumnImpl <em>Imported Key Column</em>}' class.
+	 * The meta object id for the '{@link org.nasdanika.models.sql.impl.ForeignKeyColumnImpl <em>Foreign Key Column</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.sql.impl.ImportedKeyColumnImpl
-	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKeyColumn()
+	 * @see org.nasdanika.models.sql.impl.ForeignKeyColumnImpl
+	 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getForeignKeyColumn()
 	 * @generated
 	 */
-	int IMPORTED_KEY_COLUMN = 9;
+	int FOREIGN_KEY_COLUMN = 9;
 
 	/**
 	 * The feature id for the '<em><b>Fk Column</b></em>' reference.
@@ -1643,7 +1651,7 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY_COLUMN__FK_COLUMN = 0;
+	int FOREIGN_KEY_COLUMN__FK_COLUMN = 0;
 
 	/**
 	 * The feature id for the '<em><b>Pk Column</b></em>' reference.
@@ -1652,25 +1660,25 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY_COLUMN__PK_COLUMN = 1;
+	int FOREIGN_KEY_COLUMN__PK_COLUMN = 1;
 
 	/**
-	 * The number of structural features of the '<em>Imported Key Column</em>' class.
+	 * The number of structural features of the '<em>Foreign Key Column</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY_COLUMN_FEATURE_COUNT = 2;
+	int FOREIGN_KEY_COLUMN_FEATURE_COUNT = 2;
 
 	/**
-	 * The number of operations of the '<em>Imported Key Column</em>' class.
+	 * The number of operations of the '<em>Foreign Key Column</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMPORTED_KEY_COLUMN_OPERATION_COUNT = 0;
+	int FOREIGN_KEY_COLUMN_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.sql.Type <em>Type</em>}' enum.
@@ -2346,101 +2354,112 @@ public interface SqlPackage extends EPackage {
 	EReference getPrimaryKey_Columns();
 
 	/**
-	 * Returns the meta object for class '{@link org.nasdanika.models.sql.ImportedKey <em>Imported Key</em>}'.
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.PrimaryKey#getExportedKeys <em>Exported Keys</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Imported Key</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKey
+	 * @return the meta object for the reference '<em>Exported Keys</em>'.
+	 * @see org.nasdanika.models.sql.PrimaryKey#getExportedKeys()
+	 * @see #getPrimaryKey()
 	 * @generated
 	 */
-	EClass getImportedKey();
+	EReference getPrimaryKey_ExportedKeys();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.nasdanika.models.sql.ImportedKey#getColumns <em>Columns</em>}'.
+	 * Returns the meta object for class '{@link org.nasdanika.models.sql.ForeignKey <em>Foreign Key</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Foreign Key</em>'.
+	 * @see org.nasdanika.models.sql.ForeignKey
+	 * @generated
+	 */
+	EClass getForeignKey();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link org.nasdanika.models.sql.ForeignKey#getColumns <em>Columns</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Columns</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKey#getColumns()
-	 * @see #getImportedKey()
+	 * @see org.nasdanika.models.sql.ForeignKey#getColumns()
+	 * @see #getForeignKey()
 	 * @generated
 	 */
-	EReference getImportedKey_Columns();
+	EReference getForeignKey_Columns();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ImportedKey#getPrimaryKey <em>Primary Key</em>}'.
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ForeignKey#getPrimaryKey <em>Primary Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Primary Key</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKey#getPrimaryKey()
-	 * @see #getImportedKey()
+	 * @see org.nasdanika.models.sql.ForeignKey#getPrimaryKey()
+	 * @see #getForeignKey()
 	 * @generated
 	 */
-	EReference getImportedKey_PrimaryKey();
+	EReference getForeignKey_PrimaryKey();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ImportedKey#getUpdateRule <em>Update Rule</em>}'.
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ForeignKey#getUpdateRule <em>Update Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Update Rule</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKey#getUpdateRule()
-	 * @see #getImportedKey()
+	 * @see org.nasdanika.models.sql.ForeignKey#getUpdateRule()
+	 * @see #getForeignKey()
 	 * @generated
 	 */
-	EAttribute getImportedKey_UpdateRule();
+	EAttribute getForeignKey_UpdateRule();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ImportedKey#getDeleteRule <em>Delete Rule</em>}'.
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ForeignKey#getDeleteRule <em>Delete Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Delete Rule</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKey#getDeleteRule()
-	 * @see #getImportedKey()
+	 * @see org.nasdanika.models.sql.ForeignKey#getDeleteRule()
+	 * @see #getForeignKey()
 	 * @generated
 	 */
-	EAttribute getImportedKey_DeleteRule();
+	EAttribute getForeignKey_DeleteRule();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ImportedKey#getDeferrability <em>Deferrability</em>}'.
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.ForeignKey#getDeferrability <em>Deferrability</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Deferrability</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKey#getDeferrability()
-	 * @see #getImportedKey()
+	 * @see org.nasdanika.models.sql.ForeignKey#getDeferrability()
+	 * @see #getForeignKey()
 	 * @generated
 	 */
-	EAttribute getImportedKey_Deferrability();
+	EAttribute getForeignKey_Deferrability();
 
 	/**
-	 * Returns the meta object for class '{@link org.nasdanika.models.sql.ImportedKeyColumn <em>Imported Key Column</em>}'.
+	 * Returns the meta object for class '{@link org.nasdanika.models.sql.ForeignKeyColumn <em>Foreign Key Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Imported Key Column</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKeyColumn
+	 * @return the meta object for class '<em>Foreign Key Column</em>'.
+	 * @see org.nasdanika.models.sql.ForeignKeyColumn
 	 * @generated
 	 */
-	EClass getImportedKeyColumn();
+	EClass getForeignKeyColumn();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ImportedKeyColumn#getFkColumn <em>Fk Column</em>}'.
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ForeignKeyColumn#getFkColumn <em>Fk Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Fk Column</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKeyColumn#getFkColumn()
-	 * @see #getImportedKeyColumn()
+	 * @see org.nasdanika.models.sql.ForeignKeyColumn#getFkColumn()
+	 * @see #getForeignKeyColumn()
 	 * @generated
 	 */
-	EReference getImportedKeyColumn_FkColumn();
+	EReference getForeignKeyColumn_FkColumn();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ImportedKeyColumn#getPkColumn <em>Pk Column</em>}'.
+	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.ForeignKeyColumn#getPkColumn <em>Pk Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Pk Column</em>'.
-	 * @see org.nasdanika.models.sql.ImportedKeyColumn#getPkColumn()
-	 * @see #getImportedKeyColumn()
+	 * @see org.nasdanika.models.sql.ForeignKeyColumn#getPkColumn()
+	 * @see #getForeignKeyColumn()
 	 * @generated
 	 */
-	EReference getImportedKeyColumn_PkColumn();
+	EReference getForeignKeyColumn_PkColumn();
 
 	/**
 	 * Returns the meta object for enum '{@link org.nasdanika.models.sql.Type <em>Type</em>}'.
@@ -2984,14 +3003,22 @@ public interface SqlPackage extends EPackage {
 		EReference PRIMARY_KEY__COLUMNS = eINSTANCE.getPrimaryKey_Columns();
 
 		/**
-		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.ImportedKeyImpl <em>Imported Key</em>}' class.
+		 * The meta object literal for the '<em><b>Exported Keys</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.nasdanika.models.sql.impl.ImportedKeyImpl
-		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKey()
 		 * @generated
 		 */
-		EClass IMPORTED_KEY = eINSTANCE.getImportedKey();
+		EReference PRIMARY_KEY__EXPORTED_KEYS = eINSTANCE.getPrimaryKey_ExportedKeys();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.ForeignKeyImpl <em>Foreign Key</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.sql.impl.ForeignKeyImpl
+		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getForeignKey()
+		 * @generated
+		 */
+		EClass FOREIGN_KEY = eINSTANCE.getForeignKey();
 
 		/**
 		 * The meta object literal for the '<em><b>Columns</b></em>' containment reference list feature.
@@ -2999,7 +3026,7 @@ public interface SqlPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference IMPORTED_KEY__COLUMNS = eINSTANCE.getImportedKey_Columns();
+		EReference FOREIGN_KEY__COLUMNS = eINSTANCE.getForeignKey_Columns();
 
 		/**
 		 * The meta object literal for the '<em><b>Primary Key</b></em>' reference feature.
@@ -3007,7 +3034,7 @@ public interface SqlPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference IMPORTED_KEY__PRIMARY_KEY = eINSTANCE.getImportedKey_PrimaryKey();
+		EReference FOREIGN_KEY__PRIMARY_KEY = eINSTANCE.getForeignKey_PrimaryKey();
 
 		/**
 		 * The meta object literal for the '<em><b>Update Rule</b></em>' attribute feature.
@@ -3015,7 +3042,7 @@ public interface SqlPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute IMPORTED_KEY__UPDATE_RULE = eINSTANCE.getImportedKey_UpdateRule();
+		EAttribute FOREIGN_KEY__UPDATE_RULE = eINSTANCE.getForeignKey_UpdateRule();
 
 		/**
 		 * The meta object literal for the '<em><b>Delete Rule</b></em>' attribute feature.
@@ -3023,7 +3050,7 @@ public interface SqlPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute IMPORTED_KEY__DELETE_RULE = eINSTANCE.getImportedKey_DeleteRule();
+		EAttribute FOREIGN_KEY__DELETE_RULE = eINSTANCE.getForeignKey_DeleteRule();
 
 		/**
 		 * The meta object literal for the '<em><b>Deferrability</b></em>' attribute feature.
@@ -3031,17 +3058,17 @@ public interface SqlPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute IMPORTED_KEY__DEFERRABILITY = eINSTANCE.getImportedKey_Deferrability();
+		EAttribute FOREIGN_KEY__DEFERRABILITY = eINSTANCE.getForeignKey_Deferrability();
 
 		/**
-		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.ImportedKeyColumnImpl <em>Imported Key Column</em>}' class.
+		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.ForeignKeyColumnImpl <em>Foreign Key Column</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.nasdanika.models.sql.impl.ImportedKeyColumnImpl
-		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getImportedKeyColumn()
+		 * @see org.nasdanika.models.sql.impl.ForeignKeyColumnImpl
+		 * @see org.nasdanika.models.sql.impl.SqlPackageImpl#getForeignKeyColumn()
 		 * @generated
 		 */
-		EClass IMPORTED_KEY_COLUMN = eINSTANCE.getImportedKeyColumn();
+		EClass FOREIGN_KEY_COLUMN = eINSTANCE.getForeignKeyColumn();
 
 		/**
 		 * The meta object literal for the '<em><b>Fk Column</b></em>' reference feature.
@@ -3049,7 +3076,7 @@ public interface SqlPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference IMPORTED_KEY_COLUMN__FK_COLUMN = eINSTANCE.getImportedKeyColumn_FkColumn();
+		EReference FOREIGN_KEY_COLUMN__FK_COLUMN = eINSTANCE.getForeignKeyColumn_FkColumn();
 
 		/**
 		 * The meta object literal for the '<em><b>Pk Column</b></em>' reference feature.
@@ -3057,7 +3084,7 @@ public interface SqlPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference IMPORTED_KEY_COLUMN__PK_COLUMN = eINSTANCE.getImportedKeyColumn_PkColumn();
+		EReference FOREIGN_KEY_COLUMN__PK_COLUMN = eINSTANCE.getForeignKeyColumn_PkColumn();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.sql.Type <em>Type</em>}' enum.

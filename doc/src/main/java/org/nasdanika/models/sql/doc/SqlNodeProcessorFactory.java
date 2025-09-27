@@ -20,7 +20,7 @@ import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Column;
 import org.nasdanika.models.sql.DataType;
 import org.nasdanika.models.sql.Database;
-import org.nasdanika.models.sql.ImportedKey;
+import org.nasdanika.models.sql.ForeignKey;
 import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.Table;
 import org.nasdanika.ncore.util.NcoreUtil;
@@ -148,21 +148,21 @@ public class SqlNodeProcessorFactory {
 				documentationFactories);
 	}
 	
-	@EObjectNodeProcessor(type = ImportedKey.class)
-	public Object createImportedKeyNodeProcessor(
+	@EObjectNodeProcessor(type = ForeignKey.class)
+	public Object createForeignKeyNodeProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
 			boolean parallel, 
 			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
-		return new ImportedKeyNodeProcessor(
+		return new ForeignKeyNodeProcessor(
 				config, 
 				context, 
 				getPrototypeProvider(config), 
 				documentationFactories);
 	}
 	
-//	ImportedKeyColumn.java
+//	ForeignKeyColumn.java
 //	ImportedKeyRule.java
 //	PrimaryKey.java
 //	TableType.java

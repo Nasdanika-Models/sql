@@ -16,11 +16,6 @@
 			<artifactId>cli</artifactId>
 			<version>${core.version}</version>
 		</dependency>
-        <dependency>
-            <groupId>org.nasdanika.core</groupId>
-            <artifactId>maven</artifactId>
-            <version>${core.version}</version>
-        </dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>doc</artifactId>

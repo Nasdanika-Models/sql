@@ -52,7 +52,7 @@ public abstract class ModelElementNodeProcessor<T extends EObject> extends EObje
 	public static final String COLUMN_ICON = "https://sql.models.nasdanika.org/images/spreadsheet-column.svg";
 	public static final String DATA_TYPE_ICON = "https://sql.models.nasdanika.org/images/data-format.svg";
 	public static final String TABLE_TYPE_ICON = "https://sql.models.nasdanika.org/images/spreadsheet-file.svg";
-	public static final String IMPORTED_KEY_ICON = "https://sql.models.nasdanika.org/images/relational.svg";
+	public static final String FOREIGN_KEY_ICON = "https://sql.models.nasdanika.org/images/relational.svg";
 	public static final String PRIMARY_KEY_ICON = "https://sql.models.nasdanika.org/images/key.svg";
 	
 	protected Collection<DocumentationFactory> documentationFactories;

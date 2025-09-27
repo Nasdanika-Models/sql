@@ -65,8 +65,8 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 			case SqlPackage.TABLE: return createTable();
 			case SqlPackage.COLUMN: return createColumn();
 			case SqlPackage.PRIMARY_KEY: return createPrimaryKey();
-			case SqlPackage.IMPORTED_KEY: return createImportedKey();
-			case SqlPackage.IMPORTED_KEY_COLUMN: return createImportedKeyColumn();
+			case SqlPackage.FOREIGN_KEY: return createForeignKey();
+			case SqlPackage.FOREIGN_KEY_COLUMN: return createForeignKeyColumn();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -204,9 +204,9 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	 * @generated
 	 */
 	@Override
-	public ImportedKey createImportedKey() {
-		ImportedKeyImpl importedKey = new ImportedKeyImpl();
-		return importedKey;
+	public ForeignKey createForeignKey() {
+		ForeignKeyImpl foreignKey = new ForeignKeyImpl();
+		return foreignKey;
 	}
 
 	/**
@@ -215,9 +215,9 @@ public class SqlFactoryImpl extends EFactoryImpl implements SqlFactory {
 	 * @generated
 	 */
 	@Override
-	public ImportedKeyColumn createImportedKeyColumn() {
-		ImportedKeyColumnImpl importedKeyColumn = new ImportedKeyColumnImpl();
-		return importedKeyColumn;
+	public ForeignKeyColumn createForeignKeyColumn() {
+		ForeignKeyColumnImpl foreignKeyColumn = new ForeignKeyColumnImpl();
+		return foreignKeyColumn;
 	}
 
 	/**

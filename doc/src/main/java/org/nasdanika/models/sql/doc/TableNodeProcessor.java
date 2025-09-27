@@ -135,7 +135,7 @@ public class TableNodeProcessor extends ModelElementNodeProcessor<Table> {
 					((Action) label).getChildren(), 
 					"imported-keys.html", 
 					"Imported Keys", 
-					IMPORTED_KEY_ICON);
+					FOREIGN_KEY_ICON);
 			
 			for (Entry<EReferenceConnection, Collection<Label>> re: sorted) {
 				importedKeysAction.getChildren().addAll(re.getValue());

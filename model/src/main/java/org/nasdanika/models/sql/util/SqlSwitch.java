@@ -179,22 +179,22 @@ public class SqlSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SqlPackage.IMPORTED_KEY: {
-				ImportedKey importedKey = (ImportedKey)theEObject;
-				T result = caseImportedKey(importedKey);
-				if (result == null) result = caseDocumentedNamedElement(importedKey);
-				if (result == null) result = caseNamedElement(importedKey);
-				if (result == null) result = caseDocumented(importedKey);
-				if (result == null) result = caseModelElement(importedKey);
-				if (result == null) result = caseMarked(importedKey);
-				if (result == null) result = caseAdaptable(importedKey);
-				if (result == null) result = caseIMarked(importedKey);
+			case SqlPackage.FOREIGN_KEY: {
+				ForeignKey foreignKey = (ForeignKey)theEObject;
+				T result = caseForeignKey(foreignKey);
+				if (result == null) result = caseDocumentedNamedElement(foreignKey);
+				if (result == null) result = caseNamedElement(foreignKey);
+				if (result == null) result = caseDocumented(foreignKey);
+				if (result == null) result = caseModelElement(foreignKey);
+				if (result == null) result = caseMarked(foreignKey);
+				if (result == null) result = caseAdaptable(foreignKey);
+				if (result == null) result = caseIMarked(foreignKey);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SqlPackage.IMPORTED_KEY_COLUMN: {
-				ImportedKeyColumn importedKeyColumn = (ImportedKeyColumn)theEObject;
-				T result = caseImportedKeyColumn(importedKeyColumn);
+			case SqlPackage.FOREIGN_KEY_COLUMN: {
+				ForeignKeyColumn foreignKeyColumn = (ForeignKeyColumn)theEObject;
+				T result = caseForeignKeyColumn(foreignKeyColumn);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -323,32 +323,32 @@ public class SqlSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Imported Key</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Foreign Key</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Imported Key</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Foreign Key</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImportedKey(ImportedKey object) {
+	public T caseForeignKey(ForeignKey object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Imported Key Column</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Foreign Key Column</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Imported Key Column</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Foreign Key Column</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImportedKeyColumn(ImportedKeyColumn object) {
+	public T caseForeignKeyColumn(ForeignKeyColumn object) {
 		return null;
 	}
 

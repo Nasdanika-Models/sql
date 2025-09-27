@@ -7,12 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.Function;
 import java.util.Objects;
-import java.util.TreeMap;
-
 import org.eclipse.emf.common.util.EList;
 import org.nasdanika.common.Util;
 import org.nasdanika.models.sql.core.Connector;
@@ -202,8 +199,8 @@ public interface Database extends DocumentedNamedElement {
 					}
 					importedKeyRecords.sort((a,b) -> a.keySeq() - b.keySeq());
 					for (Entry<String, List<ImportedKeyRecord>> ike: Util.groupBy(importedKeyRecords, ImportedKeyRecord::fkName).entrySet()) {
-						ImportedKey importedKey = SqlFactory.eINSTANCE.createImportedKey();
-						importedKey.setName(ike.getKey());
+						ForeignKey foreignKey = SqlFactory.eINSTANCE.createForeignKey();
+						foreignKey.setName(ike.getKey());
 						for (ImportedKeyRecord ikr: ike.getValue()) {
 							Table pkTable = getCatalogs()
 								.stream()
@@ -215,14 +212,14 @@ public interface Database extends DocumentedNamedElement {
 								.findFirst()
 								.get();
 								
-							importedKey.setPrimaryKey(pkTable.getPrimaryKey());
-							importedKey.setDeferrability(switch (ikr.deferrability()) {
+							foreignKey.setPrimaryKey(pkTable.getPrimaryKey());
+							foreignKey.setDeferrability(switch (ikr.deferrability()) {
 								case DatabaseMetaData.importedKeyInitiallyDeferred -> Deferrability.INITIALLY_DEFERRED;
 								case DatabaseMetaData.importedKeyInitiallyImmediate -> Deferrability.INITIALLY_IMMEDIATE;
 								case DatabaseMetaData.importedKeyNotDeferrable -> Deferrability.NOT_DEFERRABLE;
 								default -> throw new IllegalArgumentException("Invalid deferrability value: " + ikr.deferrability());
 							});
-							importedKey.setUpdateRule(switch (ikr.updateRule()) {
+							foreignKey.setUpdateRule(switch (ikr.updateRule()) {
 								case DatabaseMetaData.importedKeyNoAction -> ImportedKeyRule.NO_ACTION;
 								case DatabaseMetaData.importedKeyCascade -> ImportedKeyRule.KEY_CASCADE;
 								case DatabaseMetaData.importedKeySetNull -> ImportedKeyRule.KEY_SET_NULL;
@@ -230,7 +227,7 @@ public interface Database extends DocumentedNamedElement {
 								case DatabaseMetaData.importedKeyRestrict -> ImportedKeyRule.KEY_RESTRICT;
 								default -> throw new IllegalArgumentException("Invalid deferrability value: " + ikr.deferrability());
 							});
-							importedKey.setDeleteRule(switch (ikr.deleteRule()) {
+							foreignKey.setDeleteRule(switch (ikr.deleteRule()) {
 								case DatabaseMetaData.importedKeyNoAction -> ImportedKeyRule.NO_ACTION;
 								case DatabaseMetaData.importedKeyCascade -> ImportedKeyRule.KEY_CASCADE;
 								case DatabaseMetaData.importedKeySetNull -> ImportedKeyRule.KEY_SET_NULL;
@@ -239,13 +236,13 @@ public interface Database extends DocumentedNamedElement {
 								default -> throw new IllegalArgumentException("Invalid deferrability value: " + ikr.deferrability());
 							});
 							
-							ImportedKeyColumn ikc = SqlFactory.eINSTANCE.createImportedKeyColumn();
-							ikc.setPkColumn(pkTable.getColumns().stream().filter(c -> c.getName().equals(ikr.pkColumn())).findAny().get());
-							ikc.setFkColumn(table.getColumns().stream().filter(c -> c.getName().equals(ikr.fkColumn())).findAny().get());							
+							ForeignKeyColumn fkc = SqlFactory.eINSTANCE.createForeignKeyColumn();
+							fkc.setPkColumn(pkTable.getColumns().stream().filter(c -> c.getName().equals(ikr.pkColumn())).findAny().get());
+							fkc.setFkColumn(table.getColumns().stream().filter(c -> c.getName().equals(ikr.fkColumn())).findAny().get());							
 							
-							importedKey.getColumns().add(ikc);
+							foreignKey.getColumns().add(fkc);
 						}
-						table.getImportedKeys().add(importedKey);
+						table.getImportedKeys().add(foreignKey);
 					}					
 				}
 			}

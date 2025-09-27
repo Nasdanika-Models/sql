@@ -91,7 +91,7 @@ public interface Table extends DocumentedNamedElement {
 
 	/**
 	 * Returns the value of the '<em><b>Imported Keys</b></em>' containment reference list.
-	 * The list contents are of type {@link org.nasdanika.models.sql.ImportedKey}.
+	 * The list contents are of type {@link org.nasdanika.models.sql.ForeignKey}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Imported Keys</em>' containment reference list.
@@ -99,7 +99,7 @@ public interface Table extends DocumentedNamedElement {
 	 * @model containment="true" keys="name"
 	 * @generated
 	 */
-	EList<ImportedKey> getImportedKeys();
+	EList<ForeignKey> getImportedKeys();
 	
 	default void load(
 			DatabaseMetaData databaseMetaData, 

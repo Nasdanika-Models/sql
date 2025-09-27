@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.nasdanika.models.sql.Column;
-import org.nasdanika.models.sql.ImportedKey;
+import org.nasdanika.models.sql.ForeignKey;
 import org.nasdanika.models.sql.PrimaryKey;
 import org.nasdanika.models.sql.SqlPackage;
 import org.nasdanika.models.sql.Table;
@@ -135,8 +135,8 @@ public class TableImpl extends DocumentedNamedElementImpl implements Table {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public EList<ImportedKey> getImportedKeys() {
-		return (EList<ImportedKey>)eDynamicGet(SqlPackage.TABLE__IMPORTED_KEYS, SqlPackage.Literals.TABLE__IMPORTED_KEYS, true, true);
+	public EList<ForeignKey> getImportedKeys() {
+		return (EList<ForeignKey>)eDynamicGet(SqlPackage.TABLE__IMPORTED_KEYS, SqlPackage.Literals.TABLE__IMPORTED_KEYS, true, true);
 	}
 
 	/**
@@ -199,7 +199,7 @@ public class TableImpl extends DocumentedNamedElementImpl implements Table {
 				return;
 			case SqlPackage.TABLE__IMPORTED_KEYS:
 				getImportedKeys().clear();
-				getImportedKeys().addAll((Collection<? extends ImportedKey>)newValue);
+				getImportedKeys().addAll((Collection<? extends ForeignKey>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

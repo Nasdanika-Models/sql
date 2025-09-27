@@ -150,11 +150,11 @@ public class SqlCommand extends CommandGroup implements Invocable.Invoker {
 	/**
 	 * Applies the argument function in a try-catch with resources block of {@link Connection}
 	 */
-	public <Т> Т apply(ConnectionFunction<Т> function) throws SQLException {
+	public <Т> Т apply(ConnectionFunction<Т> function, ProgressMonitor progressMonitor) throws SQLException {
 		Span commandSpan = getTracer().spanBuilder(getSpanName()).startSpan();
 		try (Scope scope = commandSpan.makeCurrent()) {
-	        try (ProgressMonitor progressMonitor =  progressMonitorMixIn.createProgressMonitor(1); Connection conn = getConnection(progressMonitor)) {
-	        	Т result = function.apply(conn);	
+	        try (Connection conn = getConnection(progressMonitor)) {
+	        	Т result = function.apply(conn, progressMonitor);	
 	        	commandSpan.setStatus(StatusCode.OK);
 	        	return result;
 	        }

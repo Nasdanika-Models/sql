@@ -109,12 +109,12 @@ public class SqlAdapterFactory extends AdapterFactoryImpl {
 				return createPrimaryKeyAdapter();
 			}
 			@Override
-			public Adapter caseImportedKey(ImportedKey object) {
-				return createImportedKeyAdapter();
+			public Adapter caseForeignKey(ForeignKey object) {
+				return createForeignKeyAdapter();
 			}
 			@Override
-			public Adapter caseImportedKeyColumn(ImportedKeyColumn object) {
-				return createImportedKeyColumnAdapter();
+			public Adapter caseForeignKeyColumn(ForeignKeyColumn object) {
+				return createForeignKeyColumnAdapter();
 			}
 			@Override
 			public Adapter caseIMarked(Marked object) {
@@ -277,30 +277,30 @@ public class SqlAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.sql.ImportedKey <em>Imported Key</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.sql.ForeignKey <em>Foreign Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.sql.ImportedKey
+	 * @see org.nasdanika.models.sql.ForeignKey
 	 * @generated
 	 */
-	public Adapter createImportedKeyAdapter() {
+	public Adapter createForeignKeyAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.sql.ImportedKeyColumn <em>Imported Key Column</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.sql.ForeignKeyColumn <em>Foreign Key Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.sql.ImportedKeyColumn
+	 * @see org.nasdanika.models.sql.ForeignKeyColumn
 	 * @generated
 	 */
-	public Adapter createImportedKeyColumnAdapter() {
+	public Adapter createForeignKeyColumnAdapter() {
 		return null;
 	}
 

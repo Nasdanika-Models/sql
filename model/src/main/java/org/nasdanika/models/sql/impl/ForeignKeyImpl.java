@@ -3,38 +3,43 @@
 package org.nasdanika.models.sql.impl;
 
 import java.util.Collection;
-import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.util.InternalEList;
+
 import org.nasdanika.models.sql.Deferrability;
-import org.nasdanika.models.sql.ImportedKey;
-import org.nasdanika.models.sql.ImportedKeyColumn;
+import org.nasdanika.models.sql.ForeignKey;
+import org.nasdanika.models.sql.ForeignKeyColumn;
 import org.nasdanika.models.sql.ImportedKeyRule;
 import org.nasdanika.models.sql.PrimaryKey;
 import org.nasdanika.models.sql.SqlPackage;
+
 import org.nasdanika.ncore.impl.DocumentedNamedElementImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Imported Key</b></em>'.
+ * An implementation of the model object '<em><b>Foreign Key</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.nasdanika.models.sql.impl.ImportedKeyImpl#getColumns <em>Columns</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.ImportedKeyImpl#getPrimaryKey <em>Primary Key</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.ImportedKeyImpl#getUpdateRule <em>Update Rule</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.ImportedKeyImpl#getDeleteRule <em>Delete Rule</em>}</li>
- *   <li>{@link org.nasdanika.models.sql.impl.ImportedKeyImpl#getDeferrability <em>Deferrability</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.impl.ForeignKeyImpl#getColumns <em>Columns</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.impl.ForeignKeyImpl#getPrimaryKey <em>Primary Key</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.impl.ForeignKeyImpl#getUpdateRule <em>Update Rule</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.impl.ForeignKeyImpl#getDeleteRule <em>Delete Rule</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.impl.ForeignKeyImpl#getDeferrability <em>Deferrability</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ImportedKeyImpl extends DocumentedNamedElementImpl implements ImportedKey {
+public class ForeignKeyImpl extends DocumentedNamedElementImpl implements ForeignKey {
 	/**
 	 * The default value of the '{@link #getUpdateRule() <em>Update Rule</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -44,6 +49,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 * @ordered
 	 */
 	protected static final ImportedKeyRule UPDATE_RULE_EDEFAULT = ImportedKeyRule.KEY_CASCADE;
+
 	/**
 	 * The default value of the '{@link #getDeleteRule() <em>Delete Rule</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,6 +59,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 * @ordered
 	 */
 	protected static final ImportedKeyRule DELETE_RULE_EDEFAULT = ImportedKeyRule.KEY_CASCADE;
+
 	/**
 	 * The default value of the '{@link #getDeferrability() <em>Deferrability</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -68,7 +75,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ImportedKeyImpl() {
+	protected ForeignKeyImpl() {
 		super();
 	}
 
@@ -79,7 +86,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return SqlPackage.Literals.IMPORTED_KEY;
+		return SqlPackage.Literals.FOREIGN_KEY;
 	}
 
 	/**
@@ -89,8 +96,8 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public EList<ImportedKeyColumn> getColumns() {
-		return (EList<ImportedKeyColumn>)eDynamicGet(SqlPackage.IMPORTED_KEY__COLUMNS, SqlPackage.Literals.IMPORTED_KEY__COLUMNS, true, true);
+	public EList<ForeignKeyColumn> getColumns() {
+		return (EList<ForeignKeyColumn>)eDynamicGet(SqlPackage.FOREIGN_KEY__COLUMNS, SqlPackage.Literals.FOREIGN_KEY__COLUMNS, true, true);
 	}
 
 	/**
@@ -100,7 +107,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public PrimaryKey getPrimaryKey() {
-		return (PrimaryKey)eDynamicGet(SqlPackage.IMPORTED_KEY__PRIMARY_KEY, SqlPackage.Literals.IMPORTED_KEY__PRIMARY_KEY, true, true);
+		return (PrimaryKey)eDynamicGet(SqlPackage.FOREIGN_KEY__PRIMARY_KEY, SqlPackage.Literals.FOREIGN_KEY__PRIMARY_KEY, true, true);
 	}
 
 	/**
@@ -109,7 +116,17 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 * @generated
 	 */
 	public PrimaryKey basicGetPrimaryKey() {
-		return (PrimaryKey)eDynamicGet(SqlPackage.IMPORTED_KEY__PRIMARY_KEY, SqlPackage.Literals.IMPORTED_KEY__PRIMARY_KEY, false, true);
+		return (PrimaryKey)eDynamicGet(SqlPackage.FOREIGN_KEY__PRIMARY_KEY, SqlPackage.Literals.FOREIGN_KEY__PRIMARY_KEY, false, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetPrimaryKey(PrimaryKey newPrimaryKey, NotificationChain msgs) {
+		msgs = eDynamicInverseAdd((InternalEObject)newPrimaryKey, SqlPackage.FOREIGN_KEY__PRIMARY_KEY, msgs);
+		return msgs;
 	}
 
 	/**
@@ -119,7 +136,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public void setPrimaryKey(PrimaryKey newPrimaryKey) {
-		eDynamicSet(SqlPackage.IMPORTED_KEY__PRIMARY_KEY, SqlPackage.Literals.IMPORTED_KEY__PRIMARY_KEY, newPrimaryKey);
+		eDynamicSet(SqlPackage.FOREIGN_KEY__PRIMARY_KEY, SqlPackage.Literals.FOREIGN_KEY__PRIMARY_KEY, newPrimaryKey);
 	}
 
 	/**
@@ -129,7 +146,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public ImportedKeyRule getUpdateRule() {
-		return (ImportedKeyRule)eDynamicGet(SqlPackage.IMPORTED_KEY__UPDATE_RULE, SqlPackage.Literals.IMPORTED_KEY__UPDATE_RULE, true, true);
+		return (ImportedKeyRule)eDynamicGet(SqlPackage.FOREIGN_KEY__UPDATE_RULE, SqlPackage.Literals.FOREIGN_KEY__UPDATE_RULE, true, true);
 	}
 
 	/**
@@ -139,7 +156,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public void setUpdateRule(ImportedKeyRule newUpdateRule) {
-		eDynamicSet(SqlPackage.IMPORTED_KEY__UPDATE_RULE, SqlPackage.Literals.IMPORTED_KEY__UPDATE_RULE, newUpdateRule);
+		eDynamicSet(SqlPackage.FOREIGN_KEY__UPDATE_RULE, SqlPackage.Literals.FOREIGN_KEY__UPDATE_RULE, newUpdateRule);
 	}
 
 	/**
@@ -149,7 +166,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public ImportedKeyRule getDeleteRule() {
-		return (ImportedKeyRule)eDynamicGet(SqlPackage.IMPORTED_KEY__DELETE_RULE, SqlPackage.Literals.IMPORTED_KEY__DELETE_RULE, true, true);
+		return (ImportedKeyRule)eDynamicGet(SqlPackage.FOREIGN_KEY__DELETE_RULE, SqlPackage.Literals.FOREIGN_KEY__DELETE_RULE, true, true);
 	}
 
 	/**
@@ -159,7 +176,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public void setDeleteRule(ImportedKeyRule newDeleteRule) {
-		eDynamicSet(SqlPackage.IMPORTED_KEY__DELETE_RULE, SqlPackage.Literals.IMPORTED_KEY__DELETE_RULE, newDeleteRule);
+		eDynamicSet(SqlPackage.FOREIGN_KEY__DELETE_RULE, SqlPackage.Literals.FOREIGN_KEY__DELETE_RULE, newDeleteRule);
 	}
 
 	/**
@@ -169,7 +186,7 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public Deferrability getDeferrability() {
-		return (Deferrability)eDynamicGet(SqlPackage.IMPORTED_KEY__DEFERRABILITY, SqlPackage.Literals.IMPORTED_KEY__DEFERRABILITY, true, true);
+		return (Deferrability)eDynamicGet(SqlPackage.FOREIGN_KEY__DEFERRABILITY, SqlPackage.Literals.FOREIGN_KEY__DEFERRABILITY, true, true);
 	}
 
 	/**
@@ -179,7 +196,24 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	 */
 	@Override
 	public void setDeferrability(Deferrability newDeferrability) {
-		eDynamicSet(SqlPackage.IMPORTED_KEY__DEFERRABILITY, SqlPackage.Literals.IMPORTED_KEY__DEFERRABILITY, newDeferrability);
+		eDynamicSet(SqlPackage.FOREIGN_KEY__DEFERRABILITY, SqlPackage.Literals.FOREIGN_KEY__DEFERRABILITY, newDeferrability);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case SqlPackage.FOREIGN_KEY__PRIMARY_KEY:
+				PrimaryKey primaryKey = basicGetPrimaryKey();
+				if (primaryKey != null)
+					msgs = ((InternalEObject)primaryKey).eInverseRemove(this, SqlPackage.PRIMARY_KEY__EXPORTED_KEYS, PrimaryKey.class, msgs);
+				return basicSetPrimaryKey((PrimaryKey)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -190,8 +224,10 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case SqlPackage.IMPORTED_KEY__COLUMNS:
+			case SqlPackage.FOREIGN_KEY__COLUMNS:
 				return ((InternalEList<?>)getColumns()).basicRemove(otherEnd, msgs);
+			case SqlPackage.FOREIGN_KEY__PRIMARY_KEY:
+				return basicSetPrimaryKey(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -204,16 +240,16 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case SqlPackage.IMPORTED_KEY__COLUMNS:
+			case SqlPackage.FOREIGN_KEY__COLUMNS:
 				return getColumns();
-			case SqlPackage.IMPORTED_KEY__PRIMARY_KEY:
+			case SqlPackage.FOREIGN_KEY__PRIMARY_KEY:
 				if (resolve) return getPrimaryKey();
 				return basicGetPrimaryKey();
-			case SqlPackage.IMPORTED_KEY__UPDATE_RULE:
+			case SqlPackage.FOREIGN_KEY__UPDATE_RULE:
 				return getUpdateRule();
-			case SqlPackage.IMPORTED_KEY__DELETE_RULE:
+			case SqlPackage.FOREIGN_KEY__DELETE_RULE:
 				return getDeleteRule();
-			case SqlPackage.IMPORTED_KEY__DEFERRABILITY:
+			case SqlPackage.FOREIGN_KEY__DEFERRABILITY:
 				return getDeferrability();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -228,20 +264,20 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case SqlPackage.IMPORTED_KEY__COLUMNS:
+			case SqlPackage.FOREIGN_KEY__COLUMNS:
 				getColumns().clear();
-				getColumns().addAll((Collection<? extends ImportedKeyColumn>)newValue);
+				getColumns().addAll((Collection<? extends ForeignKeyColumn>)newValue);
 				return;
-			case SqlPackage.IMPORTED_KEY__PRIMARY_KEY:
+			case SqlPackage.FOREIGN_KEY__PRIMARY_KEY:
 				setPrimaryKey((PrimaryKey)newValue);
 				return;
-			case SqlPackage.IMPORTED_KEY__UPDATE_RULE:
+			case SqlPackage.FOREIGN_KEY__UPDATE_RULE:
 				setUpdateRule((ImportedKeyRule)newValue);
 				return;
-			case SqlPackage.IMPORTED_KEY__DELETE_RULE:
+			case SqlPackage.FOREIGN_KEY__DELETE_RULE:
 				setDeleteRule((ImportedKeyRule)newValue);
 				return;
-			case SqlPackage.IMPORTED_KEY__DEFERRABILITY:
+			case SqlPackage.FOREIGN_KEY__DEFERRABILITY:
 				setDeferrability((Deferrability)newValue);
 				return;
 		}
@@ -256,19 +292,19 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case SqlPackage.IMPORTED_KEY__COLUMNS:
+			case SqlPackage.FOREIGN_KEY__COLUMNS:
 				getColumns().clear();
 				return;
-			case SqlPackage.IMPORTED_KEY__PRIMARY_KEY:
+			case SqlPackage.FOREIGN_KEY__PRIMARY_KEY:
 				setPrimaryKey((PrimaryKey)null);
 				return;
-			case SqlPackage.IMPORTED_KEY__UPDATE_RULE:
+			case SqlPackage.FOREIGN_KEY__UPDATE_RULE:
 				setUpdateRule(UPDATE_RULE_EDEFAULT);
 				return;
-			case SqlPackage.IMPORTED_KEY__DELETE_RULE:
+			case SqlPackage.FOREIGN_KEY__DELETE_RULE:
 				setDeleteRule(DELETE_RULE_EDEFAULT);
 				return;
-			case SqlPackage.IMPORTED_KEY__DEFERRABILITY:
+			case SqlPackage.FOREIGN_KEY__DEFERRABILITY:
 				setDeferrability(DEFERRABILITY_EDEFAULT);
 				return;
 		}
@@ -283,18 +319,18 @@ public class ImportedKeyImpl extends DocumentedNamedElementImpl implements Impor
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case SqlPackage.IMPORTED_KEY__COLUMNS:
+			case SqlPackage.FOREIGN_KEY__COLUMNS:
 				return !getColumns().isEmpty();
-			case SqlPackage.IMPORTED_KEY__PRIMARY_KEY:
+			case SqlPackage.FOREIGN_KEY__PRIMARY_KEY:
 				return basicGetPrimaryKey() != null;
-			case SqlPackage.IMPORTED_KEY__UPDATE_RULE:
+			case SqlPackage.FOREIGN_KEY__UPDATE_RULE:
 				return getUpdateRule() != UPDATE_RULE_EDEFAULT;
-			case SqlPackage.IMPORTED_KEY__DELETE_RULE:
+			case SqlPackage.FOREIGN_KEY__DELETE_RULE:
 				return getDeleteRule() != DELETE_RULE_EDEFAULT;
-			case SqlPackage.IMPORTED_KEY__DEFERRABILITY:
+			case SqlPackage.FOREIGN_KEY__DEFERRABILITY:
 				return getDeferrability() != DEFERRABILITY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //ImportedKeyImpl
+} //ForeignKeyImpl

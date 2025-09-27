@@ -157,7 +157,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="primaryKey" eType="#//PrimaryKey"
         containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="importedKeys" upperBound="-1"
-        eType="#//ImportedKey" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+        eType="#//ForeignKey" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Column" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//DataType"/>
@@ -265,12 +265,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="PrimaryKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="columns" lowerBound="1"
         upperBound="-1" eType="#//Column"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="exportedKeys" eType="#//ForeignKey"
+        eOpposite="#//ForeignKey/primaryKey"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ImportedKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
+  <eClassifiers xsi:type="ecore:EClass" name="ForeignKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="columns" upperBound="-1"
-        eType="#//ImportedKeyColumn" containment="true"/>
+        eType="#//ForeignKeyColumn" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="primaryKey" lowerBound="1"
-        eType="#//PrimaryKey"/>
+        eType="#//PrimaryKey" eOpposite="#//PrimaryKey/exportedKeys"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateRule" eType="#//ImportedKeyRule">
       <eAnnotations source="urn:org.nasdanika.models.sql">
         <details key="enum-value" value="UPDATE_RULE"/>
@@ -287,7 +289,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ImportedKeyColumn">
+  <eClassifiers xsi:type="ecore:EClass" name="ForeignKeyColumn">
     <eStructuralFeatures xsi:type="ecore:EReference" name="fkColumn" lowerBound="1"
         eType="#//Column"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="pkColumn" lowerBound="1"
