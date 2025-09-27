@@ -267,8 +267,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="PrimaryKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="columns" lowerBound="1"
         upperBound="-1" eType="#//Column"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="exportedKeys" eType="#//ForeignKey"
-        eOpposite="#//ForeignKey/primaryKey"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="exportedKeys" upperBound="-1"
+        eType="#//ForeignKey" eOpposite="#//ForeignKey/primaryKey"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ForeignKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="columns" upperBound="-1"

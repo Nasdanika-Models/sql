@@ -1463,7 +1463,7 @@ public interface SqlPackage extends EPackage {
 	int PRIMARY_KEY__COLUMNS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Exported Keys</b></em>' reference.
+	 * The feature id for the '<em><b>Exported Keys</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2394,10 +2394,10 @@ public interface SqlPackage extends EPackage {
 	EReference getPrimaryKey_Columns();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.nasdanika.models.sql.PrimaryKey#getExportedKeys <em>Exported Keys</em>}'.
+	 * Returns the meta object for the reference list '{@link org.nasdanika.models.sql.PrimaryKey#getExportedKeys <em>Exported Keys</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Exported Keys</em>'.
+	 * @return the meta object for the reference list '<em>Exported Keys</em>'.
 	 * @see org.nasdanika.models.sql.PrimaryKey#getExportedKeys()
 	 * @see #getPrimaryKey()
 	 * @generated
@@ -3059,7 +3059,7 @@ public interface SqlPackage extends EPackage {
 		EReference PRIMARY_KEY__COLUMNS = eINSTANCE.getPrimaryKey_Columns();
 
 		/**
-		 * The meta object literal for the '<em><b>Exported Keys</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Exported Keys</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

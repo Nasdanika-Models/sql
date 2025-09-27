@@ -248,7 +248,6 @@ public interface Database extends DocumentedNamedElement {
 						
 						PrimaryKey primaryKey = Objects.requireNonNull(pkTable.getPrimaryKey());
 						foreignKey.setPrimaryKey(primaryKey);
-						System.out.println(foreignKey.getName() + " -> " + primaryKey.getName());						
 					}					
 				}
 			}

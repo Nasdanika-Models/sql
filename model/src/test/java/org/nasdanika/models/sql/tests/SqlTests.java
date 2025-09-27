@@ -1,5 +1,7 @@
 package org.nasdanika.models.sql.tests;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 import java.io.File;
 import java.nio.file.Files;
 import java.sql.Connection;
@@ -18,6 +20,9 @@ import org.nasdanika.common.PrintStreamProgressMonitor;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Database;
+import org.nasdanika.models.sql.ForeignKey;
+import org.nasdanika.models.sql.Schema;
+import org.nasdanika.models.sql.Table;
 import org.nasdanika.models.sql.util.DiagramGenerator;
 import org.nasdanika.models.sql.util.DiagramGenerator.CatalogGenerationResult;
 
@@ -64,6 +69,17 @@ public class SqlTests {
             stmt.execute(SCRIPT);
             
             Database database = Database.create(conn.getMetaData(), null, null, null);
+            
+    		for (Catalog catalog: database.getCatalogs()) {
+    			for (Schema schema: catalog.getSchemas()) {
+    				for (Table table: schema.getTables()) {
+    					for (ForeignKey ik: table.getImportedKeys()) {
+    						assertNotNull(ik.getPrimaryKey(), catalog.getName() + "." + schema.getName() + "." + table.getName() + "." + ik.getName());    						
+    					}
+    				}
+    			}
+    		}
+
             
     		CapabilityLoader capabilityLoader = new CapabilityLoader();
     		ProgressMonitor progressMonitor = new PrintStreamProgressMonitor();

@@ -37,26 +37,16 @@ public interface PrimaryKey extends DocumentedNamedElement {
 	EList<Column> getColumns();
 
 	/**
-	 * Returns the value of the '<em><b>Exported Keys</b></em>' reference.
+	 * Returns the value of the '<em><b>Exported Keys</b></em>' reference list.
+	 * The list contents are of type {@link org.nasdanika.models.sql.ForeignKey}.
 	 * It is bidirectional and its opposite is '{@link org.nasdanika.models.sql.ForeignKey#getPrimaryKey <em>Primary Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Exported Keys</em>' reference.
-	 * @see #setExportedKeys(ForeignKey)
+	 * @return the value of the '<em>Exported Keys</em>' reference list.
 	 * @see org.nasdanika.models.sql.SqlPackage#getPrimaryKey_ExportedKeys()
 	 * @see org.nasdanika.models.sql.ForeignKey#getPrimaryKey
 	 * @model opposite="primaryKey"
 	 * @generated
 	 */
-	ForeignKey getExportedKeys();
-
-	/**
-	 * Sets the value of the '{@link org.nasdanika.models.sql.PrimaryKey#getExportedKeys <em>Exported Keys</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Exported Keys</em>' reference.
-	 * @see #getExportedKeys()
-	 * @generated
-	 */
-	void setExportedKeys(ForeignKey value);
+	EList<ForeignKey> getExportedKeys();
 } // PrimaryKey

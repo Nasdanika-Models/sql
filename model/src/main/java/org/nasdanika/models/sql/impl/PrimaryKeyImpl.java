@@ -8,6 +8,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.nasdanika.models.sql.Column;
 import org.nasdanika.models.sql.ForeignKey;
 import org.nasdanika.models.sql.PrimaryKey;
@@ -65,9 +66,10 @@ public class PrimaryKeyImpl extends DocumentedNamedElementImpl implements Primar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
-	public ForeignKey getExportedKeys() {
-		return (ForeignKey)eDynamicGet(SqlPackage.PRIMARY_KEY__EXPORTED_KEYS, SqlPackage.Literals.PRIMARY_KEY__EXPORTED_KEYS, true, true);
+	public EList<ForeignKey> getExportedKeys() {
+		return (EList<ForeignKey>)eDynamicGet(SqlPackage.PRIMARY_KEY__EXPORTED_KEYS, SqlPackage.Literals.PRIMARY_KEY__EXPORTED_KEYS, true, true);
 	}
 
 	/**
@@ -75,43 +77,12 @@ public class PrimaryKeyImpl extends DocumentedNamedElementImpl implements Primar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ForeignKey basicGetExportedKeys() {
-		return (ForeignKey)eDynamicGet(SqlPackage.PRIMARY_KEY__EXPORTED_KEYS, SqlPackage.Literals.PRIMARY_KEY__EXPORTED_KEYS, false, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetExportedKeys(ForeignKey newExportedKeys, NotificationChain msgs) {
-		msgs = eDynamicInverseAdd((InternalEObject)newExportedKeys, SqlPackage.PRIMARY_KEY__EXPORTED_KEYS, msgs);
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setExportedKeys(ForeignKey newExportedKeys) {
-		eDynamicSet(SqlPackage.PRIMARY_KEY__EXPORTED_KEYS, SqlPackage.Literals.PRIMARY_KEY__EXPORTED_KEYS, newExportedKeys);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case SqlPackage.PRIMARY_KEY__EXPORTED_KEYS:
-				ForeignKey exportedKeys = basicGetExportedKeys();
-				if (exportedKeys != null)
-					msgs = ((InternalEObject)exportedKeys).eInverseRemove(this, SqlPackage.FOREIGN_KEY__PRIMARY_KEY, ForeignKey.class, msgs);
-				return basicSetExportedKeys((ForeignKey)otherEnd, msgs);
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getExportedKeys()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -125,7 +96,7 @@ public class PrimaryKeyImpl extends DocumentedNamedElementImpl implements Primar
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case SqlPackage.PRIMARY_KEY__EXPORTED_KEYS:
-				return basicSetExportedKeys(null, msgs);
+				return ((InternalEList<?>)getExportedKeys()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -141,8 +112,7 @@ public class PrimaryKeyImpl extends DocumentedNamedElementImpl implements Primar
 			case SqlPackage.PRIMARY_KEY__COLUMNS:
 				return getColumns();
 			case SqlPackage.PRIMARY_KEY__EXPORTED_KEYS:
-				if (resolve) return getExportedKeys();
-				return basicGetExportedKeys();
+				return getExportedKeys();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -161,7 +131,8 @@ public class PrimaryKeyImpl extends DocumentedNamedElementImpl implements Primar
 				getColumns().addAll((Collection<? extends Column>)newValue);
 				return;
 			case SqlPackage.PRIMARY_KEY__EXPORTED_KEYS:
-				setExportedKeys((ForeignKey)newValue);
+				getExportedKeys().clear();
+				getExportedKeys().addAll((Collection<? extends ForeignKey>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -179,7 +150,7 @@ public class PrimaryKeyImpl extends DocumentedNamedElementImpl implements Primar
 				getColumns().clear();
 				return;
 			case SqlPackage.PRIMARY_KEY__EXPORTED_KEYS:
-				setExportedKeys((ForeignKey)null);
+				getExportedKeys().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -196,7 +167,7 @@ public class PrimaryKeyImpl extends DocumentedNamedElementImpl implements Primar
 			case SqlPackage.PRIMARY_KEY__COLUMNS:
 				return !getColumns().isEmpty();
 			case SqlPackage.PRIMARY_KEY__EXPORTED_KEYS:
-				return basicGetExportedKeys() != null;
+				return !getExportedKeys().isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
