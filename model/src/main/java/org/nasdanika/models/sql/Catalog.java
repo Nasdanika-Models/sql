@@ -42,22 +42,41 @@ public interface Catalog extends DocumentedNamedElement {
 	default void load(
 			DatabaseMetaData databaseMetaData, 
 			ResultSet resultSet,
+			String schemaPattern,
 			Function<String,TableType> tableTypeResolver,
-			Function<String,DataType> dataTypeResolver) throws SQLException {
+			Function<String,DataType> dataTypeResolver, 
+			String tableNamePattern, 
+			String[] tableTypes) throws SQLException {
 		setName(resultSet.getString("TABLE_CAT"));		
-		ResultSet schemas = databaseMetaData.getSchemas(getName(), null);
+		ResultSet schemas = databaseMetaData.getSchemas(getName(), schemaPattern);
 		while (schemas.next()) {
-			getSchemas().add(Schema.create(databaseMetaData, schemas, tableTypeResolver, dataTypeResolver));
+			getSchemas().add(Schema.create(
+					databaseMetaData, 
+					schemas, 
+					tableTypeResolver, 
+					dataTypeResolver,
+					tableNamePattern,
+					tableTypes));
 		}								
 	}
 	
 	static Catalog create(
 			DatabaseMetaData databaseMetaData, 
 			ResultSet resultSet,
+			String schemaPattern,
 			Function<String,TableType> tableTypeResolver,
-			Function<String,DataType> dataTypeResolver) throws SQLException {
+			Function<String,DataType> dataTypeResolver,
+			String tableNamePattern, 
+			String[] tableTypes) throws SQLException {
 		Catalog catalog = SqlFactory.eINSTANCE.createCatalog();
-		catalog.load(databaseMetaData, resultSet, tableTypeResolver, dataTypeResolver);
+		catalog.load(
+				databaseMetaData, 
+				resultSet, 
+				schemaPattern,
+				tableTypeResolver, 
+				dataTypeResolver, 
+				tableNamePattern,
+				tableTypes);
 		return catalog;		
 	}
 

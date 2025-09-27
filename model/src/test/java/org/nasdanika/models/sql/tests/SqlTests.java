@@ -58,7 +58,7 @@ public class SqlTests {
 
             stmt.execute(SCRIPT);
             
-            Database database = Database.create(conn.getMetaData());
+            Database database = Database.create(conn.getMetaData(), null, null, null);
             
     		CapabilityLoader capabilityLoader = new CapabilityLoader();
     		ProgressMonitor progressMonitor = new PrintStreamProgressMonitor();

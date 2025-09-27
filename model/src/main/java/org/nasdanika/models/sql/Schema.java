@@ -44,9 +44,17 @@ public interface Schema extends DocumentedNamedElement {
 			DatabaseMetaData databaseMetaData, 
 			ResultSet resultSet,
 			Function<String,TableType> tableTypeResolver,
-			Function<String,DataType> dataTypeResolver) throws SQLException {
+			Function<String,DataType> dataTypeResolver, 
+			String tableNamePattern, 
+			String[] tableTypes) throws SQLException {
+		
 		setName(resultSet.getString("TABLE_SCHEM"));		
-		ResultSet tables = databaseMetaData.getTables(resultSet.getString("TABLE_CATALOG"),  getName(), null, null);
+		ResultSet tables = databaseMetaData.getTables(
+				resultSet.getString("TABLE_CATALOG"),
+				getName(), 
+				tableNamePattern, 
+				tableTypes);
+		
 		while (tables.next()) {
 			getTables().add(Table.create(databaseMetaData, tables, tableTypeResolver, dataTypeResolver));
 		}								
@@ -56,9 +64,19 @@ public interface Schema extends DocumentedNamedElement {
 			DatabaseMetaData databaseMetaData, 
 			ResultSet resultSet,
 			Function<String,TableType> tableTypeResolver,
-			Function<String,DataType> dataTypeResolver) throws SQLException {
+			Function<String,DataType> dataTypeResolver,
+			String tableNamePattern, 
+			String[] tableTypes) throws SQLException {
 		Schema schema = SqlFactory.eINSTANCE.createSchema();
-		schema.load(databaseMetaData, resultSet, tableTypeResolver, dataTypeResolver);
+		
+		schema.load(
+				databaseMetaData, 
+				resultSet, 
+				tableTypeResolver, 
+				dataTypeResolver, 
+				tableNamePattern, 
+				tableTypes);
+		
 		return schema;		
 	}	
 

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.function.Function;
 import java.util.Objects;
 import java.util.TreeMap;
 
@@ -131,12 +132,16 @@ public interface Database extends DocumentedNamedElement {
 	 */
 	EList<Catalog> getCatalogs();
 	
-	default void load(DatabaseMetaData databaseMetaData) throws SQLException {
+	default void load(
+			DatabaseMetaData databaseMetaData,
+			String schemaPattern,
+			String tableNamePattern, 
+			String[] tableTypes) throws SQLException {
 		setUrl(databaseMetaData.getURL());
-		ResultSet tableTypes = databaseMetaData.getTableTypes();
-		while (tableTypes.next()) {
+		ResultSet tableTypesRs = databaseMetaData.getTableTypes();
+		while (tableTypesRs.next()) {
 			TableType tType = SqlFactory.eINSTANCE.createTableType();
-			tType.setName(tableTypes.getString("TABLE_TYPE"));
+			tType.setName(tableTypesRs.getString("TABLE_TYPE"));
 			getTableTypes().add(tType);
 		}
 		ResultSet dataTypes = databaseMetaData.getTypeInfo();
@@ -148,11 +153,16 @@ public interface Database extends DocumentedNamedElement {
 		}		
 		ResultSet catalogs = databaseMetaData.getCatalogs();
 		while (catalogs.next()) {
+			Function<String,TableType> tableTypeResolver = tableTypeName -> getTableTypes().stream().filter(tt -> Objects.equals(tt.getName(), tableTypeName)).findFirst().orElse(null);
+			Function<String,DataType> dataTypeResolver = dataTypeName -> getDataTypes().stream().filter(dt -> Objects.equals(dt.getName(), dataTypeName)).findFirst().orElse(null); 
 			getCatalogs().add(Catalog.create(
 					databaseMetaData, 
 					catalogs,
-					tableTypeName -> getTableTypes().stream().filter(tt -> Objects.equals(tt.getName(), tableTypeName)).findFirst().orElse(null),
-					dataTypeName -> getDataTypes().stream().filter(dt -> Objects.equals(dt.getName(), dataTypeName)).findFirst().orElse(null)));						
+					schemaPattern,
+					tableTypeResolver,
+					dataTypeResolver,
+					tableNamePattern,
+					tableTypes));						
 		}
 		
 		record ImportedKeyRecord(
@@ -242,9 +252,13 @@ public interface Database extends DocumentedNamedElement {
 		}
 	}
 	
-	static Database create(DatabaseMetaData databaseMetaData) throws SQLException {
+	static Database create(
+			DatabaseMetaData databaseMetaData,
+			String schemaPattern,
+			String tableNamePattern, 
+			String[] tableTypes) throws SQLException {
 		Database db = SqlFactory.eINSTANCE.createDatabase();
-		db.load(databaseMetaData);
+		db.load(databaseMetaData, schemaPattern, tableNamePattern, tableTypes);
 		return db;
 	}
 

@@ -1,4 +1,5 @@
 import org.nasdanika.capability.CapabilityFactory;
+import org.nasdanika.models.sql.cli.MetaDataCommandFactory;
 import org.nasdanika.models.sql.cli.SqlCommandFactory;
 
 module org.nasdanika.models.crewai.cli {
@@ -10,6 +11,7 @@ module org.nasdanika.models.crewai.cli {
 	opens org.nasdanika.models.sql.cli;
 		
 	provides CapabilityFactory with 
-		SqlCommandFactory;
+		SqlCommandFactory,
+		MetaDataCommandFactory;
 
 }
