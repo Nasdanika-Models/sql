@@ -1,5 +1,7 @@
 package org.nasdanika.models.sql.tests;
 
+import java.io.File;
+import java.nio.file.Files;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -14,7 +16,10 @@ import org.nasdanika.capability.ServiceCapabilityFactory.Requirement;
 import org.nasdanika.capability.emf.ResourceSetRequirement;
 import org.nasdanika.common.PrintStreamProgressMonitor;
 import org.nasdanika.common.ProgressMonitor;
+import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Database;
+import org.nasdanika.models.sql.util.DiagramGenerator;
+import org.nasdanika.models.sql.util.DiagramGenerator.CatalogGenerationResult;
 
 public class SqlTests {
 	
@@ -71,6 +76,24 @@ public class SqlTests {
             
         }		
 	}
+
+	@Test
+	public void testGenerateDiagram() throws Exception {
+        String url = "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1";
+        try (Connection conn = DriverManager.getConnection(url, "sa", "");
+             Statement stmt = conn.createStatement()) {
+
+            stmt.execute(SCRIPT);
+            
+            Database database = Database.create(conn.getMetaData(), null, null, null);
+            
+    		DiagramGenerator diagramGenerator = new DiagramGenerator();
+    		for (Catalog catalog: database.getCatalogs()) {
+    			CatalogGenerationResult cr = diagramGenerator.generateCatalog(catalog, null, null, 1920, 1080);
+				Files.writeString(new File("target/" + catalog.getName() + ".drawio").toPath(), cr.document().save(null));   			
+    		}            
+        }		
+	}	
 	
 	@Test
 	public void testCreateFileDB() throws Exception {

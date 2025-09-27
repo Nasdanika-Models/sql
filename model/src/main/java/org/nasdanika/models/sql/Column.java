@@ -40,6 +40,7 @@ import org.nasdanika.ncore.DocumentedNamedElement;
  *   <li>{@link org.nasdanika.models.sql.Column#getSourceDataType <em>Source Data Type</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.Column#getIsAutoincrement <em>Is Autoincrement</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.Column#getIsGeneratedcolumn <em>Is Generatedcolumn</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.Column#getNonNulls <em>Non Nulls</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.sql.SqlPackage#getColumn()
@@ -511,6 +512,28 @@ public interface Column extends DocumentedNamedElement {
 	 * @generated
 	 */
 	void setIsGeneratedcolumn(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Non Nulls</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Non Nulls</em>' attribute.
+	 * @see #setNonNulls(Long)
+	 * @see org.nasdanika.models.sql.SqlPackage#getColumn_NonNulls()
+	 * @model
+	 * @generated
+	 */
+	Long getNonNulls();
+
+	/**
+	 * Sets the value of the '{@link org.nasdanika.models.sql.Column#getNonNulls <em>Non Nulls</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Non Nulls</em>' attribute.
+	 * @see #getNonNulls()
+	 * @generated
+	 */
+	void setNonNulls(Long value);
 
 	default void load(
 			DatabaseMetaData databaseMetaData, 

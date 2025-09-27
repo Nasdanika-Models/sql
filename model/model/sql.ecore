@@ -158,6 +158,7 @@
         containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="importedKeys" upperBound="-1"
         eType="#//ForeignKey" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//NamedElement/name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rows" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Column" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//DataType"/>
@@ -261,6 +262,7 @@
         <details key="column" value="IS_GENERATEDCOLUMN"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nonNulls" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PrimaryKey" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="columns" lowerBound="1"

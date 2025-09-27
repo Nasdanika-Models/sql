@@ -201,18 +201,20 @@ public interface Database extends DocumentedNamedElement {
 					for (Entry<String, List<ImportedKeyRecord>> ike: Util.groupBy(importedKeyRecords, ImportedKeyRecord::fkName).entrySet()) {
 						ForeignKey foreignKey = SqlFactory.eINSTANCE.createForeignKey();
 						foreignKey.setName(ike.getKey());
+						Table pkTable = null;						
 						for (ImportedKeyRecord ikr: ike.getValue()) {
-							Table pkTable = getCatalogs()
-								.stream()
-								.filter(c -> c.getName().equals(ikr.pkCatalog()))
-								.flatMap(c -> c.getSchemas().stream())
-								.filter(s -> s.getName().equals(ikr.pkSchema()))
-								.flatMap(s -> s.getTables().stream())
-								.filter(t -> t.getName().equals(ikr.pkTable()))
-								.findFirst()
-								.get();
+							if (pkTable == null) {
+								pkTable = getCatalogs()
+									.stream()
+									.filter(c -> c.getName().equals(ikr.pkCatalog()))
+									.flatMap(c -> c.getSchemas().stream())
+									.filter(s -> s.getName().equals(ikr.pkSchema()))
+									.flatMap(s -> s.getTables().stream())
+									.filter(t -> t.getName().equals(ikr.pkTable()))
+									.findFirst()
+									.get();
+							}
 								
-							foreignKey.setPrimaryKey(pkTable.getPrimaryKey());
 							foreignKey.setDeferrability(switch (ikr.deferrability()) {
 								case DatabaseMetaData.importedKeyInitiallyDeferred -> Deferrability.INITIALLY_DEFERRED;
 								case DatabaseMetaData.importedKeyInitiallyImmediate -> Deferrability.INITIALLY_IMMEDIATE;
@@ -243,6 +245,10 @@ public interface Database extends DocumentedNamedElement {
 							foreignKey.getColumns().add(fkc);
 						}
 						table.getImportedKeys().add(foreignKey);
+						
+						PrimaryKey primaryKey = Objects.requireNonNull(pkTable.getPrimaryKey());
+						foreignKey.setPrimaryKey(primaryKey);
+						System.out.println(foreignKey.getName() + " -> " + primaryKey.getName());						
 					}					
 				}
 			}

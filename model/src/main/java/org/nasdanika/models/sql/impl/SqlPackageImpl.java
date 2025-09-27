@@ -545,6 +545,16 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getTable_Rows() {
+		return (EAttribute)tableEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getColumn() {
 		return columnEClass;
 	}
@@ -757,6 +767,16 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 	@Override
 	public EAttribute getColumn_IsGeneratedcolumn() {
 		return (EAttribute)columnEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getColumn_NonNulls() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(21);
 	}
 
 	/**
@@ -978,6 +998,7 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		createEReference(tableEClass, TABLE__COLUMNS);
 		createEReference(tableEClass, TABLE__PRIMARY_KEY);
 		createEReference(tableEClass, TABLE__IMPORTED_KEYS);
+		createEAttribute(tableEClass, TABLE__ROWS);
 
 		columnEClass = createEClass(COLUMN);
 		createEReference(columnEClass, COLUMN__TYPE);
@@ -1001,6 +1022,7 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		createEAttribute(columnEClass, COLUMN__SOURCE_DATA_TYPE);
 		createEAttribute(columnEClass, COLUMN__IS_AUTOINCREMENT);
 		createEAttribute(columnEClass, COLUMN__IS_GENERATEDCOLUMN);
+		createEAttribute(columnEClass, COLUMN__NON_NULLS);
 
 		primaryKeyEClass = createEClass(PRIMARY_KEY);
 		createEReference(primaryKeyEClass, PRIMARY_KEY__COLUMNS);
@@ -1113,6 +1135,7 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		getTable_PrimaryKey().getEKeys().add(theNcorePackage.getNamedElement_Name());
 		initEReference(getTable_ImportedKeys(), this.getForeignKey(), null, "importedKeys", null, 0, -1, Table.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTable_ImportedKeys().getEKeys().add(theNcorePackage.getNamedElement_Name());
+		initEAttribute(getTable_Rows(), ecorePackage.getELongObject(), "rows", null, 0, 1, Table.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(columnEClass, Column.class, "Column", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getColumn_Type(), this.getDataType(), null, "type", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1136,6 +1159,7 @@ public class SqlPackageImpl extends EPackageImpl implements SqlPackage {
 		initEAttribute(getColumn_SourceDataType(), ecorePackage.getEShortObject(), "sourceDataType", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getColumn_IsAutoincrement(), ecorePackage.getEString(), "isAutoincrement", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getColumn_IsGeneratedcolumn(), ecorePackage.getEString(), "isGeneratedcolumn", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getColumn_NonNulls(), ecorePackage.getELongObject(), "nonNulls", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(primaryKeyEClass, PrimaryKey.class, "PrimaryKey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPrimaryKey_Columns(), this.getColumn(), null, "columns", null, 1, -1, PrimaryKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -34,11 +34,22 @@ import org.nasdanika.ncore.impl.DocumentedNamedElementImpl;
  *   <li>{@link org.nasdanika.models.sql.impl.TableImpl#getColumns <em>Columns</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.impl.TableImpl#getPrimaryKey <em>Primary Key</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.impl.TableImpl#getImportedKeys <em>Imported Keys</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.impl.TableImpl#getRows <em>Rows</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class TableImpl extends DocumentedNamedElementImpl implements Table {
+	/**
+	 * The default value of the '{@link #getRows() <em>Rows</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRows()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Long ROWS_EDEFAULT = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -145,6 +156,26 @@ public class TableImpl extends DocumentedNamedElementImpl implements Table {
 	 * @generated
 	 */
 	@Override
+	public Long getRows() {
+		return (Long)eDynamicGet(SqlPackage.TABLE__ROWS, SqlPackage.Literals.TABLE__ROWS, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRows(Long newRows) {
+		eDynamicSet(SqlPackage.TABLE__ROWS, SqlPackage.Literals.TABLE__ROWS, newRows);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case SqlPackage.TABLE__COLUMNS:
@@ -174,6 +205,8 @@ public class TableImpl extends DocumentedNamedElementImpl implements Table {
 				return getPrimaryKey();
 			case SqlPackage.TABLE__IMPORTED_KEYS:
 				return getImportedKeys();
+			case SqlPackage.TABLE__ROWS:
+				return getRows();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -201,6 +234,9 @@ public class TableImpl extends DocumentedNamedElementImpl implements Table {
 				getImportedKeys().clear();
 				getImportedKeys().addAll((Collection<? extends ForeignKey>)newValue);
 				return;
+			case SqlPackage.TABLE__ROWS:
+				setRows((Long)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -225,6 +261,9 @@ public class TableImpl extends DocumentedNamedElementImpl implements Table {
 			case SqlPackage.TABLE__IMPORTED_KEYS:
 				getImportedKeys().clear();
 				return;
+			case SqlPackage.TABLE__ROWS:
+				setRows(ROWS_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -245,6 +284,8 @@ public class TableImpl extends DocumentedNamedElementImpl implements Table {
 				return getPrimaryKey() != null;
 			case SqlPackage.TABLE__IMPORTED_KEYS:
 				return !getImportedKeys().isEmpty();
+			case SqlPackage.TABLE__ROWS:
+				return ROWS_EDEFAULT == null ? getRows() != null : !ROWS_EDEFAULT.equals(getRows());
 		}
 		return super.eIsSet(featureID);
 	}

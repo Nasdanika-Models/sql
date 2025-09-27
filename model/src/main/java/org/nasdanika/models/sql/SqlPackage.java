@@ -1011,13 +1011,22 @@ public interface SqlPackage extends EPackage {
 	int TABLE__IMPORTED_KEYS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Rows</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE__ROWS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Table</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TABLE_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 4;
+	int TABLE_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Table</em>' class.
@@ -1318,13 +1327,22 @@ public interface SqlPackage extends EPackage {
 	int COLUMN__IS_GENERATEDCOLUMN = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 20;
 
 	/**
+	 * The feature id for the '<em><b>Non Nulls</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__NON_NULLS = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 21;
+
+	/**
 	 * The number of structural features of the '<em>Column</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COLUMN_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 21;
+	int COLUMN_FEATURE_COUNT = NcorePackage.DOCUMENTED_NAMED_ELEMENT_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of operations of the '<em>Column</em>' class.
@@ -2092,6 +2110,17 @@ public interface SqlPackage extends EPackage {
 	EReference getTable_ImportedKeys();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Table#getRows <em>Rows</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rows</em>'.
+	 * @see org.nasdanika.models.sql.Table#getRows()
+	 * @see #getTable()
+	 * @generated
+	 */
+	EAttribute getTable_Rows();
+
+	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.sql.Column <em>Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2331,6 +2360,17 @@ public interface SqlPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getColumn_IsGeneratedcolumn();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.sql.Column#getNonNulls <em>Non Nulls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Non Nulls</em>'.
+	 * @see org.nasdanika.models.sql.Column#getNonNulls()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_NonNulls();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.sql.PrimaryKey <em>Primary Key</em>}'.
@@ -2807,6 +2847,14 @@ public interface SqlPackage extends EPackage {
 		EReference TABLE__IMPORTED_KEYS = eINSTANCE.getTable_ImportedKeys();
 
 		/**
+		 * The meta object literal for the '<em><b>Rows</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TABLE__ROWS = eINSTANCE.getTable_Rows();
+
+		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.ColumnImpl <em>Column</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2983,6 +3031,14 @@ public interface SqlPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute COLUMN__IS_GENERATEDCOLUMN = eINSTANCE.getColumn_IsGeneratedcolumn();
+
+		/**
+		 * The meta object literal for the '<em><b>Non Nulls</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__NON_NULLS = eINSTANCE.getColumn_NonNulls();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.sql.impl.PrimaryKeyImpl <em>Primary Key</em>}' class.

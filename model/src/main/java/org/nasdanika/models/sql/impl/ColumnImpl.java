@@ -40,6 +40,7 @@ import org.nasdanika.ncore.impl.DocumentedNamedElementImpl;
  *   <li>{@link org.nasdanika.models.sql.impl.ColumnImpl#getSourceDataType <em>Source Data Type</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.impl.ColumnImpl#getIsAutoincrement <em>Is Autoincrement</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.impl.ColumnImpl#getIsGeneratedcolumn <em>Is Generatedcolumn</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.impl.ColumnImpl#getNonNulls <em>Non Nulls</em>}</li>
  * </ul>
  *
  * @generated
@@ -225,6 +226,16 @@ public class ColumnImpl extends DocumentedNamedElementImpl implements Column {
 	 * @ordered
 	 */
 	protected static final String IS_GENERATEDCOLUMN_EDEFAULT = null;
+
+	/**
+	 * The default value of the '{@link #getNonNulls() <em>Non Nulls</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNonNulls()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Long NON_NULLS_EDEFAULT = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -680,6 +691,26 @@ public class ColumnImpl extends DocumentedNamedElementImpl implements Column {
 	 * @generated
 	 */
 	@Override
+	public Long getNonNulls() {
+		return (Long)eDynamicGet(SqlPackage.COLUMN__NON_NULLS, SqlPackage.Literals.COLUMN__NON_NULLS, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setNonNulls(Long newNonNulls) {
+		eDynamicSet(SqlPackage.COLUMN__NON_NULLS, SqlPackage.Literals.COLUMN__NON_NULLS, newNonNulls);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case SqlPackage.COLUMN__TYPE:
@@ -725,6 +756,8 @@ public class ColumnImpl extends DocumentedNamedElementImpl implements Column {
 				return getIsAutoincrement();
 			case SqlPackage.COLUMN__IS_GENERATEDCOLUMN:
 				return getIsGeneratedcolumn();
+			case SqlPackage.COLUMN__NON_NULLS:
+				return getNonNulls();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -799,6 +832,9 @@ public class ColumnImpl extends DocumentedNamedElementImpl implements Column {
 				return;
 			case SqlPackage.COLUMN__IS_GENERATEDCOLUMN:
 				setIsGeneratedcolumn((String)newValue);
+				return;
+			case SqlPackage.COLUMN__NON_NULLS:
+				setNonNulls((Long)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -875,6 +911,9 @@ public class ColumnImpl extends DocumentedNamedElementImpl implements Column {
 			case SqlPackage.COLUMN__IS_GENERATEDCOLUMN:
 				setIsGeneratedcolumn(IS_GENERATEDCOLUMN_EDEFAULT);
 				return;
+			case SqlPackage.COLUMN__NON_NULLS:
+				setNonNulls(NON_NULLS_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -929,6 +968,8 @@ public class ColumnImpl extends DocumentedNamedElementImpl implements Column {
 				return IS_AUTOINCREMENT_EDEFAULT == null ? getIsAutoincrement() != null : !IS_AUTOINCREMENT_EDEFAULT.equals(getIsAutoincrement());
 			case SqlPackage.COLUMN__IS_GENERATEDCOLUMN:
 				return IS_GENERATEDCOLUMN_EDEFAULT == null ? getIsGeneratedcolumn() != null : !IS_GENERATEDCOLUMN_EDEFAULT.equals(getIsGeneratedcolumn());
+			case SqlPackage.COLUMN__NON_NULLS:
+				return NON_NULLS_EDEFAULT == null ? getNonNulls() != null : !NON_NULLS_EDEFAULT.equals(getNonNulls());
 		}
 		return super.eIsSet(featureID);
 	}

@@ -26,6 +26,7 @@ import org.nasdanika.ncore.DocumentedNamedElement;
  *   <li>{@link org.nasdanika.models.sql.Table#getColumns <em>Columns</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.Table#getPrimaryKey <em>Primary Key</em>}</li>
  *   <li>{@link org.nasdanika.models.sql.Table#getImportedKeys <em>Imported Keys</em>}</li>
+ *   <li>{@link org.nasdanika.models.sql.Table#getRows <em>Rows</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.sql.SqlPackage#getTable()
@@ -101,6 +102,28 @@ public interface Table extends DocumentedNamedElement {
 	 */
 	EList<ForeignKey> getImportedKeys();
 	
+	/**
+	 * Returns the value of the '<em><b>Rows</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rows</em>' attribute.
+	 * @see #setRows(Long)
+	 * @see org.nasdanika.models.sql.SqlPackage#getTable_Rows()
+	 * @model
+	 * @generated
+	 */
+	Long getRows();
+
+	/**
+	 * Sets the value of the '{@link org.nasdanika.models.sql.Table#getRows <em>Rows</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rows</em>' attribute.
+	 * @see #getRows()
+	 * @generated
+	 */
+	void setRows(Long value);
+
 	default void load(
 			DatabaseMetaData databaseMetaData, 
 			ResultSet resultSet,
