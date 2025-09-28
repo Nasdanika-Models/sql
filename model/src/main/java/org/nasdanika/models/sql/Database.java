@@ -150,7 +150,18 @@ public interface Database extends DocumentedNamedElement {
 		}		
 		ResultSet catalogs = databaseMetaData.getCatalogs();
 		while (catalogs.next()) {
-			Function<String,TableType> tableTypeResolver = tableTypeName -> getTableTypes().stream().filter(tt -> Objects.equals(tt.getName(), tableTypeName)).findFirst().orElse(null);
+			Function<String,TableType> tableTypeResolver = tableTypeName -> 
+				getTableTypes()
+					.stream()
+					.filter(tt -> Objects.equals(tt.getName(), tableTypeName))
+					.findFirst()
+					.orElseGet(() -> {
+						TableType tType = SqlFactory.eINSTANCE.createTableType();
+						tType.setName(tableTypeName);
+						getTableTypes().add(tType);
+						return tType;
+					});
+			
 			Function<String,DataType> dataTypeResolver = dataTypeName ->
 				getDataTypes()
 					.stream()

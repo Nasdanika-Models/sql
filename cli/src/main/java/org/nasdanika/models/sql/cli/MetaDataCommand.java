@@ -1,13 +1,10 @@
 package org.nasdanika.models.sql.cli;
 
 import java.sql.SQLException;
-import java.util.Collection;
-import java.util.Collections;
 
 import org.nasdanika.capability.CapabilityLoader;
 import org.nasdanika.cli.CommandGroup;
 import org.nasdanika.cli.ParentCommands;
-import org.nasdanika.common.EObjectSupplier;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.models.sql.Database;
 
@@ -22,7 +19,7 @@ import picocli.CommandLine.ParentCommand;
 		mixinStandardHelpOptions = true,
 		name = "metadata")
 @ParentCommands(SqlCommand.class)
-public class MetaDataCommand extends CommandGroup implements EObjectSupplier<Database> {
+public class MetaDataCommand extends CommandGroup implements DatabaseSupplier {
 
 	protected MetaDataCommand(CapabilityLoader capabilityLoader) {
 		super(capabilityLoader);
@@ -54,14 +51,12 @@ public class MetaDataCommand extends CommandGroup implements EObjectSupplier<Dat
 				"all table types if not provided.",
 			})
 	private String[] tableTypes;	
-
+	
 	@Override
-	public Collection<Database> getEObjects(ProgressMonitor progressMonitor) {
+	public Database getDatabase(ProgressMonitor progressMonitor) {
 		try {
 			return sqlCommand.apply(
-				(connection, pm) -> {
-					return Collections.singleton(Database.create(connection.getMetaData(), schemaPattern, tableNamePattern, tableTypes));			
-				},
+				(connection, pm) -> Database.create(connection.getMetaData(), schemaPattern, tableNamePattern, tableTypes),			
 				progressMonitor);
 		} catch (SQLException e) {
 			throw new CommandLine.ExecutionException(spec.commandLine(), "Error loading metadata: " + e, e);
