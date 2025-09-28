@@ -73,6 +73,10 @@ public class MarkdownGenerator {
 	private static final String TABLE_TEMPLATE =
 			"""
 			
+			<#if type??>
+			Type: ${type.name}
+			</#if>
+			
 			## Columns
 			
 			| Name | Type | Size | Nullable | Decimal digits | 

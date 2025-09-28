@@ -122,7 +122,10 @@ public class DiagramGenerator {
 		return connection;
 	}
 	
-	public record CatalogGenerationResult(Map<Schema,SchemaGenerationResult> schemaMap, Document document) {}
+	public record CatalogGenerationResult(
+			Map<Schema,SchemaGenerationResult> schemaResults, 
+			Map<Schema,Page> schemaPageMap, 
+			Document document) {}
 
 	/**
 	 * Generates a {@link Document} from {@link Catalog} with a {@link Page} per {@link Schema} matching the predicate
@@ -139,7 +142,8 @@ public class DiagramGenerator {
 			double layoutHeight) throws ParserConfigurationException {
 		
 		Document document = Document.create(false, null);
-		Map<Schema, SchemaGenerationResult> schemaMap = new LinkedHashMap<>();
+		Map<Schema, SchemaGenerationResult> schemaResults = new LinkedHashMap<>();
+		Map<Schema, Page> schemaPageMap = new LinkedHashMap<>();
 		for (Schema schema: catalog.getSchemas()) {
 			if (schemaPredicate == null || schemaPredicate.test(schema)) {
 				Page page = document.createPage();
@@ -151,10 +155,11 @@ public class DiagramGenerator {
 				org.nasdanika.drawio.Util.forceLayout(root, layoutWidth, layoutHeight);
 				
 				SchemaGenerationResult schemaResult = generateSchemaLayer(schema, backgroundLayer, tablePredicate);
-				schemaMap.put(schema, schemaResult);
+				schemaResults.put(schema, schemaResult);
+				schemaPageMap.put(schema, page);
 			}
 		}
-		return new CatalogGenerationResult(schemaMap, document);
+		return new CatalogGenerationResult(schemaResults, schemaPageMap, document);
 	}
 
 }

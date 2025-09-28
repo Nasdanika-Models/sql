@@ -106,12 +106,7 @@ public class FreeMarkerTests {
     				}
     			}
     		}
-            
-            
-            
         }		
-		
 	}
-	
 
 }

@@ -8,6 +8,7 @@ module org.nasdanika.models.crewai.cli {
 	requires transitive org.nasdanika.cli;
 	requires transitive org.nasdanika.models.sql;
 	requires org.nasdanika.emf;
+	requires freemarker;
 	
 	exports org.nasdanika.models.sql.cli;
 	opens org.nasdanika.models.sql.cli;

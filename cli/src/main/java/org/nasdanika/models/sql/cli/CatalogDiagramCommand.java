@@ -1,7 +1,9 @@
 package org.nasdanika.models.sql.cli;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
+import java.util.Map.Entry;
 import java.util.function.Function;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -15,6 +17,8 @@ import org.nasdanika.common.EObjectSupplier;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.common.Util;
 import org.nasdanika.drawio.Document;
+import org.nasdanika.drawio.Node;
+import org.nasdanika.drawio.Page;
 import org.nasdanika.emf.ModelCommand;
 import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Database;
@@ -22,7 +26,10 @@ import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.Table;
 import org.nasdanika.models.sql.util.DiagramGenerator;
 import org.nasdanika.models.sql.util.DiagramGenerator.CatalogGenerationResult;
+import org.nasdanika.models.sql.util.DiagramGenerator.SchemaGenerationResult;
+import org.nasdanika.models.sql.util.MarkdownGenerator;
 
+import freemarker.template.TemplateException;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -131,7 +138,7 @@ public class CatalogDiagramCommand extends CommandGroup implements Document.Supp
 		
 		DiagramGenerator diagramGenerator = new DiagramGenerator();
 		try {
-			CatalogGenerationResult result = diagramGenerator.generateCatalog(
+			CatalogGenerationResult catalogResult = diagramGenerator.generateCatalog(
 					catalog, 
 					schema -> {
 						return this.schemas == null || Arrays.asList(schemas).contains(schema.getName());
@@ -162,11 +169,27 @@ public class CatalogDiagramCommand extends CommandGroup implements Document.Supp
 					layoutHeight);
 			
 			if (document) {
-				
+				MarkdownGenerator markdownGenerator = new MarkdownGenerator();
+				for (Entry<Schema, Page> pe: catalogResult.schemaPageMap().entrySet()) {
+					String schemaMarkdown = markdownGenerator.process(pe.getKey());
+					if (!Util.isBlank(schemaMarkdown)) {
+						pe.getValue().getModel().getRoot().setProperty("documentation", schemaMarkdown);
+						pe.getValue().setId(pe.getKey().getName());
+					}
+				}
+				for (SchemaGenerationResult sr: catalogResult.schemaResults().values()) {
+					for (Entry<Table, Node> te: sr.tableMap().entrySet()) {
+						String tableMarkdown = markdownGenerator.process(te.getKey());
+						if (!Util.isBlank(tableMarkdown)) {
+							te.getValue().setProperty("documentation", tableMarkdown);
+							te.getValue().setId(te.getKey().getName());
+						}
+					}				
+				}
 			}
 			
-			return result.document();			
-		} catch (ParserConfigurationException e) {
+			return catalogResult.document();			
+		} catch (ParserConfigurationException | IOException | TemplateException e) {
 			throw new CommandLine.ExecutionException(spec.commandLine(), "Error generating catalog diagram: " + e, e);
 		}
 	}

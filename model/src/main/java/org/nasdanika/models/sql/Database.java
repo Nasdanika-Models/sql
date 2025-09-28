@@ -156,6 +156,9 @@ public interface Database extends DocumentedNamedElement {
 					.filter(tt -> Objects.equals(tt.getName(), tableTypeName))
 					.findFirst()
 					.orElseGet(() -> {
+						if (Util.isBlank(tableTypeName)) {
+							return null;
+						}
 						TableType tType = SqlFactory.eINSTANCE.createTableType();
 						tType.setName(tableTypeName);
 						getTableTypes().add(tType);
