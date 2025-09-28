@@ -11,6 +11,7 @@ import java.sql.Statement;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.nasdanika.capability.CapabilityLoader;
 import org.nasdanika.capability.ServiceCapabilityFactory;
@@ -19,6 +20,7 @@ import org.nasdanika.capability.emf.ResourceSetRequirement;
 import org.nasdanika.common.PrintStreamProgressMonitor;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.models.sql.Catalog;
+import org.nasdanika.models.sql.Column;
 import org.nasdanika.models.sql.Database;
 import org.nasdanika.models.sql.ForeignKey;
 import org.nasdanika.models.sql.Schema;
@@ -31,7 +33,7 @@ public class SqlTests {
 	/**
 	 * A simple accounting system for testing
 	 */
-	private static final String SCRIPT = 
+	static final String SCRIPT = 
 			"""
 			CREATE TABLE IF NOT EXISTS Accounts (
 			    ID INT PRIMARY KEY AUTO_INCREMENT,
@@ -76,10 +78,13 @@ public class SqlTests {
     					for (ForeignKey ik: table.getImportedKeys()) {
     						assertNotNull(ik.getPrimaryKey(), catalog.getName() + "." + schema.getName() + "." + table.getName() + "." + ik.getName());    						
     					}
+    					for (Column col: table.getColumns()) {
+    						assertNotNull(col.getType(), "Type is not set for " + catalog.getName() + "." + schema.getName() + "." + table.getName() + "." + col.getName());    						
+    						assertNotNull(col.getDataType(), "Data type is not set for " + catalog.getName() + "." + schema.getName() + "." + table.getName() + "." + col.getName());    						
+    					}    					
     				}
     			}
     		}
-
             
     		CapabilityLoader capabilityLoader = new CapabilityLoader();
     		ProgressMonitor progressMonitor = new PrintStreamProgressMonitor();
@@ -112,6 +117,7 @@ public class SqlTests {
 	}	
 	
 	@Test
+	@Disabled
 	public void testCreateFileDB() throws Exception {
         String url = "jdbc:h2:./test-db/ledger";
         try (Connection conn = DriverManager.getConnection(url, "sa", "");

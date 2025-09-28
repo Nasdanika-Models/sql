@@ -145,13 +145,24 @@ public interface Database extends DocumentedNamedElement {
 		Connector<DataType> dataTypeConnector = new Connector<>(SqlPackage.Literals.DATA_TYPE);
 		while (dataTypes.next()) {
 			DataType dType = dataTypeConnector.create(dataTypes);
-			dType.setName(dataTypes.getString("TYPE_NAME"));
+			dType.setName(dataTypes.getString("TYPE_NAME"));			
 			getDataTypes().add(dType);
 		}		
 		ResultSet catalogs = databaseMetaData.getCatalogs();
 		while (catalogs.next()) {
 			Function<String,TableType> tableTypeResolver = tableTypeName -> getTableTypes().stream().filter(tt -> Objects.equals(tt.getName(), tableTypeName)).findFirst().orElse(null);
-			Function<String,DataType> dataTypeResolver = dataTypeName -> getDataTypes().stream().filter(dt -> Objects.equals(dt.getName(), dataTypeName)).findFirst().orElse(null); 
+			Function<String,DataType> dataTypeResolver = dataTypeName ->
+				getDataTypes()
+					.stream()
+					.filter(dt -> Objects.equals(dt.getName(), dataTypeName))
+					.findFirst()
+					.orElseGet(() -> {
+						DataType dType = SqlFactory.eINSTANCE.createDataType();
+						dType.setName(dataTypeName);
+						getDataTypes().add(dType);
+						return dType;
+					});
+					
 			getCatalogs().add(Catalog.create(
 					databaseMetaData, 
 					catalogs,

@@ -10,6 +10,7 @@ module org.nasdanika.models.sql {
 	requires transitive org.eclipse.emf.common;
 	requires transitive org.nasdanika.drawio;
 	requires transitive org.nasdanika.models.sql.core;
+	requires freemarker;
 	
 	provides CapabilityFactory with SqlEPackageResourceSetCapabilityFactory;
 	
