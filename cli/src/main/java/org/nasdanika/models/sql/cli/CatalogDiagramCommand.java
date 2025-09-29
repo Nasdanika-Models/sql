@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.nasdanika.capability.CapabilityLoader;
 import org.nasdanika.cli.CommandGroup;
 import org.nasdanika.cli.ParentCommands;
+import org.nasdanika.common.Description;
 import org.nasdanika.common.EObjectSupplier;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.common.Util;
@@ -22,6 +23,7 @@ import org.nasdanika.drawio.Page;
 import org.nasdanika.emf.ModelCommand;
 import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Database;
+import org.nasdanika.models.sql.PrimaryKey;
 import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.Table;
 import org.nasdanika.models.sql.util.DiagramGenerator;
@@ -44,6 +46,7 @@ import picocli.CommandLine.ParentCommand;
 	DatabaseSupplier.class,
 	ModelCommand.class	// Can't use EObjectSupplier here - it will result in long chaining with DocumentToModel command
 })
+@Description(icon = "https://sql.models.nasdanika.org/images/database.svg")
 public class CatalogDiagramCommand extends CommandGroup implements Document.Supplier {
 
 	protected CatalogDiagramCommand(CapabilityLoader capabilityLoader) {
@@ -179,12 +182,33 @@ public class CatalogDiagramCommand extends CommandGroup implements Document.Supp
 				}
 				for (SchemaGenerationResult sr: catalogResult.schemaResults().values()) {
 					for (Entry<Table, Node> te: sr.tableMap().entrySet()) {
-						String tableMarkdown = markdownGenerator.process(te.getKey());
+						Table table = te.getKey();
+						String tableMarkdown = markdownGenerator.process(table);
+						Node tableNode = te.getValue();
 						if (!Util.isBlank(tableMarkdown)) {
-							te.getValue().setProperty("documentation", tableMarkdown);
-							te.getValue().setId(te.getKey().getName());
+							tableNode.setProperty("documentation", tableMarkdown);
+							tableNode.setId(table.getName());
 						}
-					}				
+						StringBuilder tooltipBuilder = new StringBuilder("Columns: ").append(table.getColumns().size());
+						int importedKeys = table.getImportedKeys().size();
+						if (importedKeys > 0) {
+							tooltipBuilder
+								.append(System.lineSeparator())
+								.append("Imported keys: ")
+								.append(importedKeys);
+						}
+						PrimaryKey primaryKey = table.getPrimaryKey();
+						if (primaryKey != null) {
+							int exportedKeys = primaryKey.getExportedKeys().size();
+							if (exportedKeys > 0) {
+								tooltipBuilder
+									.append(System.lineSeparator())
+									.append("Exported keys: ")
+									.append(exportedKeys);
+							}
+						}
+						tableNode.setTooltip(tooltipBuilder.toString());
+					}									
 				}
 			}
 			
