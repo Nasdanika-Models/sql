@@ -9,7 +9,7 @@ import org.nasdanika.common.ProgressMonitor;
 
 import picocli.CommandLine;
 
-public class CatalogDiagramFactory extends SubCommandCapabilityFactory<CatalogDiagramCommand> {
+public class CatalogDiagramCommandFactory extends SubCommandCapabilityFactory<CatalogDiagramCommand> {
 
 	@Override
 	protected Class<CatalogDiagramCommand> getCommandType() {

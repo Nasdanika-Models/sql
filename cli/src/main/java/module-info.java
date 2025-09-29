@@ -1,5 +1,6 @@
 import org.nasdanika.capability.CapabilityFactory;
-import org.nasdanika.models.sql.cli.CatalogDiagramFactory;
+import org.nasdanika.models.sql.cli.CatalogDiagramCommandFactory;
+import org.nasdanika.models.sql.cli.EcoreGeneratorCommandFactory;
 import org.nasdanika.models.sql.cli.MetaDataCommandFactory;
 import org.nasdanika.models.sql.cli.SqlCommandFactory;
 
@@ -15,7 +16,8 @@ module org.nasdanika.models.crewai.cli {
 		
 	provides CapabilityFactory with 
 		SqlCommandFactory,
-		CatalogDiagramFactory,
+		CatalogDiagramCommandFactory,
+		EcoreGeneratorCommandFactory,
 		MetaDataCommandFactory;
 
 }
