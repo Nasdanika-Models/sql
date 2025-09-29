@@ -65,19 +65,16 @@ public class EcoreGenSqlProcessorsFactory {
 	
 	@EPackageNodeProcessorFactory(
 			label = "SQL Model",
-			documentation =  """
-				
-				```drawio-resource
-				sql.drawio
-				```
-				
-				## Core
-				
-				## Model
-				
-				## CLI
-				
-				"""
+			icon = "https://sql.models.nasdanika.org/images/sql-server.svg",
+			description = "A model of SQL database metadata for generating code and documentation",
+			actionPrototype = """
+                    app-action:
+                      content:
+                        content-markdown:
+                          source:
+                            content-resource:
+                              location: sql.md
+					"""
 	)
 	public EPackageNodeProcessor createEPackageProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 

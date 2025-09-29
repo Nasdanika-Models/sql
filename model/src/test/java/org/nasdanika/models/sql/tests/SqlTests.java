@@ -7,8 +7,14 @@ import java.nio.file.Files;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EModelElement;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.junit.jupiter.api.Disabled;
@@ -19,6 +25,7 @@ import org.nasdanika.capability.ServiceCapabilityFactory.Requirement;
 import org.nasdanika.capability.emf.ResourceSetRequirement;
 import org.nasdanika.common.PrintStreamProgressMonitor;
 import org.nasdanika.common.ProgressMonitor;
+import org.nasdanika.common.Transformer;
 import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Column;
 import org.nasdanika.models.sql.Database;
@@ -27,6 +34,7 @@ import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.Table;
 import org.nasdanika.models.sql.util.DiagramGenerator;
 import org.nasdanika.models.sql.util.DiagramGenerator.CatalogGenerationResult;
+import org.nasdanika.models.sql.util.EcoreGenerator;
 
 public class SqlTests {
 	
@@ -93,8 +101,7 @@ public class SqlTests {
     		
     		Resource resource = resourceSet.createResource(URI.createFileURI("target/metadata.xml"));
     		resource.getContents().add(database);
-    		resource.save(null);        
-            
+    		resource.save(null);                    
         }		
 	}
 
@@ -113,6 +120,48 @@ public class SqlTests {
     			CatalogGenerationResult cr = diagramGenerator.generateCatalog(catalog, null, null, 1920, 1080);
 				Files.writeString(new File("target/" + catalog.getName() + ".drawio").toPath(), cr.document().save(null));   			
     		}            
+        }		
+	}
+
+	@Test
+	public void testGenerateEcore() throws Exception {
+        String url = "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1";
+        try (Connection conn = DriverManager.getConnection(url, "sa", "");
+             Statement stmt = conn.createStatement()) {
+
+            stmt.execute(SCRIPT);
+            
+            Database database = Database.create(conn.getMetaData(), null, null, null);
+            Collection<EObject> sources = new ArrayList<>();
+            sources.add(database);
+       		for (Catalog catalog: database.getCatalogs()) {
+       			sources.add(catalog);
+    			for (Schema schema: catalog.getSchemas()) {
+    				sources.add(schema);
+    				for (Table table: schema.getTables()) {
+    					sources.add(table);
+    					for (ForeignKey ik: table.getImportedKeys()) {
+    						sources.add(ik);
+    					}
+    					for (Column col: table.getColumns()) {
+    						sources.add(col);
+    					}    					
+    				}
+    			}
+    		}
+            
+            EcoreGenerator ecoreGenerator = new EcoreGenerator();
+            Transformer<EObject,EModelElement> transformer = new Transformer<>(ecoreGenerator);
+    		ProgressMonitor progressMonitor = new PrintStreamProgressMonitor();
+            Map<EObject, EModelElement> result = transformer.transform(sources, false, progressMonitor);
+
+    		CapabilityLoader capabilityLoader = new CapabilityLoader();
+    		Requirement<ResourceSetRequirement, ResourceSet> requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);		
+    		ResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);
+    		
+    		Resource resource = resourceSet.createResource(URI.createFileURI("target/metadata.ecore"));
+    		resource.getContents().add(result.get(database));
+    		resource.save(null);        
         }		
 	}	
 	

@@ -41,6 +41,14 @@ public class Generator extends Configuration {
 		}
 		annotation.getDetails().put(key, value);
 	}
+	
+	public String getAnnotationDetail(EModelElement modelElement, String key) {
+		EAnnotation annotation = modelElement.getEAnnotation(annotationSource);
+		if (annotation == null) {
+			return null;
+		}
+		return annotation.getDetails().get(key);
+	}
 
 	public String toJavaName(String dbName, boolean capitalize) {
 		List<String> dbNameSegments = new ArrayList<>();

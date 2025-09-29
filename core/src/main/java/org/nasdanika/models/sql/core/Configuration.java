@@ -18,6 +18,14 @@ public class Configuration implements Constants {
 		return COLUMN_ANNOTATION_KEY;
 	}
 
+	protected String getKeyAnnotationKey() {
+		return KEY_ANNOTATION_KEY;
+	}
+
+	protected String getPrimaryKeyAnnotationKey() {
+		return PRIMARY_KEY_ANNOTATION_KEY;
+	}
+
 	protected String getEnumLiteralAnnotationKey() {
 		return ENUM_LITERAL_ANNOTATION_KEY;
 	}

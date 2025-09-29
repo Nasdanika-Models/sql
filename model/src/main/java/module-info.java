@@ -6,6 +6,8 @@ module org.nasdanika.models.sql {
 	exports org.nasdanika.models.sql.impl;
 	exports org.nasdanika.models.sql.util;
 	
+	opens org.nasdanika.models.sql.util to org.nasdanika.common; // For reflection to generate Ecore
+	
 	requires transitive org.eclipse.emf.ecore;
 	requires transitive org.eclipse.emf.common;
 	requires transitive org.nasdanika.drawio;

@@ -28,6 +28,14 @@ public interface Constants {
 	 */
 	String COLUMN_ANNOTATION_KEY = "column";
 	/**
+	 * {@link EReference} annotation for key name 
+	 */
+	String KEY_ANNOTATION_KEY = "key";
+	/**
+	 * {@link EClass} annotation for the primary key. Value is a YAML list with primary key columns 
+	 */
+	String PRIMARY_KEY_ANNOTATION_KEY = "primary-key";
+	/**
 	 * {@link EAttribute} annotation for column name to use as enum literal value when resolving {@link EEnum} literal. 
 	 */
 	String ENUM_LITERAL_ANNOTATION_KEY = "enum-literal";
@@ -38,6 +46,6 @@ public interface Constants {
 	/**
 	 * {@link EReference} annotation - a YAML map of the foreign key column to the primary key column 
 	 */
-	String KEY_MAPPING_ANNOTATION_KEY = "keyMapping";
+	String KEY_MAPPING_ANNOTATION_KEY = "key-mapping";
 
 }
