@@ -12,6 +12,7 @@ import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Database;
 import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.Table;
+import org.nasdanika.models.sql.TableType;
 
 import freemarker.cache.StringTemplateLoader;
 import freemarker.core.ParseException;
@@ -60,10 +61,10 @@ public class MarkdownGenerator {
 	private static final String SCHEMA_TEMPLATE =
 			"""
 
-			| Table | Columns | Relationships | 
-			| ----- | -------:| -------------:|
+			| Table | Columns | Relationships | Type | 
+			| ----- | -------:| -------------:| ---- |
 			<#list infos as info>
-			| ${info.name} | ${info.columns} | ${info.relationships} |
+			| ${info.name} | ${info.columns} | ${info.relationships} | ${info.type} |
 			</#list>
 			| **Total**: ${totalTables} | ${totalColumns} | ${totalRelationships} |  
 			
@@ -82,7 +83,7 @@ public class MarkdownGenerator {
 			| Name | Type | Size | Nullable | Decimal digits | 
 			| ---- | ---- | ----:| -------- | --------------:|
 			<#list columns as col>
-			| ${col.name} | ${col.type.name} | ${col.columnSize} | ${col.isNullable} | ${col.decimalDigits} |
+			| ${col.name} | ${col.type.name} | ${col.columnSize} | ${col.isNullable} | ${(col.decimalDigits)!''} |
 			</#list>
 			
 			<#if primaryKey??>
@@ -302,6 +303,8 @@ public class MarkdownGenerator {
 			info.put("name", table.getName());
 			info.put("columns", table.getColumns().size()); 
 			info.put("relationships", table.getImportedKeys().size()); 
+			TableType tableType = table.getType();
+			info.put("type", tableType == null ? "" : tableType.getName());
 		}
 		freemarkerConfiguration.getTemplate(SCHEMA_KEY).process(dataModel, writer);
 	}

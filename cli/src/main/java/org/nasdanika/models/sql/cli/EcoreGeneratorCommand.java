@@ -1,7 +1,6 @@
 package org.nasdanika.models.sql.cli;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +22,7 @@ import org.nasdanika.models.sql.ForeignKey;
 import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.Table;
 import org.nasdanika.models.sql.TableType;
+import org.nasdanika.models.sql.core.Generator;
 import org.nasdanika.models.sql.util.EcoreGenerator;
 import org.nasdanika.models.sql.util.MarkdownGenerator;
 
@@ -68,7 +68,7 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 				"Catalogs to include",
 				"all catalogs if not provided"
 			})
-	private String[] catalogs;
+	private List<String> catalogs;
 	
 	@Option(
 			names = "--document", 
@@ -85,15 +85,15 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 			names = "--schema", 
 			description = {
 				"Schemas to include",
-				"all schemas if not provided.",
+				"all schemas if not provided",
 			})
-	private String[] schemas;
+	private List<String> schemas;
 		
 	@Option(
 			names = "--layout-width", 
 			description = {
 				"Width for force layout",
-				"defaults to ${DEFAULT-VALUE}."
+				"defaults to ${DEFAULT-VALUE}"
 			},
 			defaultValue = "1920")
 	private double layoutWidth;	
@@ -102,7 +102,7 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 			names = "--layout-height", 
 			description = {
 				"Heigth for force layout",
-				"defaults to ${DEFAULT-VALUE}."
+				"defaults to ${DEFAULT-VALUE}"
 			},
 			defaultValue = "1080")
 	private double layoutHeight;		
@@ -111,17 +111,26 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 			names = "--table", 
 			description = {
 				"Tables to include",
-				"all tables if not provided.",
+				"all tables if not provided",
 			})
-	private String[] tables;	
+	private List<String> tables;	
 	
 	@Option(
 			names = "--table-types", 
 			description = {
 				"Table names to include",
-				"all table types if not provided.",
+				"all table types if not provided",
 			})
-	private String[] tableTypes;
+	private List<String> tableTypes;
+		
+	@Option(
+			names = "--annotation-source", 
+			description = {
+				"Annotation source",
+				"defaults to ${DEFAULT-VALUE}"
+			},
+			defaultValue = Generator.ANNOTATION_SOURCE)	
+	private String annotationSource;	
 		
 	// TODO - related 
 
@@ -135,35 +144,8 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 		}		
 	}
 	
-//	schema -> {
-//		return this.schemas == null || Arrays.asList(schemas).contains(schema.getName());
-//	}, 
-//	table -> {
-//		if (this.tables == null) {
-//			return matchTableType(table);
-//		}
-//		
-//		for (String tableName: this.tables) {
-//			int dotIdx = tableName.indexOf(".");
-//			if (dotIdx != -1) {
-//				String schemaName = tableName.substring(0, dotIdx);
-//				Schema schema = (Schema) table.eContainer();
-//				if (!schemaName.equals(schema.getName())) {
-//					continue;
-//				}
-//				tableName = tableName.substring(dotIdx + 1);
-//			}
-//			if (tableName.equals(table.getName()) && matchTableType(table)) {
-//				return true;
-//			}							
-//		}
-//		
-//		return false;
-//	}, 
-	
-	
 	protected void collect(Catalog catalog, Collection<EObject> sources) {
-		if (this.catalogs == null || Arrays.asList(catalogs).contains(catalog.getName())) {
+		if (this.catalogs == null || catalogs.contains(catalog.getName())) {
 			sources.add(catalog);
 			for (Schema schema: catalog.getSchemas()) {
 				collect(schema, sources);
@@ -173,8 +155,8 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 		
 	protected void collect(Schema schema, Collection<EObject> sources) {
 		if (this.schemas == null 
-				|| Arrays.asList(schemas).contains(schema.getName())
-				|| Arrays.asList(schemas).contains(((Catalog) schema.eContainer()).getName() + "." + schema.getName())) {
+				|| schemas.contains(schema.getName())
+				|| schemas.contains(((Catalog) schema.eContainer()).getName() + "." + schema.getName())) {
 			sources.add(schema);
 			for (Table table: schema.getTables()) {
 				collect(table, sources);
@@ -184,13 +166,12 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 		
 	protected void collect(Table table, Collection<EObject> sources) {
 		if (this.tables != null) {
-			List<String> tableNameList = Arrays.asList(tables);			
 			Schema schema = (Schema) table.eContainer();
 			Catalog catalog = (Catalog) schema.eContainer();
 			
-			if (!tableNameList.contains(table.getName())
-					&& tableNameList.contains(schema.getName() + "." + table.getName())
-					&& tableNameList.contains(catalog.getName() + "." + schema.getName() + "." + table.getName())) {
+			if (!tables.contains(table.getName())
+					&& !tables.contains(schema.getName() + "." + table.getName())
+					&& !tables.contains(catalog.getName() + "." + schema.getName() + "." + table.getName())) {
 				return;				
 			}
 		}				
@@ -230,7 +211,7 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
 			}
 		}
 		        
-        EcoreGenerator ecoreGenerator = new EcoreGenerator() {
+        EcoreGenerator ecoreGenerator = new EcoreGenerator(annotationSource) {
         	
         	@Override
         	public MarkdownGenerator getMarkdownGenerator() {
@@ -245,6 +226,12 @@ public class EcoreGeneratorCommand extends CommandGroup implements EObjectSuppli
         	@Override
         	protected String getDatabaseNsURI(Database database) {
         		return nsURI == null ? super.getDatabaseNsURI(database) : nsURI;
+        	}
+        	
+        	@Override
+        	public String getAnnotationDetail(EModelElement modelElement, String key) {
+        		// TODO Auto-generated method stub
+        		return super.getAnnotationDetail(modelElement, key);
         	}
 
         };

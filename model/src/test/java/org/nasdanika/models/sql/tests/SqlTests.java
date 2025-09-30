@@ -9,7 +9,6 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
@@ -78,7 +77,7 @@ public class SqlTests {
 
             stmt.execute(SCRIPT);
             
-            Database database = Database.create(conn.getMetaData(), null, null, null);
+            Database database = Database.create(conn.getMetaData(), null, null, null, null);
             
     		for (Catalog catalog: database.getCatalogs()) {
     			for (Schema schema: catalog.getSchemas()) {
@@ -113,7 +112,7 @@ public class SqlTests {
 
             stmt.execute(SCRIPT);
             
-            Database database = Database.create(conn.getMetaData(), null, null, null);
+            Database database = Database.create(conn.getMetaData(), null, null, null, null);
             
     		DiagramGenerator diagramGenerator = new DiagramGenerator();
     		for (Catalog catalog: database.getCatalogs()) {
@@ -131,7 +130,7 @@ public class SqlTests {
 
             stmt.execute(SCRIPT);
             
-            Database database = Database.create(conn.getMetaData(), null, null, null);
+            Database database = Database.create(conn.getMetaData(), null, null, null, null);
             Collection<EObject> sources = new ArrayList<>();
             sources.add(database);
        		for (Catalog catalog: database.getCatalogs()) {

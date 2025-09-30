@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 
+import org.eclipse.emf.common.util.Enumerator;
 import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -153,6 +154,28 @@ public class Connector<T extends EObject> extends Configuration implements Injec
 		return queryBuilder;
 	}
 	
+	/**
+	 * Override if {@link EEnum enum} {@link EEnumLiteral literals} do not cover all values 
+	 * and there is a "catch all" literal.
+	 * @param eAttribute
+	 * @param value
+	 * @return
+	 */
+	protected Enumerator getCatchAllEnumLiteralInstance(EAttribute eAttribute, String value) {
+		return null;
+	}
+	
+	/**
+	 * Override if {@link EEnum enum} {@link EEnumLiteral literals} do not cover all values 
+	 * and there is a "catch all" literal.
+	 * @param eAttribute
+	 * @param value
+	 * @return
+	 */
+	protected Enumerator getCatchAllEnumLiteralInstance(EAttribute eAttribute, int value) {
+		return null;
+	}
+	
 	public Injector<EObject> createInjector(EAttribute eAttribute) {
 		EDataType type = eAttribute.getEAttributeType();
 		if (type instanceof EEnum) {
@@ -162,8 +185,14 @@ public class Connector<T extends EObject> extends Configuration implements Injec
 				if (!Util.isBlank(valueColumn)) {
 					return (resultSet, target) -> {					
 						int val = resultSet.getInt(valueColumn);
-						EEnumLiteral enumLiteral = ((EEnum) type).getELiterals().stream().filter(l -> l.getValue() == val).findFirst().get();
-						target.eSet(eAttribute, enumLiteral.getInstance());
+						Enumerator enumLiteralInstance = ((EEnum) type)
+								.getELiterals()
+								.stream()
+								.filter(l -> l.getValue() == val)
+								.findFirst()
+								.map(EEnumLiteral::getInstance)
+								.orElse(getCatchAllEnumLiteralInstance(eAttribute, val));
+						target.eSet(eAttribute, enumLiteralInstance);
 					};
 				}				
 			} else {
@@ -171,8 +200,13 @@ public class Connector<T extends EObject> extends Configuration implements Injec
 				if (!Util.isBlank(literalColumn)) {
 					return (resultSet, target) -> {					
 						String val = resultSet.getString(literalColumn);
-						EEnumLiteral enumLiteral = ((EEnum) type).getELiterals().stream().filter(l -> l.getLiteral().equals(val)).findFirst().get();
-						target.eSet(eAttribute, enumLiteral.getInstance());
+						Enumerator enumLiteralInstance = ((EEnum) type)
+								.getELiterals()
+								.stream().filter(l -> l.getLiteral().equals(val))
+								.findFirst()
+								.map(EEnumLiteral::getInstance)
+								.orElse(getCatchAllEnumLiteralInstance(eAttribute, val));
+						target.eSet(eAttribute, enumLiteralInstance);
 					};
 				}								
 			}

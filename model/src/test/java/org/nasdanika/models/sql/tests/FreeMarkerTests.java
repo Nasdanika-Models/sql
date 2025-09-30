@@ -1,8 +1,5 @@
 package org.nasdanika.models.sql.tests;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
-import java.awt.Desktop;
 import java.io.File;
 import java.io.StringWriter;
 import java.nio.file.Files;
@@ -15,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.nasdanika.common.MarkdownHelper;
 import org.nasdanika.models.sql.Catalog;
 import org.nasdanika.models.sql.Database;
-import org.nasdanika.models.sql.ForeignKey;
 import org.nasdanika.models.sql.Schema;
 import org.nasdanika.models.sql.Table;
 import org.nasdanika.models.sql.util.MarkdownGenerator;
@@ -32,7 +28,7 @@ public class FreeMarkerTests {
         try (Connection conn = DriverManager.getConnection(url, "sa", "");
              Statement stmt = conn.createStatement()) {
             stmt.execute(SqlTests.SCRIPT);
-            Database database = Database.create(conn.getMetaData(), null, null, null);
+            Database database = Database.create(conn.getMetaData(), null, null, null, null);
             
             Configuration cfg = new Configuration(Configuration.VERSION_2_3_34);
             StringTemplateLoader loader = new StringTemplateLoader();
@@ -68,7 +64,7 @@ public class FreeMarkerTests {
         try (Connection conn = DriverManager.getConnection(url, "sa", "");
              Statement stmt = conn.createStatement()) {
             stmt.execute(SqlTests.SCRIPT);
-            Database database = Database.create(conn.getMetaData(), null, null, null);
+            Database database = Database.create(conn.getMetaData(), null, null, null, null);
             
             MarkdownGenerator markdownGenerator = new MarkdownGenerator();
             

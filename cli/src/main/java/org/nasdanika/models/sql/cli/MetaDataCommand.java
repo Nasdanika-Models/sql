@@ -1,6 +1,7 @@
 package org.nasdanika.models.sql.cli;
 
 import java.sql.SQLException;
+import java.util.List;
 
 import org.nasdanika.capability.CapabilityLoader;
 import org.nasdanika.cli.CommandGroup;
@@ -50,13 +51,27 @@ public class MetaDataCommand extends CommandGroup implements DatabaseSupplier {
 				"Table names to include",
 				"all table types if not provided.",
 			})
-	private String[] tableTypes;	
+	private String[] tableTypes;
+	
+	@Option(
+			names = "--catalog", 
+			description = {
+				"Catalogs to include",
+				"all catalogsif not provided.",
+			})
+	private List<String> catalogs;	
+	
 	
 	@Override
 	public Database getDatabase(ProgressMonitor progressMonitor) {
 		try {
 			return sqlCommand.apply(
-				(connection, pm) -> Database.create(connection.getMetaData(), schemaPattern, tableNamePattern, tableTypes),			
+				(connection, pm) -> Database.create(
+						connection.getMetaData(), 
+						c -> catalogs == null || catalogs.contains(c),
+						schemaPattern, 
+						tableNamePattern, 
+						tableTypes),			
 				progressMonitor);
 		} catch (SQLException e) {
 			throw new CommandLine.ExecutionException(spec.commandLine(), "Error loading metadata: " + e, e);

@@ -8,8 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
-import java.util.function.Function;
 import java.util.Objects;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
 import org.eclipse.emf.common.util.EList;
 import org.nasdanika.common.Util;
 import org.nasdanika.models.sql.core.Connector;
@@ -131,6 +133,7 @@ public interface Database extends DocumentedNamedElement {
 	
 	default void load(
 			DatabaseMetaData databaseMetaData,
+			Predicate<String> catalogPredicate,
 			String schemaPattern,
 			String tableNamePattern, 
 			String[] tableTypes) throws SQLException {
@@ -150,41 +153,43 @@ public interface Database extends DocumentedNamedElement {
 		}		
 		ResultSet catalogs = databaseMetaData.getCatalogs();
 		while (catalogs.next()) {
-			Function<String,TableType> tableTypeResolver = tableTypeName -> 
-				getTableTypes()
-					.stream()
-					.filter(tt -> Objects.equals(tt.getName(), tableTypeName))
-					.findFirst()
-					.orElseGet(() -> {
-						if (Util.isBlank(tableTypeName)) {
-							return null;
-						}
-						TableType tType = SqlFactory.eINSTANCE.createTableType();
-						tType.setName(tableTypeName);
-						getTableTypes().add(tType);
-						return tType;
-					});
-			
-			Function<String,DataType> dataTypeResolver = dataTypeName ->
-				getDataTypes()
-					.stream()
-					.filter(dt -> Objects.equals(dt.getName(), dataTypeName))
-					.findFirst()
-					.orElseGet(() -> {
-						DataType dType = SqlFactory.eINSTANCE.createDataType();
-						dType.setName(dataTypeName);
-						getDataTypes().add(dType);
-						return dType;
-					});
-					
-			getCatalogs().add(Catalog.create(
-					databaseMetaData, 
-					catalogs,
-					schemaPattern,
-					tableTypeResolver,
-					dataTypeResolver,
-					tableNamePattern,
-					tableTypes));						
+			if (catalogPredicate == null || catalogPredicate.test(catalogs.getString("TABLE_CAT"))) {
+				Function<String,TableType> tableTypeResolver = tableTypeName -> 
+					getTableTypes()
+						.stream()
+						.filter(tt -> Objects.equals(tt.getName(), tableTypeName))
+						.findFirst()
+						.orElseGet(() -> {
+							if (Util.isBlank(tableTypeName)) {
+								return null;
+							}
+							TableType tType = SqlFactory.eINSTANCE.createTableType();
+							tType.setName(tableTypeName);
+							getTableTypes().add(tType);
+							return tType;
+						});
+				
+				Function<String,DataType> dataTypeResolver = dataTypeName ->
+					getDataTypes()
+						.stream()
+						.filter(dt -> Objects.equals(dt.getName(), dataTypeName))
+						.findFirst()
+						.orElseGet(() -> {
+							DataType dType = SqlFactory.eINSTANCE.createDataType();
+							dType.setName(dataTypeName);
+							getDataTypes().add(dType);
+							return dType;
+						});
+						
+				getCatalogs().add(Catalog.create(
+						databaseMetaData, 
+						catalogs,
+						schemaPattern,
+						tableTypeResolver,
+						dataTypeResolver,
+						tableNamePattern,
+						tableTypes));
+			}
 		}
 		
 		record ImportedKeyRecord(
@@ -281,11 +286,12 @@ public interface Database extends DocumentedNamedElement {
 	
 	static Database create(
 			DatabaseMetaData databaseMetaData,
+			Predicate<String> catalogPredicate,
 			String schemaPattern,
 			String tableNamePattern, 
 			String[] tableTypes) throws SQLException {
 		Database db = SqlFactory.eINSTANCE.createDatabase();
-		db.load(databaseMetaData, schemaPattern, tableNamePattern, tableTypes);
+		db.load(databaseMetaData, catalogPredicate, schemaPattern, tableNamePattern, tableTypes);
 		return db;
 	}
 

@@ -7,3 +7,8 @@ sql.drawio
 ## Model
 
 ## CLI
+
+```drawio-resource
+cli.drawio
+```
+

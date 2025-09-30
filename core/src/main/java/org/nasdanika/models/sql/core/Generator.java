@@ -20,7 +20,11 @@ import org.eclipse.emf.ecore.EcorePackage;
  */
 public class Generator extends Configuration {
 	
-	protected String annotationSource;
+	private String annotationSource;
+	
+	protected String getAnnotationSource() {
+		return annotationSource;
+	}
 	
 	public Generator() {
 		this(ANNOTATION_SOURCE);
@@ -33,17 +37,17 @@ public class Generator extends Configuration {
 	private static final char UNDERSCORE = '_';
 	
 	public void setAnnotationDetail(EModelElement modelElement, String key, String value) {
-		EAnnotation annotation = modelElement.getEAnnotation(annotationSource);
+		EAnnotation annotation = modelElement.getEAnnotation(getAnnotationSource());
 		if (annotation == null) {
 			annotation = EcoreFactory.eINSTANCE.createEAnnotation();
-			annotation.setSource(annotationSource);
+			annotation.setSource(getAnnotationSource());
 			modelElement.getEAnnotations().add(annotation);
 		}
 		annotation.getDetails().put(key, value);
 	}
 	
 	public String getAnnotationDetail(EModelElement modelElement, String key) {
-		EAnnotation annotation = modelElement.getEAnnotation(annotationSource);
+		EAnnotation annotation = modelElement.getEAnnotation(getAnnotationSource());
 		if (annotation == null) {
 			return null;
 		}

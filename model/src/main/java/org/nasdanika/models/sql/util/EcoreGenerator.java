@@ -42,6 +42,16 @@ public class EcoreGenerator extends Generator {
 	
 	private MarkdownGenerator markdownGenerator;
 
+	public EcoreGenerator(String annotationSource, MarkdownGenerator markdownGenerator) {
+		super(annotationSource);
+		this.markdownGenerator = markdownGenerator;
+	}
+	
+	public EcoreGenerator(String annotationSource) {
+		super(annotationSource);
+		this.markdownGenerator = new MarkdownGenerator();
+	}
+
 	public EcoreGenerator(MarkdownGenerator markdownGenerator) {
 		this.markdownGenerator = markdownGenerator;
 	}

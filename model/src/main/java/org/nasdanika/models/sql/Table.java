@@ -130,7 +130,7 @@ public interface Table extends DocumentedNamedElement {
 			Function<String,TableType> tableTypeResolver,
 			Function<String,DataType> dataTypeResolver) throws SQLException {
 		setName(resultSet.getString("TABLE_NAME"));		
-		setType(tableTypeResolver.apply(resultSet.getString("TYPE_NAME")));
+		setType(tableTypeResolver.apply(resultSet.getString("TABLE_TYPE")));
 		ResultSet columns = databaseMetaData.getColumns(resultSet.getString("TABLE_CAT"),  resultSet.getString("TABLE_SCHEM"), getName(), null);
 		while (columns.next()) {
 			getColumns().add(Column.create(databaseMetaData, columns, dataTypeResolver));

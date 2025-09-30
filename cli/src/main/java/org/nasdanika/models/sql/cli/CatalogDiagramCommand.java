@@ -2,7 +2,7 @@ package org.nasdanika.models.sql.cli;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
+import java.util.List;
 import java.util.Map.Entry;
 import java.util.function.Function;
 
@@ -72,7 +72,7 @@ public class CatalogDiagramCommand extends CommandGroup implements Document.Supp
 				"Schemas to include",
 				"all schemas if not provided.",
 			})
-	private String[] schemas;
+	private List<String> schemas;
 		
 	@Option(
 			names = "--layout-width", 
@@ -144,7 +144,7 @@ public class CatalogDiagramCommand extends CommandGroup implements Document.Supp
 			CatalogGenerationResult catalogResult = diagramGenerator.generateCatalog(
 					catalog, 
 					schema -> {
-						return this.schemas == null || Arrays.asList(schemas).contains(schema.getName());
+						return this.schemas == null || schemas.contains(schema.getName());
 					}, 
 					table -> {
 						if (this.tables == null) {

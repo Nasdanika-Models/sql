@@ -4,7 +4,7 @@ import org.nasdanika.models.sql.cli.EcoreGeneratorCommandFactory;
 import org.nasdanika.models.sql.cli.MetaDataCommandFactory;
 import org.nasdanika.models.sql.cli.SqlCommandFactory;
 
-module org.nasdanika.models.crewai.cli {
+module org.nasdanika.models.sql.cli {
 	
 	requires transitive org.nasdanika.cli;
 	requires transitive org.nasdanika.models.sql;
