@@ -1,531 +1,552 @@
 {
+  "references/eClassifiers/Column/references/eStructuralFeatures/nonNulls/index.html": {
+    "path": "Column/Attributes/nonNulls",
+    "link-uuid": "b1bd7283-6c2b-4d7b-8d3e-7c8e288b74a0",
+    "title": "nonNulls",
+    "content": "Type ELongObject Multiplicity 0..1",
+    "timestamp": 1759374666565
+  },
   "references/eClassifiers/DataType/references/eStructuralFeatures/sqlDatetimeSub/index.html": {
     "path": "DataType/Attributes/sqlDatetimeSub",
-    "link-uuid": "bd42902b-53ea-4734-b72b-04f7ad18bf4d",
+    "link-uuid": "0643da8d-bdbe-4bb6-8e35-51536879f8eb",
     "title": "sqlDatetimeSub",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582614
+    "timestamp": 1759374666691
   },
   "references/eClassifiers/Table/references/eStructuralFeatures/type/index.html": {
     "path": "Table/References/type",
-    "link-uuid": "1a448d27-543a-452a-9ee5-e0b236a640e1",
+    "link-uuid": "1e2b5c18-483b-41c7-9a4b-9694a4e8d803",
     "title": "type",
     "content": "Type TableType Multiplicity 0..1",
-    "timestamp": 1758586582771
+    "timestamp": 1759374666840
   },
   "references/eClassifiers/DataType/index.html": {
-    "link-uuid": "d69dedb8-ab67-431e-91f8-cf8140744c4a",
+    "link-uuid": "ec2c8cfd-9e59-453e-b293-5f9d78709be0",
     "title": "DataType",
     "content": "A database data type defines the kind of data that can be stored in a particular column of a database table. It sets the rules for what values are valid, how they&rsquo;re stored, and how they behave during operations like sorting, filtering, or arithmetic..",
-    "timestamp": 1758586582572
+    "timestamp": 1759374666650
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/searchable/index.html": {
     "path": "DataType/Attributes/searchable",
-    "link-uuid": "da2babfc-dd8e-45d2-8c06-22437be426b3",
+    "link-uuid": "cacba7d6-f14a-4865-b8b5-07c2f20ee232",
     "title": "searchable",
     "content": "Type EShortObject Multiplicity 0..1",
-    "timestamp": 1758586582609
+    "timestamp": 1759374666687
+  },
+  "references/eClassifiers/ForeignKey/references/eStructuralFeatures/columns/index.html": {
+    "path": "ForeignKey/References/columns",
+    "link-uuid": "2dbbf62f-557f-4724-97e0-eba38e29856b",
+    "title": "columns",
+    "content": "Type ForeignKeyColumn Multiplicity 0..*",
+    "timestamp": 1759374666721
+  },
+  "references/eClassifiers/ForeignKeyColumn/references/eStructuralFeatures/pkColumn/index.html": {
+    "path": "ForeignKeyColumn/References/pkColumn",
+    "link-uuid": "15f12a5a-9f6d-49cd-956e-ccf3e5383b0f",
+    "title": "pkColumn",
+    "content": "Type Column Multiplicity 1",
+    "timestamp": 1759374666752
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/charOctetLength/index.html": {
     "path": "Column/Attributes/charOctetLength",
-    "link-uuid": "fae9e8a9-4417-481a-8c2f-2cae9c9b69a0",
+    "link-uuid": "8123253e-7252-4f3c-a14e-0ef6db2ae317",
     "title": "charOctetLength",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582450
-  },
-  "references/eClassifiers/ImportedKey/references/eStructuralFeatures/columns/index.html": {
-    "path": "ImportedKey/References/columns",
-    "link-uuid": "2885acab-7abe-4579-8079-97cea6ff5a9d",
-    "title": "columns",
-    "content": "Type ImportedKeyColumn Multiplicity 0..*",
-    "timestamp": 1758586582647
+    "timestamp": 1759374666543
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/numPrecRadix/index.html": {
     "path": "Column/Attributes/numPrecRadix",
-    "link-uuid": "0803e99e-48c8-4614-8b0c-058bda9dda74",
+    "link-uuid": "84871860-fd05-4ae7-ab4b-522f502a73b3",
     "title": "numPrecRadix",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582478
+    "timestamp": 1759374666570
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/remarks/index.html": {
     "path": "Column/Attributes/remarks",
-    "link-uuid": "b3db0035-b492-410a-85ab-8a9157078d01",
+    "link-uuid": "14bce222-7d18-4be6-abca-4a9aedbbd4d5",
     "title": "remarks",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582484
+    "timestamp": 1759374666574
   },
   "references/eClassifiers/Database/index.html": {
-    "link-uuid": "23032abc-7c67-4f72-a137-2af2b4909b9d",
+    "link-uuid": "2fbd9320-76e8-4589-b389-0ccc8faec4b5",
     "title": "Database",
     "content": "Database is the top-level object containing catalogs, data types and table types.",
-    "timestamp": 1758586582528
+    "timestamp": 1759374666611
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/caseSensitive/index.html": {
     "path": "DataType/Attributes/caseSensitive",
-    "link-uuid": "4ff3b771-4f3b-43a9-80d1-425ef763712c",
+    "link-uuid": "73470486-dc94-4b08-9a7b-87315aec461a",
     "title": "caseSensitive",
     "content": "Type EBooleanObject Multiplicity 0..1",
-    "timestamp": 1758586582582
+    "timestamp": 1759374666661
   },
   "references/eClassifiers/Database/references/eStructuralFeatures/tableTypes/index.html": {
     "path": "Database/References/tableTypes",
-    "link-uuid": "acee9ba5-f371-4d2c-a2fe-566911e3ea82",
+    "link-uuid": "5a7bdc41-f718-48a9-aba2-271cbb14bd2b",
     "title": "tableTypes",
     "content": "Type TableType Multiplicity 0..*",
-    "timestamp": 1758586582545
+    "timestamp": 1759374666626
   },
-  "references/eClassifiers/ImportedKey/inheritance.html": {
-    "path": "ImportedKey/Inheritance",
-    "link-uuid": "bd65a2bd-4580-4421-88d2-745081f9e2cc",
-    "title": "Inheritance",
-    "content": "Supertypes ",
-    "timestamp": 1758586582642
+  "references/eClassifiers/ForeignKeyColumn/references/eStructuralFeatures/fkColumn/index.html": {
+    "path": "ForeignKeyColumn/References/fkColumn",
+    "link-uuid": "42c2a95f-9444-4033-a558-5bbc841db961",
+    "title": "fkColumn",
+    "content": "Type Column Multiplicity 1",
+    "timestamp": 1759374666750
   },
   "index.html": {
-    "link-uuid": "289142d7-e757-46a9-b98e-6f6f5eb7142e",
+    "link-uuid": "9c6e604a-266b-407c-972a-e43400421785",
     "title": "SQL Model",
-    "content": "Core Model CLI Database Database is the top-level object containing catalogs, data types and table types Catalog A catalog is typically the top-level container for database objects like schemas, tables, and views Schema A database schema is the blueprint or architecture of a database. It defines how data is organized, structured, and related within the system Data Type A database data type defines the kind of data that can be stored in a particular column of a database table Table A database table is the core structure used to store data in a relational database. Think of it as a grid or spreadsheet where each row represents a record and each column represents a field or attribute of that record. Column A database column is one of the fundamental building blocks of a relational database table Imported Key An imported key in a relational database refers to a foreign key that a table receives from another table Primary Key A primary key is a fundamental concept in relational databases &mdash; it uniquely identifies each record (row) in a table Table type Table type refers to the classification of a table-like object. It helps distinguish бetween different kinds of structures that behave like tables but serve different purposes. SQL",
-    "timestamp": 1758586582374
+    "content": "Core Model CLI SQL https://docs.nasdanika.org/nsd-cli/nsd/sql/index.html Metadata https://docs.nasdanika.org/nsd-cli/nsd/sql/metadata/index.html Catalog diagram https://docs.nasdanika.org/nsd-cli/nsd/sql/metadata/catalog-diagram/index.html Ecore https://docs.nasdanika.org/nsd-cli/nsd/sql/metadata/ecore/index.html Database Database is the top-level object containing catalogs, data types and table types Catalog A catalog is typically the top-level container for database objects like schemas, tables, and views Schema A database schema is the blueprint or architecture of a database. It defines how data is organized, structured, and related within the system Data Type A database data type defines the kind of data that can be stored in a particular column of a database table Table A database table is the core structure used to store data in a relational database. Think of it as a grid or spreadsheet where each row represents a record and each column represents a field or attribute of that record. Column A database column is one of the fundamental building blocks of a relational database table Foreign Key An imported key in a relational database refers to a foreign key that a table receives from another table Primary Key A primary key is a fundamental concept in relational databases &mdash; it uniquely identifies each record (row) in a table Table type Table type refers to the classification of a table-like object. It helps distinguish бetween different kinds of structures that behave like tables but serve different purposes. SQL",
+    "timestamp": 1759374666475
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/sqlDataType/index.html": {
     "path": "DataType/Attributes/sqlDataType",
-    "link-uuid": "d0e9dace-3062-40bc-8733-5ad9adfa0156",
+    "link-uuid": "63798633-801c-4dac-94f9-c153f647b87f",
     "title": "sqlDataType",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582612
+    "timestamp": 1759374666689
   },
-  "references/eClassifiers/ImportedKey/references/eStructuralFeatures/updateRule/index.html": {
-    "path": "ImportedKey/Attributes/updateRule",
-    "link-uuid": "3b8e3702-df02-46df-a398-1e26fbf17f46",
+  "references/eClassifiers/ForeignKey/references/eStructuralFeatures/updateRule/index.html": {
+    "path": "ForeignKey/Attributes/updateRule",
+    "link-uuid": "bdeacc41-2f98-4533-957b-49e237e7cb1f",
     "title": "updateRule",
     "content": "Type ImportedKeyRule Multiplicity 0..1",
-    "timestamp": 1758586582656
+    "timestamp": 1759374666730
   },
   "references/eClassifiers/Database/references/eStructuralFeatures/driverClass/index.html": {
     "path": "Database/Attributes/driverClass",
-    "link-uuid": "b8fc8f02-6e70-47bd-b484-9446bd48ac0c",
+    "link-uuid": "71975c07-1e99-4c63-8a14-2211d17330b7",
     "title": "driverClass",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582543
+    "timestamp": 1759374666624
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/isGeneratedcolumn/index.html": {
     "path": "Column/Attributes/isGeneratedcolumn",
-    "link-uuid": "ce15bf84-6448-4354-94c5-874649697a63",
+    "link-uuid": "17ca3c7a-c96e-4d0b-a7cb-b2fe8633b155",
     "title": "isGeneratedcolumn",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582469
+    "timestamp": 1759374666560
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/isAutoincrement/index.html": {
     "path": "Column/Attributes/isAutoincrement",
-    "link-uuid": "bc536fc1-01a2-48dc-b034-c540f5f5df2d",
+    "link-uuid": "d71ce358-ccda-4c3c-8e0f-4d8f5a131e4a",
     "title": "isAutoincrement",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582466
-  },
-  "references/eClassifiers/ImportedKey/references/eStructuralFeatures/deferrability/index.html": {
-    "path": "ImportedKey/Attributes/deferrability",
-    "link-uuid": "90886047-0e4b-458b-ab9b-b96c40db769a",
-    "title": "deferrability",
-    "content": "Type Deferrability Multiplicity 0..1",
-    "timestamp": 1758586582649
+    "timestamp": 1759374666558
   },
   "references/eClassifiers/TableType/index.html": {
-    "link-uuid": "95e86b2a-adb0-4e03-9290-1f648aa23fb5",
+    "link-uuid": "4fe72cd1-0435-4ea1-8b2a-8cd8b1b09e60",
     "title": "TableType",
     "content": "Table type refers to the classification of a table-like object. It helps distinguish between different kinds of structures that behave like tables but serve different purposes.",
-    "timestamp": 1758586582788
+    "timestamp": 1759374666856
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/scopeSchema/index.html": {
     "path": "Column/Attributes/scopeSchema",
-    "link-uuid": "8367a5ab-af2f-41bf-8876-905feb1cad6d",
+    "link-uuid": "e925da54-76d1-4bdf-9b5f-98ba5abac8b6",
     "title": "scopeSchema",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582489
+    "timestamp": 1759374666578
   },
   "references/eClassifiers/Table/inheritance.html": {
     "path": "Table/Inheritance",
-    "link-uuid": "07e5b61e-e4d7-460a-b187-a8a588d98cc8",
+    "link-uuid": "f6dcf26a-e123-4612-adf5-da2be2c9d56a",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582762
+    "timestamp": 1759374666828
+  },
+  "references/eClassifiers/PrimaryKey/references/eStructuralFeatures/exportedKeys/index.html": {
+    "path": "PrimaryKey/References/exportedKeys",
+    "link-uuid": "93a377fb-8bfd-4e4c-bddd-05157dfb7a2b",
+    "title": "exportedKeys",
+    "content": "Type ForeignKey Multiplicity 0..*",
+    "timestamp": 1759374666782
   },
   "references/eClassifiers/Database/references/eStructuralFeatures/catalogs/index.html": {
     "path": "Database/References/catalogs",
-    "link-uuid": "df24898f-e31c-4c46-b4d1-c9d30f685dd3",
+    "link-uuid": "c1077d0b-cf70-4bb3-985d-eed9ff20290e",
     "title": "catalogs",
     "content": "Type Catalog Multiplicity 0..*",
-    "timestamp": 1758586582535
+    "timestamp": 1759374666618
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/precision/index.html": {
     "path": "DataType/Attributes/precision",
-    "link-uuid": "6858bda7-a548-48ad-a0da-a9fbd789e17e",
+    "link-uuid": "b6df9b37-cfa1-4f6e-aad3-ad48122b99e6",
     "title": "precision",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582607
+    "timestamp": 1759374666685
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/sourceDataType/index.html": {
     "path": "Column/Attributes/sourceDataType",
-    "link-uuid": "bf82a950-b117-45fd-9580-e655617a7b5f",
+    "link-uuid": "b2ab5c96-53b0-4ab9-93b5-55900b2452ce",
     "title": "sourceDataType",
     "content": "Type EShortObject Multiplicity 0..1",
-    "timestamp": 1758586582494
+    "timestamp": 1759374666583
   },
   "references/eClassifiers/Column/index.html": {
-    "link-uuid": "1a22dcaa-b0ec-45e9-bc40-41f7db563ed4",
+    "link-uuid": "765eeae0-633e-4195-8b13-8e29fcf40510",
     "title": "Column",
     "content": "A database column is one of the fundamental building blocks of a relational database table. A column defines a specific attribute or field of the data stored in a table. Each column has a name (like first_name, email, or price) and a data type (such as VARCHAR, INTEGER, DATE, etc.). All rows in the table share the same set of columns, but each row can have different values in those columns.",
-    "timestamp": 1758586582438
+    "timestamp": 1759374666533
   },
   "references/eClassifiers/Column/inheritance.html": {
     "path": "Column/Inheritance",
-    "link-uuid": "242a625e-6259-4e95-81e0-30241ce9188d",
+    "link-uuid": "6e0d410a-9db6-4527-8575-467fcf86e5a8",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582440
+    "timestamp": 1759374666535
   },
   "references/eClassifiers/Database/references/eStructuralFeatures/url/index.html": {
     "path": "Database/Attributes/url",
-    "link-uuid": "5703cd6a-7584-4cc9-bd59-108d65850fa3",
+    "link-uuid": "2e593808-56d0-4ba2-a374-49533dd99ccd",
     "title": "url",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582548
+    "timestamp": 1759374666629
+  },
+  "references/eClassifiers/Table/references/eStructuralFeatures/rows/index.html": {
+    "path": "Table/Attributes/rows",
+    "link-uuid": "f68603ad-af59-4fe9-8ad9-c5b9411dc648",
+    "title": "rows",
+    "content": "Type ELongObject Multiplicity 0..1",
+    "timestamp": 1759374666838
   },
   "references/eClassifiers/PrimaryKey/inheritance.html": {
     "path": "PrimaryKey/Inheritance",
-    "link-uuid": "bcdee8ad-9d4a-4281-933f-be6d0b3a6caf",
+    "link-uuid": "25291fa1-6edf-400c-b4fa-ee2acb5d02f7",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582707
+    "timestamp": 1759374666776
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/nullable/index.html": {
     "path": "Column/Attributes/nullable",
-    "link-uuid": "f1e41736-d3a7-455b-a499-e517684c1e7a",
+    "link-uuid": "4bf5f697-6030-4658-8a7e-f1e84f9a2783",
     "title": "nullable",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582475
+    "timestamp": 1759374666567
   },
   "references/eClassifiers/Database/inheritance.html": {
     "path": "Database/Inheritance",
-    "link-uuid": "41b1be65-6b8e-488b-83f3-5ab8a2725544",
+    "link-uuid": "f7c1f231-80e3-4063-9cee-019a156fdc2f",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582530
+    "timestamp": 1759374666613
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/createParams/index.html": {
     "path": "DataType/Attributes/createParams",
-    "link-uuid": "f94dc8f1-89f8-44ed-b9d9-b43a70833bba",
+    "link-uuid": "221f779b-f819-4642-a859-392af3420e63",
     "title": "createParams",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582584
+    "timestamp": 1759374666663
+  },
+  "references/eClassifiers/ForeignKey/inheritance.html": {
+    "path": "ForeignKey/Inheritance",
+    "link-uuid": "2811f71a-7077-409c-9505-c978e64356cd",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1759374666717
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/bufferLength/index.html": {
     "path": "Column/Attributes/bufferLength",
-    "link-uuid": "a80370fa-1d68-421b-9d48-820a08e3a45b",
+    "link-uuid": "4a3217de-98b7-489c-a46f-d21eef9dd059",
     "title": "bufferLength",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582448
+    "timestamp": 1759374666540
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/fixedPrecScale/index.html": {
     "path": "DataType/Attributes/fixedPrecScale",
-    "link-uuid": "c25bac6a-597d-41be-9185-e844ff2e48d7",
+    "link-uuid": "4b6c3325-bd67-414b-8d66-870519ed2c40",
     "title": "fixedPrecScale",
     "content": "Type EBooleanObject Multiplicity 0..1",
-    "timestamp": 1758586582589
+    "timestamp": 1759374666668
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/scopeTable/index.html": {
     "path": "Column/Attributes/scopeTable",
-    "link-uuid": "62784303-2686-46c5-af04-13a1d7bbb4ea",
+    "link-uuid": "b71bd7dc-cefd-4584-bc2e-81b4a0236cec",
     "title": "scopeTable",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582492
+    "timestamp": 1759374666581
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/columnSize/index.html": {
     "path": "Column/Attributes/columnSize",
-    "link-uuid": "22c18c59-9cad-4c72-98d1-2bf07bbce500",
+    "link-uuid": "c2219311-7d48-4772-a589-59bc473b90f6",
     "title": "columnSize",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582456
+    "timestamp": 1759374666547
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/scopeCatalog/index.html": {
     "path": "Column/Attributes/scopeCatalog",
-    "link-uuid": "5f33d5c8-2099-41a6-8e23-c32d5940dae8",
+    "link-uuid": "4ced8ed0-1c15-4f96-bc52-3bc3ede18834",
     "title": "scopeCatalog",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582486
+    "timestamp": 1759374666576
   },
   "references/eClassifiers/Database/references/eStructuralFeatures/dependencies/index.html": {
     "path": "Database/Attributes/dependencies",
-    "link-uuid": "f859394f-4325-498b-8d4f-3f6c76ac5b55",
+    "link-uuid": "ae1cad6c-792f-4cd0-9d21-f1ff9562d8b5",
     "title": "dependencies",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1758586582541
-  },
-  "references/eClassifiers/ImportedKey/index.html": {
-    "link-uuid": "8ffb7f80-02ae-4c1b-97af-3b0de624f1a2",
-    "title": "ImportedKey",
-    "content": "An imported key in a relational database refers to a foreign key that a table receives from another table. It&rsquo;s a way of saying: &ldquo;This column in my table references a primary key in another table.&rdquo; It&rsquo;s a foreign key from the perspective of the child table. It creates a relationship between two tables&mdash;typically a many-to-one or one-to-one link. The imported key ensures referential integrity, meaning the value in the child table must exist in the parent table.",
-    "timestamp": 1758586582639
+    "timestamp": 1759374666622
   },
   "references/eClassifiers/PrimaryKey/index.html": {
-    "link-uuid": "b55b1ae0-f981-4c78-9101-dba01fc6d95b",
+    "link-uuid": "6fddf741-6fba-4d14-a7a0-13d24fd69f1a",
     "title": "PrimaryKey",
     "content": "A primary key is a fundamental concept in relational databases &mdash; it uniquely identifies each record (row) in a table. Key Characteristics of a Primary Key Uniqueness: No two rows can have the same primary key value. Non-nullable: Every row must have a value for the primary key; NULL is not allowed. Immutable (ideally): Primary key values should rarely change, as they anchor relationships across tables.",
-    "timestamp": 1758586582705
+    "timestamp": 1759374666774
   },
   "references/eClassifiers/Table/references/eStructuralFeatures/importedKeys/index.html": {
     "path": "Table/References/importedKeys",
-    "link-uuid": "2258b196-2f6e-4bdc-b2e7-2f0f3cf42cb8",
+    "link-uuid": "ba09f8c4-f97a-44e1-ba55-18dc93fa3609",
     "title": "importedKeys",
-    "content": "Type ImportedKey Multiplicity 0..*",
-    "timestamp": 1758586582767
+    "content": "Type ForeignKey Multiplicity 0..*",
+    "timestamp": 1759374666834
   },
   "references/eClassifiers/Table/references/eStructuralFeatures/primaryKey/index.html": {
     "path": "Table/References/primaryKey",
-    "link-uuid": "c8c940eb-68fc-4e63-be80-9b3fafb6e358",
+    "link-uuid": "55ccca43-c6ad-4293-9c7a-97a3bc1a302d",
     "title": "primaryKey",
     "content": "Type PrimaryKey Multiplicity 0..1",
-    "timestamp": 1758586582769
-  },
-  "references/eClassifiers/ImportedKey/references/eStructuralFeatures/primaryKey/index.html": {
-    "path": "ImportedKey/References/primaryKey",
-    "link-uuid": "0d9b512e-4671-483c-9dd8-47afddfe62ba",
-    "title": "primaryKey",
-    "content": "Type PrimaryKey Multiplicity 1",
-    "timestamp": 1758586582653
+    "timestamp": 1759374666836
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/decimalDigits/index.html": {
     "path": "Column/Attributes/decimalDigits",
-    "link-uuid": "3712b007-ae20-46e6-99ce-ecd1050eaa8b",
+    "link-uuid": "fab4654a-6662-42d4-ae42-b08347da7722",
     "title": "decimalDigits",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582463
+    "timestamp": 1759374666556
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/isNullable/index.html": {
     "path": "Column/Attributes/isNullable",
-    "link-uuid": "fa02d141-9432-4d67-bc0b-03c268f8334c",
+    "link-uuid": "dc7e30db-0f1d-4a3d-92ef-eadbc5aa9d75",
     "title": "isNullable",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582472
+    "timestamp": 1759374666562
   },
   "references/eClassifiers/Database/references/eStructuralFeatures/dataTypes/index.html": {
     "path": "Database/References/dataTypes",
-    "link-uuid": "241696f7-a09d-4818-94cd-621ca79a44cf",
+    "link-uuid": "20698f66-943c-46f2-b418-6c5d01d568cc",
     "title": "dataTypes",
     "content": "Type DataType Multiplicity 0..*",
-    "timestamp": 1758586582538
+    "timestamp": 1759374666620
+  },
+  "references/eClassifiers/ForeignKey/references/eStructuralFeatures/primaryKey/index.html": {
+    "path": "ForeignKey/References/primaryKey",
+    "link-uuid": "ce8900e8-ae98-436a-9fe9-10e013d257f8",
+    "title": "primaryKey",
+    "content": "Type PrimaryKey Multiplicity 1",
+    "timestamp": 1759374666728
   },
   "references/eClassifiers/Schema/inheritance.html": {
     "path": "Schema/Inheritance",
-    "link-uuid": "e2e063df-8d3d-4eb4-a45c-07f7246f246b",
+    "link-uuid": "d7716f61-9d14-4519-8e1e-ac7d3770ef53",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582731
+    "timestamp": 1759374666801
   },
   "references/eClassifiers/Catalog/references/eStructuralFeatures/schemas/index.html": {
     "path": "Catalog/References/schemas",
-    "link-uuid": "bd875fcc-5c5e-4ded-a21f-5bde6cd72d1f",
+    "link-uuid": "99eeb9ee-d6bb-4901-9c0d-58b1bf259caa",
     "title": "schemas",
     "content": "Type Schema Multiplicity 0..* Catalog schemas.",
-    "timestamp": 1758586582405
-  },
-  "references/eClassifiers/ImportedKeyColumn/references/eStructuralFeatures/pkColumn/index.html": {
-    "path": "ImportedKeyColumn/References/pkColumn",
-    "link-uuid": "20087f79-1320-41ce-8826-d523a10c741e",
-    "title": "pkColumn",
-    "content": "Type Column Multiplicity 1",
-    "timestamp": 1758586582681
+    "timestamp": 1759374666505
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/dataType/index.html": {
     "path": "DataType/Attributes/dataType",
-    "link-uuid": "cfb0f3ef-ae58-482a-8123-293781bd9b03",
+    "link-uuid": "d9ae6d49-983f-4235-852e-bea0ee0d8b50",
     "title": "dataType",
     "content": "Type Type Multiplicity 0..1",
-    "timestamp": 1758586582586
+    "timestamp": 1759374666666
   },
   "references/eClassifiers/Schema/references/eStructuralFeatures/tables/index.html": {
     "path": "Schema/References/tables",
-    "link-uuid": "2f5367de-d659-4bb1-9fc4-a2cf391a37f1",
+    "link-uuid": "d431afa9-9f03-4821-98f1-889c83e43c8e",
     "title": "tables",
     "content": "Type Table Multiplicity 0..*",
-    "timestamp": 1758586582735
+    "timestamp": 1759374666805
   },
   "references/eClassifiers/DataType/inheritance.html": {
     "path": "DataType/Inheritance",
-    "link-uuid": "4859014c-c3a2-4c0e-b9e2-a5edb09e3f8b",
+    "link-uuid": "4664864b-995b-406b-9af5-1b2314ca98e0",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582575
+    "timestamp": 1759374666653
   },
   "references/eClassifiers/Table/references/eStructuralFeatures/columns/index.html": {
     "path": "Table/References/columns",
-    "link-uuid": "0c6b7ffe-b6e6-411d-becf-9e200f2c6b1f",
+    "link-uuid": "cdf4acd1-49d0-4dff-9e28-2fe0e5ef87b3",
     "title": "columns",
     "content": "Type Column Multiplicity 0..*",
-    "timestamp": 1758586582765
+    "timestamp": 1759374666832
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/localTypeName/index.html": {
     "path": "DataType/Attributes/localTypeName",
-    "link-uuid": "5ecf415e-6ad7-4739-b6ac-aca768ee4da8",
+    "link-uuid": "cf4ce5ef-7d68-4139-b7dd-81d12e0e4df5",
     "title": "localTypeName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582596
+    "timestamp": 1759374666675
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/minimumScale/index.html": {
     "path": "DataType/Attributes/minimumScale",
-    "link-uuid": "479ac95d-99eb-486d-8868-e31070c70bca",
+    "link-uuid": "04aa2fc1-5622-4d85-a87a-7730fe076f5a",
     "title": "minimumScale",
     "content": "Type EShortObject Multiplicity 0..1",
-    "timestamp": 1758586582601
+    "timestamp": 1759374666679
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/unsignedAttribute/index.html": {
     "path": "DataType/Attributes/unsignedAttribute",
-    "link-uuid": "8831def3-d1eb-48e3-87e8-0959c10a9a72",
+    "link-uuid": "d2580cd7-7c30-4754-9c05-1856f26e6074",
     "title": "unsignedAttribute",
     "content": "Type EBooleanObject Multiplicity 0..1",
-    "timestamp": 1758586582616
-  },
-  "references/eClassifiers/ImportedKeyColumn/references/eStructuralFeatures/fkColumn/index.html": {
-    "path": "ImportedKeyColumn/References/fkColumn",
-    "link-uuid": "bf245f37-b7f4-4668-849f-08c3691a738c",
-    "title": "fkColumn",
-    "content": "Type Column Multiplicity 1",
-    "timestamp": 1758586582679
+    "timestamp": 1759374666693
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/columnDef/index.html": {
     "path": "Column/Attributes/columnDef",
-    "link-uuid": "b97d4ad6-4e6c-4f68-bcf1-3ebebfaf2cc0",
+    "link-uuid": "989d29ee-82dc-49ec-8449-b74396d3fa82",
     "title": "columnDef",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582453
+    "timestamp": 1759374666545
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/type/index.html": {
     "path": "Column/References/type",
-    "link-uuid": "c4e4b851-d635-46ee-84e9-bee53540e330",
+    "link-uuid": "1165f845-2cf3-475d-bfc0-dfaf4d1aae50",
     "title": "type",
     "content": "Type DataType Multiplicity 0..1",
-    "timestamp": 1758586582501
+    "timestamp": 1759374666589
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/autoIncrement/index.html": {
     "path": "DataType/Attributes/autoIncrement",
-    "link-uuid": "5e910712-06dd-40b3-a404-d63aad9d5225",
+    "link-uuid": "283fba96-b8d3-42ca-aa3f-7d268690ee91",
     "title": "autoIncrement",
     "content": "Type EBooleanObject Multiplicity 0..1",
-    "timestamp": 1758586582580
+    "timestamp": 1759374666659
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/dataType/index.html": {
     "path": "Column/Attributes/dataType",
-    "link-uuid": "762a3a6f-3fa9-4a0f-a2c6-eedf7f2c6ff3",
+    "link-uuid": "13e57ccd-3376-47de-b0cb-90008c215fa7",
     "title": "dataType",
     "content": "Type Type Multiplicity 0..1",
-    "timestamp": 1758586582459
+    "timestamp": 1759374666553
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/ordinalPosition/index.html": {
     "path": "Column/Attributes/ordinalPosition",
-    "link-uuid": "15f5a026-7f0f-41f0-b1a0-ebdac9f98f46",
+    "link-uuid": "a824932c-fcd2-4c11-906a-5f2fa5c13cf1",
     "title": "ordinalPosition",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582481
+    "timestamp": 1759374666571
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/literalPrefix/index.html": {
     "path": "DataType/Attributes/literalPrefix",
-    "link-uuid": "abf4a077-49c1-476a-b2d1-643246dd5121",
+    "link-uuid": "9842bfef-3f42-4355-9cb9-2e8c89b7ac97",
     "title": "literalPrefix",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582591
+    "timestamp": 1759374666670
   },
   "references/eClassifiers/Catalog/inheritance.html": {
     "path": "Catalog/Inheritance",
-    "link-uuid": "51f9fa1a-0b3b-4979-a3ec-42e2a94f5510",
+    "link-uuid": "22fb8e4e-057b-4fa4-a98e-d247b2851f25",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582398
+    "timestamp": 1759374666499
   },
   "references/eClassifiers/PrimaryKey/references/eStructuralFeatures/columns/index.html": {
     "path": "PrimaryKey/References/columns",
-    "link-uuid": "b814dced-21d5-439e-98ed-11772c190b42",
+    "link-uuid": "3841b74c-686d-4de2-83df-95864ff8ac38",
     "title": "columns",
     "content": "Type Column Multiplicity 1..*",
-    "timestamp": 1758586582711
+    "timestamp": 1759374666780
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/sqlDatetimeSub/index.html": {
     "path": "Column/Attributes/sqlDatetimeSub",
-    "link-uuid": "b77750ea-145a-4b2e-9e42-e1a3744962ba",
+    "link-uuid": "c321d127-e4f7-41c5-b37f-c7d2f343c454",
     "title": "sqlDatetimeSub",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582499
+    "timestamp": 1759374666587
+  },
+  "references/eClassifiers/ForeignKey/references/eStructuralFeatures/deferrability/index.html": {
+    "path": "ForeignKey/Attributes/deferrability",
+    "link-uuid": "250c53ce-5bfd-4f37-b164-6b061c5136d0",
+    "title": "deferrability",
+    "content": "Type Deferrability Multiplicity 0..1",
+    "timestamp": 1759374666724
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/typeName/index.html": {
     "path": "Column/Attributes/typeName",
-    "link-uuid": "fa89b7fb-d606-4b60-898f-bde097bd0e36",
+    "link-uuid": "16d5584a-ff00-4a20-9818-6a02df27f801",
     "title": "typeName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582504
+    "timestamp": 1759374666592
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/literalSuffix/index.html": {
     "path": "DataType/Attributes/literalSuffix",
-    "link-uuid": "92bceeb9-f8a4-4bc2-a85d-2b48b282aeee",
+    "link-uuid": "212e13db-6afe-4c8b-80a3-cf85964f48df",
     "title": "literalSuffix",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1758586582594
+    "timestamp": 1759374666672
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/maximumScale/index.html": {
     "path": "DataType/Attributes/maximumScale",
-    "link-uuid": "fd176c07-4b43-4dc9-8fb8-41cfb017050c",
+    "link-uuid": "76e6af66-f39c-454d-a94e-b206ae29e326",
     "title": "maximumScale",
     "content": "Type EShortObject Multiplicity 0..1",
-    "timestamp": 1758586582598
+    "timestamp": 1759374666677
   },
   "references/eClassifiers/TableType/inheritance.html": {
     "path": "TableType/Inheritance",
-    "link-uuid": "49a92152-1db4-447d-afd0-4e6663522d71",
+    "link-uuid": "dadbe601-58ed-4851-a017-4c8d13ae475c",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1758586582790
+    "timestamp": 1759374666857
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/numPrecRadix/index.html": {
     "path": "DataType/Attributes/numPrecRadix",
-    "link-uuid": "b511e1a8-59cc-4176-89c2-36c75c3d9847",
+    "link-uuid": "bf4adcbc-920c-4968-a40b-0cd40452fb60",
     "title": "numPrecRadix",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582605
+    "timestamp": 1759374666683
   },
   "references/eClassifiers/Table/index.html": {
-    "link-uuid": "d8cb6db8-aa49-46f1-a713-bea5801c273f",
+    "link-uuid": "b60a5197-72ba-4de3-9c07-a41fdfcf1659",
     "title": "Table",
     "content": "A database table is the core structure used to store data in a relational database. Think of it as a grid or spreadsheet where each row represents a record and each column represents a field or attribute of that record. Anatomy of a Table Rows: Each row (also called a record or tuple) holds a single instance of data. Columns: Each column defines a specific attribute, with a name and data type. Data Types: Columns are typed&mdash;e.g., INTEGER, VARCHAR, DATE &mdash; to control what kind of data they hold. Constraints: Tables can enforce rules like PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE, etc.",
-    "timestamp": 1758586582759
+    "timestamp": 1759374666826
+  },
+  "references/eClassifiers/ForeignKey/index.html": {
+    "link-uuid": "0b69967d-c194-4071-85c2-aaeb43ee31d7",
+    "title": "ForeignKey",
+    "content": "An imported key in a relational database refers to a foreign key that a table receives from another table. It&rsquo;s a way of saying: &ldquo;This column in my table references a primary key in another table.&rdquo; It&rsquo;s a foreign key from the perspective of the child table. It creates a relationship between two tables&mdash;typically a many-to-one or one-to-one link. The imported key ensures referential integrity, meaning the value in the child table must exist in the parent table.",
+    "timestamp": 1759374666715
+  },
+  "references/eClassifiers/ForeignKey/references/eStructuralFeatures/deleteRule/index.html": {
+    "path": "ForeignKey/Attributes/deleteRule",
+    "link-uuid": "419e8161-029a-4fca-8ba3-4479e6bd979d",
+    "title": "deleteRule",
+    "content": "Type ImportedKeyRule Multiplicity 0..1",
+    "timestamp": 1759374666726
   },
   "references/eClassifiers/Schema/index.html": {
-    "link-uuid": "0e84d4a3-8fde-49a4-b0fc-2df5ab5da199",
+    "link-uuid": "e62921fb-c04c-48d5-b4b9-64b81544145b",
     "title": "Schema",
     "content": "A database schema is the blueprint or architecture of a database. It defines how data is organized, structured, and related within the system. What Does a Schema Include? Tables: Definitions of each table, including names and columns. Columns: Names, data types, constraints (e.g., NOT NULL, UNIQUE). Relationships: Foreign keys that link tables together. Indexes: Structures that speed up data retrieval. Views: Virtual tables based on queries. Stored Procedures &amp; Functions: Reusable logic stored in the database. Triggers: Automated actions based on data changes. Schema vs. Database A database is the container for all data. A schema is the organizational structure within that container. Some databases (like PostgreSQL or Oracle) support multiple schemas within a single database. Others (like MySQL) treat each database as a single schema.",
-    "timestamp": 1758586582729
+    "timestamp": 1759374666799
   },
   "references/eClassifiers/Column/references/eStructuralFeatures/sqlDataType/index.html": {
     "path": "Column/Attributes/sqlDataType",
-    "link-uuid": "ae6a2857-2110-4b62-beb7-ea4b5325cc17",
+    "link-uuid": "3b77fa46-c330-403d-8f3b-2ab909fbfd86",
     "title": "sqlDataType",
     "content": "Type EIntegerObject Multiplicity 0..1",
-    "timestamp": 1758586582497
-  },
-  "references/eClassifiers/ImportedKey/references/eStructuralFeatures/deleteRule/index.html": {
-    "path": "ImportedKey/Attributes/deleteRule",
-    "link-uuid": "b8887e7e-169e-4762-8a41-23f7f96b8646",
-    "title": "deleteRule",
-    "content": "Type ImportedKeyRule Multiplicity 0..1",
-    "timestamp": 1758586582651
+    "timestamp": 1759374666585
   },
   "references/eClassifiers/DataType/references/eStructuralFeatures/nullable/index.html": {
     "path": "DataType/Attributes/nullable",
-    "link-uuid": "b8ec6bd5-5d09-40dd-bd1c-fdb1294034ff",
+    "link-uuid": "fff41cca-09f8-4b22-8ea9-250b454fbd2d",
     "title": "nullable",
     "content": "Type EShortObject Multiplicity 0..1",
-    "timestamp": 1758586582603
+    "timestamp": 1759374666681
   },
   "references/eClassifiers/Catalog/index.html": {
-    "link-uuid": "09087207-123a-4b0c-8918-2f328e65fc4a",
+    "link-uuid": "c4e7d018-43c3-4822-a8a9-4f731f0b797d",
     "title": "Catalog",
     "content": "A catalog is typically the top-level container for database objects like schemas, tables, and views. In many databases, a catalog corresponds to a database instance itself. Not all databases support catalogs. Some use schemas as the highest level, while others (like MySQL) treat each database as a catalog.",
-    "timestamp": 1758586582395
+    "timestamp": 1759374666496
   }
 }
