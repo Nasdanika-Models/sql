@@ -4,6 +4,8 @@ sql.drawio
 
 ## Core
 
+Updates, content adapter - future releases
+
 ## Model
 
 ## CLI
