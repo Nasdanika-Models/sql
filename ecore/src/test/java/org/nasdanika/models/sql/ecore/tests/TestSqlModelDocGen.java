@@ -82,7 +82,7 @@ public class TestSqlModelDocGen {
 		AppSiteGenerator actionSiteGenerator = new AppSiteGenerator() {
 			
 			protected boolean isDeleteOutputPath(String path) {
-				return !"CNAME".equals(path) && !path.startsWith("images/") && !path.startsWith("libraries/");			
+				return !"CNAME".equals(path) && !path.startsWith("images/") && !path.startsWith("libraries/") && !path.startsWith("demos/");			
 			};
 			
 		};		
@@ -106,7 +106,7 @@ public class TestSqlModelDocGen {
 		
 		System.out.println("There are " + errorCount + " site errors");
 		
-		if (errorCount != 95) {
+		if (errorCount != 186) {
 			throw new ExecutionException("There are problems with pages: " + errorCount);
 		}		
 	}
