@@ -245,7 +245,7 @@ This module provides several processor classes for generating HTML documentation
 * [Sources](https://github.com/Nasdanika-Models/sql/tree/main/doc)
 * [Maven Central](https://central.sonatype.com/artifact/org.nasdanika.models.sql/doc)
 * [Javadoc](https://javadoc.io/doc/org.nasdanika.models.sql/doc)
-* [Demo](demos/sample-database-doc/index.html)
+* [Demo](demos/sample-database-docs/index.html)
 
 
 The below snippet demonstrates how to generate database metamodel documentation.
