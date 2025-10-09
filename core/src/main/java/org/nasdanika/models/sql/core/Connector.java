@@ -217,29 +217,46 @@ public class Connector<T extends EObject> extends Configuration implements Injec
 			return null;
 		}
 		
-		return (resultSet, target) -> {
-			if (type == EcorePackage.Literals.ESTRING) {
-				target.eSet(eAttribute, resultSet.getString(column));
-			} else if (type == EcorePackage.Literals.EDATE) {
-				target.eSet(eAttribute, resultSet.getDate(column));
-			} else if (type == EcorePackage.Literals.EINT) {
-				target.eSet(eAttribute, resultSet.getInt(column));
-			} else if (type == EcorePackage.Literals.EBIG_DECIMAL) {
-				target.eSet(eAttribute, resultSet.getBigDecimal(column));
-			} else if (type == EcorePackage.Literals.ESHORT) {
-				target.eSet(eAttribute, resultSet.getShort(column));
-			} else if (type == EcorePackage.Literals.EBOOLEAN) {
-				target.eSet(eAttribute, resultSet.getBoolean(column));
-			} else if (type == EcorePackage.Literals.EDOUBLE) {
-				target.eSet(eAttribute, resultSet.getDouble(column));
-			} else if (type == EcorePackage.Literals.ELONG) {
-				target.eSet(eAttribute, resultSet.getLong(column));
-			} else if (type == EcorePackage.Literals.EFLOAT) {
-				target.eSet(eAttribute, resultSet.getFloat(column));
-			} else {
-				target.eSet(eAttribute, resultSet.getObject(column, type.getInstanceClass()));
-			}
-		};
+		return (resultSet, target) -> target.eSet(eAttribute, getValue(resultSet, column, type));
+	}
+	
+	/**
+	 * Retrieves column value of specified type. 
+	 * Override if the database does not support some type conversions.
+	 * @param resultSet
+	 * @param column
+	 * @param type
+	 * @return
+	 */
+	protected Object getValue(ResultSet resultSet, String column, EDataType type) throws SQLException {
+		if (type == EcorePackage.Literals.ESTRING) {
+			return resultSet.getString(column);
+		} 
+		if (type == EcorePackage.Literals.EDATE) {
+			return resultSet.getDate(column);
+		} 
+		if (type == EcorePackage.Literals.EINT) {
+			return resultSet.getInt(column);
+		} 
+		if (type == EcorePackage.Literals.EBIG_DECIMAL) {
+			return resultSet.getBigDecimal(column);
+		} 
+		if (type == EcorePackage.Literals.ESHORT) {
+			return resultSet.getShort(column);
+		} 
+		if (type == EcorePackage.Literals.EBOOLEAN) {
+			return resultSet.getBoolean(column);
+		} 
+		if (type == EcorePackage.Literals.EDOUBLE) {
+			return resultSet.getDouble(column);
+		} 
+		if (type == EcorePackage.Literals.ELONG) {
+			return resultSet.getLong(column);
+		} 
+		if (type == EcorePackage.Literals.EFLOAT) {
+			return resultSet.getFloat(column);
+		} 
+		return resultSet.getObject(column, type.getInstanceClass());
 	}
 	
 	@Override
