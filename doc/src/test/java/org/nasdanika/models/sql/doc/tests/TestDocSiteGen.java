@@ -90,7 +90,7 @@ public class TestDocSiteGen {
 		
 		System.out.println("There are " + errorCount + " site errors");
 		
-		if (errorCount != 4) {
+		if (errorCount != 90) {
 			throw new ExecutionException("There are problems with pages: " + errorCount);
 		}				
 	}

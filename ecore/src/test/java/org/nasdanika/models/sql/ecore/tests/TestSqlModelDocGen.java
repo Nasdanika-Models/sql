@@ -106,7 +106,7 @@ public class TestSqlModelDocGen {
 		
 		System.out.println("There are " + errorCount + " site errors");
 		
-		if (errorCount != 186) {
+		if (errorCount != 185) {
 			throw new ExecutionException("There are problems with pages: " + errorCount);
 		}		
 	}
