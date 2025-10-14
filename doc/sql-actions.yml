@@ -1,7 +1,7 @@
 Action:
     icon: https://docs.nasdanika.org/images/nasdanika-logo.png
     text: Nasdanika SQL Model
-    location: https://crew-ai.models.nasdanika.org/
+    location: https://sql.models.nasdanika.org/
     children:
      - ActionReference: "target/action-models/sql-actions.xmi#/"
     navigation:
