@@ -4,6 +4,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.Executor;
 import java.util.function.Consumer;
 
 /**
@@ -31,5 +34,44 @@ public interface Factory<T> {
 			consumer.accept(create(resultSet));
 		}		
 	}	
+	
+	default <R> void process(
+			ResultSet resultSet,
+			Processor<? super T, ? extends R> processor,
+			Consumer<? super R> consumer) throws SQLException {
+		
+		while (resultSet.next()) {
+			T arg = create(resultSet);
+			R result = processor.process(arg);
+			if (consumer != null) {
+				consumer.accept(result);
+			}
+		}		
+	}
+	
+	default <R> void process(
+			ResultSet resultSet,
+			Executor executor,
+			Processor<? super T, ? extends R> processor,
+			Consumer<? super CompletionStage<? super R>> consumer) throws SQLException {
+		
+		while (resultSet.next()) {
+			CompletableFuture<R> cf = new CompletableFuture<>();
+			
+			executor.execute(() -> {
+				try {
+					T arg = create(resultSet);
+					R result = processor.process(arg);
+					cf.complete(result);
+				} catch (Exception e) {
+					cf.completeExceptionally(e);
+				}
+			});
+			
+			if (consumer != null) {
+				consumer.accept(cf);
+			}
+		}		
+	}
 	
 }
