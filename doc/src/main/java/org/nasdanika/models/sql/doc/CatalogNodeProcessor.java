@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
 import org.nasdanika.common.Context;
 import org.nasdanika.common.DocumentationFactory;
@@ -25,7 +26,7 @@ public class CatalogNodeProcessor extends ModelElementNodeProcessor<Catalog> {
 	public CatalogNodeProcessor(
 		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
 		Context context,
-		java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {
 		
 		super(config, context, prototypeProvider, documentationFactories);

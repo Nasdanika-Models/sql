@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.function.BiConsumer;
 
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EObject;
 import org.nasdanika.common.Context;
 import org.nasdanika.common.DocumentationFactory;
 import org.nasdanika.common.ProgressMonitor;
@@ -36,8 +37,8 @@ public class SqlNodeProcessorFactory {
 	private java.util.function.BiFunction<URI, ProgressMonitor, Label> prototypeProvider;
 	private Collection<DocumentationFactory> documentationFactories;
 
-	protected java.util.function.Function<ProgressMonitor, Action> getPrototypeProvider(NodeProcessorConfig<WidgetFactory, WidgetFactory> config) {
-		return progressMonitor -> {
+	protected java.util.function.BiFunction<EObject, ProgressMonitor, Action> getPrototypeProvider(NodeProcessorConfig<WidgetFactory, WidgetFactory> config) {
+		return (eObj, progressMonitor) -> {
 			if (prototypeProvider != null) {
 				for (URI identifier: NcoreUtil.getIdentifiers(((EObjectNode) config.getElement()).get())) {
 					Label prototype = prototypeProvider.apply(identifier, progressMonitor);
