@@ -58,7 +58,7 @@ public abstract class ModelElementNodeProcessor<T extends EObject> extends EObje
 	protected Collection<DocumentationFactory> documentationFactories;
 	
 	protected ModelElementNodeProcessor(
-		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+		NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 		Context context,
 		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {

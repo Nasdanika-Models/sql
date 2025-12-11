@@ -2,2977 +2,2977 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://something.org/catalogs.html</loc>
-    <lastmod>2025-09-24T21:14:49.315-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.179-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/data-types.html</loc>
-    <lastmod>2025-09-24T21:14:53.068-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.828-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.307-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.169-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.326-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.188-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.339-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.202-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CHECK_CONSTRAINTS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:49.366-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.222-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CHECK_CONSTRAINTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.358-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.216-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CHECK_CONSTRAINTS/references/columns/CHECK_CLAUSE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.374-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.229-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CHECK_CONSTRAINTS/references/columns/CONSTRAINT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.380-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.236-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CHECK_CONSTRAINTS/references/columns/CONSTRAINT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.387-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.241-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CHECK_CONSTRAINTS/references/columns/CONSTRAINT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.393-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.249-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLLATIONS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:49.404-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.260-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLLATIONS/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.399-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.254-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLLATIONS/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.412-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.267-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLLATIONS/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.417-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.273-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLLATIONS/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.423-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.279-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLLATIONS/references/columns/LANGUAGE_TAG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.430-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.285-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLLATIONS/references/columns/PAD_ATTRIBUTE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.436-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.290-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:49.448-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.303-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.441-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.296-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/CHARACTER_MAXIMUM_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.454-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.309-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/CHARACTER_OCTET_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.459-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.316-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.466-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.322-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.472-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.328-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.478-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.334-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.484-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.340-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.490-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.345-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.496-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.350-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/COLUMN_DEFAULT/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.501-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.356-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/COLUMN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.507-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.362-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/COLUMN_ON_UPDATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.513-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.368-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.519-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.374-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DATETIME_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.525-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.379-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.532-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.385-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.538-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.391-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.544-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.397-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DEFAULT_ON_NULL/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.550-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.403-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DOMAIN_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.559-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.412-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DOMAIN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.565-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.418-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DOMAIN_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.571-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.424-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/DTD_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.577-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.430-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/GENERATION_EXPRESSION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.584-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.436-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/GEOMETRY_SRID/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.590-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.442-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/GEOMETRY_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.596-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.448-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_BASE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.602-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.454-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_CACHE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.608-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.460-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_CYCLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.614-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.466-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_GENERATION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.622-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.474-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_INCREMENT/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.628-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.480-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_MAXIMUM/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.635-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.487-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_MINIMUM/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.641-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.493-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IDENTITY_START/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.647-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.499-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/INTERVAL_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.654-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.505-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/INTERVAL_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.660-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.512-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IS_GENERATED/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.667-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.518-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IS_IDENTITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.673-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.524-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IS_NULLABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.681-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.532-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/IS_VISIBLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.689-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.539-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/MAXIMUM_CARDINALITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.696-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.547-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.702-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.554-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.709-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.562-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.716-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.569-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/ORDINAL_POSITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.722-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.577-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.729-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.584-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/SELECTIVITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.735-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.591-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.742-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.599-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.750-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.606-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMNS/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.759-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.613-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:49.772-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.625-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.766-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.619-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/COLUMN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.780-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.632-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/GRANTEE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.786-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.638-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/GRANTOR/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.792-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.643-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/IS_GRANTABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.798-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.649-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/PRIVILEGE_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.806-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.655-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.812-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.661-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.818-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.667-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/COLUMN_PRIVILEGES/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.824-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.673-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:49.836-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.684-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.830-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.679-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CHARACTER_MAXIMUM_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.843-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.692-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CHARACTER_OCTET_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.849-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.697-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.856-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.703-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.862-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.709-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.868-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.715-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.874-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.721-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.879-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.727-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.886-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.732-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CONSTANT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.892-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.739-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CONSTANT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.897-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.745-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/CONSTANT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.904-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.751-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.910-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.757-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/DATETIME_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.916-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.764-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.922-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.770-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.928-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.777-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.934-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.783-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/DTD_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.940-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.789-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/GEOMETRY_SRID/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.949-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.796-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/GEOMETRY_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.956-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.802-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/INTERVAL_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.962-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.809-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/INTERVAL_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.968-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.815-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/MAXIMUM_CARDINALITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.973-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.822-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.980-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.828-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.986-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.833-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.992-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.839-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:49.998-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.846-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTANTS/references/columns/VALUE_DEFINITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.005-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.852-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.016-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.864-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.011-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.858-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/references/columns/COLUMN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.026-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.871-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/references/columns/CONSTRAINT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.032-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.877-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/references/columns/CONSTRAINT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.038-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.882-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/references/columns/CONSTRAINT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.046-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.889-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.051-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.894-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.057-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.900-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/CONSTRAINT_COLUMN_USAGE/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.062-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.906-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.075-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.919-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.069-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.912-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/CHARACTER_MAXIMUM_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.082-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.925-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/CHARACTER_OCTET_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.087-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.930-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.095-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.936-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.101-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.941-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.107-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.948-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.113-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.954-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.119-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.959-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.124-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.965-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.130-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.971-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DATETIME_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.136-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.977-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.142-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.982-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.148-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.989-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.154-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.995-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DOMAIN_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.160-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DOMAIN_DEFAULT/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.166-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.007-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DOMAIN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.173-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.013-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DOMAIN_ON_UPDATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.179-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.019-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DOMAIN_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.187-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.025-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/DTD_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.192-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.030-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/GEOMETRY_SRID/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.198-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.036-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/GEOMETRY_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.205-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.043-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/INTERVAL_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.211-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.049-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/INTERVAL_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.217-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.055-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/MAXIMUM_CARDINALITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.223-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.062-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.230-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.068-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.236-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.074-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.243-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.080-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/PARENT_DOMAIN_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.249-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.086-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/PARENT_DOMAIN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.255-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.092-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/PARENT_DOMAIN_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.262-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.098-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAINS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.268-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.104-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.279-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.116-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.274-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.110-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/CONSTRAINT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.287-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.123-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/CONSTRAINT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.293-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.129-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/CONSTRAINT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.298-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.135-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/DOMAIN_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.305-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.141-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/DOMAIN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.311-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.146-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/DOMAIN_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.317-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.153-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/INITIALLY_DEFERRED/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.323-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.159-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/IS_DEFERRABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.328-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.164-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/DOMAIN_CONSTRAINTS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.334-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.170-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.346-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.182-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.340-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.176-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/CHARACTER_MAXIMUM_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.355-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.189-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/CHARACTER_OCTET_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.361-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.195-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.368-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.202-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.374-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.207-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.379-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.213-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.386-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.219-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.392-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.225-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.397-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.230-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/COLLECTION_TYPE_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.402-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.236-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.409-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.241-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/DATETIME_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.415-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.247-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.421-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.254-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.427-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.260-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.433-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.267-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/DTD_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.439-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.275-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/GEOMETRY_SRID/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.445-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.282-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/GEOMETRY_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.451-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.288-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/INTERVAL_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.461-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.294-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/INTERVAL_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.467-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.300-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/MAXIMUM_CARDINALITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.473-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.306-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.479-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.313-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.486-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.319-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.492-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.325-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/OBJECT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.499-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.331-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/OBJECT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.505-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.337-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/OBJECT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.511-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.344-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ELEMENT_TYPES/references/columns/OBJECT_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.518-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.350-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.529-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.362-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.524-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.357-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/references/columns/ENUM_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.537-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.369-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/references/columns/OBJECT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.543-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.374-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/references/columns/OBJECT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.549-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.380-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/references/columns/OBJECT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.556-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.386-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/references/columns/OBJECT_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.562-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.392-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/references/columns/VALUE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.568-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.398-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ENUM_VALUES/references/columns/VALUE_ORDINAL/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.573-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.404-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.586-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.416-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.579-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.409-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/CHARACTER_MAXIMUM_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.593-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.423-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/CHARACTER_OCTET_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.599-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.428-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.606-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.434-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.611-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.439-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.618-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.445-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.623-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.450-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.629-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.456-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.635-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.461-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.641-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.467-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/DATETIME_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.646-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.473-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.653-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.479-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.658-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.485-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.664-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.491-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/DTD_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.671-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.496-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/FIELD_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.676-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.503-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/GEOMETRY_SRID/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.683-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.509-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/GEOMETRY_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.688-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.515-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/INTERVAL_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.696-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.521-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/INTERVAL_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.703-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.527-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/MAXIMUM_CARDINALITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.709-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.533-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.716-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.539-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.722-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.546-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.728-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.552-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/OBJECT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.734-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.557-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/OBJECT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.740-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.564-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/OBJECT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.746-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.570-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/OBJECT_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.753-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.577-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/ORDINAL_POSITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.764-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.583-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/FIELDS/references/columns/ROW_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.770-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.589-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.781-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.601-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.776-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.595-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/INDEX_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.789-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.609-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/INDEX_CLASS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.794-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.614-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/INDEX_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.800-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.620-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/INDEX_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.806-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.626-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/INDEX_TYPE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.812-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.631-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/IS_GENERATED/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.818-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.636-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/NULLS_DISTINCT/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.824-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.642-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.830-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.649-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.836-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.654-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.842-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.660-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEXES/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.847-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.666-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.859-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.676-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.853-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.671-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/COLUMN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.866-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.684-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/INDEX_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.872-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.690-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/INDEX_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.878-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.695-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/INDEX_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.884-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.701-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/IS_UNIQUE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.890-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.706-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/NULL_ORDERING/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.895-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.713-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/ORDERING_SPECIFICATION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.901-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.719-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/ORDINAL_POSITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.907-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.724-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.913-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.730-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.919-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.736-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INDEX_COLUMNS/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.925-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.742-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INFORMATION_SCHEMA_CATALOG_NAME/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.937-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.754-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INFORMATION_SCHEMA_CATALOG_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.932-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.748-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/INFORMATION_SCHEMA_CATALOG_NAME/references/columns/CATALOG_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.946-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.761-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/IN_DOUBT/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.958-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.773-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/IN_DOUBT/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.953-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.767-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/IN_DOUBT/references/columns/TRANSACTION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.965-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.780-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/IN_DOUBT/references/columns/TRANSACTION_STATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.971-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.785-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/columns.html</loc>
-    <lastmod>2025-09-24T21:14:50.983-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.797-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.978-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.792-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/COLUMN_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.991-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.804-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/CONSTRAINT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:50.997-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.810-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/CONSTRAINT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.002-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.816-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/CONSTRAINT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.009-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.821-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/ORDINAL_POSITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.014-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.827-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/POSITION_IN_UNIQUE_CONSTRAINT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.020-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.833-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.025-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.839-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.032-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.845-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/KEY_COLUMN_USAGE/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.038-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.850-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/LOCKS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.049-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.862-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/LOCKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.043-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.857-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/LOCKS/references/columns/LOCK_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.056-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.869-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/LOCKS/references/columns/SESSION_ID/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.061-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.874-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/LOCKS/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.068-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.881-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/LOCKS/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.075-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.887-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.088-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.899-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.081-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.892-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/AS_LOCATOR/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.097-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.905-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/CHARACTER_MAXIMUM_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.102-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.911-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/CHARACTER_OCTET_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.108-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.917-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.115-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.923-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.121-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.928-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.127-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.934-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.133-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.939-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.139-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.945-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.144-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.951-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.151-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.957-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/DATETIME_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.157-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.962-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.163-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.968-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.168-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.975-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.175-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.981-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/DTD_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.181-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.986-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/GEOMETRY_SRID/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.187-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.993-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/GEOMETRY_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.193-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:23.998-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/INTERVAL_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.200-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.005-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/INTERVAL_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.206-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.011-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/IS_RESULT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.212-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.017-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/MAXIMUM_CARDINALITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.219-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.022-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.225-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.028-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.231-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.035-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.237-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.041-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/ORDINAL_POSITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.243-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.047-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/PARAMETER_DEFAULT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.249-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.053-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/PARAMETER_MODE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.256-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.059-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/PARAMETER_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.265-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.065-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/SPECIFIC_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.272-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.070-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/SPECIFIC_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.278-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.077-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/PARAMETERS/references/columns/SPECIFIC_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.284-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.083-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.296-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.094-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.290-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.089-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/AVERAGE_EXECUTION_TIME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.303-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.102-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/AVERAGE_ROW_COUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.309-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.108-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/CUMULATIVE_EXECUTION_TIME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.316-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.113-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/CUMULATIVE_ROW_COUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.321-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.119-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/EXECUTION_COUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.327-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.126-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/MAX_EXECUTION_TIME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.333-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.131-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/MAX_ROW_COUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.339-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.137-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/MIN_EXECUTION_TIME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.345-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.143-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/MIN_ROW_COUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.351-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.149-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/SQL_STATEMENT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.357-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.155-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/STD_DEV_EXECUTION_TIME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.363-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.160-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/QUERY_STATISTICS/references/columns/STD_DEV_ROW_COUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.370-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.167-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.382-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.178-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.376-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.173-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/CONSTRAINT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.390-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.185-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/CONSTRAINT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.396-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.190-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/CONSTRAINT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.402-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.196-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/DELETE_RULE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.408-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.202-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/MATCH_OPTION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.413-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.208-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/UNIQUE_CONSTRAINT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.421-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.213-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/UNIQUE_CONSTRAINT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.427-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.219-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/UNIQUE_CONSTRAINT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.433-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.225-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/REFERENTIAL_CONSTRAINTS/references/columns/UPDATE_RULE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.439-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.231-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.451-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.243-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.444-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.237-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/references/columns/GRANTEDROLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.458-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.250-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/references/columns/GRANTEE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.464-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.255-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/references/columns/GRANTEETYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.470-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.262-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/references/columns/RIGHTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.476-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.268-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.484-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.274-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/RIGHTS/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.490-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.279-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROLES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.501-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.291-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROLES/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.496-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.286-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROLES/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.508-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.298-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROLES/references/columns/ROLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.514-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.304-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.526-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.317-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.520-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.310-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/CHARACTER_MAXIMUM_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.533-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.323-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/CHARACTER_OCTET_LENGTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.539-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.329-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.544-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.334-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.551-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.340-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.556-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.344-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/COLLATION_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.562-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.351-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.568-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.357-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/COLLATION_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.573-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.363-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.580-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.369-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/DATETIME_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.586-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.374-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.592-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.379-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.598-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.386-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.603-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.391-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/DTD_IDENTIFIER/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.610-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.397-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/EXTERNAL_LANGUAGE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.616-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.403-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/EXTERNAL_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.623-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.409-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/GEOMETRY_SRID/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.629-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.415-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/GEOMETRY_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.635-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.422-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/INTERVAL_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.641-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.428-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/INTERVAL_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.648-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.433-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/IS_DETERMINISTIC/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.653-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.440-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/MAXIMUM_CARDINALITY/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.659-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.446-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.666-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.452-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.672-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.458-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.678-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.465-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/PARAMETER_STYLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.685-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.471-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.691-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.477-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/ROUTINE_BODY/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.700-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.484-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/ROUTINE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.706-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.489-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/ROUTINE_DEFINITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.713-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.496-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/ROUTINE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.719-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.502-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/ROUTINE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.725-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.508-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/ROUTINE_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.732-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.514-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/SPECIFIC_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.738-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.520-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/SPECIFIC_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.745-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.527-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/ROUTINES/references/columns/SPECIFIC_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.751-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.534-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.765-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.545-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.759-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.540-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/CATALOG_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.772-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.551-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/DEFAULT_CHARACTER_SET_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.777-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.557-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/DEFAULT_CHARACTER_SET_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.784-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.564-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/DEFAULT_CHARACTER_SET_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.789-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.569-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/DEFAULT_COLLATION_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.795-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.576-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.801-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.582-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/SCHEMA_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.807-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.587-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/SCHEMA_OWNER/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.813-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.593-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SCHEMATA/references/columns/SQL_PATH/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.819-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.598-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.830-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.610-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.824-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.605-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/BASE_VALUE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.838-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.617-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/CACHE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.844-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.623-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/CYCLE_OPTION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.849-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.628-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.856-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.633-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/DECLARED_DATA_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.862-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.639-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/DECLARED_NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.868-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.646-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/DECLARED_NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.874-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.652-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/INCREMENT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.880-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.656-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/MAXIMUM_VALUE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.885-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.662-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/MINIMUM_VALUE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.891-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.669-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/NUMERIC_PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.897-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.674-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/NUMERIC_PRECISION_RADIX/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.903-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.681-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/NUMERIC_SCALE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.909-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.687-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.916-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.693-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/SEQUENCE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.922-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.699-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/SEQUENCE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.928-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.705-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/SEQUENCE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.935-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.711-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SEQUENCES/references/columns/START_VALUE/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.941-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.716-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:51.953-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.729-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.947-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.723-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/BLOCKER_ID/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.961-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.736-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/CLIENT_ADDR/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.967-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.741-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/CLIENT_INFO/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.973-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.748-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/CONTAINS_UNCOMMITTED/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.980-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.754-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/EXECUTING_STATEMENT/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.986-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.760-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/EXECUTING_STATEMENT_START/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.991-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.766-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/ISOLATION_LEVEL/index.html</loc>
-    <lastmod>2025-09-24T21:14:51.997-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.773-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/SERVER/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.003-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.778-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/SESSION_ID/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.008-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.785-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/SESSION_START/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.014-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.791-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/SESSION_STATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.020-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.797-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/SLEEP_SINCE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.026-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.803-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSIONS/references/columns/USER_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.032-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.809-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSION_STATE/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.043-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.821-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSION_STATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.038-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.815-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSION_STATE/references/columns/STATE_COMMAND/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.053-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.829-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SESSION_STATE/references/columns/STATE_KEY/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.058-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.834-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SETTINGS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.070-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.846-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SETTINGS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.065-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.840-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SETTINGS/references/columns/SETTING_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.077-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.853-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SETTINGS/references/columns/SETTING_VALUE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.084-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.859-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.095-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.871-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.090-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.865-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.102-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.878-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/STATUS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.107-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.883-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/SYNONYM_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.113-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.888-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/SYNONYM_FOR/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.119-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.894-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/SYNONYM_FOR_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.127-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.901-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/SYNONYM_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.133-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.907-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/SYNONYM_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.139-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.913-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/SYNONYMS/references/columns/TYPE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.145-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.919-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.157-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.930-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.151-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.925-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/COMMIT_ACTION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.163-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.937-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/IS_INSERTABLE_INTO/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.169-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.943-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/LAST_MODIFICATION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.174-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.948-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.182-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.956-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/ROW_COUNT_ESTIMATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.188-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.962-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/STORAGE_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.193-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.968-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.199-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.973-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/TABLE_CLASS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.204-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.980-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.211-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.985-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.216-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.991-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLES/references/columns/TABLE_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.222-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:24.997-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.234-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.009-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.229-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.004-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/CONSTRAINT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.242-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.017-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/CONSTRAINT_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.248-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.023-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/CONSTRAINT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.254-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.028-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/CONSTRAINT_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.260-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.034-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/ENFORCED/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.266-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.039-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/INDEX_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.272-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.045-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/INDEX_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.278-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.051-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/INDEX_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.284-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.057-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/INITIALLY_DEFERRED/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.290-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.063-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/IS_DEFERRABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.296-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.069-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/NULLS_DISTINCT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.302-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.075-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.308-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.081-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.314-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.086-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.320-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.093-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_CONSTRAINTS/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.326-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.099-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.337-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.111-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.332-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.105-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/GRANTEE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.347-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.118-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/GRANTOR/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.352-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.123-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/IS_GRANTABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.358-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.129-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/PRIVILEGE_TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.365-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.134-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.371-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.142-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.376-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.148-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.382-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.156-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TABLE_PRIVILEGES/references/columns/WITH_HIERARCHY/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.389-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.163-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.401-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.174-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.395-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.168-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/ACTION_ORIENTATION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.408-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.181-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/ACTION_TIMING/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.413-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.188-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/EVENT_MANIPULATION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.419-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.194-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/EVENT_OBJECT_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.426-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.200-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/EVENT_OBJECT_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.432-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.206-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/EVENT_OBJECT_TABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.437-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.211-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/IS_ROLLBACK/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.443-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.218-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/JAVA_CLASS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.450-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.225-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/NO_WAIT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.456-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.232-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/QUEUE_SIZE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.461-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.237-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.467-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.243-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/TRIGGER_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.473-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.249-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/TRIGGER_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.479-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.256-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/TRIGGERS/references/columns/TRIGGER_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.486-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.261-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/USERS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.498-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.273-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/USERS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.492-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.268-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/USERS/references/columns/IS_ADMIN/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.504-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.280-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/USERS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.510-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.285-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/USERS/references/columns/USER_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.515-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.292-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.528-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.304-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.522-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.298-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/CHECK_OPTION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.535-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.311-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/INSERTABLE_INTO/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.541-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.316-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/IS_TRIGGER_DELETABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.547-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.322-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/IS_TRIGGER_INSERTABLE_INTO/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.556-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.328-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/IS_TRIGGER_UPDATABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.561-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.333-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/IS_UPDATABLE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.567-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.339-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/REMARKS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.573-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.344-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/STATUS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.579-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.352-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/TABLE_CATALOG/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.585-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.357-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/TABLE_NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.591-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.363-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/TABLE_SCHEMA/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.597-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.369-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/references/tables/VIEWS/references/columns/VIEW_DEFINITION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.603-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.375-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/INFORMATION_SCHEMA/tables.html</loc>
-    <lastmod>2025-09-24T21:14:49.345-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.208-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.609-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.381-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.627-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.399-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/imported-keys.html</loc>
-    <lastmod>2025-09-24T21:14:52.669-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.439-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.621-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.393-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/references/columns/ID/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.635-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.407-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/references/columns/NAME/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.641-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.413-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/references/columns/PARENT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.648-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.419-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/references/columns/TYPE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.654-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.426-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/ACCOUNTS/references/importedKeys/CONSTRAINT_AF/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.661-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.432-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.682-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.451-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/imported-keys.html</loc>
-    <lastmod>2025-09-24T21:14:52.735-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.502-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.675-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.444-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/references/columns/ACCOUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.690-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.457-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/references/columns/CREDITAMOUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.697-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.463-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/references/columns/DEBITAMOUNT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.703-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.470-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/references/columns/ID/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.709-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.476-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/references/columns/TRANSACTION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.716-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.483-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/references/importedKeys/CONSTRAINT_16/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.723-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.489-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/JOURNAL_ENTRIES/references/importedKeys/CONSTRAINT_166/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.729-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.495-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/TRANSACTIONS/columns.html</loc>
-    <lastmod>2025-09-24T21:14:52.748-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.514-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/TRANSACTIONS/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.741-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.508-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/TRANSACTIONS/references/columns/DESCRIPTION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.755-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.522-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/TRANSACTIONS/references/columns/ID/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.761-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.527-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/TRANSACTIONS/references/columns/REFERENCENUMBER/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.767-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.534-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/references/tables/TRANSACTIONS/references/columns/TRANSACTION_DATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.775-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.540-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/references/schemas/PUBLIC/tables.html</loc>
-    <lastmod>2025-09-24T21:14:52.614-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.387-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/catalogs/TESTDB/schemas.html</loc>
-    <lastmod>2025-09-24T21:14:49.332-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:22.195-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/ARRAY/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.782-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.546-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/BIGINT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.789-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.553-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/BINARY/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.796-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.559-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/BINARY LARGE OBJECT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.802-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.565-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/BINARY VARYING/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.810-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.572-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/BOOLEAN/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.816-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.578-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/CHARACTER/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.822-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.585-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/CHARACTER LARGE OBJECT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.829-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.592-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/CHARACTER VARYING/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.836-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.599-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/DATE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.842-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.605-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/DECFLOAT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.849-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.613-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/DOUBLE PRECISION/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.855-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.619-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/ENUM/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.862-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.625-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/GEOMETRY/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.869-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.631-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTEGER/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.875-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.639-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL DAY/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.882-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.645-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL DAY TO HOUR/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.889-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.652-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL DAY TO MINUTE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.896-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.659-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL DAY TO SECOND/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.902-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.666-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL HOUR/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.909-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.673-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL HOUR TO MINUTE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.916-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.679-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL HOUR TO SECOND/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.923-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.687-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL MINUTE/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.930-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.693-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL MINUTE TO SECOND/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.938-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.699-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL MONTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.944-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.707-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL SECOND/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.952-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.713-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL YEAR/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.958-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.720-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/INTERVAL YEAR TO MONTH/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.965-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.727-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/JAVA_OBJECT/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.972-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.734-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/JSON/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.980-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.741-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/NUMERIC/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.988-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.748-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/REAL/index.html</loc>
-    <lastmod>2025-09-24T21:14:52.994-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.755-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/ROW/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.001-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.763-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/SMALLINT/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.009-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.770-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/TIME/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.016-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.777-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/TIME WITH TIME ZONE/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.025-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.784-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/TIMESTAMP/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.032-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.791-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/TIMESTAMP WITH TIME ZONE/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.039-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.798-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/TINYINT/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.046-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.805-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/UUID/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.053-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.813-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://something.org/references/dataTypes/VARCHAR_IGNORECASE/index.html</loc>
-    <lastmod>2025-09-24T21:14:53.060-04:00</lastmod>
+    <lastmod>2025-12-09T08:01:25.821-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

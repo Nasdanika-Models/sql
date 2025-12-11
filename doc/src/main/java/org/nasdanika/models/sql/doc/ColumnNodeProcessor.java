@@ -25,7 +25,7 @@ import org.nasdanika.models.sql.SqlPackage;
 public class ColumnNodeProcessor extends ModelElementNodeProcessor<Column> {
 
 	public ColumnNodeProcessor(
-		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+		NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 		Context context,
 		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {

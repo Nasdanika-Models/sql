@@ -14,7 +14,7 @@ import org.nasdanika.models.sql.ForeignKey;
 public class ForeignKeyNodeProcessor extends ModelElementNodeProcessor<ForeignKey> {
 
 	public ForeignKeyNodeProcessor(
-		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+		NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 		Context context,
 		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {

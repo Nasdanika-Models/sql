@@ -24,7 +24,7 @@ import org.nasdanika.ncore.NamedElement;
 public class CatalogNodeProcessor extends ModelElementNodeProcessor<Catalog> {
 
 	public CatalogNodeProcessor(
-		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+		NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 		Context context,
 		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {

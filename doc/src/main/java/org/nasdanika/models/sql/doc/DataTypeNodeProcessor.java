@@ -24,7 +24,7 @@ import org.nasdanika.models.sql.SqlPackage;
 public class DataTypeNodeProcessor extends ModelElementNodeProcessor<DataType> {
 
 	public DataTypeNodeProcessor(
-		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+		NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 		Context context,
 		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {

@@ -37,7 +37,7 @@ public class SqlNodeProcessorFactory {
 	private java.util.function.BiFunction<URI, ProgressMonitor, Label> prototypeProvider;
 	private Collection<DocumentationFactory> documentationFactories;
 
-	protected java.util.function.BiFunction<EObject, ProgressMonitor, Action> getPrototypeProvider(NodeProcessorConfig<WidgetFactory, WidgetFactory> config) {
+	protected java.util.function.BiFunction<EObject, ProgressMonitor, Action> getPrototypeProvider(NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config) {
 		return (eObj, progressMonitor) -> {
 			if (prototypeProvider != null) {
 				for (URI identifier: NcoreUtil.getIdentifiers(((EObjectNode) config.getElement()).get())) {
@@ -67,9 +67,9 @@ public class SqlNodeProcessorFactory {
 	
 	@EObjectNodeProcessor(type = Database.class)
 	public Object createDatabaseNodeProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			boolean parallel, 
-			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			BiConsumer<Element,BiConsumer<ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
 		return new DatabaseNodeProcessor(
@@ -81,9 +81,9 @@ public class SqlNodeProcessorFactory {
 	
 	@EObjectNodeProcessor(type = Catalog.class)
 	public Object createCatalogNodeProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			boolean parallel, 
-			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			BiConsumer<Element,BiConsumer<ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
 		return new CatalogNodeProcessor(
@@ -95,9 +95,9 @@ public class SqlNodeProcessorFactory {
 	
 	@EObjectNodeProcessor(type = Schema.class)
 	public Object createSchemaNodeProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			boolean parallel, 
-			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			BiConsumer<Element,BiConsumer<ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
 		return new SchemaNodeProcessor(
@@ -109,9 +109,9 @@ public class SqlNodeProcessorFactory {
 		
 	@EObjectNodeProcessor(type = Table.class)
 	public Object createTableNodeProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			boolean parallel, 
-			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			BiConsumer<Element,BiConsumer<ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
 		return new TableNodeProcessor(
@@ -123,9 +123,9 @@ public class SqlNodeProcessorFactory {
 	
 	@EObjectNodeProcessor(type = Column.class)
 	public Object createColumnNodeProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			boolean parallel, 
-			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			BiConsumer<Element,BiConsumer<ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
 		return new ColumnNodeProcessor(
@@ -137,9 +137,9 @@ public class SqlNodeProcessorFactory {
 	
 	@EObjectNodeProcessor(type = DataType.class)
 	public Object createDataTypeNodeProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			boolean parallel, 
-			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			BiConsumer<Element,BiConsumer<ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
 		return new DataTypeNodeProcessor(
@@ -151,9 +151,9 @@ public class SqlNodeProcessorFactory {
 	
 	@EObjectNodeProcessor(type = ForeignKey.class)
 	public Object createForeignKeyNodeProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			boolean parallel, 
-			BiConsumer<Element,BiConsumer<ProcessorInfo<Object>,ProgressMonitor>> infoProvider,
+			BiConsumer<Element,BiConsumer<ProcessorInfo<WidgetFactory, WidgetFactory, Object, Object>,ProgressMonitor>> infoProvider,
 			ProgressMonitor progressMonitor) {
 		
 		return new ForeignKeyNodeProcessor(

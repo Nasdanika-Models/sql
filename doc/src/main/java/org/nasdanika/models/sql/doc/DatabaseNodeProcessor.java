@@ -27,7 +27,7 @@ import org.nasdanika.ncore.NamedElement;
 public class DatabaseNodeProcessor extends ModelElementNodeProcessor<Database> {
 
 	public DatabaseNodeProcessor(
-		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+		NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 		Context context,
 		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {
