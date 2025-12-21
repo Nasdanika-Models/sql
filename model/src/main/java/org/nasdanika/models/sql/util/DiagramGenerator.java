@@ -57,7 +57,7 @@ public class DiagramGenerator {
 	 */
 	public SchemaGenerationResult generateSchemaLayer(
 			Schema schema, 
-			Layer layer,
+			Layer<?> layer,
 			Predicate<Table> tablePredicate) {		
 		Map<Table, CompletableFuture<Node>> nodeMap = new HashMap<>();
 		Function<Table, CompletableFuture<Node>> nodeProvider = k -> nodeMap.computeIfAbsent(k, kk -> new CompletableFuture<>());
@@ -76,7 +76,7 @@ public class DiagramGenerator {
 	protected Node generateTableNode(
 			Schema schema,
 			Table table, 
-			Layer layer, 
+			Layer<?> layer, 
 			Function<Table, CompletionStage<Node>> nodeProvider,
 			BiConsumer<ForeignKey, Connection> connectionConsumer) {
 		Node diagramNode = layer.createNode();
@@ -113,7 +113,7 @@ public class DiagramGenerator {
 	 * @param targetNode
 	 */
 	protected Connection createDrawioConnection(
-			Layer layer,
+			Layer<?> layer,
 			ForeignKey foreignKey,
 			org.nasdanika.drawio.Node fkNode,
 			org.nasdanika.drawio.Node pkNode) {
@@ -151,7 +151,7 @@ public class DiagramGenerator {
 				
 				Model model = page.getModel();
 				Root root = model.getRoot();
-				Layer backgroundLayer = root.getLayers().get(0);
+				Layer<?> backgroundLayer = root.getLayers().get(0);
 				org.nasdanika.drawio.Util.forceLayout(root, layoutWidth, layoutHeight);
 				
 				SchemaGenerationResult schemaResult = generateSchemaLayer(schema, backgroundLayer, tablePredicate);

@@ -9,6 +9,10 @@ import java.util.concurrent.CompletionStage;
 import java.util.concurrent.Executor;
 import java.util.function.Consumer;
 
+import org.nasdanika.common.NasdanikaException;
+
+import reactor.core.publisher.Flux;
+
 /**
  * Creates and loads objects from result sets
  * @param <T>
@@ -27,6 +31,24 @@ public interface Factory<T> {
 		List<T> ret = new ArrayList<>();
 		load(resultSet, ret::add);
 		return ret;
+	}
+	
+	default Flux<T> toFlux(ResultSet resultSet) {
+		return Flux.create(sink -> {
+			try {
+				load(resultSet, sink::next);
+			} catch (SQLException e) {
+				sink.error(e);
+			}
+			
+			sink.onDispose(() -> {
+				try {
+					resultSet.close();
+				} catch (SQLException e) {
+					throw new NasdanikaException(e);
+				}
+			});			
+		});			
 	}
 
 	default void load(ResultSet resultSet, Consumer<? super T> consumer) throws SQLException {
