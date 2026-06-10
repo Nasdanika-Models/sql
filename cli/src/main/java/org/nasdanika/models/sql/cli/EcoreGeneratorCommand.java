@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.nasdanika.capability.CapabilityLoader;
 import org.nasdanika.cli.CommandGroup;
 import org.nasdanika.cli.ParentCommands;
+import org.nasdanika.common.EModelElementSupplier;
 import org.nasdanika.common.EObjectSupplier;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.common.Transformer;
@@ -34,12 +35,12 @@ import picocli.CommandLine.ParentCommand;
 		description = "Generates a Ecore model from a database model",
 		versionProvider = ModuleVersionProvider.class,		
 		mixinStandardHelpOptions = true,
-		name = "ecore")
+		name = "sql-to-ecore")
 @ParentCommands({
 	DatabaseSupplier.class,
 	ModelCommand.class	// Can't use EObjectSupplier here - it will result in long chaining with DocumentToModel command
 })
-public class EcoreGeneratorCommand extends CommandGroup implements EObjectSupplier<EModelElement> {
+public class EcoreGeneratorCommand extends CommandGroup implements EModelElementSupplier<EModelElement> {
 
 	protected EcoreGeneratorCommand(CapabilityLoader capabilityLoader) {
 		super(capabilityLoader);
