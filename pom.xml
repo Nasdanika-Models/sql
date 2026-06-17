@@ -186,6 +186,8 @@
 
 	<modules>
 		<module>core</module>
+		<module>ast</module>
+		<module>ast-loader</module>
 		<module>model</module>
 		<module>doc</module>
 		<module>ecore</module>
