@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.nasdanika.models.sql.ast/src/main/java" creationIcons="false"
+    editorDirectory="" modelPluginID="org.nasdanika.models.sql.ast" modelName="Ast"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    bundleManifest="false" featureDelegation="Dynamic" complianceLevel="21.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>sql-ast.ecore</foreignModel>
+  <genPackages prefix="Ast" basePackage="org.nasdanika.models.sql" disposableProviderFactory="true"
+      ecorePackage="sql-ast.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sql-ast.ecore#//JoinType">
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//JoinType/INNER"/>
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//JoinType/LEFT"/>
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//JoinType/RIGHT"/>
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//JoinType/FULL"/>
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//JoinType/CROSS"/>
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//JoinType/NATURAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sql-ast.ecore#//SortDirection">
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//SortDirection/ASC"/>
+      <genEnumLiterals ecoreEnumLiteral="sql-ast.ecore#//SortDirection/DESC"/>
+    </genEnums>
+    <genClasses ecoreClass="sql-ast.ecore#//SourceSpan">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SourceSpan/startLine"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SourceSpan/startColumn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SourceSpan/endLine"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SourceSpan/endColumn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SourceSpan/startOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SourceSpan/endOffset"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sql-ast.ecore#//AstNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//AstNode/sourceSpan"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//AstNode/comment"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//SqlScript">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SqlScript/sourceUri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SqlScript/dialect"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//SqlScript/statements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SqlScript/leadingComments"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sql-ast.ecore#//Statement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Statement/rawSql"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//UnparsedStatement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//UnparsedStatement/errorMessage"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//CreateTable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateTable/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateTable/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateTable/ifNotExists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//CreateTable/columns"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//CreateTable/constraints"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//AlterTable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//AlterTable/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//AlterTable/tableName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//AlterTable/operations"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sql-ast.ecore#//AlterOperation"/>
+    <genClasses ecoreClass="sql-ast.ecore#//AddColumn">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//AddColumn/column"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//DropColumn">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropColumn/columnName"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//AddConstraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//AddConstraint/constraint"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//DropTable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropTable/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropTable/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropTable/ifExists"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//CreateView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateView/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateView/viewName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateView/orReplace"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//CreateView/query"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//DropView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropView/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropView/viewName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropView/ifExists"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//CreateIndex">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateIndex/indexName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateIndex/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateIndex/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateIndex/unique"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CreateIndex/columnNames"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//DropIndex">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropIndex/indexName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropIndex/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//DropIndex/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//Select">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Select/distinct"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Select/selectItems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Select/fromItems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Select/joins"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Select/where"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Select/groupBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Select/having"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Select/orderBy"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//Insert">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Insert/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Insert/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Insert/columnNames"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Insert/values"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Insert/select"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//Update">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Update/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Update/tableName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Update/sets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Update/where"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//SetClause">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SetClause/columnName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//SetClause/value"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//Delete">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Delete/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Delete/tableName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Delete/where"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//ColumnDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnDefinition/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnDefinition/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnDefinition/nullable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnDefinition/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnDefinition/identity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnDefinition/computed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnDefinition/computedExpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//ColumnDefinition/inlineConstraints"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sql-ast.ecore#//TableConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//TableConstraint/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//PrimaryKeyConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//PrimaryKeyConstraint/columnNames"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//ForeignKeyConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ForeignKeyConstraint/columnNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ForeignKeyConstraint/referencedTable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ForeignKeyConstraint/referencedSchema"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ForeignKeyConstraint/referencedColumns"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ForeignKeyConstraint/onDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ForeignKeyConstraint/onUpdate"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//UniqueConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//UniqueConstraint/columnNames"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//CheckConstraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//CheckConstraint/expression"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//CheckConstraint/expressionText"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//SelectItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//SelectItem/expression"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SelectItem/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SelectItem/allColumns"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//SelectItem/tableAlias"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sql-ast.ecore#//FromItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//FromItem/alias"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//TableReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//TableReference/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//TableReference/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//SubSelect">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//SubSelect/select"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//Join">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Join/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Join/rightItem"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Join/onCondition"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//OrderByItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//OrderByItem/expression"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//OrderByItem/direction"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sql-ast.ecore#//Expression"/>
+    <genClasses ecoreClass="sql-ast.ecore#//ColumnReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnReference/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnReference/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//ColumnReference/columnName"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//Literal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Literal/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//Literal/type"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//FunctionCall">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//FunctionCall/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//FunctionCall/schemaName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//FunctionCall/arguments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//FunctionCall/distinct"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//FunctionCall/allColumns"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//BinaryExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//BinaryExpression/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//BinaryExpression/right"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//BinaryExpression/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//UnaryExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//UnaryExpression/operand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//UnaryExpression/operator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sql-ast.ecore#//UnaryExpression/prefix"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//Parenthesis">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//Parenthesis/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//CaseExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//CaseExpression/switchExpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//CaseExpression/whenClauses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//CaseExpression/elseExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//WhenClause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//WhenClause/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//WhenClause/result"/>
+    </genClasses>
+    <genClasses ecoreClass="sql-ast.ecore#//AllColumns"/>
+    <genClasses ecoreClass="sql-ast.ecore#//ExpressionList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sql-ast.ecore#//ExpressionList/expressions"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
