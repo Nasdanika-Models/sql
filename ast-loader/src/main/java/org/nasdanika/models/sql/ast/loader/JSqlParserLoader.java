@@ -16,6 +16,7 @@ import org.nasdanika.models.sql.ast.AddColumn;
 import org.nasdanika.models.sql.ast.AddConstraint;
 import org.nasdanika.models.sql.ast.AllColumns;
 import org.nasdanika.models.sql.ast.AlterTable;
+import org.nasdanika.models.sql.ast.AstFactory;
 import org.nasdanika.models.sql.ast.AstNode;
 import org.nasdanika.models.sql.ast.BinaryExpression;
 import org.nasdanika.models.sql.ast.CaseExpression;
@@ -46,7 +47,6 @@ import org.nasdanika.models.sql.ast.SelectItem;
 import org.nasdanika.models.sql.ast.SetClause;
 import org.nasdanika.models.sql.ast.SortDirection;
 import org.nasdanika.models.sql.ast.SourceSpan;
-import org.nasdanika.models.sql.ast.SqlAstFactory;
 import org.nasdanika.models.sql.ast.SqlScript;
 import org.nasdanika.models.sql.ast.Statement;
 import org.nasdanika.models.sql.ast.SubSelect;
@@ -98,7 +98,7 @@ public class JSqlParserLoader implements Function<String, SqlScript> {
             "AUTO_INCREMENT", "IDENTITY", "AS", "COLLATE", "COMMENT", "ENCRYPTED", "MASKED", "GENERATED",
             "VISIBLE", "INVISIBLE", "WITH")));
 
-    private final SqlAstFactory factory = SqlAstFactory.eINSTANCE;
+    private final AstFactory factory = AstFactory.eINSTANCE;
 
     @Override
     public SqlScript apply(String sqlText) {

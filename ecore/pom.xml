@@ -16,6 +16,11 @@
 			<artifactId>model</artifactId>
 			<version>${project.version}</version>
 		</dependency>		
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>ast</artifactId>
+            <version>${project.version}</version>
+        </dependency>       
 		<dependency>
 			<groupId>org.nasdanika.models.ecore</groupId>
 			<artifactId>graph</artifactId>

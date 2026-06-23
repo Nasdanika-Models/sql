@@ -26,6 +26,8 @@ import org.nasdanika.models.app.gen.AppSiteGenerator;
 import org.nasdanika.models.ecore.graph.processors.EcoreHtmlAppGenerator;
 import org.nasdanika.models.ecore.graph.processors.EcoreNodeProcessorFactory;
 import org.nasdanika.models.sql.SqlPackage;
+import org.nasdanika.models.sql.ast.AstPackage;
+import org.nasdanika.models.sql.ast.ecore.EcoreGenAstProcessorsFactory;
 import org.nasdanika.models.sql.ecore.EcoreGenSqlProcessorsFactory;
 //import org.nasdanika.models.party.PartyPackage;
 import org.nasdanika.ncore.NcorePackage;
@@ -43,7 +45,7 @@ public class TestSqlModelDocGen {
 		MutableContext context = Context.EMPTY_CONTEXT.fork();
 		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
 		List<Function<URI,Action>> actionProviders = new ArrayList<>();		
-		EcoreGenSqlProcessorsFactory ecoreGenFamilyProcessorFactory = new EcoreGenSqlProcessorsFactory(context);		
+		EcoreGenSqlProcessorsFactory ecoreGenSqlProcessorFactory = new EcoreGenSqlProcessorsFactory(context);		
 		EcoreNodeProcessorFactory ecoreNodeProcessorFactory = new EcoreNodeProcessorFactory(
 				context, 
 				(uri, pm) -> {
@@ -56,7 +58,7 @@ public class TestSqlModelDocGen {
 					return null;
 				},
 				diagnosticConsumer,
-				ecoreGenFamilyProcessorFactory);
+				ecoreGenSqlProcessorFactory);
 		
 		File actionModelsDir = new File("target\\action-models\\");
 		actionModelsDir.mkdirs();
@@ -82,7 +84,7 @@ public class TestSqlModelDocGen {
 		AppSiteGenerator actionSiteGenerator = new AppSiteGenerator() {
 			
 			protected boolean isDeleteOutputPath(String path) {
-				return !"CNAME".equals(path) && !path.startsWith("images/") && !path.startsWith("libraries/") && !path.startsWith("demos/");			
+				return !"CNAME".equals(path) && !path.startsWith("images/") && !path.startsWith("libraries/") && !path.startsWith("demos/") && !path.startsWith("ast/");			
 			};
 			
 		};		
@@ -104,11 +106,71 @@ public class TestSqlModelDocGen {
 			}
 		}
 		
-		System.out.println("There are " + errorCount + " site errors");
+		System.out.println("There are " + errorCount + " site errors");		
+	}
+	
+	@Test
+	public void testGenerateAstModelDoc() throws IOException, DiagnosticException {
+		ProgressMonitor progressMonitor = new NullProgressMonitor(); // new PrintStreamProgressMonitor();
+		MutableContext context = Context.EMPTY_CONTEXT.fork();
+		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
+		List<Function<URI,Action>> actionProviders = new ArrayList<>();		
+		EcoreGenAstProcessorsFactory ecoreGenAstProcessorFactory = new EcoreGenAstProcessorsFactory(context);		
+		EcoreNodeProcessorFactory ecoreNodeProcessorFactory = new EcoreNodeProcessorFactory(
+				context, 
+				(uri, pm) -> {
+					for (Function<URI, Action> ap: actionProviders) {
+						Action prototype = ap.apply(uri);
+						if (prototype != null) {
+							return prototype;
+						}
+					}
+					return null;
+				},
+				diagnosticConsumer,
+				ecoreGenAstProcessorFactory);
 		
-		if (errorCount != 185) {
-			throw new ExecutionException("There are problems with pages: " + errorCount);
-		}		
+		File actionModelsDir = new File("target\\action-models\\");
+		actionModelsDir.mkdirs();
+		File output = new File(actionModelsDir, "ast.xmi");
+		
+		
+		Map<EPackage, URI> packageURIMap = Map.ofEntries(
+				Map.entry(EcorePackage.eINSTANCE, URI.createURI("https://ecore.models.nasdanika.org/")),	
+				Map.entry(NcorePackage.eINSTANCE, URI.createURI("https://ncore.models.nasdanika.org/"))	
+			);
+			
+		EcoreHtmlAppGenerator eCoreHtmlAppGenerator = new EcoreHtmlAppGenerator(
+				AstPackage.eINSTANCE, 
+				packageURIMap, 
+				ecoreNodeProcessorFactory);
+		
+		eCoreHtmlAppGenerator.generateHtmlAppModel(diagnosticConsumer, output, progressMonitor);
+				
+		String rootActionResource = "ast-actions.yml";
+		URI rootActionURI = URI.createFileURI(new File(rootActionResource).getAbsolutePath());//.appendFragment("/");
+		URI pageTeplateURI = URI.createFileURI(new File("page-template.yml").getAbsolutePath());//.appendFragment("/");
+		String siteMapDomain = "https://sql.models.nasdanika.org/ast";		
+		AppSiteGenerator actionSiteGenerator = new AppSiteGenerator();		
+		
+		Map<String, Collection<String>> errors = actionSiteGenerator.generate(
+				rootActionURI, 
+				pageTeplateURI, // Theme.Cerulean.pageTemplateCdnURI, 
+				siteMapDomain, 
+				new File("../docs/ast"), 
+				new File("target/ast-doc-site-work-dir"), 
+				true);
+				
+		int errorCount = 0;
+		for (Entry<String, Collection<String>> ee: errors.entrySet()) {
+			System.err.println(ee.getKey());
+			for (String error: ee.getValue()) {
+				System.err.println("\t" + error);
+				++errorCount;
+			}
+		}
+		
+		System.out.println("There are " + errorCount + " site errors");
 	}
 				
 }

@@ -1,5 +1,5 @@
 import org.nasdanika.capability.CapabilityFactory;
-import org.nasdanika.models.sql.ast.util.SqlAstEPackageResourceSetCapabilityFactory;
+import org.nasdanika.models.sql.ast.util.AstEPackageResourceSetCapabilityFactory;
 
 module org.nasdanika.models.sql.ast {
     exports org.nasdanika.models.sql.ast;
@@ -10,5 +10,5 @@ module org.nasdanika.models.sql.ast {
     requires transitive org.eclipse.emf.common;
     requires org.nasdanika.capability;
 
-    provides CapabilityFactory with SqlAstEPackageResourceSetCapabilityFactory;
+    provides CapabilityFactory with AstEPackageResourceSetCapabilityFactory;
 }
