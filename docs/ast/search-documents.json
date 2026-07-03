@@ -1,1413 +1,1413 @@
 {
   "references/eClassifiers/ForeignKeyConstraint/references/eStructuralFeatures/onDelete/index.html": {
     "path": "ForeignKeyConstraint/Attributes/onDelete",
-    "link-uuid": "68965882-e456-4d45-a6f4-9d1aa896721f",
+    "link-uuid": "fed4b11d-7742-47f1-8351-1700de3dccb5",
     "title": "onDelete",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557319
+    "timestamp": 1782834280113
   },
   "references/eClassifiers/Delete/inheritance.html": {
     "path": "Delete/Inheritance",
-    "link-uuid": "d172899b-f31b-4068-b0d3-06f1646d9258",
+    "link-uuid": "ba352bf1-3e20-4423-a15c-ce6050366f71",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556998
+    "timestamp": 1782834279850
   },
   "references/eClassifiers/Expression/index.html": {
-    "link-uuid": "4cb50cd7-d0d8-4c3d-ac8a-c68f0bb4dd8b",
+    "link-uuid": "d32a5e5d-30de-4f1f-ab95-727bc6356488",
     "title": "Expression",
     "content": "Diagram ",
-    "timestamp": 1782182557243
+    "timestamp": 1782834280042
   },
   "references/eClassifiers/AlterTable/references/eStructuralFeatures/operations/index.html": {
     "path": "AlterTable/References/operations",
-    "link-uuid": "67ea4132-366f-4703-a9a3-3877cdcb829b",
+    "link-uuid": "e461131c-d9fd-4416-85df-60baf18ea052",
     "title": "operations",
     "content": "Type AlterOperation Multiplicity 0..*",
-    "timestamp": 1782182556452
+    "timestamp": 1782834279423
   },
   "references/eClassifiers/ColumnReference/references/eStructuralFeatures/schemaName/index.html": {
     "path": "ColumnReference/Attributes/schemaName",
-    "link-uuid": "8a7a375c-c4ed-4d9b-a42f-e709b3d7ba2b",
+    "link-uuid": "91b18bc3-8b21-43ae-8dea-47b519bc56fe",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556798
+    "timestamp": 1782834279683
   },
   "references/eClassifiers/Join/references/eStructuralFeatures/rightItem/index.html": {
     "path": "Join/References/rightItem",
-    "link-uuid": "f5257ff7-635b-4567-99d2-5944c47cd9a0",
+    "link-uuid": "fbbf18a5-432e-4451-a26e-602a6dc67c34",
     "title": "rightItem",
     "content": "Type FromItem Multiplicity 1",
-    "timestamp": 1782182557502
+    "timestamp": 1782834280288
   },
   "references/eClassifiers/CreateView/inheritance.html": {
     "path": "CreateView/Inheritance",
-    "link-uuid": "83416d92-d995-40e6-b1b1-0fa553640b8c",
+    "link-uuid": "b9b48b99-1403-4b81-81fc-568f195f42bc",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556947
+    "timestamp": 1782834279806
   },
   "references/eClassifiers/Join/inheritance.html": {
     "path": "Join/Inheritance",
-    "link-uuid": "7979a8ae-21c5-4702-b8a1-59c6a7e5e590",
+    "link-uuid": "704c47a0-6307-4664-9f7f-ac30a9dd7835",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557493
+    "timestamp": 1782834280278
   },
   "references/eClassifiers/AddConstraint/references/eStructuralFeatures/constraint/index.html": {
     "path": "AddConstraint/References/constraint",
-    "link-uuid": "c06ff7d8-f8eb-4217-aa77-3008b6fc7eeb",
+    "link-uuid": "21d7ae92-771d-460b-a1de-f362f0c8e1db",
     "title": "constraint",
     "content": "Type TableConstraint Multiplicity 1",
-    "timestamp": 1782182556330
+    "timestamp": 1782834279334
   },
   "references/eClassifiers/ForeignKeyConstraint/references/eStructuralFeatures/onUpdate/index.html": {
     "path": "ForeignKeyConstraint/Attributes/onUpdate",
-    "link-uuid": "7525c294-d7c0-46d3-99b0-e09cd9b1d496",
+    "link-uuid": "f1d8f9b5-14a7-46a1-8a99-06392a7e2be6",
     "title": "onUpdate",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557322
+    "timestamp": 1782834280117
   },
   "references/eClassifiers/ColumnReference/inheritance.html": {
     "path": "ColumnReference/Inheritance",
-    "link-uuid": "07be61ef-043e-44df-aee7-e4455f07ad2e",
+    "link-uuid": "0c2fe46b-6d06-4e8d-bbcd-11b3d3d29579",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556785
+    "timestamp": 1782834279673
   },
   "references/eClassifiers/AlterOperation/inheritance.html": {
     "path": "AlterOperation/Inheritance",
-    "link-uuid": "1180f658-c24d-4095-b9a2-4536fde10c90",
+    "link-uuid": "0e882297-8162-4bd7-b5b9-568344bc5d98",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1782182556407
+    "timestamp": 1782834279390
   },
   "references/eClassifiers/UnaryExpression/references/eStructuralFeatures/operand/index.html": {
     "path": "UnaryExpression/References/operand",
-    "link-uuid": "06dcfe8b-9b38-4d51-8c16-ce19dcf07f8e",
+    "link-uuid": "829c08eb-a1d6-429c-8183-fa2abc1057b7",
     "title": "operand",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182558152
+    "timestamp": 1782834280880
   },
   "references/eClassifiers/SelectItem/references/eStructuralFeatures/alias/index.html": {
     "path": "SelectItem/Attributes/alias",
-    "link-uuid": "fd30df43-ab22-4d22-9a64-ae7fe448e01b",
+    "link-uuid": "6138d732-b6db-41a0-8dc5-77575066fbca",
     "title": "alias",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557782
+    "timestamp": 1782834280573
   },
   "references/eClassifiers/CaseExpression/references/eStructuralFeatures/switchExpression/index.html": {
     "path": "CaseExpression/References/switchExpression",
-    "link-uuid": "1b7be906-345a-49ac-9d95-febc0f3e3ee0",
+    "link-uuid": "0de70a52-4f6e-4abe-ae27-1f1937675460",
     "title": "switchExpression",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182556619
+    "timestamp": 1782834279544
   },
   "references/eClassifiers/CreateTable/references/eStructuralFeatures/ifNotExists/index.html": {
     "path": "CreateTable/Attributes/ifNotExists",
-    "link-uuid": "66e5419d-0121-44cd-856d-f7579856fe27",
+    "link-uuid": "790deb30-fafa-475e-8903-1760ca2275b5",
     "title": "ifNotExists",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182556911
+    "timestamp": 1782834279772
   },
   "references/eClassifiers/DropIndex/index.html": {
-    "link-uuid": "d10d6345-30c7-4fb3-8b00-e173841fe8f4",
+    "link-uuid": "afc722d5-844f-49d4-8cc8-9f6b26ddbd42",
     "title": "DropIndex",
     "content": "Diagram ",
-    "timestamp": 1782182557085
+    "timestamp": 1782834279916
   },
   "references/eClassifiers/AlterTable/references/eStructuralFeatures/tableName/index.html": {
     "path": "AlterTable/Attributes/tableName",
-    "link-uuid": "fd3327b0-6652-4fc8-84fa-7f52d7803e66",
+    "link-uuid": "8dca25be-18d7-464a-a2ce-7746db53482c",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556461
+    "timestamp": 1782834279429
   },
   "references/eClassifiers/ColumnReference/index.html": {
-    "link-uuid": "118660f6-98ba-490e-ba1e-027479b7489e",
+    "link-uuid": "0b707f65-3ed4-4952-b05b-de84b38e4f48",
     "title": "ColumnReference",
     "content": "Diagram ",
-    "timestamp": 1782182556781
+    "timestamp": 1782834279670
   },
   "references/eClassifiers/FromItem/references/eStructuralFeatures/alias/index.html": {
     "path": "FromItem/Attributes/alias",
-    "link-uuid": "4944036b-df00-480e-add0-5c8395d38b7c",
+    "link-uuid": "c6c171ff-1bac-45fb-b902-d8961e097e43",
     "title": "alias",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557366
+    "timestamp": 1782834280158
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/having/index.html": {
     "path": "Select/References/having",
-    "link-uuid": "32d9f578-b836-4ef4-a3ae-8dc045ea1d1c",
+    "link-uuid": "5540eef5-437e-47f4-b410-16a8fc5cf110",
     "title": "having",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182557734
+    "timestamp": 1782834280524
   },
   "references/eClassifiers/DropTable/references/eStructuralFeatures/tableName/index.html": {
     "path": "DropTable/Attributes/tableName",
-    "link-uuid": "1a1f7784-9ec5-472a-a323-04e4331dd7ab",
+    "link-uuid": "71f9071f-6daa-4105-a980-08bf00c4647d",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557148
+    "timestamp": 1782834279970
   },
   "references/eClassifiers/CreateView/index.html": {
-    "link-uuid": "8636f4be-5c09-4c2e-9cb5-2aa331338f51",
+    "link-uuid": "54fa1be4-8680-4a1d-8cdc-2959cca1eb34",
     "title": "CreateView",
     "content": "Diagram ",
-    "timestamp": 1782182556943
+    "timestamp": 1782834279803
   },
   "references/eClassifiers/Statement/inheritance.html": {
     "path": "Statement/Inheritance",
-    "link-uuid": "e19b0f3b-604d-461f-8b37-df34f29430db",
+    "link-uuid": "1852f447-d233-4d6b-bf0b-92cf01cd052d",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1782182557962
+    "timestamp": 1782834280740
   },
   "references/eClassifiers/ExpressionList/inheritance.html": {
     "path": "ExpressionList/Inheritance",
-    "link-uuid": "6a081b62-b4d4-4db9-aea8-5e89806f6e4d",
+    "link-uuid": "8fe76616-a7f8-4dbe-9641-30404360a6b8",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557272
+    "timestamp": 1782834280072
   },
   "references/eClassifiers/AlterTable/references/eStructuralFeatures/schemaName/index.html": {
     "path": "AlterTable/Attributes/schemaName",
-    "link-uuid": "0ac5758c-cfc2-4a99-b240-c543f11c2c07",
+    "link-uuid": "a2ccc133-e998-481e-9ed5-9e5b97efa8b3",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556457
+    "timestamp": 1782834279426
   },
   "references/eClassifiers/UnparsedStatement/index.html": {
-    "link-uuid": "47ed3fe4-e128-46cd-829a-37c0dc04535a",
+    "link-uuid": "5a7decdd-c89f-416e-a675-f30f20565d11",
     "title": "UnparsedStatement",
     "content": "Diagram ",
-    "timestamp": 1782182558217
+    "timestamp": 1782834280944
   },
   "references/eClassifiers/CreateIndex/references/eStructuralFeatures/tableName/index.html": {
     "path": "CreateIndex/Attributes/tableName",
-    "link-uuid": "3a45f28f-5866-4753-9e41-e5c120bf3ff4",
+    "link-uuid": "cfc0d013-ad53-4b2f-9b32-f13468ad6e2e",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556857
+    "timestamp": 1782834279729
   },
   "references/eClassifiers/OrderByItem/references/eStructuralFeatures/direction/index.html": {
     "path": "OrderByItem/Attributes/direction",
-    "link-uuid": "a6a0f0c2-7d11-42a3-bdee-a8bbe29b30f4",
+    "link-uuid": "1b01d049-1825-4806-ab80-200f8bc8cae3",
     "title": "direction",
     "content": "Type SortDirection Multiplicity 0..1",
-    "timestamp": 1782182557613
+    "timestamp": 1782834280397
   },
   "references/eClassifiers/AllColumns/inheritance.html": {
     "path": "AllColumns/Inheritance",
-    "link-uuid": "05c0678d-0373-41b8-831b-98cca9205a00",
+    "link-uuid": "2d42781d-c361-45d1-8456-3ebd8939f6e9",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556365
+    "timestamp": 1782834279359
   },
   "references/eClassifiers/SetClause/references/eStructuralFeatures/value/index.html": {
     "path": "SetClause/References/value",
-    "link-uuid": "f1ffe295-16cc-4330-8def-314006c07092",
+    "link-uuid": "a92378e8-74b4-4e7d-8f0a-49dbe8c664c3",
     "title": "value",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182557830
+    "timestamp": 1782834280619
   },
   "references/eClassifiers/Delete/index.html": {
-    "link-uuid": "660c4bbd-346a-4c46-ba44-3954d1b64953",
+    "link-uuid": "fb49255b-68c2-4cce-9e81-c81946533e96",
     "title": "Delete",
     "content": "Diagram ",
-    "timestamp": 1782182556995
+    "timestamp": 1782834279846
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/inlineConstraints/index.html": {
     "path": "ColumnDefinition/References/inlineConstraints",
-    "link-uuid": "07bcf65f-44e0-4d07-86a9-a7e1a37d6c3a",
+    "link-uuid": "61ada5d2-4310-44dc-829b-39f038645c2c",
     "title": "inlineConstraints",
     "content": "Type TableConstraint Multiplicity 0..*",
-    "timestamp": 1782182556742
+    "timestamp": 1782834279641
   },
   "references/eClassifiers/UnaryExpression/references/eStructuralFeatures/prefix/index.html": {
     "path": "UnaryExpression/Attributes/prefix",
-    "link-uuid": "809b4c31-3cea-495c-b0a6-66638ed5130d",
+    "link-uuid": "a7c69bf3-198a-4ab5-a254-2261de484deb",
     "title": "prefix",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182558158
+    "timestamp": 1782834280887
   },
   "references/eClassifiers/SourceSpan/references/eStructuralFeatures/endColumn/index.html": {
     "path": "SourceSpan/Attributes/endColumn",
-    "link-uuid": "ba6704bd-ecb9-4bc5-9a0f-1788679f2340",
+    "link-uuid": "039a8a71-5dbe-452e-8e45-f881d2d9af37",
     "title": "endColumn",
     "content": "Type EInt Multiplicity 0..1",
-    "timestamp": 1782182557862
+    "timestamp": 1782834280650
   },
   "references/eClassifiers/BinaryExpression/index.html": {
-    "link-uuid": "98a927b8-a468-4bb9-815e-a96936aa1b3f",
+    "link-uuid": "e4fdb088-eba5-4797-80d1-297d9a3a4998",
     "title": "BinaryExpression",
     "content": "Diagram ",
-    "timestamp": 1782182556549
+    "timestamp": 1782834279491
   },
   "references/eClassifiers/FunctionCall/references/eStructuralFeatures/arguments/index.html": {
     "path": "FunctionCall/References/arguments",
-    "link-uuid": "eea6264e-7165-4f44-8ee1-501cc6c286f4",
+    "link-uuid": "6bedfcf4-5523-44d3-a0f3-a47b1dde78ba",
     "title": "arguments",
     "content": "Type Expression Multiplicity 0..*",
-    "timestamp": 1782182557405
+    "timestamp": 1782834280194
   },
   "references/eClassifiers/DropView/references/eStructuralFeatures/schemaName/index.html": {
     "path": "DropView/Attributes/schemaName",
-    "link-uuid": "693be8bf-4655-4eb8-b6e1-f4b524810560",
+    "link-uuid": "208cea2a-3adf-47b8-b250-79303ec557be",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557192
+    "timestamp": 1782834280005
   },
   "references/eClassifiers/SourceSpan/references/eStructuralFeatures/endLine/index.html": {
     "path": "SourceSpan/Attributes/endLine",
-    "link-uuid": "267e4754-d169-4aba-8edc-cc206c58d851",
+    "link-uuid": "44be2254-140f-4a33-b883-590d2ec8a90b",
     "title": "endLine",
     "content": "Type EInt Multiplicity 0..1",
-    "timestamp": 1782182557865
+    "timestamp": 1782834280654
   },
   "references/eClassifiers/ForeignKeyConstraint/references/eStructuralFeatures/referencedTable/index.html": {
     "path": "ForeignKeyConstraint/Attributes/referencedTable",
-    "link-uuid": "19368d19-11d5-4dd9-b846-21c4108b34ff",
+    "link-uuid": "6ace2ccb-00cb-48af-8685-7ada02642b05",
     "title": "referencedTable",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557332
+    "timestamp": 1782834280127
   },
   "references/eClassifiers/OrderByItem/inheritance.html": {
     "path": "OrderByItem/Inheritance",
-    "link-uuid": "4ab2d717-2593-4a34-8a67-04d9371bcd0d",
+    "link-uuid": "6408bd54-b9f9-44b9-a2c2-133e352139eb",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557606
+    "timestamp": 1782834280390
   },
   "references/eClassifiers/CheckConstraint/references/eStructuralFeatures/expressionText/index.html": {
     "path": "CheckConstraint/Attributes/expressionText",
-    "link-uuid": "2540484e-e4c6-4aef-b83e-1ad550289c3c",
+    "link-uuid": "0c5c3197-b3c9-45fc-a509-35f9e797baf8",
     "title": "expressionText",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556671
+    "timestamp": 1782834279583
   },
   "references/eClassifiers/ForeignKeyConstraint/inheritance.html": {
     "path": "ForeignKeyConstraint/Inheritance",
-    "link-uuid": "28a82335-252c-46dd-8207-c11a42f864f7",
+    "link-uuid": "64b24409-658a-42b4-bc53-4e3a8d857c23",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557309
+    "timestamp": 1782834280104
   },
   "references/eClassifiers/SourceSpan/references/eStructuralFeatures/startColumn/index.html": {
     "path": "SourceSpan/Attributes/startColumn",
-    "link-uuid": "15159bc4-9115-4327-992d-403d08fdc06f",
+    "link-uuid": "0b64d055-b469-491a-8174-323da60cb561",
     "title": "startColumn",
     "content": "Type EInt Multiplicity 0..1",
-    "timestamp": 1782182557872
+    "timestamp": 1782834280660
   },
   "references/eClassifiers/SelectItem/references/eStructuralFeatures/expression/index.html": {
     "path": "SelectItem/References/expression",
-    "link-uuid": "e4560cdd-5720-4563-ad2e-f9c6e11cbab0",
+    "link-uuid": "f13a8356-2f5e-471b-8b6d-4473107a14ee",
     "title": "expression",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182557789
+    "timestamp": 1782834280580
   },
   "references/eClassifiers/TableReference/index.html": {
-    "link-uuid": "8c5be425-b246-4bc7-94c0-0b6e70dcc4ed",
+    "link-uuid": "cd91e005-e7aa-447b-b3ae-b2615b419cc8",
     "title": "TableReference",
     "content": "Diagram ",
-    "timestamp": 1782182558107
+    "timestamp": 1782834280836
   },
   "references/eClassifiers/CreateView/references/eStructuralFeatures/viewName/index.html": {
     "path": "CreateView/Attributes/viewName",
-    "link-uuid": "14a32d30-ea9b-4e97-b94c-2b721b44534f",
+    "link-uuid": "b52a30d1-da98-4f45-a630-11d653dcebd6",
     "title": "viewName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556968
+    "timestamp": 1782834279822
   },
   "references/eClassifiers/ColumnReference/references/eStructuralFeatures/tableName/index.html": {
     "path": "ColumnReference/Attributes/tableName",
-    "link-uuid": "5c8be6a7-557d-4aba-b714-1925bc9a4054",
+    "link-uuid": "ee8a940f-80b1-4d69-ae08-83b7c61a0977",
     "title": "tableName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556803
+    "timestamp": 1782834279686
   },
   "references/eClassifiers/CreateIndex/references/eStructuralFeatures/columnNames/index.html": {
     "path": "CreateIndex/Attributes/columnNames",
-    "link-uuid": "04e6a21f-4a25-4293-a59c-0bfb99d269ea",
+    "link-uuid": "5501007d-e589-4060-82c0-e40723ee1f22",
     "title": "columnNames",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1782182556845
+    "timestamp": 1782834279719
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/where/index.html": {
     "path": "Select/References/where",
-    "link-uuid": "c389a572-7333-4d76-b25e-8172663d2367",
+    "link-uuid": "3aefa8ac-d51c-4649-9fc9-a5284890611d",
     "title": "where",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182557747
+    "timestamp": 1782834280538
   },
   "references/eClassifiers/SourceSpan/references/eStructuralFeatures/startLine/index.html": {
     "path": "SourceSpan/Attributes/startLine",
-    "link-uuid": "876a0db9-8240-4ce8-bb12-474dc2564b25",
+    "link-uuid": "d9a9d9c9-d2f4-458a-92e9-71218629b3e3",
     "title": "startLine",
     "content": "Type EInt Multiplicity 0..1",
-    "timestamp": 1782182557875
+    "timestamp": 1782834280663
   },
   "references/eClassifiers/OrderByItem/references/eStructuralFeatures/expression/index.html": {
     "path": "OrderByItem/References/expression",
-    "link-uuid": "ec3276a7-a1a6-4f6c-a143-7d61c0dc8a32",
+    "link-uuid": "f774a7a0-4fc2-4ec8-9501-304171f7e898",
     "title": "expression",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182557617
+    "timestamp": 1782834280400
   },
   "references/eClassifiers/Statement/references/eStructuralFeatures/rawSql/index.html": {
     "path": "Statement/Attributes/rawSql",
-    "link-uuid": "cd024c06-edc3-4dd0-b622-6a98279101ff",
+    "link-uuid": "3ac16451-c936-48a7-aceb-bdc4eec428e7",
     "title": "rawSql",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557966
+    "timestamp": 1782834280743
   },
   "references/eClassifiers/TableConstraint/inheritance.html": {
     "path": "TableConstraint/Inheritance",
-    "link-uuid": "b9021eea-34df-4166-97a0-81c150fdcecc",
+    "link-uuid": "53746b51-4fd4-4396-9b3e-3603926b75a1",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1782182558031
+    "timestamp": 1782834280809
   },
   "references/eClassifiers/ColumnReference/references/eStructuralFeatures/columnName/index.html": {
     "path": "ColumnReference/Attributes/columnName",
-    "link-uuid": "7c4a4055-2976-4c78-ae01-ac71f758b86a",
+    "link-uuid": "c1e87c16-4bcf-4f90-9da7-30430857fbbf",
     "title": "columnName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556794
+    "timestamp": 1782834279679
   },
   "references/eClassifiers/Literal/references/eStructuralFeatures/type/index.html": {
     "path": "Literal/Attributes/type",
-    "link-uuid": "ebff66a1-aa94-4e7f-8b14-fa050d89c600",
+    "link-uuid": "0ee01f03-9fbf-4128-8150-c87585ace8d8",
     "title": "type",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557557
+    "timestamp": 1782834280335
   },
   "references/eClassifiers/SubSelect/inheritance.html": {
     "path": "SubSelect/Inheritance",
-    "link-uuid": "ad159b6d-6358-4860-906a-57a8fcd344d3",
+    "link-uuid": "b829b842-6154-498a-a90c-bd97a4cdd09c",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557993
+    "timestamp": 1782834280772
   },
   "references/eClassifiers/CaseExpression/references/eStructuralFeatures/whenClauses/index.html": {
     "path": "CaseExpression/References/whenClauses",
-    "link-uuid": "ccec0220-566a-4dfc-91c6-178d19efd058",
+    "link-uuid": "59d92d63-2ab6-49c7-85d2-c237111ce5b0",
     "title": "whenClauses",
     "content": "Type WhenClause Multiplicity 0..*",
-    "timestamp": 1782182556623
+    "timestamp": 1782834279547
   },
   "references/eClassifiers/Delete/references/eStructuralFeatures/schemaName/index.html": {
     "path": "Delete/Attributes/schemaName",
-    "link-uuid": "11139df3-bf35-4d99-a099-dd145faa60d0",
+    "link-uuid": "eed28e6e-b2f4-4d39-b1ef-195a2c7b5dec",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557007
+    "timestamp": 1782834279856
   },
   "index.html": {
-    "link-uuid": "a02ca74b-d7bf-4675-bd99-078a5922ed92",
+    "link-uuid": "1c6ea758-5007-42a3-b1b4-4f6684ba3dba",
     "title": "SQL AST Model",
     "content": " JoinType Expression FromItem Join onCondition rightItem OrderByItem expression SetClause value WhenClause condition result TableReference AllColumns AstNode FunctionCall arguments Parenthesis expression CheckConstraint expression CreateView AddColumn Insert values Literal AddConstraint SortDirection SourceSpan sourceSpan Delete where AlterTable Statement DropView DropIndex ExpressionList expressions UniqueConstraint BinaryExpression left right CaseExpression switchExpression elseExpression whenClauses ColumnReference AlterOperation operations Select joins where groupBy having fromItems orderBy select query SqlScript statements UnaryExpression operand ColumnDefinition column PrimaryKeyConstraint SubSelect select CreateTable columns DropColumn DropTable ForeignKeyConstraint CreateIndex TableConstraint constraints inlineConstraints constraint UnparsedStatement SelectItem expression selectItems Update where sets XSD",
-    "timestamp": 1782182556234
+    "timestamp": 1782834279271
   },
   "references/eClassifiers/ForeignKeyConstraint/references/eStructuralFeatures/referencedSchema/index.html": {
     "path": "ForeignKeyConstraint/Attributes/referencedSchema",
-    "link-uuid": "44fafc26-7193-48b2-a754-7e15092d9cee",
+    "link-uuid": "c23e0b0e-628e-47a4-8ed0-d30f3d0b48d4",
     "title": "referencedSchema",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557329
+    "timestamp": 1782834280123
   },
   "references/eClassifiers/TableReference/references/eStructuralFeatures/schemaName/index.html": {
     "path": "TableReference/Attributes/schemaName",
-    "link-uuid": "f1203bb9-444d-413a-9724-6113513f4b2a",
+    "link-uuid": "1c02163e-9ef0-4e2e-a09e-6d9b2334e6a9",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182558117
+    "timestamp": 1782834280845
   },
   "references/eClassifiers/DropTable/index.html": {
-    "link-uuid": "989adf20-cf24-4566-9f78-8efd9300f4fe",
+    "link-uuid": "f5439576-fe8f-43ea-a7f6-b5dcb6444767",
     "title": "DropTable",
     "content": "Diagram ",
-    "timestamp": 1782182557130
+    "timestamp": 1782834279955
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/identity/index.html": {
     "path": "ColumnDefinition/Attributes/identity",
-    "link-uuid": "53537595-c074-43c8-b0ed-22da66a21a50",
+    "link-uuid": "9523369c-8875-40f9-bf90-24d1394e611c",
     "title": "identity",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182556737
+    "timestamp": 1782834279637
   },
   "references/eClassifiers/AstNode/inheritance.html": {
     "path": "AstNode/Inheritance",
-    "link-uuid": "767c3d8e-d8f8-45b7-9216-cb9f6ca11a82",
+    "link-uuid": "73c854df-a66d-42f8-86cc-505f68ec2f8a",
     "title": "Inheritance",
     "content": "Subtypes ",
-    "timestamp": 1782182556510
+    "timestamp": 1782834279463
   },
   "references/eClassifiers/Update/references/eStructuralFeatures/where/index.html": {
     "path": "Update/References/where",
-    "link-uuid": "7aa27001-aa80-40b8-a2e3-63d8e43ed496",
+    "link-uuid": "d26182db-6a21-4c28-8362-2a5a210ef492",
     "title": "where",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182558272
+    "timestamp": 1782834280998
   },
   "references/eClassifiers/Update/references/eStructuralFeatures/schemaName/index.html": {
     "path": "Update/Attributes/schemaName",
-    "link-uuid": "3f06dfd2-2232-4c05-a6a4-b81cb65ee419",
+    "link-uuid": "7a5dc396-68d3-4d98-94be-0785a7b79b84",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182558262
+    "timestamp": 1782834280988
   },
   "references/eClassifiers/Insert/references/eStructuralFeatures/values/index.html": {
     "path": "Insert/References/values",
-    "link-uuid": "61ece3bd-d668-4a7d-a15f-99cafec62d8f",
+    "link-uuid": "85c12e9c-746c-4b93-840e-7543b56a6cd4",
     "title": "values",
     "content": "Type Expression Multiplicity 0..*",
-    "timestamp": 1782182557464
+    "timestamp": 1782834280250
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/computedExpression/index.html": {
     "path": "ColumnDefinition/Attributes/computedExpression",
-    "link-uuid": "3d05ad3f-406d-46fd-8609-8cfe54e4ee57",
+    "link-uuid": "70187727-3082-45b3-9aad-e0b1708e809c",
     "title": "computedExpression",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556725
+    "timestamp": 1782834279628
   },
   "references/eClassifiers/CreateIndex/references/eStructuralFeatures/indexName/index.html": {
     "path": "CreateIndex/Attributes/indexName",
-    "link-uuid": "70d888d6-1cea-45f3-922e-5dbb5213a901",
+    "link-uuid": "c4e83627-c37c-4c9c-93c4-6d583bc390a7",
     "title": "indexName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556849
+    "timestamp": 1782834279723
   },
   "references/eClassifiers/WhenClause/index.html": {
-    "link-uuid": "104d4d58-edcb-427e-8239-d0ad1b937548",
+    "link-uuid": "57767b79-0394-4044-905d-e2e692e839e0",
     "title": "WhenClause",
     "content": "Diagram ",
-    "timestamp": 1782182558296
+    "timestamp": 1782834281023
   },
   "references/eClassifiers/UnaryExpression/references/eStructuralFeatures/operator/index.html": {
     "path": "UnaryExpression/Attributes/operator",
-    "link-uuid": "67484014-5d39-476b-a515-d026f1dd313b",
+    "link-uuid": "2622c498-97cd-4c8e-8474-cec777bb1207",
     "title": "operator",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182558155
+    "timestamp": 1782834280884
   },
   "references/eClassifiers/AllColumns/index.html": {
-    "link-uuid": "f3bddb68-0e8c-4e0f-a6f0-f5b1eb85aec2",
+    "link-uuid": "63ce3035-19dd-485f-8eeb-4abe385224c3",
     "title": "AllColumns",
     "content": "Diagram ",
-    "timestamp": 1782182556360
+    "timestamp": 1782834279356
   },
   "references/eClassifiers/CreateTable/references/eStructuralFeatures/columns/index.html": {
     "path": "CreateTable/References/columns",
-    "link-uuid": "fb15b2e5-430a-47dd-931a-65e5daf776ee",
+    "link-uuid": "d513bf01-5ab8-4536-a601-6da8eeab9be5",
     "title": "columns",
     "content": "Type ColumnDefinition Multiplicity 0..*",
-    "timestamp": 1782182556903
+    "timestamp": 1782834279766
   },
   "references/eClassifiers/CreateTable/references/eStructuralFeatures/constraints/index.html": {
     "path": "CreateTable/References/constraints",
-    "link-uuid": "db213837-5325-42fb-af7c-c468e8588dc5",
+    "link-uuid": "63c96a6e-e463-44f1-bf05-ec65c74ba6a8",
     "title": "constraints",
     "content": "Type TableConstraint Multiplicity 0..*",
-    "timestamp": 1782182556907
+    "timestamp": 1782834279769
   },
   "references/eClassifiers/Statement/index.html": {
-    "link-uuid": "4371d120-a998-4dbf-b71e-4e1d810f9315",
+    "link-uuid": "6baf9b6b-8957-438f-ab97-beed27718311",
     "title": "Statement",
     "content": "Diagram ",
-    "timestamp": 1782182557959
+    "timestamp": 1782834280736
   },
   "references/eClassifiers/DropTable/references/eStructuralFeatures/schemaName/index.html": {
     "path": "DropTable/Attributes/schemaName",
-    "link-uuid": "8002af9a-805e-475d-ad30-17e825331774",
+    "link-uuid": "11f2291d-95d4-45b1-bb60-625d5a2b6e85",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557144
+    "timestamp": 1782834279967
   },
   "references/eClassifiers/CheckConstraint/references/eStructuralFeatures/expression/index.html": {
     "path": "CheckConstraint/References/expression",
-    "link-uuid": "2dc45502-b31b-4485-9349-41731aed15b1",
+    "link-uuid": "bb4bf380-abdd-4bcc-b09a-11e00f6a46fc",
     "title": "expression",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182556666
+    "timestamp": 1782834279580
   },
   "references/eClassifiers/Update/references/eStructuralFeatures/sets/index.html": {
     "path": "Update/References/sets",
-    "link-uuid": "5c9dbde0-ca90-4dd1-8e58-e7cc187a5912",
+    "link-uuid": "4b5d75a9-91bd-45e9-94af-e6b000942972",
     "title": "sets",
     "content": "Type SetClause Multiplicity 0..*",
-    "timestamp": 1782182558265
+    "timestamp": 1782834280992
   },
   "references/eClassifiers/WhenClause/references/eStructuralFeatures/result/index.html": {
     "path": "WhenClause/References/result",
-    "link-uuid": "8009ee28-469c-4115-8684-012acbb41d2a",
+    "link-uuid": "8a844e11-da2e-41d8-b996-6b68b44a0146",
     "title": "result",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182558309
+    "timestamp": 1782834281035
   },
   "references/eClassifiers/SourceSpan/references/eStructuralFeatures/endOffset/index.html": {
     "path": "SourceSpan/Attributes/endOffset",
-    "link-uuid": "424fdb9e-c6a7-4a76-b403-af5f638abedd",
+    "link-uuid": "77e873bf-8164-4a1f-869e-1c6abb14241d",
     "title": "endOffset",
     "content": "Type EInt Multiplicity 0..1",
-    "timestamp": 1782182557869
+    "timestamp": 1782834280657
   },
   "references/eClassifiers/PrimaryKeyConstraint/references/eStructuralFeatures/columnNames/index.html": {
     "path": "PrimaryKeyConstraint/Attributes/columnNames",
-    "link-uuid": "c4dae440-35ec-4281-8460-e7708bf287bf",
+    "link-uuid": "a9f9bce7-778b-4bd9-bd39-3b4a6b10ad5a",
     "title": "columnNames",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1782182557686
+    "timestamp": 1782834280476
   },
   "references/eClassifiers/DropColumn/references/eStructuralFeatures/columnName/index.html": {
     "path": "DropColumn/Attributes/columnName",
-    "link-uuid": "b138f8c9-43f8-4729-b013-46d76c364b9e",
+    "link-uuid": "b81487c6-d1a6-4dc8-b3c7-aa28653c65f9",
     "title": "columnName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557057
+    "timestamp": 1782834279894
   },
   "references/eClassifiers/PrimaryKeyConstraint/index.html": {
-    "link-uuid": "4728652e-9482-4b46-b00b-eaf7efa70e39",
+    "link-uuid": "e666bc1a-b76b-4e40-9dee-ba623621134c",
     "title": "PrimaryKeyConstraint",
     "content": "Diagram ",
-    "timestamp": 1782182557676
+    "timestamp": 1782834280465
   },
   "references/eClassifiers/Parenthesis/index.html": {
-    "link-uuid": "86a1c347-f236-42b2-925c-faa3d7603b2b",
+    "link-uuid": "45716cbf-8f58-40ae-8460-7b243e500b07",
     "title": "Parenthesis",
     "content": "Diagram ",
-    "timestamp": 1782182557639
+    "timestamp": 1782834280427
   },
   "references/eClassifiers/Literal/inheritance.html": {
     "path": "Literal/Inheritance",
-    "link-uuid": "299f4f82-27bd-4fe4-ac73-38336f3b3903",
+    "link-uuid": "6feb4675-1119-459e-8e1f-0f632bb21e1f",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557545
+    "timestamp": 1782834280327
   },
   "references/eClassifiers/AstNode/references/eStructuralFeatures/sourceSpan/index.html": {
     "path": "AstNode/References/sourceSpan",
-    "link-uuid": "b8372414-3e8e-439d-8595-53d6267f5f82",
+    "link-uuid": "edb125c6-f4f4-4397-8c18-c2f06f02db04",
     "title": "sourceSpan",
     "content": "Type SourceSpan Multiplicity 0..1",
-    "timestamp": 1782182556520
+    "timestamp": 1782834279469
   },
   "references/eClassifiers/WhenClause/inheritance.html": {
     "path": "WhenClause/Inheritance",
-    "link-uuid": "9a4d212b-023e-4762-9d97-dd39579453ad",
+    "link-uuid": "fe7e90e3-e1b7-4fd1-8ae6-b62521378e93",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182558299
+    "timestamp": 1782834281026
   },
   "references/eClassifiers/AddConstraint/inheritance.html": {
     "path": "AddConstraint/Inheritance",
-    "link-uuid": "7788cbc4-4870-4f23-9a63-cb0bf8fc9d65",
+    "link-uuid": "52594a68-2e04-47c2-9547-9d85a175ed0b",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556321
+    "timestamp": 1782834279328
   },
   "references/eClassifiers/AstNode/references/eStructuralFeatures/comment/index.html": {
     "path": "AstNode/Attributes/comment",
-    "link-uuid": "f3f60831-d144-44c2-8eba-5fd745311b3a",
+    "link-uuid": "98d88b21-6f4e-44ec-874c-2a3ec4994d33",
     "title": "comment",
     "content": "Type EString Multiplicity 0..1 Trailing or inline comment associated with this node",
-    "timestamp": 1782182556514
+    "timestamp": 1782834279466
   },
   "references/eClassifiers/DropIndex/references/eStructuralFeatures/indexName/index.html": {
     "path": "DropIndex/Attributes/indexName",
-    "link-uuid": "5f4a7f44-6093-45f9-95e4-38cd708ee313",
+    "link-uuid": "f01f4273-22b3-4570-bd55-7dd6dbab807f",
     "title": "indexName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557095
+    "timestamp": 1782834279925
   },
   "references/eClassifiers/UniqueConstraint/index.html": {
-    "link-uuid": "ebac52b3-0325-4bd5-af1a-bfe2fe8b6040",
+    "link-uuid": "5a2890c2-13e4-472c-97dc-9059477b1694",
     "title": "UniqueConstraint",
     "content": "Diagram ",
-    "timestamp": 1782182558183
+    "timestamp": 1782834280910
   },
   "references/eClassifiers/SelectItem/inheritance.html": {
     "path": "SelectItem/Inheritance",
-    "link-uuid": "4951d32a-3c98-428b-9e80-e508697a884d",
+    "link-uuid": "1bfa9f02-f1cc-4abd-b7b6-7b38d5273612",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557776
+    "timestamp": 1782834280566
   },
   "references/eClassifiers/Join/index.html": {
-    "link-uuid": "2531511f-bc17-4e28-b17b-8620fa84fb03",
+    "link-uuid": "58df80b9-b19d-4c73-89cb-fab0c51efb00",
     "title": "Join",
     "content": "Diagram ",
-    "timestamp": 1782182557490
+    "timestamp": 1782834280275
   },
   "references/eClassifiers/SelectItem/references/eStructuralFeatures/allColumns/index.html": {
     "path": "SelectItem/Attributes/allColumns",
-    "link-uuid": "1b905f9a-5932-4fcd-b714-2416c0ada544",
+    "link-uuid": "38b4c4a1-b6e5-4e6d-8ff0-f798727c72ca",
     "title": "allColumns",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182557785
+    "timestamp": 1782834280576
   },
   "references/eClassifiers/CreateIndex/references/eStructuralFeatures/schemaName/index.html": {
     "path": "CreateIndex/Attributes/schemaName",
-    "link-uuid": "63b58cef-2aca-4454-8dfe-553b71fb1ad9",
+    "link-uuid": "4c80d6ae-a156-434f-b348-cd369f0e2b5d",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556854
+    "timestamp": 1782834279726
   },
   "references/eClassifiers/AlterOperation/index.html": {
-    "link-uuid": "a2713fbb-2557-40dd-b9c5-5a000725a404",
+    "link-uuid": "14092377-507c-4e06-a552-d32d1a28c21c",
     "title": "AlterOperation",
     "content": "Diagram ",
-    "timestamp": 1782182556403
+    "timestamp": 1782834279386
   },
   "references/eClassifiers/SqlScript/references/eStructuralFeatures/leadingComments/index.html": {
     "path": "SqlScript/Attributes/leadingComments",
-    "link-uuid": "e6f65aed-099e-4e40-b7ea-40caaf14ebd2",
+    "link-uuid": "935395b4-3da6-4686-95ac-a0af2aaef6de",
     "title": "leadingComments",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1782182557912
+    "timestamp": 1782834280699
   },
   "references/eClassifiers/BinaryExpression/references/eStructuralFeatures/left/index.html": {
     "path": "BinaryExpression/References/left",
-    "link-uuid": "a8bd0274-e082-4577-a70c-10439d2dfcc0",
+    "link-uuid": "d6aa8eb5-439b-4317-aa56-e08d23f51f58",
     "title": "left",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182556561
+    "timestamp": 1782834279500
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/orderBy/index.html": {
     "path": "Select/References/orderBy",
-    "link-uuid": "18ddf23e-88a6-4e68-86e1-283a93a0b566",
+    "link-uuid": "24788f09-5f4c-4054-b407-802f6a2d824b",
     "title": "orderBy",
     "content": "Type OrderByItem Multiplicity 0..*",
-    "timestamp": 1782182557741
+    "timestamp": 1782834280532
   },
   "references/eClassifiers/DropColumn/index.html": {
-    "link-uuid": "9e52e354-6a71-4744-bbb8-1d735692718e",
+    "link-uuid": "1462092e-d838-4ed2-95f9-72a4132e9029",
     "title": "DropColumn",
     "content": "Diagram ",
-    "timestamp": 1782182557045
+    "timestamp": 1782834279885
   },
   "references/eClassifiers/AddColumn/inheritance.html": {
     "path": "AddColumn/Inheritance",
-    "link-uuid": "1e100e1d-dc39-4ca0-9609-2937c3a0e488",
+    "link-uuid": "e1cc5809-92ea-4f86-9848-fa9cf3df5d57",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556274
+    "timestamp": 1782834279295
   },
   "references/eClassifiers/ColumnDefinition/inheritance.html": {
     "path": "ColumnDefinition/Inheritance",
-    "link-uuid": "4b7d6809-2e0d-46c1-85ff-76cce2deabf9",
+    "link-uuid": "7018b32b-cc93-4253-bcba-ba6c4475872b",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556712
+    "timestamp": 1782834279618
   },
   "references/eClassifiers/CreateIndex/index.html": {
-    "link-uuid": "779ad383-bef1-413c-bb00-5c67a4680a8e",
+    "link-uuid": "e83c3252-02c1-4c1f-80ed-75c534cb77b6",
     "title": "CreateIndex",
     "content": "Diagram ",
-    "timestamp": 1782182556835
+    "timestamp": 1782834279709
   },
   "references/eClassifiers/CreateView/references/eStructuralFeatures/query/index.html": {
     "path": "CreateView/References/query",
-    "link-uuid": "35189afc-2278-4f68-a7e2-310b3ae652ab",
+    "link-uuid": "05bc93bd-0672-470c-87cb-affe752b63fc",
     "title": "query",
     "content": "Type Select Multiplicity 1",
-    "timestamp": 1782182556960
+    "timestamp": 1782834279816
   },
   "references/eClassifiers/DropView/references/eStructuralFeatures/viewName/index.html": {
     "path": "DropView/Attributes/viewName",
-    "link-uuid": "ee2dd706-ec23-443c-87c5-2fda7574aa4d",
+    "link-uuid": "f5540f94-7e34-40b7-831a-fa380090b428",
     "title": "viewName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557196
+    "timestamp": 1782834280008
   },
   "references/eClassifiers/FunctionCall/references/eStructuralFeatures/distinct/index.html": {
     "path": "FunctionCall/Attributes/distinct",
-    "link-uuid": "3cf05ede-f8fc-4b54-b535-eac4d3059e8e",
+    "link-uuid": "db2154a0-38ac-486f-beb7-8056258ce451",
     "title": "distinct",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182557409
+    "timestamp": 1782834280197
   },
   "references/eClassifiers/DropColumn/inheritance.html": {
     "path": "DropColumn/Inheritance",
-    "link-uuid": "5a81493e-4d4c-4442-a0f9-3ee8d3a74575",
+    "link-uuid": "c44d9590-16ac-4847-b3b1-59a76e3fa506",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557049
+    "timestamp": 1782834279888
   },
   "references/eClassifiers/ForeignKeyConstraint/references/eStructuralFeatures/referencedColumns/index.html": {
     "path": "ForeignKeyConstraint/Attributes/referencedColumns",
-    "link-uuid": "e566d655-7450-4b21-b599-e06140f8079b",
+    "link-uuid": "acc9639c-1d77-45ef-8265-3381cc88dd61",
     "title": "referencedColumns",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1782182557325
+    "timestamp": 1782834280120
   },
   "references/eClassifiers/SqlScript/references/eStructuralFeatures/sourceUri/index.html": {
     "path": "SqlScript/Attributes/sourceUri",
-    "link-uuid": "64a06354-a764-4de7-9857-84b487434a1f",
+    "link-uuid": "c4839bcf-3ef3-4f52-85bb-0c13078a72ca",
     "title": "sourceUri",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557915
+    "timestamp": 1782834280703
   },
   "references/eClassifiers/Select/index.html": {
-    "link-uuid": "af924f5e-0faa-4e3b-a450-0085fed16877",
+    "link-uuid": "4ae42d71-58ed-43dc-855d-9a09c5d1db39",
     "title": "Select",
     "content": "Diagram ",
-    "timestamp": 1782182557714
+    "timestamp": 1782834280504
   },
   "references/eClassifiers/Update/inheritance.html": {
     "path": "Update/Inheritance",
-    "link-uuid": "7f479193-b8c7-46b8-8468-85ff9cc548ae",
+    "link-uuid": "d119418e-835a-4190-8ed3-aa9e0d8ed100",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182558254
+    "timestamp": 1782834280980
   },
   "references/eClassifiers/DropTable/references/eStructuralFeatures/ifExists/index.html": {
     "path": "DropTable/Attributes/ifExists",
-    "link-uuid": "795b3960-80f0-455a-a683-0969ab9d4bbf",
+    "link-uuid": "80615762-fadc-42d0-a2e4-db02f11f2e4e",
     "title": "ifExists",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182557141
+    "timestamp": 1782834279964
   },
   "references/eClassifiers/CheckConstraint/index.html": {
-    "link-uuid": "896576c0-f9d0-4efd-9168-3922a181b2d9",
+    "link-uuid": "8512297e-7b57-4677-a2b8-c0f51f56756b",
     "title": "CheckConstraint",
     "content": "Diagram ",
-    "timestamp": 1782182556654
+    "timestamp": 1782834279569
   },
   "references/eClassifiers/Insert/index.html": {
-    "link-uuid": "19c2ef53-e50d-487e-9277-395943380508",
+    "link-uuid": "b6bea170-d36d-4eb9-b6a5-c8cac3ebaa33",
     "title": "Insert",
     "content": "Diagram ",
-    "timestamp": 1782182557441
+    "timestamp": 1782834280228
   },
   "references/eClassifiers/AddColumn/references/eStructuralFeatures/column/index.html": {
     "path": "AddColumn/References/column",
-    "link-uuid": "a743d585-112e-4aec-9eab-28ae1ca0dbf7",
+    "link-uuid": "955e5260-33b6-46c6-ad9c-0bc39d01d85a",
     "title": "column",
     "content": "Type ColumnDefinition Multiplicity 1",
-    "timestamp": 1782182556284
+    "timestamp": 1782834279301
   },
   "references/eClassifiers/SqlScript/references/eStructuralFeatures/dialect/index.html": {
     "path": "SqlScript/Attributes/dialect",
-    "link-uuid": "6b8f1f53-5229-4191-92c7-1cd886b2f003",
+    "link-uuid": "0e09245f-326c-4197-ae50-6c62416e843a",
     "title": "dialect",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557908
+    "timestamp": 1782834280695
   },
   "references/eClassifiers/CaseExpression/inheritance.html": {
     "path": "CaseExpression/Inheritance",
-    "link-uuid": "74ac221d-f29c-4296-bd00-36525319530e",
+    "link-uuid": "24a20e5d-303b-4253-b58a-ac4c103b153d",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556606
+    "timestamp": 1782834279534
   },
   "references/eClassifiers/Delete/references/eStructuralFeatures/where/index.html": {
     "path": "Delete/References/where",
-    "link-uuid": "af492ce4-c169-4006-a7ca-9c18cc5e7484",
+    "link-uuid": "d88ed0e5-848a-43a7-a16d-3c09e7f1062f",
     "title": "where",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182557015
+    "timestamp": 1782834279863
   },
   "references/eClassifiers/Insert/references/eStructuralFeatures/select/index.html": {
     "path": "Insert/References/select",
-    "link-uuid": "b70836b8-6666-4e2c-b671-288d22e70a71",
+    "link-uuid": "aac80a91-85cd-4030-9fd9-9cf6aee3d193",
     "title": "select",
     "content": "Type Select Multiplicity 0..1",
-    "timestamp": 1782182557457
+    "timestamp": 1782834280243
   },
   "references/eClassifiers/PrimaryKeyConstraint/inheritance.html": {
     "path": "PrimaryKeyConstraint/Inheritance",
-    "link-uuid": "97fd6f80-d504-42bf-956f-409373c881a1",
+    "link-uuid": "d210dea4-6a22-41cd-8de8-905ed0605015",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557680
+    "timestamp": 1782834280469
   },
   "references/eClassifiers/SelectItem/references/eStructuralFeatures/tableAlias/index.html": {
     "path": "SelectItem/Attributes/tableAlias",
-    "link-uuid": "a76b26df-ba9e-4b09-8d9f-69c11541a79d",
+    "link-uuid": "2415bd16-d160-4836-92db-ee45bf36cfc6",
     "title": "tableAlias",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557792
+    "timestamp": 1782834280582
   },
   "references/eClassifiers/SetClause/inheritance.html": {
     "path": "SetClause/Inheritance",
-    "link-uuid": "e081e5e9-c117-4c3e-8ec2-311b75d87857",
+    "link-uuid": "5b74d0bd-7bfd-45aa-81b7-698f14233983",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557820
+    "timestamp": 1782834280609
   },
   "references/eClassifiers/OrderByItem/index.html": {
-    "link-uuid": "74760171-3190-473e-abab-f0c7b51ed54e",
+    "link-uuid": "5fe2f644-2ff0-4071-abf0-3d8f2f1d143b",
     "title": "OrderByItem",
     "content": "Diagram ",
-    "timestamp": 1782182557603
+    "timestamp": 1782834280386
   },
   "references/eClassifiers/TableReference/references/eStructuralFeatures/tableName/index.html": {
     "path": "TableReference/Attributes/tableName",
-    "link-uuid": "21dfbca6-1110-42df-b9a0-f288eb740d15",
+    "link-uuid": "aaf5fdb8-f8a2-4234-89ac-ebd4f6c7df45",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182558120
+    "timestamp": 1782834280848
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/joins/index.html": {
     "path": "Select/References/joins",
-    "link-uuid": "d62219f0-f01d-4b28-b0fd-b79874d59667",
+    "link-uuid": "801e0830-9a0b-414a-a374-823e18061d05",
     "title": "joins",
     "content": "Type Join Multiplicity 0..*",
-    "timestamp": 1782182557737
+    "timestamp": 1782834280527
   },
   "references/eClassifiers/FunctionCall/inheritance.html": {
     "path": "FunctionCall/Inheritance",
-    "link-uuid": "0fa10065-1c2c-4917-8da0-ef3f7c73a0af",
+    "link-uuid": "7e5edc23-9835-4924-be0f-44be2034be3f",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557394
+    "timestamp": 1782834280184
   },
   "references/eClassifiers/SelectItem/index.html": {
-    "link-uuid": "8cabc254-8931-4612-8714-a901de320d2b",
+    "link-uuid": "5c8fc6a4-ae9e-4543-ada7-e414928ed95e",
     "title": "SelectItem",
     "content": "Diagram ",
-    "timestamp": 1782182557773
+    "timestamp": 1782834280562
   },
   "references/eClassifiers/Delete/references/eStructuralFeatures/tableName/index.html": {
     "path": "Delete/Attributes/tableName",
-    "link-uuid": "ba51487d-fcdf-4e34-ac2e-97889a14ceb1",
+    "link-uuid": "98594bfe-1f07-4bea-917b-9d8a739bc3e1",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557011
+    "timestamp": 1782834279859
   },
   "references/eClassifiers/SubSelect/index.html": {
-    "link-uuid": "531f85f7-c486-4c35-9a7e-5c5629c48411",
+    "link-uuid": "13f0a1bb-14d8-4235-aa75-5a6038ae515d",
     "title": "SubSelect",
     "content": "Diagram ",
-    "timestamp": 1782182557990
+    "timestamp": 1782834280769
   },
   "references/eClassifiers/DropView/index.html": {
-    "link-uuid": "b8c94ce8-309e-435f-840e-99c2ea94b9cb",
+    "link-uuid": "1243c03e-fc29-4ae7-b6ef-835e0358d273",
     "title": "DropView",
     "content": "Diagram ",
-    "timestamp": 1782182557176
+    "timestamp": 1782834279993
   },
   "references/eClassifiers/Update/references/eStructuralFeatures/tableName/index.html": {
     "path": "Update/Attributes/tableName",
-    "link-uuid": "5ef30b4b-5aa2-4539-a989-7ca2f44c678b",
+    "link-uuid": "9f6b0883-9ff0-4f5f-8360-b7fdec1afc41",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182558269
+    "timestamp": 1782834280995
   },
   "references/eClassifiers/BinaryExpression/inheritance.html": {
     "path": "BinaryExpression/Inheritance",
-    "link-uuid": "c43e2ce2-3114-4e39-9b67-210be7e4ce85",
+    "link-uuid": "d09cff74-6f69-420f-8e08-71b4dc74a5a3",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556553
+    "timestamp": 1782834279495
   },
   "references/eClassifiers/Join/references/eStructuralFeatures/type/index.html": {
     "path": "Join/Attributes/type",
-    "link-uuid": "004a5d83-a6f3-4c0f-ab7a-03801889425c",
+    "link-uuid": "24fdd5f4-6436-4385-96e4-92029113ef86",
     "title": "type",
     "content": "Type JoinType Multiplicity 0..1",
-    "timestamp": 1782182557506
+    "timestamp": 1782834280291
   },
   "references/eClassifiers/DropView/inheritance.html": {
     "path": "DropView/Inheritance",
-    "link-uuid": "916e0805-fe42-4318-8477-340ae6dae4ee",
+    "link-uuid": "d1114727-d1ff-4660-9e80-6d0b2f0dcce7",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557179
+    "timestamp": 1782834279996
   },
   "references/eClassifiers/Insert/references/eStructuralFeatures/schemaName/index.html": {
     "path": "Insert/Attributes/schemaName",
-    "link-uuid": "511eead2-fdf0-49ca-b3a4-e4b3e135c7d2",
+    "link-uuid": "b449029d-0625-4631-9553-d8b9708bd9b4",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557454
+    "timestamp": 1782834280240
   },
   "references/eClassifiers/UnaryExpression/index.html": {
-    "link-uuid": "87c57e64-29e5-4f9d-9289-4ce4a689ac25",
+    "link-uuid": "95eef942-00d8-4701-af9e-d597bd6e3ca8",
     "title": "UnaryExpression",
     "content": "Diagram ",
-    "timestamp": 1782182558142
+    "timestamp": 1782834280871
   },
   "references/eClassifiers/CreateTable/references/eStructuralFeatures/tableName/index.html": {
     "path": "CreateTable/Attributes/tableName",
-    "link-uuid": "5ee31929-1ea1-40e0-b227-d446d7b96bd8",
+    "link-uuid": "333e39c1-096f-4145-8041-f84836604125",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556918
+    "timestamp": 1782834279779
   },
   "references/eClassifiers/DropIndex/references/eStructuralFeatures/tableName/index.html": {
     "path": "DropIndex/Attributes/tableName",
-    "link-uuid": "e83022fe-5511-4729-8194-70e0fdf712a4",
+    "link-uuid": "0ce42ee9-ebec-4d7d-b5c1-c99a4e6b64ac",
     "title": "tableName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557102
+    "timestamp": 1782834279932
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/computed/index.html": {
     "path": "ColumnDefinition/Attributes/computed",
-    "link-uuid": "2e0c3132-ecec-4495-84d1-d89721e0d2a2",
+    "link-uuid": "03535f34-0764-436d-a5ab-4bd846e4e131",
     "title": "computed",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182556721
+    "timestamp": 1782834279625
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/name/index.html": {
     "path": "ColumnDefinition/Attributes/name",
-    "link-uuid": "a7be8eb1-229d-4dc6-b379-9c536265ea28",
+    "link-uuid": "c1f83338-0df0-4dd8-a92b-5daca1a845c6",
     "title": "name",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556745
+    "timestamp": 1782834279644
   },
   "references/eClassifiers/Expression/inheritance.html": {
     "path": "Expression/Inheritance",
-    "link-uuid": "eecfacc2-fa32-4229-b9ba-fb0db9bbd5e9",
+    "link-uuid": "b3e65fa5-b768-46d3-a5ca-5cd18e316c75",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1782182557246
+    "timestamp": 1782834280046
   },
   "references/eClassifiers/Parenthesis/references/eStructuralFeatures/expression/index.html": {
     "path": "Parenthesis/References/expression",
-    "link-uuid": "d3e3d5f6-33b7-4070-a0c4-5142613c5197",
+    "link-uuid": "919b8f84-cc58-4e7e-9b0a-827f04913b9e",
     "title": "expression",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182557650
+    "timestamp": 1782834280439
   },
   "references/eClassifiers/ForeignKeyConstraint/references/eStructuralFeatures/columnNames/index.html": {
     "path": "ForeignKeyConstraint/Attributes/columnNames",
-    "link-uuid": "818f96b2-837a-4c95-a227-36a5e5707c06",
+    "link-uuid": "557c6932-363f-4db0-90cd-fff69adb52c5",
     "title": "columnNames",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1782182557315
+    "timestamp": 1782834280110
   },
   "references/eClassifiers/AlterTable/index.html": {
-    "link-uuid": "70100502-c6dc-4a00-b98a-0932439931a9",
+    "link-uuid": "174b842e-c235-4e44-adb6-5562dcff614d",
     "title": "AlterTable",
     "content": "Diagram ",
-    "timestamp": 1782182556438
+    "timestamp": 1782834279413
   },
   "references/eClassifiers/CaseExpression/references/eStructuralFeatures/elseExpression/index.html": {
     "path": "CaseExpression/References/elseExpression",
-    "link-uuid": "a9b8b5a5-a526-4703-aaf8-bdc24d7705ac",
+    "link-uuid": "99b0622d-046a-4b7c-bb77-45e308da2a7d",
     "title": "elseExpression",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182556615
+    "timestamp": 1782834279541
   },
   "references/eClassifiers/Literal/index.html": {
-    "link-uuid": "3d038827-d76c-4cfe-897b-43ddbfa18d6e",
+    "link-uuid": "f212159d-9c9b-465d-8b6a-0e85f3b6d07b",
     "title": "Literal",
     "content": "Diagram ",
-    "timestamp": 1782182557540
+    "timestamp": 1782834280322
   },
   "references/eClassifiers/UniqueConstraint/references/eStructuralFeatures/columnNames/index.html": {
     "path": "UniqueConstraint/Attributes/columnNames",
-    "link-uuid": "4537a386-f674-4d66-bb21-44d0b3112742",
+    "link-uuid": "ac67a79f-2650-41a8-b79c-8e307cf12e4d",
     "title": "columnNames",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1782182558192
+    "timestamp": 1782834280920
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/dataType/index.html": {
     "path": "ColumnDefinition/Attributes/dataType",
-    "link-uuid": "1e357a8a-ce2a-4534-ac91-1b8206d20094",
+    "link-uuid": "5bd1d8f4-80a3-434a-a13d-e60c7778e4b2",
     "title": "dataType",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556729
+    "timestamp": 1782834279631
   },
   "references/eClassifiers/FunctionCall/references/eStructuralFeatures/name/index.html": {
     "path": "FunctionCall/Attributes/name",
-    "link-uuid": "18f88a05-ba43-49b3-b31c-2116e35e00af",
+    "link-uuid": "59be3c84-9a7a-4d27-b971-4801642fe49d",
     "title": "name",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557412
+    "timestamp": 1782834280200
   },
   "references/eClassifiers/SetClause/index.html": {
-    "link-uuid": "e4f52ebc-9e5c-4367-aa9b-1e599611cedc",
+    "link-uuid": "bad746ab-2fb7-4d2d-85be-3f1134c02e5b",
     "title": "SetClause",
     "content": "Diagram ",
-    "timestamp": 1782182557816
+    "timestamp": 1782834280606
   },
   "references/eClassifiers/Parenthesis/inheritance.html": {
     "path": "Parenthesis/Inheritance",
-    "link-uuid": "90619fb5-636f-429b-bed3-c5a944ede55e",
+    "link-uuid": "2a3bd152-6472-468e-9068-fd6a1d7f3caa",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557643
+    "timestamp": 1782834280431
   },
   "references/eClassifiers/UnparsedStatement/references/eStructuralFeatures/errorMessage/index.html": {
     "path": "UnparsedStatement/Attributes/errorMessage",
-    "link-uuid": "69bfd87d-13a9-42f4-9fee-12091c26eeb9",
+    "link-uuid": "55a88b5c-3bae-46c9-bb22-6217f628533b",
     "title": "errorMessage",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182558227
+    "timestamp": 1782834280954
   },
   "references/eClassifiers/SourceSpan/references/eStructuralFeatures/startOffset/index.html": {
     "path": "SourceSpan/Attributes/startOffset",
-    "link-uuid": "768909f7-f3e4-4cce-810f-5417f1febce6",
+    "link-uuid": "03b3c5a5-ef16-479d-b101-493833df651f",
     "title": "startOffset",
     "content": "Type EInt Multiplicity 0..1",
-    "timestamp": 1782182557878
+    "timestamp": 1782834280666
   },
   "references/eClassifiers/AddConstraint/index.html": {
-    "link-uuid": "cf8ad166-5402-4373-8aca-7bb0fe3b959e",
+    "link-uuid": "ef85e44b-f133-4fcc-9f91-44f94134fd77",
     "title": "AddConstraint",
     "content": "Diagram ",
-    "timestamp": 1782182556316
+    "timestamp": 1782834279324
   },
   "references/eClassifiers/TableConstraint/index.html": {
-    "link-uuid": "4661d445-14b1-4f26-9e52-99854e6852f6",
+    "link-uuid": "cdc1e456-4f64-4f26-933a-e8aae0caa220",
     "title": "TableConstraint",
     "content": "Diagram ",
-    "timestamp": 1782182558026
+    "timestamp": 1782834280806
   },
   "references/eClassifiers/CreateView/references/eStructuralFeatures/schemaName/index.html": {
     "path": "CreateView/Attributes/schemaName",
-    "link-uuid": "d2cdedfc-20b2-4765-86e4-351b71073b31",
+    "link-uuid": "b302ddea-a904-4caf-8f44-8b03fb1882c3",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556964
+    "timestamp": 1782834279819
   },
   "references/eClassifiers/FunctionCall/references/eStructuralFeatures/allColumns/index.html": {
     "path": "FunctionCall/Attributes/allColumns",
-    "link-uuid": "4f19ffde-e023-47aa-8cab-8b9d1a5726c7",
+    "link-uuid": "371c73cd-1a44-4b93-a558-0a888057bd80",
     "title": "allColumns",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182557401
+    "timestamp": 1782834280191
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/distinct/index.html": {
     "path": "Select/Attributes/distinct",
-    "link-uuid": "b8883455-cfaa-4537-8114-ceb1570724a4",
+    "link-uuid": "fedf9617-08d5-4cf0-b033-11b2bdbfff9e",
     "title": "distinct",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182557724
+    "timestamp": 1782834280514
   },
   "references/eClassifiers/AstNode/index.html": {
-    "link-uuid": "f2d2f6f0-befd-4733-ab05-df16a9636320",
+    "link-uuid": "c2c6f6e5-a78b-4595-a1a4-37cceebf0cdc",
     "title": "AstNode",
     "content": "Diagram ",
-    "timestamp": 1782182556504
+    "timestamp": 1782834279460
   },
   "references/eClassifiers/CreateIndex/inheritance.html": {
     "path": "CreateIndex/Inheritance",
-    "link-uuid": "71439600-422f-4e6a-80c9-f5a7094fb624",
+    "link-uuid": "6586dd97-55b9-4429-93ed-9c084b398bb0",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556839
+    "timestamp": 1782834279712
   },
   "references/eClassifiers/FromItem/inheritance.html": {
     "path": "FromItem/Inheritance",
-    "link-uuid": "e1254d78-a8f6-456e-aa0e-b03dcc9dc602",
+    "link-uuid": "8554df9c-0460-45bd-87ee-37c8ca0f548d",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1782182557361
+    "timestamp": 1782834280155
   },
   "references/eClassifiers/SqlScript/index.html": {
-    "link-uuid": "bb88a561-83ff-4a49-b4d6-f027dd9b5db4",
+    "link-uuid": "6ca22fa1-46e5-445b-9180-277fb528a4d8",
     "title": "SqlScript",
     "content": "Diagram ",
-    "timestamp": 1782182557899
+    "timestamp": 1782834280686
   },
   "references/eClassifiers/SqlScript/inheritance.html": {
     "path": "SqlScript/Inheritance",
-    "link-uuid": "d0d1662b-75ec-49d2-9d92-fc5d5be18c5e",
+    "link-uuid": "07111dcd-1577-4da1-b364-ed0ca5a98d2b",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557902
+    "timestamp": 1782834280689
   },
   "references/eClassifiers/UniqueConstraint/inheritance.html": {
     "path": "UniqueConstraint/Inheritance",
-    "link-uuid": "8baded8e-1562-4c02-954f-332162db9482",
+    "link-uuid": "f818dda1-2270-4241-869e-03d29fc1e9b1",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182558186
+    "timestamp": 1782834280913
   },
   "references/eClassifiers/BinaryExpression/references/eStructuralFeatures/operator/index.html": {
     "path": "BinaryExpression/Attributes/operator",
-    "link-uuid": "918dd7ca-6276-439f-ba66-a3eb8b24112d",
+    "link-uuid": "5446c478-7467-4111-b622-745cf44ecd41",
     "title": "operator",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182556566
+    "timestamp": 1782834279504
   },
   "references/eClassifiers/Insert/inheritance.html": {
     "path": "Insert/Inheritance",
-    "link-uuid": "8a687b18-d6cc-4f18-87a2-ba99e5ad9617",
+    "link-uuid": "55ae54de-dae3-415a-9368-563cf7bdc260",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557443
+    "timestamp": 1782834280231
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/groupBy/index.html": {
     "path": "Select/References/groupBy",
-    "link-uuid": "3a2fa217-154e-4067-92dc-8c774b7ce82b",
+    "link-uuid": "e6f2dfd2-6147-4f20-991f-2a836ea59287",
     "title": "groupBy",
     "content": "Type Expression Multiplicity 0..*",
-    "timestamp": 1782182557731
+    "timestamp": 1782834280521
   },
   "references/eClassifiers/CreateTable/inheritance.html": {
     "path": "CreateTable/Inheritance",
-    "link-uuid": "da2fccac-e826-459c-9142-978f7d92f9b6",
+    "link-uuid": "e61f4f1d-0aa9-46bb-99a5-250552b0f5b8",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556895
+    "timestamp": 1782834279760
   },
   "references/eClassifiers/UnaryExpression/inheritance.html": {
     "path": "UnaryExpression/Inheritance",
-    "link-uuid": "abb53f6c-5521-48de-8ab6-1b33bbbb8dce",
+    "link-uuid": "fddd0b32-25b4-47a6-b647-fb7e1003498c",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182558145
+    "timestamp": 1782834280874
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/defaultValue/index.html": {
     "path": "ColumnDefinition/Attributes/defaultValue",
-    "link-uuid": "c066f43e-e4bc-4ddc-b787-6df22b134fa1",
+    "link-uuid": "4c5b7d0f-60b6-447b-a4ba-d392994ad570",
     "title": "defaultValue",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556733
+    "timestamp": 1782834279634
   },
   "references/eClassifiers/SubSelect/references/eStructuralFeatures/select/index.html": {
     "path": "SubSelect/References/select",
-    "link-uuid": "542ecd24-c23a-469f-9223-3c6547e40f76",
+    "link-uuid": "c5c0888d-7fbf-49c5-b598-b4bd1aa72578",
     "title": "select",
     "content": "Type Select Multiplicity 1",
-    "timestamp": 1782182557999
+    "timestamp": 1782834280779
   },
   "references/eClassifiers/CreateTable/index.html": {
-    "link-uuid": "c0939a7d-79f4-4ab9-aa82-f76d3cbed246",
+    "link-uuid": "19c9f426-1f64-4d45-9bbc-79dfb41e760b",
     "title": "CreateTable",
     "content": "Diagram ",
-    "timestamp": 1782182556890
+    "timestamp": 1782834279757
   },
   "references/eClassifiers/SourceSpan/index.html": {
-    "link-uuid": "53e4ceed-2478-4d31-96d7-edab8bf21c06",
+    "link-uuid": "fb30b1a1-17a1-4666-8400-7e653e7fa49c",
     "title": "SourceSpan",
     "content": "Diagram ",
-    "timestamp": 1782182557855
+    "timestamp": 1782834280644
   },
   "references/eClassifiers/DropIndex/inheritance.html": {
     "path": "DropIndex/Inheritance",
-    "link-uuid": "9a5a2cd7-d1f9-4657-9d1a-b1174263cea4",
+    "link-uuid": "a2d177b9-69b7-47cd-a481-1c3ca19d604b",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557088
+    "timestamp": 1782834279919
   },
   "references/eClassifiers/CreateView/references/eStructuralFeatures/orReplace/index.html": {
     "path": "CreateView/Attributes/orReplace",
-    "link-uuid": "17b9405c-d941-42ea-a643-5c5981113680",
+    "link-uuid": "e2ac5f4a-6b43-4203-9071-daa7f5e8c632",
     "title": "orReplace",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182556955
+    "timestamp": 1782834279813
   },
   "references/eClassifiers/ColumnDefinition/references/eStructuralFeatures/nullable/index.html": {
     "path": "ColumnDefinition/Attributes/nullable",
-    "link-uuid": "395eba5b-856f-4e26-8e4e-9e229445099f",
+    "link-uuid": "80d58391-4b4e-4f33-a528-c299cf917ee7",
     "title": "nullable",
     "content": "Type EBooleanObject Multiplicity 0..1",
-    "timestamp": 1782182556750
+    "timestamp": 1782834279647
   },
   "references/eClassifiers/DropIndex/references/eStructuralFeatures/schemaName/index.html": {
     "path": "DropIndex/Attributes/schemaName",
-    "link-uuid": "5b6c6d72-64c6-40dd-9c85-fd066416209e",
+    "link-uuid": "09f3d23e-ac8b-45cc-83c3-11aa56934216",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557099
+    "timestamp": 1782834279928
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/fromItems/index.html": {
     "path": "Select/References/fromItems",
-    "link-uuid": "e3e13586-1eee-45df-8bc7-c3b62313f1eb",
+    "link-uuid": "f1374e8a-da81-46c0-8184-3c24caa201a0",
     "title": "fromItems",
     "content": "Type FromItem Multiplicity 0..*",
-    "timestamp": 1782182557727
+    "timestamp": 1782834280518
   },
   "references/eClassifiers/BinaryExpression/references/eStructuralFeatures/right/index.html": {
     "path": "BinaryExpression/References/right",
-    "link-uuid": "61e7655c-cf04-4239-b0b9-07f943213071",
+    "link-uuid": "021a56f7-1e87-43d0-a44e-669a971399d9",
     "title": "right",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182556570
+    "timestamp": 1782834279507
   },
   "references/eClassifiers/SqlScript/references/eStructuralFeatures/statements/index.html": {
     "path": "SqlScript/References/statements",
-    "link-uuid": "0a6fa5c1-8ee0-432b-86cd-2577d0cbcbf1",
+    "link-uuid": "cac61b88-13cb-456c-a28f-9b35b603008a",
     "title": "statements",
     "content": "Type Statement Multiplicity 0..*",
-    "timestamp": 1782182557920
+    "timestamp": 1782834280706
   },
   "references/eClassifiers/FunctionCall/index.html": {
-    "link-uuid": "2f00947f-2193-4776-aff0-de64d283545c",
+    "link-uuid": "2d5b6904-35a5-43ff-af57-23e2a8ec6db3",
     "title": "FunctionCall",
     "content": "Diagram ",
-    "timestamp": 1782182557390
+    "timestamp": 1782834280181
   },
   "references/eClassifiers/ExpressionList/references/eStructuralFeatures/expressions/index.html": {
     "path": "ExpressionList/References/expressions",
-    "link-uuid": "d56ce6c0-c891-46a8-840a-59af04e705e5",
+    "link-uuid": "257f0c70-1237-43bb-b243-012c6234fd0e",
     "title": "expressions",
     "content": "Type Expression Multiplicity 0..*",
-    "timestamp": 1782182557278
+    "timestamp": 1782834280078
   },
   "references/eClassifiers/Insert/references/eStructuralFeatures/columnNames/index.html": {
     "path": "Insert/Attributes/columnNames",
-    "link-uuid": "81e9daea-f553-4a2b-ab7a-2d95cf5b3915",
+    "link-uuid": "9e3ef8cc-ec63-4d93-9996-f2246ff29a9d",
     "title": "columnNames",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1782182557451
+    "timestamp": 1782834280237
   },
   "references/eClassifiers/FromItem/index.html": {
-    "link-uuid": "a381a996-b68b-4490-866e-9867b69919cb",
+    "link-uuid": "b86b7e32-e9b1-41d8-bf79-9074053e3859",
     "title": "FromItem",
     "content": "Diagram ",
-    "timestamp": 1782182557358
+    "timestamp": 1782834280152
   },
   "references/eClassifiers/CheckConstraint/inheritance.html": {
     "path": "CheckConstraint/Inheritance",
-    "link-uuid": "9b3bd553-e7e2-4f40-a53d-9a33bee17f2b",
+    "link-uuid": "75b94f2c-2780-4915-9a6f-7967592d757e",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556658
+    "timestamp": 1782834279572
   },
   "references/eClassifiers/SetClause/references/eStructuralFeatures/columnName/index.html": {
     "path": "SetClause/Attributes/columnName",
-    "link-uuid": "b8cdc1ed-ed29-4af7-96b4-0a55c40dcc52",
+    "link-uuid": "1da64fd6-b1c2-4761-bcbd-56ab49227fb2",
     "title": "columnName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557827
+    "timestamp": 1782834280615
   },
   "references/eClassifiers/Literal/references/eStructuralFeatures/value/index.html": {
     "path": "Literal/Attributes/value",
-    "link-uuid": "2406a2b6-c526-4977-bca9-1e71c50f4bbe",
+    "link-uuid": "b4290ced-59c8-443d-9194-540a46bcd91a",
     "title": "value",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557561
+    "timestamp": 1782834280351
   },
   "references/eClassifiers/AddColumn/index.html": {
-    "link-uuid": "36166fbc-5a09-4008-af1b-82c24573eb02",
+    "link-uuid": "71a5cb78-ff4d-4d77-a850-206e305ee5ea",
     "title": "AddColumn",
     "content": "Diagram ",
-    "timestamp": 1782182556270
+    "timestamp": 1782834279291
   },
   "references/eClassifiers/Select/inheritance.html": {
     "path": "Select/Inheritance",
-    "link-uuid": "da3f28cb-3d8e-40e5-8ba0-aedea03e79d9",
+    "link-uuid": "f8698407-37aa-4abb-aefb-d5e63cfb8933",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557717
+    "timestamp": 1782834280508
   },
   "references/eClassifiers/TableConstraint/references/eStructuralFeatures/name/index.html": {
     "path": "TableConstraint/Attributes/name",
-    "link-uuid": "5ddce55e-09ae-4338-89f8-044a6a15613c",
+    "link-uuid": "d9ac7a38-8789-4385-b939-3cab77a72493",
     "title": "name",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182558082
+    "timestamp": 1782834280813
   },
   "references/eClassifiers/Update/index.html": {
-    "link-uuid": "97af1d19-9512-4087-b83a-ec73d227a546",
+    "link-uuid": "40a4255e-2148-4069-a07d-5da1c2d300a0",
     "title": "Update",
     "content": "Diagram ",
-    "timestamp": 1782182558250
+    "timestamp": 1782834280977
   },
   "references/eClassifiers/TableReference/inheritance.html": {
     "path": "TableReference/Inheritance",
-    "link-uuid": "76ebc628-58c3-4fd0-9a64-34ca4a474924",
+    "link-uuid": "22dec0b7-07a3-4eb5-bccc-243212ed8678",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182558110
+    "timestamp": 1782834280839
   },
   "references/eClassifiers/ExpressionList/index.html": {
-    "link-uuid": "fd22a02f-4fd4-40cd-8d54-00a5aacb7949",
+    "link-uuid": "e242d474-f8c8-428e-8728-2361898d3668",
     "title": "ExpressionList",
     "content": "Diagram ",
-    "timestamp": 1782182557269
+    "timestamp": 1782834280068
   },
   "references/eClassifiers/FunctionCall/references/eStructuralFeatures/schemaName/index.html": {
     "path": "FunctionCall/Attributes/schemaName",
-    "link-uuid": "86488f46-51c6-4f2b-9893-6676ac9f4677",
+    "link-uuid": "ba7748e3-e740-48c5-8442-2879e50b1825",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182557416
+    "timestamp": 1782834280204
   },
   "references/eClassifiers/AlterTable/inheritance.html": {
     "path": "AlterTable/Inheritance",
-    "link-uuid": "993534db-1593-42b3-b23f-5fa0d1f7d143",
+    "link-uuid": "a4eef5fb-0505-4a81-8f40-c1a8e90e5651",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182556442
+    "timestamp": 1782834279417
   },
   "references/eClassifiers/DropTable/inheritance.html": {
     "path": "DropTable/Inheritance",
-    "link-uuid": "9ccb60e7-bf4e-48f2-857d-aaaf7dd57162",
+    "link-uuid": "476302de-e58f-496c-b3c3-ca9fb4872e46",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182557134
+    "timestamp": 1782834279958
   },
   "references/eClassifiers/ForeignKeyConstraint/index.html": {
-    "link-uuid": "06d1a81c-726d-41f2-8fb6-db93b84e6e84",
+    "link-uuid": "012efa82-737f-464f-8704-0a306e99fe01",
     "title": "ForeignKeyConstraint",
     "content": "Diagram ",
-    "timestamp": 1782182557305
+    "timestamp": 1782834280101
   },
   "references/eClassifiers/Join/references/eStructuralFeatures/onCondition/index.html": {
     "path": "Join/References/onCondition",
-    "link-uuid": "4df06fa7-fccc-4b3b-a10c-87168473f139",
+    "link-uuid": "aff67162-ca88-4b09-b6a3-4d24bea117cf",
     "title": "onCondition",
     "content": "Type Expression Multiplicity 0..1",
-    "timestamp": 1782182557499
+    "timestamp": 1782834280284
   },
   "references/eClassifiers/UnparsedStatement/inheritance.html": {
     "path": "UnparsedStatement/Inheritance",
-    "link-uuid": "2baab664-a8a4-46b0-a541-c16b7e400007",
+    "link-uuid": "419a8591-2fef-4cb6-b982-05c00ff8583a",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1782182558219
+    "timestamp": 1782834280947
   },
   "references/eClassifiers/ColumnDefinition/index.html": {
-    "link-uuid": "f51eaf16-d3c4-47e4-b85e-447e7638afa8",
+    "link-uuid": "1812b2bb-06a7-4351-91e5-6da12f3298e6",
     "title": "ColumnDefinition",
     "content": "Diagram ",
-    "timestamp": 1782182556707
+    "timestamp": 1782834279615
   },
   "references/eClassifiers/WhenClause/references/eStructuralFeatures/condition/index.html": {
     "path": "WhenClause/References/condition",
-    "link-uuid": "e129e2ac-5294-45e8-95e7-43e54fe623b4",
+    "link-uuid": "2981b94b-36b8-47bf-a42f-9aae300f9310",
     "title": "condition",
     "content": "Type Expression Multiplicity 1",
-    "timestamp": 1782182558306
+    "timestamp": 1782834281032
   },
   "references/eClassifiers/CreateIndex/references/eStructuralFeatures/unique/index.html": {
     "path": "CreateIndex/Attributes/unique",
-    "link-uuid": "84fe5224-fc88-4c8d-a3b8-a9b75c8773b4",
+    "link-uuid": "e20c84cc-2fad-4b01-a2e5-a3df303988df",
     "title": "unique",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182556860
+    "timestamp": 1782834279733
   },
   "references/eClassifiers/DropView/references/eStructuralFeatures/ifExists/index.html": {
     "path": "DropView/Attributes/ifExists",
-    "link-uuid": "bf17eefc-dd5a-4fd8-9880-23a0be5c12ad",
+    "link-uuid": "cc976d21-935b-4461-9880-b3e2f5414203",
     "title": "ifExists",
     "content": "Type EBoolean Multiplicity 0..1",
-    "timestamp": 1782182557187
+    "timestamp": 1782834280002
   },
   "references/eClassifiers/CaseExpression/index.html": {
-    "link-uuid": "9ba28ab1-64ce-4587-9caa-ca9f67509c0b",
+    "link-uuid": "d9f02421-5f37-4973-8c7d-b655096b2dd5",
     "title": "CaseExpression",
     "content": "Diagram ",
-    "timestamp": 1782182556601
+    "timestamp": 1782834279531
   },
   "references/eClassifiers/Insert/references/eStructuralFeatures/tableName/index.html": {
     "path": "Insert/Attributes/tableName",
-    "link-uuid": "e4285530-a64e-4aee-a73b-42fa4475fe0c",
+    "link-uuid": "3b387d8b-8d10-4cc5-b6c3-4884cd4440cc",
     "title": "tableName",
     "content": "Type EString Multiplicity 1",
-    "timestamp": 1782182557461
+    "timestamp": 1782834280247
   },
   "references/eClassifiers/CreateTable/references/eStructuralFeatures/schemaName/index.html": {
     "path": "CreateTable/Attributes/schemaName",
-    "link-uuid": "97a7173f-5b46-4048-a9ba-ca443da199fe",
+    "link-uuid": "291dba8a-99b0-491d-96dc-da436536be9e",
     "title": "schemaName",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1782182556914
+    "timestamp": 1782834279776
   },
   "references/eClassifiers/Select/references/eStructuralFeatures/selectItems/index.html": {
     "path": "Select/References/selectItems",
-    "link-uuid": "74d7e3a0-b28a-4b7d-8b60-5d98de80724e",
+    "link-uuid": "44174ec5-29e5-4aaa-829a-a6d1d4c558c9",
     "title": "selectItems",
     "content": "Type SelectItem Multiplicity 0..*",
-    "timestamp": 1782182557744
+    "timestamp": 1782834280535
   }
 }
